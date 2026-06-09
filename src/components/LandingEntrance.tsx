@@ -1,8 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-
 export default function LandingEntrance() {
   const [stage, setStage] = useState(0);
 
@@ -40,8 +38,10 @@ export default function LandingEntrance() {
         </p>
       </div>
 
-      <Link
-        href="/house"
+      <a
+        href="https://www.airbnb.co.uk/rooms/1695506665949683620"
+        target="_blank"
+        rel="noopener noreferrer"
         className="border border-cream bg-cream/[0.08] px-6 py-4 text-center font-display text-sm tracking-[5.76px] text-cream transition-all duration-500 hover:bg-cream/20 hover:tracking-[7px] md:text-lg lg:text-2xl"
         style={{
           opacity: stage >= 3 ? 1 : 0,
@@ -51,7 +51,7 @@ export default function LandingEntrance() {
         }}
       >
         STAY WITH US
-      </Link>
+      </a>
     </div>
   );
 }
