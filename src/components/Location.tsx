@@ -4,10 +4,10 @@ export default function Location() {
   return (
     <section className="flex flex-col gap-10 bg-warm px-6 py-16 text-cream md:px-16 lg:flex-row lg:items-start lg:justify-between lg:p-[120px]">
       <div className="flex flex-col gap-4 md:gap-6 lg:w-[560px] lg:shrink-0">
-        <h2 className="font-fine text-4xl leading-tight md:text-5xl lg:text-[72px] lg:leading-[80px]">
+        <h2 className="font-display text-4xl leading-tight md:text-5xl lg:text-[72px] lg:leading-[80px]">
           madeira. the pearl of the atlantic.
         </h2>
-        <p className="text-lg font-light leading-8 md:text-2xl lg:text-[32px] lg:leading-[48px]">
+        <p className="text-lg font-normal leading-8 md:text-2xl lg:text-[32px] lg:leading-[48px]">
           The house sits on the hills of Arco da Calheta, on Madeira&apos;s
           south-west coast. The Atlantic faces it directly. The village is 1
           kilometre downhill; Funchal and the airport are forty-five minutes by

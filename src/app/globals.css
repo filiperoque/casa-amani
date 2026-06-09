@@ -9,22 +9,6 @@
 }
 
 @font-face {
-  font-family: "GT Sectra Fine";
-  src: url("/fonts/GT-Sectra-Fine-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "GT Walsheim";
-  src: url("/fonts/GT-Walsheim-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "GT Walsheim";
   src: url("/fonts/GT-Walsheim-Regular.woff2") format("woff2");
   font-weight: 400;
@@ -51,7 +35,6 @@
   --color-cream: var(--color-cream);
   --color-brown: var(--color-brown);
   --font-display: "GT Sectra Display", Georgia, "Times New Roman", serif;
-  --font-fine: "GT Sectra Fine", Georgia, "Times New Roman", serif;
   --font-body: "GT Walsheim", system-ui, -apple-system, sans-serif;
 }
 

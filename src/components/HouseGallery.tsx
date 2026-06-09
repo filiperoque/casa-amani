@@ -73,7 +73,7 @@ export default function HouseGallery() {
     <section className="bg-cream py-16 lg:py-[120px]">
       <Reveal>
         <div className="flex flex-col items-center gap-4 px-6 text-center text-brown md:gap-6 lg:px-[120px]">
-          <h2 className="font-fine text-4xl md:text-5xl lg:text-[72px] lg:leading-[80px]">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-[72px] lg:leading-[80px]">
             the house
           </h2>
           <p className="max-w-3xl text-sm leading-7 md:text-lg lg:text-2xl lg:leading-8">
