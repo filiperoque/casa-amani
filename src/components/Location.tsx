@@ -10,8 +10,8 @@ export default function Location() {
         <p className="text-lg font-normal leading-8 md:text-2xl lg:text-[32px] lg:leading-[48px]">
           The house sits on the hills of Arco da Calheta, on Madeira&apos;s
           south-west coast. The Atlantic faces it directly. The village is 1
-          kilometre downhill; Funchal and the airport are forty-five minutes by
-          car.
+          kilometre downhill; Funchal is thirty minutes by car; the airport
+          about fifty.
         </p>
       </div>
 

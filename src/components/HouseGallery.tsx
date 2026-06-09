@@ -77,8 +77,7 @@ export default function HouseGallery() {
             the house
           </h2>
           <p className="max-w-3xl text-sm leading-7 md:text-lg lg:text-2xl lg:leading-8">
-            2 + 1 bedrooms • 234 m² • atlantic-facing • heated pool • open-plan
-            living
+            2 bedrooms • 3 bathrooms • 219 m² • atlantic-facing • heated pool
             <br className="hidden md:block" />
             workspaces • fibre wifi • outdoor dining &amp; barbecue • garage for 2
             cars
