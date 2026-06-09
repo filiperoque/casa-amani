@@ -20,7 +20,8 @@
 
 ## Pages
 - [Home](https://casa-amani.com/): brand overview and booking entry
-- [The House](https://casa-amani.com/house): rooms, layout, amenities
+- [The House](https://casa-amani.com/en/house): rooms, layout, amenities
+- [FAQ](https://casa-amani.com/en/faq): common questions answered directly
 
 ## Booking
 - OurMadeira: https://www.ourmadeira.com/regions/calheta-area/amani/
