@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { type Locale, getTranslations } from "@/i18n/translations";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Tagline from "@/components/Tagline";
@@ -13,35 +14,34 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/house",
   },
-  openGraph: {
-    title: "The House — Casa Amani | Arco da Calheta, Madeira",
-    description:
-      "2 bedrooms, 3 bathrooms, heated pool, sea view, workspaces. A 219 m² contemporary villa on Madeira's south-west coast.",
-    url: "https://casa-amani.com/house",
-    images: [
-      {
-        url: "/images/living-space.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Open-plan living space at Casa Amani with direct terrace and pool access",
-      },
-    ],
-  },
 };
 
-export default function HousePage() {
+export default async function HousePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = getTranslations(locale as Locale);
+
   return (
     <main>
       <div className="bg-warm">
-        <Header />
-        <Hero />
+        <Header menuLabel={t.header.menu} />
+        <Hero title={t.landing.title} subtitle={t.landing.subtitle} />
       </div>
       <Reveal>
-        <Tagline />
+        <Tagline
+          heading={t.tagline.heading}
+          subheading={t.tagline.subheading}
+        />
       </Reveal>
-      <HouseGallery />
+      <HouseGallery t={t} />
       <Reveal>
-        <Location />
+        <Location
+          heading={t.location.heading}
+          description={t.location.description}
+        />
       </Reveal>
     </main>
   );

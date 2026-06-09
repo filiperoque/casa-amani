@@ -4,7 +4,19 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { landingBlurDataURL } from "./blur-placeholder";
 
-export default function LandingScene() {
+interface LandingSceneProps {
+  title: string;
+  subtitle: string;
+  cta: string;
+  ctaHref?: string;
+}
+
+export default function LandingScene({
+  title,
+  subtitle,
+  cta,
+  ctaHref = "https://www.airbnb.co.uk/rooms/1695506665949683620",
+}: LandingSceneProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [stage, setStage] = useState(0);
 
@@ -23,7 +35,6 @@ export default function LandingScene() {
 
   return (
     <>
-      {/* Blur placeholder — instant */}
       <div
         className="absolute inset-0"
         style={{
@@ -35,7 +46,6 @@ export default function LandingScene() {
         }}
       />
 
-      {/* Full image — fades in, then Ken Burns */}
       <div
         className={`absolute inset-0 transition-opacity duration-[1.5s] ease-out ${
           imageLoaded ? "opacity-100" : "opacity-0"
@@ -54,7 +64,6 @@ export default function LandingScene() {
         </div>
       </div>
 
-      {/* Content — stages only advance after image loads */}
       <div className="relative z-10 flex w-full flex-1 flex-col items-center justify-center gap-10 px-6 pb-16 pt-10 mix-blend-lighten md:px-[120px]">
         <div className="flex flex-col items-center gap-6 text-cream">
           <h1
@@ -64,7 +73,7 @@ export default function LandingScene() {
               transform: stage >= 1 ? "translateY(0)" : "translateY(20px)",
             }}
           >
-            casa amani
+            {title}
           </h1>
           <p
             className="text-center text-sm tracking-[5.76px] transition-all duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)] md:text-lg lg:text-2xl"
@@ -73,12 +82,12 @@ export default function LandingScene() {
               transform: stage >= 2 ? "translateY(0)" : "translateY(16px)",
             }}
           >
-            ARCO DA CALHETA, MADEIRA
+            {subtitle}
           </p>
         </div>
 
         <a
-          href="https://www.airbnb.co.uk/rooms/1695506665949683620"
+          href={ctaHref}
           target="_blank"
           rel="noopener noreferrer"
           className="border border-cream bg-cream/[0.08] px-3 py-2.5 text-center font-display text-xs tracking-[4.8px] text-cream transition-all duration-500 hover:bg-cream/20 hover:tracking-[5.5px] md:px-4 md:py-3 md:text-base lg:px-4 lg:py-3 lg:text-xl lg:leading-5"
@@ -89,7 +98,7 @@ export default function LandingScene() {
             transitionTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
           }}
         >
-          STAY WITH US
+          {cta}
         </a>
       </div>
     </>

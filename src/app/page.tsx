@@ -1,9 +1,18 @@
-import LandingScene from "@/components/LandingScene";
+"use client";
 
-export default function LandingPage() {
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { detectLocale } from "@/i18n/locale-detect";
+
+export default function RootRedirect() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const locale = detectLocale();
+    router.replace(`/${locale}`);
+  }, [router]);
+
   return (
-    <div className="relative flex h-dvh items-center justify-center overflow-hidden bg-[#bb9669]">
-      <LandingScene />
-    </div>
+    <div className="flex h-dvh items-center justify-center bg-[#bb9669]" />
   );
 }
