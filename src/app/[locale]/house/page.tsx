@@ -6,6 +6,7 @@ import Tagline from "@/components/Tagline";
 import HouseGallery from "@/components/HouseGallery";
 import Location from "@/components/Location";
 import Reveal from "@/components/Reveal";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "The House — Casa Amani | Arco da Calheta, Madeira",
@@ -43,6 +44,7 @@ export default async function HousePage({
           description={t.location.description}
         />
       </Reveal>
+      <Footer />
     </main>
   );
 }

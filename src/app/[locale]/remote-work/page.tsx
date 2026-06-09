@@ -3,6 +3,8 @@ import { type Locale, getTranslations } from "@/i18n/translations";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
+import BookCTA from "@/components/BookCTA";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Remote work from Madeira — Casa Amani | Arco da Calheta",
@@ -206,18 +208,12 @@ export default async function RemoteWorkPage({
 
             <Reveal>
               <div className="border-t border-brown/10 pt-8">
-                <a
-                  href="https://www.airbnb.co.uk/rooms/1695506665949683620"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block border border-brown bg-brown/[0.06] px-6 py-3 font-display text-sm uppercase tracking-[4px] text-brown transition-colors hover:bg-brown/15"
-                >
-                  Book a stay
-                </a>
+                <BookCTA placement="remote-work-cta" />
               </div>
             </Reveal>
           </div>
         </section>
+        <Footer />
       </main>
     </>
   );

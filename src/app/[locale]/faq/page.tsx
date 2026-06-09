@@ -3,6 +3,7 @@ import { type Locale, getTranslations } from "@/i18n/translations";
 import { faqItems } from "@/content/faq";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Frequently asked questions — Casa Amani",
@@ -105,18 +106,17 @@ export default async function FaqPage({
               <p>
                 Can&apos;t find what you need?{" "}
                 <a
-                  href="https://www.airbnb.co.uk/rooms/1695506665949683620"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brown/70 underline transition-colors hover:text-brown"
+                  href="mailto:hello@casa-amani.com"
+                  className="plausible-event-name=email-click text-brown/70 underline transition-colors hover:text-brown"
                 >
-                  Get in touch through Airbnb
+                  hello@casa-amani.com
                 </a>
                 .
               </p>
             </div>
           </Reveal>
         </div>
+        <Footer />
       </main>
     </>
   );

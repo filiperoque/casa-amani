@@ -139,6 +139,20 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          async
+          src="https://plausible.io/js/pa-ySxT_AZs1Q8jkSINO-Uxk.js"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var t=[50,90],f=new Set;function c(){var s=Math.round((window.scrollY+window.innerHeight)/document.documentElement.scrollHeight*100);t.forEach(function(v){if(s>=v&&!f.has(v)){f.add(v);window.plausible("scroll-"+v,{props:{path:window.location.pathname}})}})}var k=false;window.addEventListener("scroll",function(){if(!k){window.requestAnimationFrame(function(){c();k=false});k=true}},{passive:true})})()`,
+          }}
+        />
       </head>
       <body className="antialiased">{children}</body>
     </html>

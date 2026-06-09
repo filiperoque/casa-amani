@@ -87,10 +87,10 @@ export default function LandingScene({
         </div>
 
         <a
-          href={ctaHref}
+          href={`${ctaHref}${ctaHref.includes("?") ? "&" : "?"}utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=landing-hero`}
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-cream bg-cream/[0.08] px-3 py-2.5 text-center font-display text-xs tracking-[4.8px] text-cream transition-all duration-500 hover:bg-cream/20 hover:tracking-[5.5px] md:px-4 md:py-3 md:text-base lg:px-4 lg:py-3 lg:text-xl lg:leading-5"
+          className="plausible-event-name=outbound-airbnb border border-cream bg-cream/[0.08] px-3 py-2.5 text-center font-display text-xs tracking-[4.8px] text-cream transition-all duration-500 hover:bg-cream/20 hover:tracking-[5.5px] md:px-4 md:py-3 md:text-base lg:px-4 lg:py-3 lg:text-xl lg:leading-5"
           style={{
             opacity: stage >= 3 ? 1 : 0,
             transform: stage >= 3 ? "translateY(0)" : "translateY(12px)",
