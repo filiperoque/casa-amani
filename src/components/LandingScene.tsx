@@ -69,7 +69,7 @@ export default function LandingScene() {
           <p
             className="text-center text-sm tracking-[5.76px] transition-all duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)] md:text-lg lg:text-2xl"
             style={{
-              opacity: stage >= 2 ? 0.7 : 0,
+              opacity: stage >= 2 ? 0.8 : 0,
               transform: stage >= 2 ? "translateY(0)" : "translateY(16px)",
             }}
           >
@@ -81,7 +81,7 @@ export default function LandingScene() {
           href="https://www.airbnb.co.uk/rooms/1695506665949683620"
           target="_blank"
           rel="noopener noreferrer"
-          className="border border-cream bg-cream/[0.08] px-6 py-4 text-center font-display text-sm tracking-[5.76px] text-cream transition-all duration-500 hover:bg-cream/20 hover:tracking-[7px] md:text-lg lg:text-2xl"
+          className="border border-cream bg-cream/[0.08] px-3 py-2.5 text-center font-display text-xs tracking-[4.8px] text-cream transition-all duration-500 hover:bg-cream/20 hover:tracking-[5.5px] md:px-4 md:py-3 md:text-base lg:px-4 lg:py-3 lg:text-xl lg:leading-5"
           style={{
             opacity: stage >= 3 ? 1 : 0,
             transform: stage >= 3 ? "translateY(0)" : "translateY(12px)",
