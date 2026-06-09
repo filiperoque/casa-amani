@@ -101,7 +101,13 @@ const jsonLd = {
     propertyID: "Alojamento Local licence",
     value: "176882/AL",
   },
-  sameAs: ["https://www.ourmadeira.com/regions/calheta-area/amani/"],
+  sameAs: [
+    "https://www.ourmadeira.com/regions/calheta-area/amani/",
+    "https://www.airbnb.co.uk/rooms/1695506665949683620",
+    "https://www.vrbo.com/en-gb/p12152433",
+    "https://www.booking.com/hotel/pt/superb-modern-villa-with-pool-in-calhetaamani.en-gb.html",
+    "https://www.casai.com/property/ourmadeira-amani/BC-16564906",
+  ],
   amenityFeature: [
     { "@type": "LocationFeatureSpecification", name: "Private heated pool (optional)", value: true },
     { "@type": "LocationFeatureSpecification", name: "Panoramic sea view", value: true },
