@@ -284,88 +284,88 @@ const translations = {
       mainBedroom: {
         title: "O QUARTO PRINCIPAL",
         description:
-          "cama king virada para o Atlântico, com casa de banho privativa e uma secretária atrás da cama para trabalhar ou ler.",
+          "cama king virada para o Atlântico, com casa de banho privativa e secretária atrás da cama para trabalhar cedo ou ler.",
       },
       guestBedroom: {
         title: "O QUARTO DE HÓSPEDES",
         description:
-          "cama king junto à sala, com secretária e monitor para descanso e trabalho remoto.",
+          "cama king junto à sala, com secretária e monitor para descanso ou trabalho remoto.",
       },
       familyBathroom: {
-        title: "A CASA DE BANHO FAMILIAR",
+        title: "A CASA DE BANHO",
         description:
-          "microcimento em todo o espaço, com chuveiro de chuva e som integrado. quente, suave e fácil de usar no dia a dia.",
+          "microcimento do chão ao teto, chuveiro de chuva e som ambiente. quente, suave, fácil no dia a dia.",
       },
       swimmingPool: {
         title: "A PISCINA",
         description:
-          "piscina privada integrada no terraço, com assentos e plantas ao redor. usada a diferentes horas do dia.",
+          "piscina privada integrada no terraço, com lugares sentados e plantas à volta. usa-se a horas diferentes do dia.",
       },
       livingSpace: {
-        title: "A SALA DE ESTAR",
+        title: "A SALA",
         description:
-          "sala de estar aberta com acesso direto ao terraço e à piscina, onde a maior parte do dia se passa entre interior e exterior.",
+          "sala aberta com acesso direto ao terraço e à piscina. o dia vai-se passando entre dentro e fora.",
       },
       kitchen: {
         title: "A COZINHA",
         description:
-          "cozinha totalmente equipada junto à sala, usada diariamente desde o café da manhã até refeições mais longas.",
+          "cozinha equipada junto à sala, usada todos os dias — do café da manhã às refeições mais longas ao fim do dia.",
       },
       lowerRoom: {
-        title: "O QUARTO INFERIOR",
+        title: "O QUARTO DE BAIXO",
         description:
-          "quarto no piso inferior com duas camas de solteiro e casa de banho própria, mais privado e confortável, embora sem janela.",
+          "quarto no piso inferior com duas camas de solteiro e casa de banho própria. mais reservado, embora sem janela.",
       },
       outdoorDining: {
-        title: "A ZONA DE REFEIÇÕES EXTERIOR",
+        title: "A ZONA DE REFEIÇÕES",
         description:
-          "mesa exterior e churrasqueira a gás junto à sala. as refeições tendem a passar para fora sem grande planeamento.",
+          "mesa e churrasqueira a gás junto à sala. as refeições acabam por passar para fora sem se dar por isso.",
       },
       garage: {
         title: "A GARAGEM",
         description:
-          "garagem privada com espaço para dois carros, ligada diretamente à casa para chegadas e partidas simples.",
+          "garagem com espaço para dois carros, ligada à casa. chegar e partir sem complicações.",
       },
     },
     location: {
       heading: "madeira. a pérola do atlântico.",
       description:
-        "A casa fica nas colinas de Arco da Calheta, na costa sudoeste da Madeira. O Atlântico fica mesmo em frente. A vila está a 1 quilómetro encosta abaixo; o Funchal a trinta minutos de carro; o aeroporto a cerca de cinquenta.",
+        "A casa fica nas colinas de Arco da Calheta, na costa sudoeste da Madeira. O Atlântico fica mesmo em frente. A aldeia está a 1 quilómetro encosta abaixo; o Funchal a trinta minutos de carro; o aeroporto a uns cinquenta.",
     },
     bookCta: "Reservar estadia",
     faq: {
       title: "perguntas frequentes",
       subtitle:
-        "Respostas diretas sobre a Casa Amani — a casa, a localização e o que esperar.",
+        "Respostas diretas sobre a Casa Amani — a casa, a zona e o que esperar.",
       contact: "Não encontra o que procura?",
       items: [
         {
-          question: "Onde fica exatamente a Casa Amani?",
+          question: "Onde fica a Casa Amani?",
           answer:
-            "A Casa Amani fica em Arco da Calheta, uma freguesia na costa sudoeste da ilha da Madeira, Portugal. Fica a cerca de 50 minutos de carro (48 km) do Aeroporto Internacional da Madeira (FNC), e a praia e marina da Calheta ficam a 6 km — cerca de cinco minutos de carro.",
+            "Em Arco da Calheta, uma freguesia na costa sudoeste da Madeira. Fica a cerca de 50 minutos de carro (48 km) do aeroporto, e a praia e marina da Calheta estão a 6 km — cinco minutos de carro.",
         },
         {
           question: "A que distância fica o aeroporto?",
           answer:
-            "O Aeroporto Internacional da Madeira (FNC) fica a 48 km da casa — aproximadamente 50 minutos de carro. O Funchal fica a cerca de 30 minutos.",
+            "O aeroporto da Madeira fica a 48 km — cerca de 50 minutos de carro. O Funchal fica a 30 minutos.",
         },
         {
-          question: "A Casa Amani é adequada para trabalho remoto?",
+          question: "Dá para trabalhar remotamente?",
           answer:
-            "Sim. Ambos os quartos têm secretária, e o quarto de hóspedes tem um monitor externo que pode ser ligado a um portátil. Wi-Fi gratuito em toda a moradia e terraço, e estadias de uma semana ou mais são encorajadas. A Madeira é um destino reconhecido para nómadas digitais, com a Digital Nomad Village em Ponta do Sol, nas proximidades.",
+            "Dá. Os dois quartos têm secretária e o quarto de hóspedes tem monitor externo para ligar ao portátil. Há Wi-Fi de fibra em toda a casa e no terraço. Estadias de uma semana ou mais são bem-vindas. A Madeira é destino reconhecido de nómadas digitais — a Digital Nomad Village fica em Ponta do Sol, ali perto.",
         },
         {
-          question: "Há piscina?",
+          question: "Tem piscina?",
           answer:
-            "Sim. Uma piscina privada de 7 metros integrada no terraço, com opção de aquecimento (disponível com custo adicional). Tem vista para o Atlântico.",
+            "Tem. Piscina privada de 7 metros integrada no terraço, com opção de aquecimento (custo extra). Vista para o Atlântico.",
         },
         {
-          question: "Quantas pessoas podem ficar na Casa Amani?",
+          question: "Para quantas pessoas?",
           answer:
-            "Até seis. Os dois quartos têm cama king-size (a cama king do quarto de hóspedes pode ser dividida em dois colchões individuais), e duas camas de solteiro podem ser montadas no piso inferior para um quinto e sexto hóspede.",
+            "Até seis. Os dois quartos têm cama king-size (a do quarto de hóspedes divide-se em duas individuais) e podem montar-se mais duas camas de solteiro no piso inferior.",
         },
         {
-          question: "São permitidos animais de estimação?",
+          question: "Aceitam animais?",
           answer: "Não. A Casa Amani não aceita animais de estimação.",
         },
         {
@@ -374,122 +374,122 @@ const translations = {
             "Sete noites. A casa foi pensada para estadias longas — semanas, não fins de semana.",
         },
         {
-          question: "Há estacionamento?",
+          question: "Tem estacionamento?",
           answer:
-            "Sim. Uma garagem privada com espaço para dois carros, ligada diretamente à casa.",
+            "Tem. Garagem com espaço para dois carros, ligada diretamente à casa.",
         },
         {
           question: "Como é o Wi-Fi?",
           answer:
-            "Fibra óptica em toda a moradia e terraço. Rápida o suficiente para videochamadas, uploads grandes e streaming em simultâneo.",
+            "Fibra óptica em toda a casa e no terraço. Aguenta videochamadas, uploads grandes e streaming ao mesmo tempo.",
         },
         {
-          question: "Há restaurantes a uma distância a pé?",
+          question: "Há restaurantes perto a pé?",
           answer:
-            "O bar mais próximo (Monteiros) e o restaurante mais próximo (Melton’s Kitchen) ficam a cerca de 1 km da casa. Os restaurantes da marina da Calheta ficam a 5 minutos de carro. Recomenda-se carro para a maioria das refeições fora.",
+            "O bar mais perto (Monteiros) e o restaurante mais perto (Melton's Kitchen) ficam a cerca de 1 km. Os restaurantes da marina da Calheta ficam a 5 minutos de carro. Para a maioria das refeições fora, convém ter carro.",
         },
         {
           question: "Preciso de carro?",
           answer:
-            "Sim, para a maioria das coisas. Arco da Calheta é uma aldeia na encosta; as lojas, restaurantes e praias mais próximas ficam a uma curta distância de carro. O aluguer de carro na ilha é simples e acessível.",
+            "Sim, para quase tudo. Arco da Calheta é uma aldeia na encosta — lojas, restaurantes e praias ficam a uma curta distância de carro. Alugar carro na ilha é simples e barato.",
         },
         {
           question: "Como é o clima no inverno?",
           answer:
-            "Ameno. As temperaturas diurnas na costa sudoeste variam tipicamente entre 17–22°C no inverno, com mais horas de sol do que no Funchal. A Madeira não tem uma estação fria como o Norte da Europa — tem uma estação mais tranquila.",
+            "Ameno. Na costa sudoeste as temperaturas andam entre os 17 e os 22°C no inverno, com mais sol do que no Funchal. A Madeira não tem propriamente inverno como no Norte da Europa — tem uma estação mais calma.",
         },
         {
-          question: "A casa é adequada para famílias?",
+          question: "É boa para famílias?",
           answer:
-            "Sim. Berço e cadeira alta disponíveis a pedido. A piscina não tem vedação, pelo que as crianças devem ser supervisionadas. O quarto inferior com duas camas de solteiro funciona bem para crianças mais velhas ou adolescentes.",
+            "É. Berço e cadeira alta disponíveis a pedido. A piscina não tem vedação, por isso as crianças precisam de supervisão. O quarto de baixo com duas camas de solteiro funciona bem para miúdos mais velhos.",
         },
         {
-          question: "Posso trabalhar a partir da casa a tempo inteiro?",
+          question: "Dá para trabalhar a tempo inteiro?",
           answer:
-            "Sim. Foi construída para isso. Secretárias dedicadas em ambos os quartos, um monitor externo no quarto de hóspedes, Wi-Fi de fibra e um fuso horário (GMT/WET) que se sobrepõe confortavelmente ao do Reino Unido, à maioria da Europa e à manhã da Costa Leste dos EUA.",
+            "Dá — foi feita para isso. Secretárias nos dois quartos, monitor externo no quarto de hóspedes, fibra óptica e um fuso horário (GMT/WET) que encaixa bem com o Reino Unido, a maior parte da Europa e a manhã da Costa Leste americana.",
         },
         {
-          question: "Como posso reservar?",
+          question: "Como reservo?",
           answer:
-            "Atualmente aceitamos reservas exclusivamente através do Airbnb. Toque em qualquer botão “Fique connosco” para verificar disponibilidade e reservar. A Casa Amani também está listada no Booking.com, VRBO, OurMadeira e Casai através do nosso gestor de propriedade, mas para uma experiência consistente encaminhamos os hóspedes para o anúncio no Airbnb a partir deste site.",
+            "De momento, as reservas são feitas pelo Airbnb. Carregue em qualquer botão \"Fique connosco\" para ver disponibilidade. A Casa Amani também aparece no Booking.com, VRBO, OurMadeira e Casai através do gestor do imóvel, mas para simplificar encaminhamos tudo para o Airbnb a partir deste site.",
         },
         {
-          question: "O pequeno-almoço está incluído?",
+          question: "Inclui pequeno-almoço?",
           answer:
-            "Não. A Casa Amani é em regime de alojamento próprio. A cozinha está totalmente equipada com placa de indução, forno, máquina de lavar loiça e máquina de café expresso. Um chef privado pode ser organizado a pedido.",
+            "Não. A casa funciona em regime próprio. A cozinha tem tudo — placa de indução, forno, máquina de lavar loiça e máquina de café. Pode pedir-se chef privado.",
         },
         {
-          question: "Há ar condicionado e aquecimento?",
+          question: "Tem ar condicionado e aquecimento?",
           answer:
-            "Sim. Ar condicionado e aquecimento central em toda a casa.",
+            "Tem. Ar condicionado e aquecimento central em toda a casa.",
         },
         {
-          question: "Qual é o supermercado mais próximo?",
+          question: "E supermercado?",
           answer:
-            "Há uma pequena mercearia em Arco da Calheta. Para um supermercado completo, o Pingo Doce na Calheta fica a cerca de 5 minutos de carro.",
+            "Há uma mercearia pequena em Arco da Calheta. O Pingo Doce na Calheta fica a 5 minutos de carro.",
         },
         {
-          question: "São fornecidas toalhas e roupa de cama?",
+          question: "Toalhas e roupa de cama estão incluídas?",
           answer:
-            "Sim. Toda a roupa de cama, toalhas de banho e toalhas de piscina são fornecidas e mudadas semanalmente.",
+            "Sim. Roupa de cama, toalhas de banho e toalhas de piscina — tudo incluído e mudado semanalmente.",
         },
         {
-          question: "Quais são os horários de check-in e check-out?",
+          question: "Horários de check-in e check-out?",
           answer:
-            "O check-in é a partir das 16:00. O check-out é até às 11:00. Check-in antecipado ou check-out tardio podem ser possíveis dependendo da disponibilidade — pergunte ao reservar.",
+            "Check-in a partir das 16:00. Check-out até às 11:00. Entradas antecipadas ou saídas tardias podem ser possíveis consoante a disponibilidade — pergunte ao reservar.",
         },
       ],
     },
     remoteWork: {
-      title: "trabalhar a partir do lado tranquilo da Madeira",
+      title: "trabalhar a partir do lado calmo da Madeira",
       intro:
-        "A Casa Amani é uma moradia privada com espaços de trabalho dedicados, Wi-Fi de fibra e um monitor externo — na costa sudoeste da Madeira, onde o sol é mais constante e as multidões não. Pensada para estadias de uma semana ou mais, igualmente adequada a trabalho focado a solo e a casais que trabalham remotamente.",
-      setupTitle: "a configuração",
+        "A Casa Amani é uma moradia privada com espaço de trabalho a sério, fibra óptica e monitor externo — na costa sudoeste da Madeira, onde o sol é mais certo e as multidões ficam longe. Pensada para estadias de uma semana ou mais. Funciona bem tanto para quem trabalha a solo como para casais em trabalho remoto.",
+      setupTitle: "o que temos",
       setup: {
         wifi: {
           label: "Wi-Fi",
-          text: "Fibra óptica. Rápida o suficiente para videochamadas, uploads grandes e streaming em simultâneo.",
+          text: "Fibra óptica. Aguenta videochamadas, uploads grandes e streaming tudo ao mesmo tempo.",
         },
         desks: {
           label: "Secretárias",
-          text: "Secretária dedicada em ambos os quartos. A secretária do quarto principal tem vista para o Atlântico.",
+          text: "Secretária nos dois quartos. A do quarto principal tem vista para o Atlântico.",
         },
         monitor: {
           label: "Monitor",
-          text: "Monitor externo no quarto de hóspedes, pronto a ligar ao seu portátil.",
+          text: "Monitor externo no quarto de hóspedes, pronto a ligar ao portátil.",
         },
         timezone: {
           label: "Fuso horário",
-          text: "GMT/WET (igual a Londres). Sobrepõe-se à maioria da Europa e à manhã da Costa Leste dos EUA.",
+          text: "GMT/WET (igual a Londres). Encaixa bem com a Europa e a manhã da Costa Leste americana.",
         },
         quiet: {
           label: "Silêncio",
-          text: "Arco da Calheta é uma aldeia na encosta. Sem barulho de trânsito, sem barulho de bares, sem corredores de hotel.",
+          text: "Arco da Calheta é uma aldeia na encosta. Sem trânsito, sem bares, sem corredores de hotel.",
         },
         minimumStay: {
           label: "Estadia mínima",
-          text: "Sete noites. A maioria dos trabalhadores remotos fica duas a quatro semanas.",
+          text: "Sete noites. A maioria de quem vem trabalhar fica duas a quatro semanas.",
         },
       },
       colivingTitle: "não é coliving",
       colivingP1:
-        "Poderá também estar a considerar o Outsite (Ponta do Sol) ou o Homeoffice Madeira (Santo da Serra). São casas partilhadas com espírito comunitário — refeições de grupo, calendários sociais, opções de beliche ou cama dupla. Adequado para viajantes a solo que procuram criar uma rede.",
+        "Se está a pensar no Outsite (Ponta do Sol) ou no Homeoffice Madeira (Santo da Serra) — são casas partilhadas com espírito comunitário. Refeições de grupo, agenda social, beliches ou camas duplas. Bom para quem viaja sozinho e quer criar rede.",
       colivingP2:
-        "A Casa Amani é a alternativa privada. A sua própria casa, a sua própria piscina, o seu próprio ritmo. Sem desconhecidos na cozinha ao pequeno-almoço. Adequada a casais, famílias e pequenos grupos que procuram o foco de um espaço dedicado sem o atrito da vida partilhada.",
+        "A Casa Amani é a alternativa privada. A sua casa, a sua piscina, o seu ritmo. Sem desconhecidos na cozinha ao pequeno-almoço. Para casais, famílias ou pequenos grupos que querem foco e espaço próprio, sem a fricção de viver com estranhos.",
       islandTitle: "a ilha para trabalho remoto",
       islandP1:
-        "A Madeira é um destino reconhecido para nómadas digitais. A Digital Nomad Village em Ponta do Sol (30 minutos para leste) tem um espaço de coworking e programa comunitário. O Funchal tem vários espaços de coworking para quem quiser mudar de cenário. O visto D8 de Portugal torna as estadias superiores a 90 dias simples para cidadãos não pertencentes à UE.",
+        "A Madeira é destino reconhecido para nómadas digitais. A Digital Nomad Village em Ponta do Sol (30 minutos para leste) tem coworking e programa comunitário. No Funchal há vários espaços de coworking para quem quiser mudar de ares. O visto D8 português facilita estadias de mais de 90 dias para quem vem de fora da UE.",
       islandP2:
-        "O clima ajuda. A costa sudoeste tem uma média de 17–24°C durante todo o ano, com mais horas de sol do que o Funchal. Trabalha-se de manhã, nada-se depois do almoço, caminha-se pelas levadas antes do jantar. O ritmo instala-se depressa.",
+        "O clima ajuda. Na costa sudoeste a média ronda os 17–24°C o ano todo, com mais horas de sol do que no Funchal. Trabalha-se de manhã, vai-se à água depois do almoço, caminha-se pelas levadas antes do jantar. O ritmo instala-se rápido.",
     },
     thePlace: {
       title: "Arco da Calheta, Madeira",
       intro:
-        "Arco da Calheta é uma freguesia do concelho da Calheta, na costa sudoeste da ilha da Madeira, Portugal. Situa-se numa encosta acima do Atlântico, virada a sul — o trecho mais tranquilo e soalheiro de uma ilha que já tem um dos climas mais amenos da Europa. A aldeia é pequena. A luz é constante. O ritmo é lento por desenho, não por acaso.",
+        "Arco da Calheta é uma freguesia da Calheta, na costa sudoeste da Madeira. Fica numa encosta virada a sul, acima do Atlântico — o trecho mais calmo e soalheiro de uma ilha que já tem um dos melhores climas da Europa. A aldeia é pequena. A luz é constante. O ritmo é lento por opção, não por acaso.",
       distancesTitle: "distâncias",
       distances: [
         ["Praia e marina da Calheta", "6 km / 5 min"],
-        ["Bar e restaurante mais próximos", "1 km"],
+        ["Bar e restaurante mais perto", "1 km"],
         ["Funchal", "30 min de carro"],
         ["Aeroporto da Madeira (FNC)", "48 km / 50 min"],
         ["Jardim do Mar (surf)", "8 km / 10 min"],
@@ -499,25 +499,25 @@ const translations = {
       ],
       westCoastTitle: "a costa oeste",
       westCoastP1:
-        "A maioria dos visitantes da Madeira fica no Funchal ou na costa sudeste. O lado oeste — de Ribeira Brava a Porto Moniz — é onde a ilha se abre. Menos hotéis, menos autocarros turísticos, vistas mais longas. A costa sudoeste, em particular, tem mais horas de sol do que qualquer outro ponto da ilha, protegida dos ventos alísios de nordeste pela cordilheira central.",
+        "A maioria de quem visita a Madeira fica no Funchal ou na costa sudeste. O lado oeste — de Ribeira Brava a Porto Moniz — é onde a ilha se abre. Menos hotéis, menos autocarros de turistas, mais horizonte. A costa sudoeste tem mais horas de sol do que qualquer outro ponto da ilha, protegida dos ventos alísios pela cordilheira central.",
       westCoastP2:
-        "O concelho da Calheta é o coração deste troço. A sua marina tem uma das únicas praias de areia da ilha (importada, mas agradável). A aldeia de Jardim do Mar, dez minutos encosta abaixo, é um ponto reconhecido de surf. Paul do Mar, mais adiante na costa, é ainda mais tranquilo. No interior, as levadas — a rede de canais de irrigação da Madeira — atravessam floresta de loureiros que existia antes da ilha ser povoada.",
+        "A Calheta é o coração deste troço. A marina tem uma das poucas praias de areia da ilha (importada, mas agradável). Jardim do Mar, dez minutos encosta abaixo, é ponto de surf reconhecido. Paul do Mar, mais à frente, é ainda mais sossegado. Para o interior, as levadas — a rede de canais de irrigação da Madeira — cruzam floresta de loureiros anterior ao povoamento da ilha.",
       climateTitle: "o clima",
       climateP1:
-        "A costa sudoeste da Madeira é amena durante todo o ano. O verão tem uma média de 22–26°C; o inverno raramente desce abaixo dos 16°C. A chuva cai sobretudo no lado norte e nas montanhas — o sudoeste é o lado seco. A temperatura do mar varia entre 18°C no inverno e 24°C no verão, quente o suficiente para nadar a maior parte do ano.",
+        "A costa sudoeste da Madeira é amena o ano todo. No verão a média anda nos 22–26°C; no inverno raramente desce dos 16°C. A chuva cai sobretudo no lado norte e nas montanhas — o sudoeste é o lado seco. O mar varia entre 18°C no inverno e 24°C no verão — dá para nadar quase o ano inteiro.",
       climateP2:
-        "Não há estação má. A ilha é mais verde no inverno, mais cheia em agosto e mais equilibrada em abril e outubro — calor sem multidões, flores por todo o lado, as levadas no seu máximo caudal.",
+        "Não há estação má. A ilha é mais verde no inverno, mais cheia em agosto, mais equilibrada em abril e outubro — calor sem multidões, flores por todo o lado, as levadas no seu máximo.",
       gettingHereTitle: "como chegar",
       gettingHereP1:
-        "O Aeroporto Internacional da Madeira (FNC) tem voos diretos durante todo o ano a partir de Londres, Frankfurt, Amesterdão, Paris, Lisboa, Porto, Varsóvia e uma dezena de outras cidades europeias. Companhias de baixo custo (easyJet, Ryanair, Wizz Air) e companhias regulares (TAP, British Airways, Condor) servem a ilha.",
+        "O aeroporto da Madeira tem voos diretos o ano todo a partir de Londres, Frankfurt, Amesterdão, Paris, Lisboa, Porto, Varsóvia e mais de uma dezena de cidades europeias. Há low-cost (easyJet, Ryanair, Wizz Air) e companhias regulares (TAP, British Airways, Condor).",
       gettingHereP2:
-        "A partir do aeroporto, Arco da Calheta fica a cerca de 50 minutos para oeste pela autoestrada VR1. Recomenda-se alugar carro — o lado oeste explora-se melhor ao seu próprio ritmo, e as estradas são boas.",
+        "Do aeroporto, Arco da Calheta fica a uns 50 minutos para oeste pela VR1. Convém alugar carro — o lado oeste explora-se melhor ao seu ritmo, e as estradas são boas.",
     },
     privacy: {
       title: "privacidade",
-      p1: "Utilizamos o Plausible Analytics, uma ferramenta que respeita a privacidade e nos ajuda a compreender como este site é utilizado. O Plausible não utiliza cookies, não armazena dados pessoais e não o rastreia noutros sites. As estatísticas de utilização agregadas são armazenadas na União Europeia.",
-      p2: "Se se inscrever na nossa lista de email, mantemos o seu endereço de email até nos pedir para o remover. Utilizamos-no apenas para lhe enviar email quando abrirmos reservas diretas ou tivermos algo útil para partilhar. Não vendemos, partilhamos nem cedemos o seu email a ninguém.",
-      p3: "Para pedir a remoção do seu email ou colocar questões, escreva para",
+      p1: "Usamos o Plausible Analytics para perceber como o site é utilizado. O Plausible não usa cookies, não guarda dados pessoais e não o segue para outros sites. Os dados agregados ficam armazenados na União Europeia.",
+      p2: "Se se inscrever na nossa lista, guardamos o seu email até nos pedir para o apagar. Usamos apenas para avisar quando abrirmos reservas diretas ou tivermos algo útil. Não vendemos nem partilhamos o seu email com ninguém.",
+      p3: "Para pedir a remoção do email ou tirar dúvidas, escreva para",
     },
   },
   de: {
@@ -645,7 +645,7 @@ const translations = {
         {
           question: "Gibt es Restaurants in Gehweite?",
           answer:
-            "Die nächste Bar (Monteiros) und das nächste Restaurant (Melton’s Kitchen) sind etwa 1 km vom Haus entfernt. Die Restaurants am Jachthafen von Calheta sind 5 Autominuten entfernt. Für die meisten Mahlzeiten empfiehlt sich ein Auto.",
+            "Die nächste Bar (Monteiros) und das nächste Restaurant (Melton's Kitchen) sind etwa 1 km vom Haus entfernt. Die Restaurants am Jachthafen von Calheta sind 5 Autominuten entfernt. Für die meisten Mahlzeiten empfiehlt sich ein Auto.",
         },
         {
           question: "Brauche ich ein Auto?",
@@ -670,7 +670,7 @@ const translations = {
         {
           question: "Wie buche ich?",
           answer:
-            "Wir nehmen Buchungen derzeit ausschließlich über Airbnb entgegen. Tippen Sie auf einen beliebigen „Bei uns wohnen“-Button, um Verfügbarkeit zu prüfen und zu reservieren. Die Casa Amani ist auch auf Booking.com, VRBO, OurMadeira und Casai über unseren Hausverwalter gelistet. Für ein einheitliches Erlebnis leiten wir Gäste jedoch von dieser Seite zum Airbnb-Inserat weiter.",
+            "Wir nehmen Buchungen derzeit ausschließlich über Airbnb entgegen. Tippen Sie auf einen beliebigen \"Bei uns wohnen\"-Button, um Verfügbarkeit zu prüfen und zu reservieren. Die Casa Amani ist auch auf Booking.com, VRBO, OurMadeira und Casai über unseren Hausverwalter gelistet. Für ein einheitliches Erlebnis leiten wir Gäste jedoch von dieser Seite zum Airbnb-Inserat weiter.",
         },
         {
           question: "Ist Frühstück inbegriffen?",
@@ -787,14 +787,14 @@ const translations = {
     },
     header: { menu: "MENU" },
     tagline: {
-      heading: "chez vous, le temps d’un séjour.",
+      heading: "chez vous, le temps d'un séjour.",
       subheading:
         "faite pour être vécue lentement, du côté ensoleillé de Madère.",
     },
     house: {
       title: "la maison",
       features:
-        "2 chambres · 3 salles de bain · 219 m² · face à l’Atlantique · piscine chauffée",
+        "2 chambres · 3 salles de bain · 219 m² · face à l'Atlantique · piscine chauffée",
       features2:
         "espaces de travail · fibre optique · repas en plein air et barbecue · garage pour 2 voitures",
     },
@@ -802,10 +802,10 @@ const translations = {
       mainBedroom: {
         title: "LA CHAMBRE PRINCIPALE",
         description:
-          "lit king face à l’Atlantique, avec salle de bain privative et un bureau derrière le lit pour travailler ou lire.",
+          "lit king face à l'Atlantique, avec salle de bain privative et un bureau derrière le lit pour travailler ou lire.",
       },
       guestBedroom: {
-        title: "LA CHAMBRE D’AMIS",
+        title: "LA CHAMBRE D'AMIS",
         description:
           "lit king à côté du séjour, avec bureau intégré et écran pour le repos et le télétravail.",
       },
@@ -820,7 +820,7 @@ const translations = {
           "piscine privée intégrée à la terrasse, avec assises et plantes. utilisée à différents moments de la journée.",
       },
       livingSpace: {
-        title: "L’ESPACE DE VIE",
+        title: "L'ESPACE DE VIE",
         description:
           "séjour ouvert avec accès direct à la terrasse et à la piscine, où la journée oscille entre intérieur et extérieur.",
       },
@@ -835,7 +835,7 @@ const translations = {
           "chambre en bas avec deux lits simples et sa propre salle de bain, plus intime et confortable, bien que sans fenêtre.",
       },
       outdoorDining: {
-        title: "L’ESPACE REPAS EXTÉRIEUR",
+        title: "L'ESPACE REPAS EXTÉRIEUR",
         description:
           "table extérieure et barbecue à gaz juste au-delà du séjour. les repas se déplacent dehors sans trop y penser.",
       },
@@ -846,45 +846,45 @@ const translations = {
       },
     },
     location: {
-      heading: "madère. la perle de l’atlantique.",
+      heading: "madère. la perle de l'atlantique.",
       description:
-        "La maison se trouve sur les collines d’Arco da Calheta, sur la côte sud-ouest de Madère. L’Atlantique lui fait face. Le village est à 1 kilomètre en contrebas ; Funchal à trente minutes en voiture ; l’aéroport à cinquante environ.",
+        "La maison se trouve sur les collines d'Arco da Calheta, sur la côte sud-ouest de Madère. L'Atlantique lui fait face. Le village est à 1 kilomètre en contrebas ; Funchal à trente minutes en voiture ; l'aéroport à cinquante environ.",
     },
     bookCta: "Réserver un séjour",
     faq: {
       title: "questions fréquentes",
       subtitle:
-        "Réponses directes sur la Casa Amani — la maison, le lieu et ce à quoi s’attendre.",
+        "Réponses directes sur la Casa Amani — la maison, le lieu et ce à quoi s'attendre.",
       contact: "Vous ne trouvez pas ce que vous cherchez ?",
       items: [
         {
           question: "Où se trouve exactement la Casa Amani ?",
           answer:
-            "La Casa Amani se trouve à Arco da Calheta, un village sur la côte sud-ouest de l’île de Madère, au Portugal. Elle est à environ 50 minutes en voiture (48 km) de l’aéroport international de Madère (FNC), et la plage et la marina de Calheta sont à 6 km — environ cinq minutes en voiture.",
+            "La Casa Amani se trouve à Arco da Calheta, un village sur la côte sud-ouest de l'île de Madère, au Portugal. Elle est à environ 50 minutes en voiture (48 km) de l'aéroport international de Madère (FNC), et la plage et la marina de Calheta sont à 6 km — environ cinq minutes en voiture.",
         },
         {
-          question: "À quelle distance se trouve l’aéroport ?",
+          question: "À quelle distance se trouve l'aéroport ?",
           answer:
-            "L’aéroport international de Madère (FNC) est à 48 km de la maison — environ 50 minutes en voiture. Funchal est à environ 30 minutes.",
+            "L'aéroport international de Madère (FNC) est à 48 km de la maison — environ 50 minutes en voiture. Funchal est à environ 30 minutes.",
         },
         {
           question: "La Casa Amani est-elle adaptée au télétravail ?",
           answer:
-            "Oui. Les deux chambres disposent d’un bureau, et la chambre d’amis possède un écran externe qui peut être connecté à un ordinateur portable. Le Wi-Fi gratuit couvre l’ensemble de la villa et la terrasse, et les séjours d’une semaine ou plus sont encouragés. Madère est une destination reconnue pour les nomades numériques, avec le Digital Nomad Village à Ponta do Sol, à proximité.",
+            "Oui. Les deux chambres disposent d'un bureau, et la chambre d'amis possède un écran externe qui peut être connecté à un ordinateur portable. Le Wi-Fi gratuit couvre l'ensemble de la villa et la terrasse, et les séjours d'une semaine ou plus sont encouragés. Madère est une destination reconnue pour les nomades numériques, avec le Digital Nomad Village à Ponta do Sol, à proximité.",
         },
         {
           question: "Y a-t-il une piscine ?",
           answer:
-            "Oui. Une piscine privée de 7 mètres intégrée à la terrasse, avec option de chauffage (disponible en supplément). Elle fait face à l’Atlantique.",
+            "Oui. Une piscine privée de 7 mètres intégrée à la terrasse, avec option de chauffage (disponible en supplément). Elle fait face à l'Atlantique.",
         },
         {
           question: "Combien de personnes la Casa Amani peut-elle accueillir ?",
           answer:
-            "Jusqu’à six. Les deux chambres disposent chacune d’un lit king-size (le lit king de la chambre d’amis peut être séparé en deux matelas simples), et deux lits simples peuvent être installés au niveau inférieur pour un cinquième et un sixième invité.",
+            "Jusqu'à six. Les deux chambres disposent chacune d'un lit king-size (le lit king de la chambre d'amis peut être séparé en deux matelas simples), et deux lits simples peuvent être installés au niveau inférieur pour un cinquième et un sixième invité.",
         },
         {
           question: "Les animaux sont-ils acceptés ?",
-          answer: "Non. La Casa Amani n’accepte pas les animaux.",
+          answer: "Non. La Casa Amani n'accepte pas les animaux.",
         },
         {
           question: "Quelle est la durée minimale de séjour ?",
@@ -904,32 +904,32 @@ const translations = {
         {
           question: "Y a-t-il des restaurants à distance de marche ?",
           answer:
-            "Le bar le plus proche (Monteiros) et le restaurant le plus proche (Melton’s Kitchen) sont à environ 1 km de la maison. Les restaurants de la marina de Calheta sont à 5 minutes en voiture. Une voiture est recommandée pour la plupart des repas.",
+            "Le bar le plus proche (Monteiros) et le restaurant le plus proche (Melton's Kitchen) sont à environ 1 km de la maison. Les restaurants de la marina de Calheta sont à 5 minutes en voiture. Une voiture est recommandée pour la plupart des repas.",
         },
         {
-          question: "Ai-je besoin d’une voiture ?",
+          question: "Ai-je besoin d'une voiture ?",
           answer:
-            "Oui, pour la plupart des choses. Arco da Calheta est un village à flanc de colline ; les commerces, restaurants et plages les plus proches sont à quelques minutes en voiture. La location de voiture sur l’île est simple et abordable.",
+            "Oui, pour la plupart des choses. Arco da Calheta est un village à flanc de colline ; les commerces, restaurants et plages les plus proches sont à quelques minutes en voiture. La location de voiture sur l'île est simple et abordable.",
         },
         {
           question: "Quel est le climat en hiver ?",
           answer:
-            "Doux. Les températures diurnes sur la côte sud-ouest varient généralement entre 17–22°C en hiver, avec plus d’heures d’ensoleillement qu’à Funchal. Madère n’a pas de saison froide comme le nord de l’Europe — elle a une saison plus calme.",
+            "Doux. Les températures diurnes sur la côte sud-ouest varient généralement entre 17–22°C en hiver, avec plus d'heures d'ensoleillement qu'à Funchal. Madère n'a pas de saison froide comme le nord de l'Europe — elle a une saison plus calme.",
         },
         {
           question: "La maison convient-elle aux familles ?",
           answer:
-            "Oui. Un lit bébé et une chaise haute sont disponibles sur demande. La piscine n’est pas clôturée, les enfants doivent donc être surveillés. La chambre du bas avec deux lits simples convient bien aux enfants plus grands ou aux adolescents.",
+            "Oui. Un lit bébé et une chaise haute sont disponibles sur demande. La piscine n'est pas clôturée, les enfants doivent donc être surveillés. La chambre du bas avec deux lits simples convient bien aux enfants plus grands ou aux adolescents.",
         },
         {
           question: "Puis-je travailler à temps plein depuis la maison ?",
           answer:
-            "Oui. C’est sa raison d’être. Bureaux dans les deux chambres, un écran externe dans la chambre d’amis, Wi-Fi fibre, et un fuseau horaire (GMT/WET) qui chevauche le Royaume-Uni, la majeure partie de l’Europe et le matin de la côte est des États-Unis.",
+            "Oui. C'est sa raison d'être. Bureaux dans les deux chambres, un écran externe dans la chambre d'amis, Wi-Fi fibre, et un fuseau horaire (GMT/WET) qui chevauche le Royaume-Uni, la majeure partie de l'Europe et le matin de la côte est des États-Unis.",
         },
         {
           question: "Comment réserver ?",
           answer:
-            "Nous acceptons actuellement les réservations exclusivement via Airbnb. Appuyez sur n’importe quel bouton « Séjournez chez nous » pour vérifier la disponibilité et réserver. La Casa Amani est également référencée sur Booking.com, VRBO, OurMadeira et Casai via notre gestionnaire de propriété, mais pour une expérience cohérente, nous orientons les clients vers l’annonce Airbnb depuis ce site.",
+            "Nous acceptons actuellement les réservations exclusivement via Airbnb. Appuyez sur n'importe quel bouton \"Séjournez chez nous\" pour vérifier la disponibilité et réserver. La Casa Amani est également référencée sur Booking.com, VRBO, OurMadeira et Casai via notre gestionnaire de propriété, mais pour une expérience cohérente, nous orientons les clients vers l'annonce Airbnb depuis ce site.",
         },
         {
           question: "Le petit-déjeuner est-il inclus ?",
@@ -952,17 +952,17 @@ const translations = {
             "Oui. Tout le linge de lit, les serviettes de bain et les serviettes de piscine sont fournis et changés chaque semaine.",
         },
         {
-          question: "Quels sont les horaires d’arrivée et de départ ?",
+          question: "Quels sont les horaires d'arrivée et de départ ?",
           answer:
-            "L’arrivée se fait à partir de 16h00. Le départ est avant 11h00. Une arrivée anticipée ou un départ tardif peuvent être possibles selon la disponibilité — demandez lors de la réservation.",
+            "L'arrivée se fait à partir de 16h00. Le départ est avant 11h00. Une arrivée anticipée ou un départ tardif peuvent être possibles selon la disponibilité — demandez lors de la réservation.",
         },
       ],
     },
     remoteWork: {
       title: "travailler depuis le côté calme de Madère",
       intro:
-        "La Casa Amani est une villa privée avec des espaces de travail dédiés, le Wi-Fi fibre et un écran externe — sur la côte sud-ouest de Madère, où le soleil est le plus constant et les foules absentes. Conçue pour des séjours d’une semaine ou plus, aussi adaptée au travail concentré en solo qu’aux couples qui travaillent à distance.",
-      setupTitle: "l’équipement",
+        "La Casa Amani est une villa privée avec des espaces de travail dédiés, le Wi-Fi fibre et un écran externe — sur la côte sud-ouest de Madère, où le soleil est le plus constant et les foules absentes. Conçue pour des séjours d'une semaine ou plus, aussi adaptée au travail concentré en solo qu'aux couples qui travaillent à distance.",
+      setupTitle: "l'équipement",
       setup: {
         wifi: {
           label: "Wi-Fi",
@@ -970,19 +970,19 @@ const translations = {
         },
         desks: {
           label: "Bureaux",
-          text: "Bureau dédié dans les deux chambres. Le bureau de la chambre principale fait face à l’Atlantique.",
+          text: "Bureau dédié dans les deux chambres. Le bureau de la chambre principale fait face à l'Atlantique.",
         },
         monitor: {
           label: "Écran",
-          text: "Écran externe dans la chambre d’amis, prêt à être connecté à votre ordinateur portable.",
+          text: "Écran externe dans la chambre d'amis, prêt à être connecté à votre ordinateur portable.",
         },
         timezone: {
           label: "Fuseau horaire",
-          text: "GMT/WET (comme Londres). Chevauche la majeure partie de l’Europe et le matin de la côte est des États-Unis.",
+          text: "GMT/WET (comme Londres). Chevauche la majeure partie de l'Europe et le matin de la côte est des États-Unis.",
         },
         quiet: {
           label: "Calme",
-          text: "Arco da Calheta est un village à flanc de colline. Pas de bruit de circulation, pas de bruit de bar, pas de couloirs d’hôtel.",
+          text: "Arco da Calheta est un village à flanc de colline. Pas de bruit de circulation, pas de bruit de bar, pas de couloirs d'hôtel.",
         },
         minimumStay: {
           label: "Séjour minimum",
@@ -993,17 +993,17 @@ const translations = {
       colivingP1:
         "Vous envisagez peut-être aussi Outsite (Ponta do Sol) ou Homeoffice Madeira (Santo da Serra). Ce sont des maisons partagées axées sur la communauté — repas de groupe, calendriers sociaux, lits superposés ou jumeaux. Adapté aux voyageurs solo qui cherchent à se créer un réseau.",
       colivingP2:
-        "La Casa Amani est l’alternative privée. Votre propre maison, votre propre piscine, votre propre rythme. Pas d’inconnus dans la cuisine au petit-déjeuner. Elle convient aux couples, familles et petits groupes qui veulent le calme d’un espace dédié sans les contraintes de la vie en communauté.",
-      islandTitle: "l’île pour le télétravail",
+        "La Casa Amani est l'alternative privée. Votre propre maison, votre propre piscine, votre propre rythme. Pas d'inconnus dans la cuisine au petit-déjeuner. Elle convient aux couples, familles et petits groupes qui veulent le calme d'un espace dédié sans les contraintes de la vie en communauté.",
+      islandTitle: "l'île pour le télétravail",
       islandP1:
-        "Madère est une destination reconnue pour les nomades numériques. Le Digital Nomad Village à Ponta do Sol (30 minutes à l’est) propose un espace de coworking et un programme communautaire. Funchal dispose de plusieurs espaces de coworking pour changer de décor. Le visa D8 du Portugal facilite les séjours de plus de 90 jours pour les ressortissants hors UE.",
+        "Madère est une destination reconnue pour les nomades numériques. Le Digital Nomad Village à Ponta do Sol (30 minutes à l'est) propose un espace de coworking et un programme communautaire. Funchal dispose de plusieurs espaces de coworking pour changer de décor. Le visa D8 du Portugal facilite les séjours de plus de 90 jours pour les ressortissants hors UE.",
       islandP2:
-        "Le climat aide. La côte sud-ouest affiche en moyenne 17–24°C toute l’année, avec plus d’heures de soleil qu’à Funchal. On travaille le matin, on nage après le déjeuner, on parcourt les levadas avant le dîner. Le rythme s’installe vite.",
+        "Le climat aide. La côte sud-ouest affiche en moyenne 17–24°C toute l'année, avec plus d'heures de soleil qu'à Funchal. On travaille le matin, on nage après le déjeuner, on parcourt les levadas avant le dîner. Le rythme s'installe vite.",
     },
     thePlace: {
       title: "Arco da Calheta, Madeira",
       intro:
-        "Arco da Calheta est une paroisse de la municipalité de Calheta, sur la côte sud-ouest de l’île de Madère, au Portugal. Elle se situe à flanc de colline au-dessus de l’Atlantique, orientée sud — le tronçon le plus calme et le plus ensoleillé d’une île qui possède déjà l’un des climats les plus doux d’Europe. Le village est petit. La lumière est constante. Le rythme est lent par choix, pas par hasard.",
+        "Arco da Calheta est une paroisse de la municipalité de Calheta, sur la côte sud-ouest de l'île de Madère, au Portugal. Elle se situe à flanc de colline au-dessus de l'Atlantique, orientée sud — le tronçon le plus calme et le plus ensoleillé d'une île qui possède déjà l'un des climats les plus doux d'Europe. Le village est petit. La lumière est constante. Le rythme est lent par choix, pas par hasard.",
       distancesTitle: "distances",
       distances: [
         ["Plage et marina de Calheta", "6 km / 5 min"],
@@ -1017,24 +1017,24 @@ const translations = {
       ],
       westCoastTitle: "la côte ouest",
       westCoastP1:
-        "La plupart des visiteurs de Madère séjournent à Funchal ou le long de la côte sud-est. Le côté ouest — de Ribeira Brava à Porto Moniz — est là où l’île s’ouvre. Moins d’hôtels, moins de cars touristiques, des vues plus longues. La côte sud-ouest en particulier bénéficie de plus d’heures de soleil que partout ailleurs sur l’île, protégée des alizés du nord-est par la chaîne de montagnes centrale.",
+        "La plupart des visiteurs de Madère séjournent à Funchal ou le long de la côte sud-est. Le côté ouest — de Ribeira Brava à Porto Moniz — est là où l'île s'ouvre. Moins d'hôtels, moins de cars touristiques, des vues plus longues. La côte sud-ouest en particulier bénéficie de plus d'heures de soleil que partout ailleurs sur l'île, protégée des alizés du nord-est par la chaîne de montagnes centrale.",
       westCoastP2:
-        "La municipalité de Calheta est le cœur de ce tronçon. Sa marina possède l’une des rares plages de sable de l’île (importé, mais agréable). Le village de Jardim do Mar, dix minutes en contrebas, est un spot de surf reconnu. Paul do Mar, plus loin sur la côte, est plus calme encore. À l’intérieur des terres, les levadas — le réseau de canaux d’irrigation de Madère — traversent une forêt de lauriers présente depuis avant le peuplement de l’île.",
+        "La municipalité de Calheta est le cœur de ce tronçon. Sa marina possède l'une des rares plages de sable de l'île (importé, mais agréable). Le village de Jardim do Mar, dix minutes en contrebas, est un spot de surf reconnu. Paul do Mar, plus loin sur la côte, est plus calme encore. À l'intérieur des terres, les levadas — le réseau de canaux d'irrigation de Madère — traversent une forêt de lauriers présente depuis avant le peuplement de l'île.",
       climateTitle: "le climat",
       climateP1:
-        "La côte sud-ouest de Madère est douce toute l’année. L’été affiche en moyenne 22–26°C ; l’hiver descend rarement sous 16°C. La pluie tombe surtout au nord et en montagne — le sud-ouest est le côté sec. La température de la mer varie de 18°C en hiver à 24°C en été, assez chaude pour se baigner la majeure partie de l’année.",
+        "La côte sud-ouest de Madère est douce toute l'année. L'été affiche en moyenne 22–26°C ; l'hiver descend rarement sous 16°C. La pluie tombe surtout au nord et en montagne — le sud-ouest est le côté sec. La température de la mer varie de 18°C en hiver à 24°C en été, assez chaude pour se baigner la majeure partie de l'année.",
       climateP2:
-        "Il n’y a pas de mauvaise saison. L’île est la plus verte en hiver, la plus fréquentée en août, et la plus équilibrée en avril et octobre — chaleur sans les foules, floraison partout, les levadas à leur débit maximal.",
+        "Il n'y a pas de mauvaise saison. L'île est la plus verte en hiver, la plus fréquentée en août, et la plus équilibrée en avril et octobre — chaleur sans les foules, floraison partout, les levadas à leur débit maximal.",
       gettingHereTitle: "comment venir",
       gettingHereP1:
-        "L’aéroport international de Madère (FNC) propose des vols directs toute l’année depuis Londres, Francfort, Amsterdam, Paris, Lisbonne, Porto, Varsovie et une dizaine d’autres villes européennes. Compagnies low-cost (easyJet, Ryanair, Wizz Air) et compagnies régulières (TAP, British Airways, Condor) desservent l’île.",
+        "L'aéroport international de Madère (FNC) propose des vols directs toute l'année depuis Londres, Francfort, Amsterdam, Paris, Lisbonne, Porto, Varsovie et une dizaine d'autres villes européennes. Compagnies low-cost (easyJet, Ryanair, Wizz Air) et compagnies régulières (TAP, British Airways, Condor) desservent l'île.",
       gettingHereP2:
-        "Depuis l’aéroport, Arco da Calheta est à environ 50 minutes vers l’ouest par l’autoroute VR1. La location de voiture est recommandée — le côté ouest se découvre mieux à votre rythme, et les routes sont bonnes.",
+        "Depuis l'aéroport, Arco da Calheta est à environ 50 minutes vers l'ouest par l'autoroute VR1. La location de voiture est recommandée — le côté ouest se découvre mieux à votre rythme, et les routes sont bonnes.",
     },
     privacy: {
       title: "confidentialité",
-      p1: "Nous utilisons Plausible Analytics, un outil respectueux de la vie privée qui nous aide à comprendre comment ce site est utilisé. Plausible n’utilise pas de cookies, ne stocke pas de données personnelles et ne vous suit pas sur d’autres sites. Les statistiques d’utilisation agrégées sont stockées dans l’Union européenne.",
-      p2: "Si vous vous inscrivez à notre liste de diffusion, nous conservons votre adresse e-mail jusqu’à ce que vous nous demandiez de la supprimer. Nous l’utilisons uniquement pour vous contacter lorsque nous ouvrons les réservations directes ou avons quelque chose d’utile à partager. Nous ne vendons, ne partageons ni ne louons votre adresse e-mail.",
+      p1: "Nous utilisons Plausible Analytics, un outil respectueux de la vie privée qui nous aide à comprendre comment ce site est utilisé. Plausible n'utilise pas de cookies, ne stocke pas de données personnelles et ne vous suit pas sur d'autres sites. Les statistiques d'utilisation agrégées sont stockées dans l'Union européenne.",
+      p2: "Si vous vous inscrivez à notre liste de diffusion, nous conservons votre adresse e-mail jusqu'à ce que vous nous demandiez de la supprimer. Nous l'utilisons uniquement pour vous contacter lorsque nous ouvrons les réservations directes ou avons quelque chose d'utile à partager. Nous ne vendons, ne partageons ni ne louons votre adresse e-mail.",
       p3: "Pour demander la suppression de votre adresse e-mail ou poser des questions, écrivez à",
     },
   },
@@ -1163,7 +1163,7 @@ const translations = {
         {
           question: "Czy w pobliżu są restauracje w zasięgu spaceru?",
           answer:
-            "Najbliższy bar (Monteiros) i restauracja (Melton’s Kitchen) są w odległości około 1 km od domu. Restauracje przy marinie w Calheta są 5 minut jazdy samochodem. Do większości posiłków poza domem zaleca się samochód.",
+            "Najbliższy bar (Monteiros) i restauracja (Melton's Kitchen) są w odległości około 1 km od domu. Restauracje przy marinie w Calheta są 5 minut jazdy samochodem. Do większości posiłków poza domem zaleca się samochód.",
         },
         {
           question: "Czy potrzebuję samochodu?",
@@ -1188,7 +1188,7 @@ const translations = {
         {
           question: "Jak zarezerwować?",
           answer:
-            "Obecnie przyjmujemy rezerwacje wyłącznie przez Airbnb. Kliknij dowolny przycisk „Zamieszkaj z nami”, aby sprawdzić dostępność i zarezerwować. Casa Amani jest również wymieniona na Booking.com, VRBO, OurMadeira i Casai za pośrednictwem naszego zarządcy nieruchomości, ale dla spójnego doświadczenia kierujemy gości do ogłoszenia na Airbnb z tej strony.",
+            "Obecnie przyjmujemy rezerwacje wyłącznie przez Airbnb. Kliknij dowolny przycisk \"Zamieszkaj z nami\", aby sprawdzić dostępność i zarezerwować. Casa Amani jest również wymieniona na Booking.com, VRBO, OurMadeira i Casai za pośrednictwem naszego zarządcy nieruchomości, ale dla spójnego doświadczenia kierujemy gości do ogłoszenia na Airbnb z tej strony.",
         },
         {
           question: "Czy śniadanie jest wliczone?",
