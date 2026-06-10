@@ -3,6 +3,7 @@ import { type Locale, getTranslations } from "@/i18n/translations";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
+import LocaleRedirect from "@/components/LocaleRedirect";
 
 export const metadata: Metadata = {
   title: "Privacy — Casa Amani",
@@ -20,7 +21,8 @@ export default async function PrivacyPage({
   const t = getTranslations(locale as Locale);
 
   return (
-    <main>
+    <main id="main">
+      <LocaleRedirect />
       <div className="bg-warm">
         <Header menuLabel={t.header.menu} />
       </div>

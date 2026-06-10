@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
+import LocaleRedirect from "@/components/LocaleRedirect";
 
 export const metadata: Metadata = {
   title: "Arco da Calheta — Casa Amani | West Madeira",
@@ -65,7 +66,8 @@ export default async function ThePlacePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main>
+      <LocaleRedirect />
+      <main id="main">
         <div className="bg-warm">
           <Header menuLabel={t.header.menu} />
         </div>

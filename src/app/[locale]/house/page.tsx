@@ -26,7 +26,7 @@ export default async function HousePage({
   const t = getTranslations(locale as Locale);
 
   return (
-    <main>
+    <main id="main">
       <div className="bg-warm">
         <Header menuLabel={t.header.menu} />
         <Hero title={t.landing.title} subtitle={t.landing.subtitle} />

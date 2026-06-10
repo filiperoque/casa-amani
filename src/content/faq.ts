@@ -77,7 +77,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "How do I book?",
     answer:
-      "Casa Amani is available on Airbnb, Booking.com, VRBO, and through OurMadeira. Choose whichever platform you prefer.",
+      "We currently take bookings exclusively through Airbnb. Tap any 'Stay with us' button to check availability and reserve. Casa Amani is also listed on Booking.com, VRBO, OurMadeira, and Casai through our property manager, but for a consistent experience we direct guests to the Airbnb listing from this site.",
   },
   {
     question: "Is breakfast included?",

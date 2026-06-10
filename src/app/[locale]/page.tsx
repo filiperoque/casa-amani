@@ -10,7 +10,7 @@ export default async function LandingPage({
   const t = getTranslations(locale as Locale);
 
   return (
-    <div className="relative flex h-dvh items-center justify-center overflow-hidden bg-[#bb9669]">
+    <div id="main" className="relative flex h-dvh items-center justify-center overflow-hidden bg-[#bb9669]">
       <LandingScene
         title={t.landing.title}
         subtitle={t.landing.subtitle}

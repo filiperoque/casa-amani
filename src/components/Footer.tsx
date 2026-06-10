@@ -18,14 +18,14 @@ export default function Footer() {
           <p className="text-sm">AL 176882/AL</p>
         </div>
 
-        <nav className="flex flex-col gap-2 text-sm">
+        <nav aria-label="Site pages" className="flex flex-col gap-2 text-sm">
           <a href={`${base}/house`} className="transition-colors hover:text-cream">The House</a>
           <a href={`${base}/the-place`} className="transition-colors hover:text-cream">The Place</a>
           <a href={`${base}/remote-work`} className="transition-colors hover:text-cream">Remote Work</a>
           <a href={`${base}/faq`} className="transition-colors hover:text-cream">FAQ</a>
         </nav>
 
-        <nav className="flex flex-col gap-2 text-sm">
+        <nav aria-label="Contact and booking" className="flex flex-col gap-2 text-sm">
           <a
             href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=footer"
             target="_blank"

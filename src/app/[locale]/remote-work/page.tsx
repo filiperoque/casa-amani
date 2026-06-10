@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
+import LocaleRedirect from "@/components/LocaleRedirect";
 
 export const metadata: Metadata = {
   title: "Remote work from Madeira — Casa Amani | Arco da Calheta",
@@ -74,7 +75,8 @@ export default async function RemoteWorkPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <main>
+      <LocaleRedirect />
+      <main id="main">
         <div className="bg-warm">
           <Header menuLabel={t.header.menu} />
         </div>

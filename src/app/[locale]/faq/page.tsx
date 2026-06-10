@@ -4,6 +4,7 @@ import { faqItems } from "@/content/faq";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
+import LocaleRedirect from "@/components/LocaleRedirect";
 
 export const metadata: Metadata = {
   title: "Frequently asked questions — Casa Amani",
@@ -56,6 +57,7 @@ export default async function FaqPage({
 
   return (
     <>
+      <LocaleRedirect />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -65,7 +67,7 @@ export default async function FaqPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main className="bg-cream min-h-dvh">
+      <main id="main" className="bg-cream min-h-dvh">
         <div className="bg-warm">
           <Header menuLabel={t.header.menu} />
         </div>

@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://casa-amani.com/en</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt"/>
@@ -14,27 +14,52 @@
   </url>
   <url>
     <loc>https://casa-amani.com/pt</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en"/>
   </url>
   <url>
     <loc>https://casa-amani.com/de</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en"/>
   </url>
   <url>
     <loc>https://casa-amani.com/fr</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en"/>
   </url>
   <url>
     <loc>https://casa-amani.com/pl</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en"/>
   </url>
+
   <url>
     <loc>https://casa-amani.com/en/house</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/house"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/house"/>
@@ -45,22 +70,270 @@
   </url>
   <url>
     <loc>https://casa-amani.com/pt/house</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/house"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/house"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/house"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/house"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/house"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/house"/>
   </url>
   <url>
     <loc>https://casa-amani.com/de/house</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/house"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/house"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/house"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/house"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/house"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/house"/>
   </url>
   <url>
     <loc>https://casa-amani.com/fr/house</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/house"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/house"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/house"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/house"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/house"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/house"/>
   </url>
   <url>
     <loc>https://casa-amani.com/pl/house</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/house"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/house"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/house"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/house"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/house"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/house"/>
+  </url>
+
+  <url>
+    <loc>https://casa-amani.com/en/faq</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/faq"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pt/faq</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/faq"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/de/faq</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/faq"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/fr/faq</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/faq"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pl/faq</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/faq"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/faq"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/faq"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/faq"/>
+  </url>
+
+  <url>
+    <loc>https://casa-amani.com/en/remote-work</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/remote-work"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pt/remote-work</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/remote-work"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/de/remote-work</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/remote-work"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/fr/remote-work</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/remote-work"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pl/remote-work</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/remote-work"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/remote-work"/>
+  </url>
+
+  <url>
+    <loc>https://casa-amani.com/en/the-place</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/the-place"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/the-place"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/the-place"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-place"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pt/the-place</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/the-place"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/the-place"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/the-place"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-place"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/de/the-place</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/the-place"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/the-place"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/the-place"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-place"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/fr/the-place</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/the-place"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/the-place"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/the-place"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-place"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pl/the-place</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/the-place"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/the-place"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/the-place"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/the-place"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-place"/>
+  </url>
+
+  <url>
+    <loc>https://casa-amani.com/en/privacy</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/privacy"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pt/privacy</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/privacy"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/de/privacy</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/privacy"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/fr/privacy</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/privacy"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/pl/privacy</loc>
+    <lastmod>2026-06-10</lastmod>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://casa-amani.com/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://casa-amani.com/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://casa-amani.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/privacy"/>
   </url>
 </urlset>
