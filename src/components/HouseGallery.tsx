@@ -12,7 +12,7 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
     { ...t.rooms.guestBedroom, image: "/images/guest-bedroom.jpg", alt: "Guest bedroom with built-in desk" },
     { ...t.rooms.familyBathroom, image: "/images/family-bathroom.jpg", alt: "Family bathroom with microcement finishes" },
     { ...t.rooms.swimmingPool, image: "/images/swimming-pool.jpg", alt: "Private heated swimming pool with terrace" },
-    { ...t.rooms.livingSpace, image: "/images/living-space.jpg", alt: "Open-plan living space with terrace access", featured: true },
+    { ...t.rooms.livingSpace, image: "/images/living-space.jpg", alt: "Open-plan living space with terrace access" },
     { ...t.rooms.kitchen, image: "/images/kitchen.jpg", alt: "Fully equipped kitchen" },
     { ...t.rooms.lowerRoom, image: "/images/lower-room.jpg", alt: "Lower room with twin beds" },
     { ...t.rooms.outdoorDining, image: "/images/outdoor-dining.jpg", alt: "Outdoor dining area with barbecue" },
@@ -43,10 +43,10 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
                 alt={room.alt}
                 title={room.title}
                 description={room.description}
-                featured={"featured" in room}
               />
             </Reveal>
           ))}
+          <div className="w-px shrink-0" aria-hidden="true" />
         </div>
       </div>
     </section>

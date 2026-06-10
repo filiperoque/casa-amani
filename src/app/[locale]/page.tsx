@@ -10,13 +10,23 @@ export default async function LandingPage({
   const t = getTranslations(locale as Locale);
 
   return (
-    <div id="main" className="relative flex h-dvh items-center justify-center overflow-hidden bg-[#bb9669]">
-      <LandingScene
-        title={t.landing.title}
-        subtitle={t.landing.subtitle}
-        cta={t.landing.cta}
-        ctaHref="https://www.airbnb.co.uk/rooms/1695506665949683620"
-      />
-    </div>
+    <>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/landing-bg.jpg"
+          fetchPriority="high"
+        />
+      </head>
+      <div id="main" className="relative flex h-dvh items-center justify-center overflow-hidden bg-[#bb9669]">
+        <LandingScene
+          title={t.landing.title}
+          subtitle={t.landing.subtitle}
+          cta={t.landing.cta}
+          ctaHref="https://www.airbnb.co.uk/rooms/1695506665949683620"
+        />
+      </div>
+    </>
   );
 }
