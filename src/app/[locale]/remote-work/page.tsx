@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
-import LocaleRedirect from "@/components/LocaleRedirect";
 
 export const metadata: Metadata = {
   title: "Remote work from Madeira — Casa Amani | Arco da Calheta",
@@ -64,6 +63,15 @@ export default async function RemoteWorkPage({
   const { locale } = await params;
   const t = getTranslations(locale as Locale);
 
+  const setupItems = [
+    t.remoteWork.setup.wifi,
+    t.remoteWork.setup.desks,
+    t.remoteWork.setup.monitor,
+    t.remoteWork.setup.timezone,
+    t.remoteWork.setup.quiet,
+    t.remoteWork.setup.minimumStay,
+  ];
+
   return (
     <>
       <script
@@ -75,7 +83,6 @@ export default async function RemoteWorkPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <LocaleRedirect />
       <main id="main">
         <div className="bg-warm">
           <Header menuLabel={t.header.menu} />
@@ -85,14 +92,10 @@ export default async function RemoteWorkPage({
           <div className="mx-auto max-w-3xl">
             <Reveal>
               <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
-                work from Madeira&apos;s quiet side
+                {t.remoteWork.title}
               </h1>
               <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
-                Casa Amani is a private villa with dedicated workspaces, fibre
-                Wi-Fi, and an external monitor — on the south-west coast of
-                Madeira, where the sun is most consistent and the crowds are
-                not. Designed for stays of a week or longer, equally suited to
-                focused solo work and working couples.
+                {t.remoteWork.intro}
               </p>
             </Reveal>
 
@@ -110,107 +113,47 @@ export default async function RemoteWorkPage({
 
             <Reveal>
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
-                the setup
+                {t.remoteWork.setupTitle}
               </h2>
               <dl className="mb-16 grid grid-cols-1 gap-6 text-brown/80 md:grid-cols-2">
-                <div>
-                  <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
-                    Wi-Fi
-                  </dt>
-                  <dd>
-                    Fibre broadband. Fast enough for video calls, large uploads,
-                    and streaming simultaneously.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
-                    Desks
-                  </dt>
-                  <dd>
-                    Dedicated desk in both bedrooms. The main bedroom desk faces
-                    the Atlantic.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
-                    Monitor
-                  </dt>
-                  <dd>
-                    External monitor in the guest bedroom, ready to connect to
-                    your laptop.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
-                    Time zone
-                  </dt>
-                  <dd>
-                    GMT/WET (same as London). Overlaps with most of Europe and
-                    the US East Coast morning.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
-                    Quiet
-                  </dt>
-                  <dd>
-                    Arco da Calheta is a hillside village. No traffic noise, no
-                    bar noise, no hotel corridors.
-                  </dd>
-                </div>
-                <div>
-                  <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
-                    Minimum stay
-                  </dt>
-                  <dd>
-                    Seven nights. Most remote workers stay two to four weeks.
-                  </dd>
-                </div>
+                {setupItems.map((item) => (
+                  <div key={item.label}>
+                    <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
+                      {item.label}
+                    </dt>
+                    <dd>{item.text}</dd>
+                  </div>
+                ))}
               </dl>
             </Reveal>
 
             <Reveal>
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
-                not coliving
+                {t.remoteWork.colivingTitle}
               </h2>
               <p className="mb-4 leading-8 text-brown/70">
-                You may also be considering Outsite (Ponta do Sol) or Homeoffice
-                Madeira (Santo da Serra). They&apos;re community-driven shared
-                houses — group meals, social calendars, bunk or twin options.
-                Good if you&apos;re a solo traveller building a network.
+                {t.remoteWork.colivingP1}
               </p>
               <p className="mb-16 leading-8 text-brown/70">
-                Casa Amani is the private alternative. Your own house, your own
-                pool, your own schedule. No strangers in the kitchen at
-                breakfast. It suits couples, families, and small groups who want
-                the focus of a dedicated space without the friction of shared
-                living.
+                {t.remoteWork.colivingP2}
               </p>
             </Reveal>
 
             <Reveal>
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
-                the island for remote work
+                {t.remoteWork.islandTitle}
               </h2>
               <p className="mb-4 leading-8 text-brown/70">
-                Madeira is a recognised digital nomad destination. The Digital
-                Nomad Village in Ponta do Sol (30 minutes east) runs a coworking
-                space and community programme. Funchal has several coworking
-                spaces if you want a change of scene. Portugal&apos;s D8 visa
-                makes stays longer than 90 days straightforward for non-EU
-                nationals.
+                {t.remoteWork.islandP1}
               </p>
               <p className="mb-16 leading-8 text-brown/70">
-                The climate helps. The south-west coast averages 17–24°C
-                year-round, with more sunshine hours than Funchal. You work in
-                the morning, swim after lunch, walk the levadas before dinner.
-                The rhythm settles quickly.
+                {t.remoteWork.islandP2}
               </p>
             </Reveal>
 
             <Reveal>
               <div className="border-t border-brown/10 pt-8">
-                <BookCTA placement="remote-work-cta" />
+                <BookCTA placement="remote-work-cta" label={t.bookCta} />
               </div>
             </Reveal>
           </div>

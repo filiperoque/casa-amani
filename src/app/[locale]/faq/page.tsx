@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
-import { faqItems } from "@/content/faq";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
-import LocaleRedirect from "@/components/LocaleRedirect";
 
 export const metadata: Metadata = {
   title: "Frequently asked questions — Casa Amani",
@@ -13,19 +11,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/faq",
   },
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: item.answer,
-    },
-  })),
 };
 
 const breadcrumbJsonLd = {
@@ -55,9 +40,21 @@ export default async function FaqPage({
   const { locale } = await params;
   const t = getTranslations(locale as Locale);
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: t.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <>
-      <LocaleRedirect />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -75,16 +72,15 @@ export default async function FaqPage({
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-24 lg:py-32">
           <Reveal>
             <h1 className="mb-4 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
-              frequently asked questions
+              {t.faq.title}
             </h1>
             <p className="mb-16 text-brown/60 md:text-lg">
-              Direct answers about Casa Amani — the house, the location, and
-              what to expect.
+              {t.faq.subtitle}
             </p>
           </Reveal>
 
           <div className="flex flex-col">
-            {faqItems.map((item, i) => (
+            {t.faq.items.map((item, i) => (
               <Reveal key={i} delay={Math.min(i * 40, 200)}>
                 <details className="group border-t border-brown/10 py-6 last:border-b">
                   <summary className="flex cursor-pointer items-start justify-between gap-4 text-brown marker:content-none [&::-webkit-details-marker]:hidden">
@@ -106,7 +102,7 @@ export default async function FaqPage({
           <Reveal>
             <div className="mt-16 border-t border-brown/10 pt-8 text-sm text-brown/50">
               <p>
-                Can&apos;t find what you need?{" "}
+                {t.faq.contact}{" "}
                 <a
                   href="mailto:stay@casa-amani.com"
                   className="plausible-event-name=email-click text-brown/70 underline transition-colors hover:text-brown"
