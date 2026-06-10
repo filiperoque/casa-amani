@@ -7,7 +7,7 @@ import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Remote work from Madeira — Casa Amani | Arco da Calheta",
+  title: "Remote Work — Casa Amani Madeira | Arco da Calheta",
   description:
     "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor — Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
   alternates: {

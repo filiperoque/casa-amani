@@ -38,14 +38,14 @@ const translations = {
           "microcement throughout, with a rain shower and built-in sound. warm, soft, and easy to use day to day.",
       },
       swimmingPool: {
-        title: "THE SWIMMING POOL",
+        title: "THE HEATED POOL",
         description:
-          "private pool set into the terrace, with seating and surrounding plants. used at different times of day.",
+          "private heated pool set into the terrace, with seating and surrounding plants. used at different times of day.",
       },
       livingSpace: {
         title: "THE LIVING SPACE",
         description:
-          "open-plan living with direct access to the terrace and pool, where most of the day moves between inside and out.",
+          "open-plan living with direct access to the terrace and heated pool, where most of the day moves between inside and out.",
       },
       kitchen: {
         title: "THE KITCHEN",
@@ -98,7 +98,7 @@ const translations = {
         {
           question: "Is there a pool?",
           answer:
-            "Yes. A private 7-metre pool set into the terrace, with the option of heating (available at extra cost). It faces the Atlantic.",
+            "Yes. A private heated pool — 7 metres, set into the terrace with a sea view. Heating is included as an option at extra cost. It faces the Atlantic.",
         },
         {
           question: "How many people does Casa Amani sleep?",

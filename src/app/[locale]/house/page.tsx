@@ -9,7 +9,7 @@ import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "The House — Casa Amani | Arco da Calheta, Madeira",
+  title: "The House — Casa Amani Madeira | Arco da Calheta",
   description:
     "A 219 m² split-level contemporary villa with 2 bedrooms, 3 bathrooms, heated pool, sea view, and workspaces. Sleeps up to 6 in Arco da Calheta, Madeira.",
   alternates: {

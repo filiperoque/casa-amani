@@ -22,7 +22,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Is there a pool?",
     answer:
-      "Yes. A private 7-metre pool set into the terrace, with the option of heating (available at extra cost). It faces the Atlantic.",
+      "Yes. A private heated pool — 7 metres, set into the terrace with a sea view. Heating is included as an option at extra cost. It faces the Atlantic.",
   },
   {
     question: "How many people does Casa Amani sleep?",

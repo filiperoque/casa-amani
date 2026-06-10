@@ -5,8 +5,8 @@ import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy — Casa Amani",
-  description: "How Casa Amani handles your data. No cookies, no tracking across sites.",
+  title: "Privacy — Casa Amani Madeira",
+  description: "How Casa Amani Madeira handles your data. No cookies, no tracking across sites.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };

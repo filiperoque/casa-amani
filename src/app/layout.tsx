@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Casa Amani — A contemporary house on Madeira's quiet side",
+  title: "Casa Amani Madeira — Made for slow stays on Madeira's quiet side",
   description:
-    "A two-bedroom contemporary house in Arco da Calheta, on Madeira's quiet side. Made to be lived in slowly — by visitors and remote workers alike.",
+    "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side — by visitors, remote workers, and surfers on the west-coast breaks.",
   keywords: [
-    "Casa Amani",
+    "Casa Amani Madeira",
+    "Casa Amani Calheta",
     "Madeira villa",
     "Arco da Calheta",
     "vacation rental Madeira",
@@ -14,17 +15,18 @@ export const metadata: Metadata = {
     "holiday house Calheta",
     "Madeira south-west coast",
     "slow travel Madeira",
+    "surf villa Madeira",
   ],
   metadataBase: new URL("https://casa-amani.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Casa Amani — A contemporary house on Madeira's quiet side",
+    title: "Casa Amani Madeira — Made for slow stays on Madeira's quiet side",
     description:
-      "A two-bedroom contemporary house in Arco da Calheta, on Madeira's quiet side. Made to be lived in slowly — by visitors and remote workers alike.",
+      "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side — by visitors, remote workers, and surfers on the west-coast breaks.",
     url: "https://casa-amani.com",
-    siteName: "Casa Amani",
+    siteName: "Casa Amani Madeira",
     locale: "en_GB",
     type: "website",
     images: [
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Casa Amani — A contemporary house on Madeira's quiet side",
+    title: "Casa Amani Madeira — Made for slow stays on Madeira's quiet side",
     description:
-      "A two-bedroom contemporary house in Arco da Calheta, on Madeira's quiet side. Made to be lived in slowly.",
+      "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side.",
     images: ["/images/hero.jpg"],
   },
   robots: {
@@ -53,7 +55,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "VacationRental",
   name: "Casa Amani",
-  alternateName: "Amani",
+  alternateName: ["Casa Amani Madeira", "Casa Amani Calheta", "Amani"],
   url: "https://casa-amani.com",
   image: [
     "https://casa-amani.com/images/hero.jpg",
@@ -61,7 +63,7 @@ const jsonLd = {
     "https://casa-amani.com/images/swimming-pool.jpg",
   ],
   description:
-    "A 2-bedroom contemporary rental villa in Arco da Calheta, on the quiet south-west coast of Madeira, Portugal. Built for slow stays — equally suited to travellers visiting the island and to remote-mobile workers using it as a base. Sleeps up to 6.",
+    "Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the south-west coast of Madeira, Portugal. The house sits split-level above a private heated pool with a front-facing sea view, and is designed for slow stays — equally suited to travellers visiting Madeira, to remote-mobile workers using the island as a base, and to surfers based on the island's west-coast breaks. It sleeps up to six and is available for stays of one week or longer. Registered Alojamento Local 176882/AL.",
   brand: { "@type": "Brand", name: "Casa Amani" },
   address: {
     "@type": "PostalAddress",
@@ -109,7 +111,7 @@ const jsonLd = {
     "https://www.casai.com/property/ourmadeira-amani/BC-16564906",
   ],
   amenityFeature: [
-    { "@type": "LocationFeatureSpecification", name: "Private heated pool (optional)", value: true },
+    { "@type": "LocationFeatureSpecification", name: "Private heated pool, 7m, with panoramic sea view", value: true },
     { "@type": "LocationFeatureSpecification", name: "Panoramic sea view", value: true },
     { "@type": "LocationFeatureSpecification", name: "Desk in both bedrooms; external monitor in guest bedroom", value: true },
     { "@type": "LocationFeatureSpecification", name: "Free Wi-Fi throughout villa and terrace", value: true },

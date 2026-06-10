@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Frequently asked questions — Casa Amani",
+  title: "FAQ — Casa Amani Madeira | Arco da Calheta",
   description:
     "Common questions about Casa Amani: location, remote work, pool, capacity, booking, and more. Direct answers about this contemporary villa in Arco da Calheta, Madeira.",
   alternates: {
