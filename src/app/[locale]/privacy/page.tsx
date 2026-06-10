@@ -56,10 +56,10 @@ export default async function PrivacyPage({
               <p>
                 To request removal of your email or to ask questions, write to{" "}
                 <a
-                  href="mailto:hello@casa-amani.com"
+                  href="mailto:stay@casa-amani.com"
                   className="plausible-event-name=email-click text-brown underline"
                 >
-                  hello@casa-amani.com
+                  stay@casa-amani.com
                 </a>
                 .
               </p>

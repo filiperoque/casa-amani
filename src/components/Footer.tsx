@@ -27,26 +27,18 @@ export default function Footer() {
 
         <nav className="flex flex-col gap-2 text-sm">
           <a
-            href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=footer&utm_content=footer-airbnb"
+            href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=footer"
             target="_blank"
             rel="noopener noreferrer"
             className="plausible-event-name=outbound-airbnb transition-colors hover:text-cream"
           >
-            Airbnb
+            Book on Airbnb
           </a>
           <a
-            href="https://www.booking.com/hotel/pt/superb-modern-villa-with-pool-in-calhetaamani.en-gb.html?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=footer&utm_content=footer-booking"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="plausible-event-name=outbound-booking transition-colors hover:text-cream"
-          >
-            Booking.com
-          </a>
-          <a
-            href="mailto:hello@casa-amani.com"
+            href="mailto:stay@casa-amani.com"
             className="plausible-event-name=email-click transition-colors hover:text-cream"
           >
-            hello@casa-amani.com
+            stay@casa-amani.com
           </a>
         </nav>
 

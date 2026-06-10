@@ -106,10 +106,10 @@ export default async function FaqPage({
               <p>
                 Can&apos;t find what you need?{" "}
                 <a
-                  href="mailto:hello@casa-amani.com"
+                  href="mailto:stay@casa-amani.com"
                   className="plausible-event-name=email-click text-brown/70 underline transition-colors hover:text-brown"
                 >
-                  hello@casa-amani.com
+                  stay@casa-amani.com
                 </a>
                 .
               </p>
