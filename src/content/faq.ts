@@ -7,12 +7,12 @@ export const faqItems: FaqItem[] = [
   {
     question: "Where exactly is Casa Amani?",
     answer:
-      "Casa Amani is in Arco da Calheta, a village on the south-west coast of Madeira island, Portugal. It's about 50 minutes by car (48 km) from Madeira International Airport (FNC), and Calheta beach and marina are 6 km away — roughly a five-minute drive.",
+      "Casa Amani is in Arco da Calheta, a village on the south-west coast of Madeira island, Portugal. It's about 50 minutes by car (48 km) from Madeira International Airport (FNC), and Calheta beach and marina are 6 km away, roughly a five-minute drive.",
   },
   {
     question: "How far is the airport?",
     answer:
-      "Madeira International Airport (FNC) is 48 km from the house — approximately 50 minutes by car. Funchal is about 30 minutes.",
+      "Madeira International Airport (FNC) is 48 km from the house, approximately 50 minutes by car. Funchal is about 30 minutes.",
   },
   {
     question: "Is Casa Amani suitable for remote work?",
@@ -22,7 +22,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Is there a pool?",
     answer:
-      "Yes. A private heated pool — 7 metres, set into the terrace with a sea view. Heating is included as an option at extra cost. It faces the Atlantic.",
+      "Yes. A private 7-metre pool set into the terrace, with the option of heating (available at extra cost). It faces the Atlantic.",
   },
   {
     question: "How many people does Casa Amani sleep?",
@@ -37,7 +37,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "What's the minimum stay?",
     answer:
-      "Seven nights. The house is designed for slow stays — weeks rather than weekends.",
+      "Seven nights. The house is designed for slow stays, weeks rather than weekends.",
   },
   {
     question: "Is there parking?",
@@ -62,7 +62,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "What's the climate like in winter?",
     answer:
-      "Mild. Daytime temperatures on the south-west coast typically range from 17–22°C in winter, with more sunshine hours than Funchal. Madeira doesn't have a cold season in the way Northern Europe does — it has a quieter season.",
+      "Mild. Daytime temperatures on the south-west coast typically range from 17 to 22°C in winter, with more sunshine hours than Funchal. Madeira doesn't have a cold season in the way Northern Europe does. It has a quieter season.",
   },
   {
     question: "Is the house family-friendly?",
@@ -102,6 +102,6 @@ export const faqItems: FaqItem[] = [
   {
     question: "What are the check-in and check-out times?",
     answer:
-      "Check-in is from 16:00. Check-out is by 11:00. Early check-in or late check-out may be possible depending on availability — ask when you book.",
+      "Check-in is from 16:00. Check-out is by 11:00. Early check-in or late check-out may be possible depending on availability. Ask when you book.",
   },
 ];

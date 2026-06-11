@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import type { ReactElement } from "react";
 import { type Locale, getTranslations } from "@/i18n/translations";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "FAQ — Casa Amani Madeira | Arco da Calheta",
+  title: "FAQ | Casa Amani Madeira | Arco da Calheta",
   description:
     "Common questions about Casa Amani: location, remote work, pool, capacity, booking, and more. Direct answers about this contemporary villa in Arco da Calheta, Madeira.",
   alternates: {
@@ -31,6 +32,46 @@ const breadcrumbJsonLd = {
     },
   ],
 };
+
+const AIRBNB_UTM =
+  "?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=faq-how-to-book";
+
+function renderAnswer(text: string) {
+  const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts: (string | ReactElement)[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = mdLinkPattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const linkText = match[1];
+    let href = match[2];
+    const isAirbnb = href.includes("airbnb.co");
+    if (isAirbnb) {
+      href = href + AIRBNB_UTM;
+    }
+    parts.push(
+      <a
+        key={match.index}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`text-brown underline transition-colors hover:text-brown/70${isAirbnb ? " plausible-event-name=outbound-airbnb" : ""}`}
+      >
+        {linkText}
+      </a>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts.length === 1 && typeof parts[0] === "string" ? parts[0] : parts;
+}
 
 export default async function FaqPage({
   params,
@@ -92,7 +133,7 @@ export default async function FaqPage({
                     </span>
                   </summary>
                   <p className="mt-4 leading-7 text-brown/70 md:text-base">
-                    {item.answer}
+                    {renderAnswer(item.answer)}
                   </p>
                 </details>
               </Reveal>

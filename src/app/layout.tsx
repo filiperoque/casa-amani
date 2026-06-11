@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Casa Amani Madeira — Made for slow stays on Madeira's quiet side",
+  title: "Casa Amani Madeira | Made for slow stays on Madeira's quiet side",
   description:
-    "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side — by visitors, remote workers, and surfers on the west-coast breaks.",
+    "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side, by visitors, remote workers, and surfers on the west-coast breaks.",
   keywords: [
     "Casa Amani Madeira",
     "Casa Amani Calheta",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Casa Amani Madeira — Made for slow stays on Madeira's quiet side",
+    title: "Casa Amani Madeira | Made for slow stays on Madeira's quiet side",
     description:
-      "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side — by visitors, remote workers, and surfers on the west-coast breaks.",
+      "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side, by visitors, remote workers, and surfers on the west-coast breaks.",
     url: "https://casa-amani.com",
     siteName: "Casa Amani Madeira",
     locale: "en_GB",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Casa Amani Madeira — Made for slow stays on Madeira's quiet side",
+    title: "Casa Amani Madeira | Made for slow stays on Madeira's quiet side",
     description:
       "Casa Amani Madeira is a two-bedroom contemporary villa in Arco da Calheta. Made for slow stays on Madeira's quiet side.",
     images: ["/images/hero.jpg"],
@@ -63,7 +63,7 @@ const jsonLd = {
     "https://casa-amani.com/images/swimming-pool.jpg",
   ],
   description:
-    "Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the south-west coast of Madeira, Portugal. The house sits split-level above a private heated pool with a front-facing sea view, and is designed for slow stays — equally suited to travellers visiting Madeira, to remote-mobile workers using the island as a base, and to surfers based on the island's west-coast breaks. It sleeps up to six and is available for stays of one week or longer. Registered Alojamento Local 176882/AL.",
+    "Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the south-west coast of Madeira, Portugal. The house sits split-level above a private heated pool with a front-facing sea view, and is designed for slow stays, equally suited to travellers visiting Madeira, to remote-mobile workers using the island as a base, and to surfers based on the island's west-coast breaks. It sleeps up to six and is available for stays of one week or longer. Registered Alojamento Local 176882/AL.",
   brand: { "@type": "Brand", name: "Casa Amani" },
   address: {
     "@type": "PostalAddress",

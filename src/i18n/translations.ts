@@ -77,18 +77,18 @@ const translations = {
     faq: {
       title: "frequently asked questions",
       subtitle:
-        "Direct answers about Casa Amani — the house, the location, and what to expect.",
+        "Direct answers about Casa Amani: the house, the location, and what to expect.",
       contact: "Can't find what you need?",
       items: [
         {
           question: "Where exactly is Casa Amani?",
           answer:
-            "Casa Amani is in Arco da Calheta, a village on the south-west coast of Madeira island, Portugal. It's about 50 minutes by car (48 km) from Madeira International Airport (FNC), and Calheta beach and marina are 6 km away — roughly a five-minute drive.",
+            "Casa Amani is in Arco da Calheta, a village on the south-west coast of Madeira island, Portugal. It's about 50 minutes by car (48 km) from Madeira International Airport (FNC), and Calheta beach and marina are 6 km away, roughly a five-minute drive.",
         },
         {
           question: "How far is the airport?",
           answer:
-            "Madeira International Airport (FNC) is 48 km from the house — approximately 50 minutes by car. Funchal is about 30 minutes.",
+            "Madeira International Airport (FNC) is 48 km from the house, approximately 50 minutes by car. Funchal is about 30 minutes.",
         },
         {
           question: "Is Casa Amani suitable for remote work?",
@@ -98,7 +98,7 @@ const translations = {
         {
           question: "Is there a pool?",
           answer:
-            "Yes. A private heated pool — 7 metres, set into the terrace with a sea view. Heating is included as an option at extra cost. It faces the Atlantic.",
+            "Yes. A private 7-metre pool set into the terrace, with the option of heating (available at extra cost). It faces the Atlantic.",
         },
         {
           question: "How many people does Casa Amani sleep?",
@@ -112,7 +112,7 @@ const translations = {
         {
           question: "What's the minimum stay?",
           answer:
-            "Seven nights. The house is designed for slow stays — weeks rather than weekends.",
+            "Seven nights. The house is designed for slow stays, weeks rather than weekends.",
         },
         {
           question: "Is there parking?",
@@ -137,7 +137,7 @@ const translations = {
         {
           question: "What's the climate like in winter?",
           answer:
-            "Mild. Daytime temperatures on the south-west coast typically range from 17–22°C in winter, with more sunshine hours than Funchal. Madeira doesn't have a cold season in the way Northern Europe does — it has a quieter season.",
+            "Mild. Daytime temperatures on the south-west coast typically range from 17 to 22°C in winter, with more sunshine hours than Funchal. Madeira doesn't have a cold season in the way Northern Europe does. It has a quieter season.",
         },
         {
           question: "Is the house family-friendly?",
@@ -152,7 +152,7 @@ const translations = {
         {
           question: "How do I book?",
           answer:
-            "We currently take bookings exclusively through Airbnb. Tap any 'Stay with us' button to check availability and reserve. Casa Amani is also listed on Booking.com, VRBO, OurMadeira, and Casai through our property manager, but for a consistent experience we direct guests to the Airbnb listing from this site.",
+            "We currently take bookings exclusively through [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620). You can check availability and reserve there directly, or tap any 'Stay with us' button on this site. Casa Amani is also listed on Booking.com, VRBO, OurMadeira, and Casai through our property manager, but for a consistent experience we direct guests to the Airbnb listing from this site.",
         },
         {
           question: "Is breakfast included?",
@@ -162,7 +162,7 @@ const translations = {
         {
           question: "Is there air conditioning and heating?",
           answer:
-            "Yes. Full air conditioning and central heating throughout the house.",
+            "Air conditioning throughout the house, and the same units can be set to heat when needed. There is no separate central heating system, but the south-west coast's mild climate rarely calls for one.",
         },
         {
           question: "What's the nearest supermarket?",
@@ -177,14 +177,14 @@ const translations = {
         {
           question: "What are the check-in and check-out times?",
           answer:
-            "Check-in is from 16:00. Check-out is by 11:00. Early check-in or late check-out may be possible depending on availability — ask when you book.",
+            "Check-in is from 16:00. Check-out is by 11:00. Early check-in or late check-out may be possible depending on availability. Ask when you book.",
         },
       ],
     },
     remoteWork: {
       title: "work from Madeira's quiet side",
       intro:
-        "Casa Amani is a private villa with dedicated workspaces, fibre Wi-Fi, and an external monitor — on the south-west coast of Madeira, where the sun is most consistent and the crowds are not. Designed for stays of a week or longer, equally suited to focused solo work and working couples.",
+        "Casa Amani is a private villa with dedicated workspaces, fibre Wi-Fi, and an external monitor, set on the south-west coast of Madeira where the sun is most consistent. Designed for stays of a week or longer, equally suited to focused solo work and working couples.",
       setupTitle: "the setup",
       setup: {
         wifi: {
@@ -205,28 +205,28 @@ const translations = {
         },
         quiet: {
           label: "Quiet",
-          text: "Arco da Calheta is a hillside village. No traffic noise, no bar noise, no hotel corridors.",
+          text: "Arco da Calheta is a hillside village. The kind of quiet that takes a few days to notice and longer to leave.",
         },
         minimumStay: {
           label: "Minimum stay",
           text: "Seven nights. Most remote workers stay two to four weeks.",
         },
       },
-      colivingTitle: "not coliving",
+      colivingTitle: "private, not shared",
       colivingP1:
-        "You may also be considering Outsite (Ponta do Sol) or Homeoffice Madeira (Santo da Serra). They're community-driven shared houses — group meals, social calendars, bunk or twin options. Good if you're a solo traveller building a network.",
+        "You may also be considering Outsite (Ponta do Sol) or Homeoffice Madeira (Santo da Serra). They're community-driven shared houses, with group meals, social calendars, and bunk or twin options. Good if you're a solo traveller building a network.",
       colivingP2:
-        "Casa Amani is the private alternative. Your own house, your own pool, your own schedule. No strangers in the kitchen at breakfast. It suits couples, families, and small groups who want the focus of a dedicated space without the friction of shared living.",
+        "Casa Amani is private. The house is yours, the pool is yours, the kitchen is yours. It suits couples, families, and small groups who want a dedicated workspace and the calm of an unshared home, on a longer rhythm than a weekend.",
       islandTitle: "the island for remote work",
       islandP1:
         "Madeira is a recognised digital nomad destination. The Digital Nomad Village in Ponta do Sol (30 minutes east) runs a coworking space and community programme. Funchal has several coworking spaces if you want a change of scene. Portugal's D8 visa makes stays longer than 90 days straightforward for non-EU nationals.",
       islandP2:
-        "The climate helps. The south-west coast averages 17–24°C year-round, with more sunshine hours than Funchal. You work in the morning, swim after lunch, walk the levadas before dinner. The rhythm settles quickly.",
+        "The climate helps. The south-west coast averages 17 to 24°C year-round, with more sunshine hours than Funchal. You work in the morning, swim after lunch, walk the levadas before dinner. The rhythm settles quickly.",
     },
     thePlace: {
       title: "Arco da Calheta, Madeira",
       intro:
-        "Arco da Calheta is a parish in Calheta municipality, on the south-west coast of Madeira island, Portugal. It sits on a hillside above the Atlantic, facing south — the quietest, sunniest stretch of an island that already has one of Europe's mildest climates. The village is small. The light is consistent. The pace is slow by design, not by accident.",
+        "Arco da Calheta is a parish in Calheta municipality, on the south-west coast of Madeira island, Portugal. It sits on a hillside above the Atlantic, facing south, the quietest and sunniest stretch of an island that already has one of Europe's mildest climates. The village is small. The light is consistent. The pace is slow by design, not by accident.",
       distancesTitle: "distances",
       distances: [
         ["Calheta beach & marina", "6 km / 5 min"],
@@ -240,19 +240,19 @@ const translations = {
       ],
       westCoastTitle: "the west coast",
       westCoastP1:
-        "Most visitors to Madeira stay in Funchal or along the south-east coast. The west side — from Ribeira Brava to Porto Moniz — is where the island opens up. Fewer hotels, fewer tour buses, longer views. The south-west coast in particular gets more sun hours than anywhere else on the island, sheltered from the north-east trade winds by the central mountain range.",
+        "Most visitors to Madeira stay in Funchal or along the south-east coast. The west side, from Ribeira Brava to Porto Moniz, is where the island opens up. Fewer hotels, fewer tour buses, longer views. The south-west coast in particular gets more sun hours than anywhere else on the island, sheltered from the north-east trade winds by the central mountain range.",
       westCoastP2:
-        "Calheta municipality is the heart of this stretch. Its marina has one of the island's only sand beaches (imported, but pleasant). The village of Jardim do Mar, ten minutes downhill, is a recognised surf break. Paul do Mar, further along the coast, is quieter still. Inland, the levadas — Madeira's network of irrigation channels — thread through laurel forest that's been here since before the island was settled.",
+        "Calheta municipality is the heart of this stretch. Its marina has one of the island's only sand beaches (imported, but pleasant). The village of Jardim do Mar, ten minutes downhill, is a recognised surf break. Paul do Mar, further along the coast, is quieter still. Inland, the levadas (Madeira's network of irrigation channels) thread through laurel forest that's been here since before the island was settled.",
       climateTitle: "the climate",
       climateP1:
-        "Madeira's south-west coast is mild year-round. Summer averages 22–26°C; winter rarely drops below 16°C. Rain falls mostly on the north side and in the mountains — the south-west is the dry side. The sea temperature ranges from 18°C in winter to 24°C in summer, warm enough for swimming most of the year.",
+        "Madeira's south-west coast is mild year-round. Summer averages 22 to 26°C; winter rarely drops below 16°C. Rain falls mostly on the north side and in the mountains; the south-west is the dry side. The sea temperature ranges from 18°C in winter to 24°C in summer, warm enough for swimming most of the year.",
       climateP2:
-        "There is no bad season. The island is greenest in winter, busiest in August, and at its most balanced in April and October — warm without the crowds, flowering everywhere, the levadas at their fullest.",
+        "There is no bad season. The island is greenest in winter, busiest in August, and at its most balanced in April and October. Warm without the crowds, flowering everywhere, the levadas at their fullest.",
       gettingHereTitle: "getting here",
       gettingHereP1:
         "Madeira International Airport (FNC) has direct flights year-round from London, Frankfurt, Amsterdam, Paris, Lisbon, Porto, Warsaw, and a dozen other European cities. Low-cost carriers (easyJet, Ryanair, Wizz Air) and full-service airlines (TAP, British Airways, Condor) both serve the island.",
       gettingHereP2:
-        "From the airport, Arco da Calheta is about 50 minutes west along the VR1 motorway. A hire car is recommended — the west side is best explored at your own pace, and the roads are good.",
+        "From the airport, Arco da Calheta is about 50 minutes west along the VR1 motorway. A hire car is recommended. The west side is best explored at your own pace, and the roads are good.",
     },
     privacy: {
       title: "privacy",
@@ -309,7 +309,7 @@ const translations = {
       kitchen: {
         title: "A COZINHA",
         description:
-          "cozinha equipada junto à sala, usada todos os dias — do café da manhã às refeições mais longas ao fim do dia.",
+          "cozinha totalmente equipada junto à sala, usada diariamente desde o café da manhã até refeições mais longas.",
       },
       lowerRoom: {
         title: "O QUARTO DE BAIXO",
@@ -336,23 +336,23 @@ const translations = {
     faq: {
       title: "perguntas frequentes",
       subtitle:
-        "Respostas diretas sobre a Casa Amani — a casa, a zona e o que esperar.",
+        "Respostas diretas sobre a Casa Amani: a casa, a zona e o que esperar.",
       contact: "Não encontra o que procura?",
       items: [
         {
           question: "Onde fica a Casa Amani?",
           answer:
-            "Em Arco da Calheta, uma freguesia na costa sudoeste da Madeira. Fica a cerca de 50 minutos de carro (48 km) do aeroporto, e a praia e marina da Calheta estão a 6 km — cinco minutos de carro.",
+            "Em Arco da Calheta, uma freguesia na costa sudoeste da Madeira. Fica a cerca de 50 minutos de carro (48 km) do aeroporto, e a praia e marina da Calheta estão a 6 km, cinco minutos de carro.",
         },
         {
           question: "A que distância fica o aeroporto?",
           answer:
-            "O aeroporto da Madeira fica a 48 km — cerca de 50 minutos de carro. O Funchal fica a 30 minutos.",
+            "O aeroporto da Madeira fica a 48 km, cerca de 50 minutos de carro. O Funchal fica a 30 minutos.",
         },
         {
           question: "Dá para trabalhar remotamente?",
           answer:
-            "Dá. Os dois quartos têm secretária e o quarto de hóspedes tem monitor externo para ligar ao portátil. Há Wi-Fi de fibra em toda a casa e no terraço. Estadias de uma semana ou mais são bem-vindas. A Madeira é destino reconhecido de nómadas digitais — a Digital Nomad Village fica em Ponta do Sol, ali perto.",
+            "Dá. Os dois quartos têm secretária e o quarto de hóspedes tem monitor externo para ligar ao portátil. Há Wi-Fi de fibra em toda a casa e no terraço. Estadias de uma semana ou mais são bem-vindas. A Madeira é destino reconhecido de nómadas digitais, com a Digital Nomad Village em Ponta do Sol, ali perto.",
         },
         {
           question: "Tem piscina?",
@@ -371,7 +371,7 @@ const translations = {
         {
           question: "Qual é a estadia mínima?",
           answer:
-            "Sete noites. A casa foi pensada para estadias longas — semanas, não fins de semana.",
+            "Sete noites. A casa foi pensada para estadias longas, semanas, não fins de semana.",
         },
         {
           question: "Tem estacionamento?",
@@ -391,12 +391,12 @@ const translations = {
         {
           question: "Preciso de carro?",
           answer:
-            "Sim, para quase tudo. Arco da Calheta é uma aldeia na encosta — lojas, restaurantes e praias ficam a uma curta distância de carro. Alugar carro na ilha é simples e barato.",
+            "Sim, para quase tudo. Arco da Calheta é uma aldeia na encosta; lojas, restaurantes e praias ficam a uma curta distância de carro. Alugar carro na ilha é simples e barato.",
         },
         {
           question: "Como é o clima no inverno?",
           answer:
-            "Ameno. Na costa sudoeste as temperaturas andam entre os 17 e os 22°C no inverno, com mais sol do que no Funchal. A Madeira não tem propriamente inverno como no Norte da Europa — tem uma estação mais calma.",
+            "Ameno. Na costa sudoeste as temperaturas andam entre os 17 e os 22°C no inverno, com mais sol do que no Funchal. A Madeira não tem propriamente inverno como no Norte da Europa. Tem uma estação mais calma.",
         },
         {
           question: "É boa para famílias?",
@@ -406,7 +406,7 @@ const translations = {
         {
           question: "Dá para trabalhar a tempo inteiro?",
           answer:
-            "Dá — foi feita para isso. Secretárias nos dois quartos, monitor externo no quarto de hóspedes, fibra óptica e um fuso horário (GMT/WET) que encaixa bem com o Reino Unido, a maior parte da Europa e a manhã da Costa Leste americana.",
+            "Dá, foi feita para isso. Secretárias nos dois quartos, monitor externo no quarto de hóspedes, fibra óptica e um fuso horário (GMT/WET) que encaixa bem com o Reino Unido, a maior parte da Europa e a manhã da Costa Leste americana.",
         },
         {
           question: "Como reservo?",
@@ -416,12 +416,12 @@ const translations = {
         {
           question: "Inclui pequeno-almoço?",
           answer:
-            "Não. A casa funciona em regime próprio. A cozinha tem tudo — placa de indução, forno, máquina de lavar loiça e máquina de café. Pode pedir-se chef privado.",
+            "Não. A casa funciona em regime próprio. A cozinha tem tudo: placa de indução, forno, máquina de lavar loiça e máquina de café. Pode pedir-se chef privado.",
         },
         {
           question: "Tem ar condicionado e aquecimento?",
           answer:
-            "Tem. Ar condicionado e aquecimento central em toda a casa.",
+            "Ar condicionado em toda a casa, e as mesmas unidades podem ser reguladas para aquecer quando necessário. Não há sistema de aquecimento central separado, mas o clima ameno da costa sudoeste raramente o exige.",
         },
         {
           question: "E supermercado?",
@@ -431,19 +431,19 @@ const translations = {
         {
           question: "Toalhas e roupa de cama estão incluídas?",
           answer:
-            "Sim. Roupa de cama, toalhas de banho e toalhas de piscina — tudo incluído e mudado semanalmente.",
+            "Sim. Roupa de cama, toalhas de banho e toalhas de piscina, tudo incluído e mudado semanalmente.",
         },
         {
           question: "Horários de check-in e check-out?",
           answer:
-            "Check-in a partir das 16:00. Check-out até às 11:00. Entradas antecipadas ou saídas tardias podem ser possíveis consoante a disponibilidade — pergunte ao reservar.",
+            "Check-in a partir das 16:00. Check-out até às 11:00. Entradas antecipadas ou saídas tardias podem ser possíveis consoante a disponibilidade. Pergunte ao reservar.",
         },
       ],
     },
     remoteWork: {
       title: "trabalhar a partir do lado calmo da Madeira",
       intro:
-        "A Casa Amani é uma moradia privada com espaço de trabalho a sério, fibra óptica e monitor externo — na costa sudoeste da Madeira, onde o sol é mais certo e as multidões ficam longe. Pensada para estadias de uma semana ou mais. Funciona bem tanto para quem trabalha a solo como para casais em trabalho remoto.",
+        "A Casa Amani é uma moradia privada com espaço de trabalho a sério, fibra óptica e monitor externo, na costa sudoeste da Madeira, onde o sol é mais certo. Pensada para estadias de uma semana ou mais. Funciona bem tanto para quem trabalha a solo como para casais em trabalho remoto.",
       setupTitle: "o que temos",
       setup: {
         wifi: {
@@ -464,28 +464,28 @@ const translations = {
         },
         quiet: {
           label: "Silêncio",
-          text: "Arco da Calheta é uma aldeia na encosta. Sem trânsito, sem bares, sem corredores de hotel.",
+          text: "Arco da Calheta é uma aldeia na encosta. O tipo de silêncio que demora uns dias a notar e mais tempo a deixar.",
         },
         minimumStay: {
           label: "Estadia mínima",
           text: "Sete noites. A maioria de quem vem trabalhar fica duas a quatro semanas.",
         },
       },
-      colivingTitle: "não é coliving",
+      colivingTitle: "privada, não partilhada",
       colivingP1:
-        "Se está a pensar no Outsite (Ponta do Sol) ou no Homeoffice Madeira (Santo da Serra) — são casas partilhadas com espírito comunitário. Refeições de grupo, agenda social, beliches ou camas duplas. Bom para quem viaja sozinho e quer criar rede.",
+        "Se está a pensar no Outsite (Ponta do Sol) ou no Homeoffice Madeira (Santo da Serra), são casas partilhadas com espírito comunitário. Refeições de grupo, agenda social, beliches ou camas duplas. Bom para quem viaja sozinho e quer criar rede.",
       colivingP2:
-        "A Casa Amani é a alternativa privada. A sua casa, a sua piscina, o seu ritmo. Sem desconhecidos na cozinha ao pequeno-almoço. Para casais, famílias ou pequenos grupos que querem foco e espaço próprio, sem a fricção de viver com estranhos.",
+        "A Casa Amani é privada. A casa é sua, a piscina é sua, a cozinha é sua. Para casais, famílias e pequenos grupos que querem um espaço de trabalho dedicado e a calma de uma casa não partilhada, num ritmo mais longo do que um fim de semana.",
       islandTitle: "a ilha para trabalho remoto",
       islandP1:
         "A Madeira é destino reconhecido para nómadas digitais. A Digital Nomad Village em Ponta do Sol (30 minutos para leste) tem coworking e programa comunitário. No Funchal há vários espaços de coworking para quem quiser mudar de ares. O visto D8 português facilita estadias de mais de 90 dias para quem vem de fora da UE.",
       islandP2:
-        "O clima ajuda. Na costa sudoeste a média ronda os 17–24°C o ano todo, com mais horas de sol do que no Funchal. Trabalha-se de manhã, vai-se à água depois do almoço, caminha-se pelas levadas antes do jantar. O ritmo instala-se rápido.",
+        "O clima ajuda. Na costa sudoeste a média ronda os 17 a 24°C o ano todo, com mais horas de sol do que no Funchal. Trabalha-se de manhã, vai-se à água depois do almoço, caminha-se pelas levadas antes do jantar. O ritmo instala-se rápido.",
     },
     thePlace: {
       title: "Arco da Calheta, Madeira",
       intro:
-        "Arco da Calheta é uma freguesia da Calheta, na costa sudoeste da Madeira. Fica numa encosta virada a sul, acima do Atlântico — o trecho mais calmo e soalheiro de uma ilha que já tem um dos melhores climas da Europa. A aldeia é pequena. A luz é constante. O ritmo é lento por opção, não por acaso.",
+        "Arco da Calheta é uma freguesia da Calheta, na costa sudoeste da Madeira. Fica numa encosta virada a sul, acima do Atlântico, o trecho mais calmo e soalheiro de uma ilha que já tem um dos melhores climas da Europa. A aldeia é pequena. A luz é constante. O ritmo é lento por opção, não por acaso.",
       distancesTitle: "distâncias",
       distances: [
         ["Praia e marina da Calheta", "6 km / 5 min"],
@@ -499,19 +499,19 @@ const translations = {
       ],
       westCoastTitle: "a costa oeste",
       westCoastP1:
-        "A maioria de quem visita a Madeira fica no Funchal ou na costa sudeste. O lado oeste — de Ribeira Brava a Porto Moniz — é onde a ilha se abre. Menos hotéis, menos autocarros de turistas, mais horizonte. A costa sudoeste tem mais horas de sol do que qualquer outro ponto da ilha, protegida dos ventos alísios pela cordilheira central.",
+        "A maioria de quem visita a Madeira fica no Funchal ou na costa sudeste. O lado oeste, de Ribeira Brava a Porto Moniz, é onde a ilha se abre. Menos hotéis, menos autocarros de turistas, mais horizonte. A costa sudoeste tem mais horas de sol do que qualquer outro ponto da ilha, protegida dos ventos alísios pela cordilheira central.",
       westCoastP2:
-        "A Calheta é o coração deste troço. A marina tem uma das poucas praias de areia da ilha (importada, mas agradável). Jardim do Mar, dez minutos encosta abaixo, é ponto de surf reconhecido. Paul do Mar, mais à frente, é ainda mais sossegado. Para o interior, as levadas — a rede de canais de irrigação da Madeira — cruzam floresta de loureiros anterior ao povoamento da ilha.",
+        "A Calheta é o coração deste troço. A marina tem uma das poucas praias de areia da ilha (importada, mas agradável). Jardim do Mar, dez minutos encosta abaixo, é ponto de surf reconhecido. Paul do Mar, mais à frente, é ainda mais sossegado. Para o interior, as levadas (a rede de canais de irrigação da Madeira) cruzam floresta de loureiros anterior ao povoamento da ilha.",
       climateTitle: "o clima",
       climateP1:
-        "A costa sudoeste da Madeira é amena o ano todo. No verão a média anda nos 22–26°C; no inverno raramente desce dos 16°C. A chuva cai sobretudo no lado norte e nas montanhas — o sudoeste é o lado seco. O mar varia entre 18°C no inverno e 24°C no verão — dá para nadar quase o ano inteiro.",
+        "A costa sudoeste da Madeira é amena o ano todo. No verão a média anda nos 22 a 26°C; no inverno raramente desce dos 16°C. A chuva cai sobretudo no lado norte e nas montanhas; o sudoeste é o lado seco. O mar varia entre 18°C no inverno e 24°C no verão, dá para nadar quase o ano inteiro.",
       climateP2:
-        "Não há estação má. A ilha é mais verde no inverno, mais cheia em agosto, mais equilibrada em abril e outubro — calor sem multidões, flores por todo o lado, as levadas no seu máximo.",
+        "Não há estação má. A ilha é mais verde no inverno, mais cheia em agosto, mais equilibrada em abril e outubro. Calor sem multidões, flores por todo o lado, as levadas no seu máximo.",
       gettingHereTitle: "como chegar",
       gettingHereP1:
         "O aeroporto da Madeira tem voos diretos o ano todo a partir de Londres, Frankfurt, Amesterdão, Paris, Lisboa, Porto, Varsóvia e mais de uma dezena de cidades europeias. Há low-cost (easyJet, Ryanair, Wizz Air) e companhias regulares (TAP, British Airways, Condor).",
       gettingHereP2:
-        "Do aeroporto, Arco da Calheta fica a uns 50 minutos para oeste pela VR1. Convém alugar carro — o lado oeste explora-se melhor ao seu ritmo, e as estradas são boas.",
+        "Do aeroporto, Arco da Calheta fica a uns 50 minutos para oeste pela VR1. Convém alugar carro. O lado oeste explora-se melhor ao seu ritmo, e as estradas são boas.",
     },
     privacy: {
       title: "privacidade",
@@ -530,7 +530,7 @@ const translations = {
     tagline: {
       heading: "Ihr Zuhause, auf Zeit.",
       subheading:
-        "Gemacht, um langsam gelebt zu werden — auf Madeiras Sonnenseite.",
+        "Gemacht, um langsam gelebt zu werden, auf Madeiras Sonnenseite.",
     },
     house: {
       title: "das Haus",
@@ -563,17 +563,17 @@ const translations = {
       livingSpace: {
         title: "DER WOHNBEREICH",
         description:
-          "Offener Wohnbereich mit direktem Zugang zu Terrasse und Pool — der Tag bewegt sich ganz natürlich zwischen drinnen und draußen.",
+          "Offener Wohnbereich mit direktem Zugang zu Terrasse und Pool, der Tag bewegt sich ganz natürlich zwischen drinnen und draußen.",
       },
       kitchen: {
         title: "DIE KÜCHE",
         description:
-          "Voll ausgestattete Küche direkt neben dem Wohnbereich — täglich genutzt, vom Morgenkaffee bis zu längeren Mahlzeiten.",
+          "Voll ausgestattete Küche direkt neben dem Wohnbereich, täglich genutzt vom Morgenkaffee bis zu längeren Mahlzeiten.",
       },
       lowerRoom: {
         title: "DAS UNTERE ZIMMER",
         description:
-          "Zimmer im Untergeschoss mit zwei Einzelbetten und eigenem Bad — privater und ruhig, allerdings ohne Fenster.",
+          "Zimmer im Untergeschoss mit zwei Einzelbetten und eigenem Bad, privater und ruhig, allerdings ohne Fenster.",
       },
       outdoorDining: {
         title: "DER AUSSENESSBEREICH",
@@ -583,7 +583,7 @@ const translations = {
       garage: {
         title: "DIE GARAGE",
         description:
-          "Privatgarage für zwei Autos, direkt mit dem Haus verbunden — unkompliziertes Ankommen und Abreisen.",
+          "Privatgarage für zwei Autos, direkt mit dem Haus verbunden, unkompliziertes Ankommen und Abreisen.",
       },
     },
     location: {
@@ -595,18 +595,18 @@ const translations = {
     faq: {
       title: "häufig gestellte Fragen",
       subtitle:
-        "Direkte Antworten zur Casa Amani — das Haus, die Lage und was Sie erwartet.",
+        "Direkte Antworten zur Casa Amani: das Haus, die Lage und was Sie erwartet.",
       contact: "Nicht gefunden, was Sie suchen?",
       items: [
         {
           question: "Wo genau liegt die Casa Amani?",
           answer:
-            "Die Casa Amani liegt in Arco da Calheta, einem Dorf an der Südwestküste der Insel Madeira, Portugal. Sie ist etwa 50 Autominuten (48 km) vom internationalen Flughafen Madeira (FNC) entfernt. Strand und Jachthafen von Calheta sind 6 km entfernt — etwa fünf Minuten mit dem Auto.",
+            "Die Casa Amani liegt in Arco da Calheta, einem Dorf an der Südwestküste der Insel Madeira, Portugal. Sie ist etwa 50 Autominuten (48 km) vom internationalen Flughafen Madeira (FNC) entfernt. Strand und Jachthafen von Calheta sind 6 km entfernt, etwa fünf Minuten mit dem Auto.",
         },
         {
           question: "Wie weit ist der Flughafen entfernt?",
           answer:
-            "Der internationale Flughafen Madeira (FNC) ist 48 km vom Haus entfernt — etwa 50 Minuten mit dem Auto. Funchal ist etwa 30 Minuten entfernt.",
+            "Der internationale Flughafen Madeira (FNC) ist 48 km vom Haus entfernt, etwa 50 Minuten mit dem Auto. Funchal ist etwa 30 Minuten entfernt.",
         },
         {
           question: "Ist die Casa Amani für Remote-Arbeit geeignet?",
@@ -630,7 +630,7 @@ const translations = {
         {
           question: "Wie lang ist der Mindestaufenthalt?",
           answer:
-            "Sieben Nächte. Das Haus ist für längere Aufenthalte gedacht — Wochen statt Wochenenden.",
+            "Sieben Nächte. Das Haus ist für längere Aufenthalte gedacht, Wochen statt Wochenenden.",
         },
         {
           question: "Gibt es Parkmöglichkeiten?",
@@ -655,12 +655,12 @@ const translations = {
         {
           question: "Wie ist das Klima im Winter?",
           answer:
-            "Mild. Die Tagestemperaturen an der Südwestküste liegen im Winter typischerweise zwischen 17–22°C, mit mehr Sonnenstunden als in Funchal. Madeira hat keine kalte Jahreszeit wie Nordeuropa — es hat eine ruhigere Jahreszeit.",
+            "Mild. Die Tagestemperaturen an der Südwestküste liegen im Winter typischerweise zwischen 17 und 22°C, mit mehr Sonnenstunden als in Funchal. Madeira hat keine kalte Jahreszeit wie Nordeuropa. Es hat eine ruhigere Jahreszeit.",
         },
         {
           question: "Ist das Haus familienfreundlich?",
           answer:
-            "Ja. Ein Kinderbett und ein Hochstuhl sind auf Anfrage verfügbar. Der Pool ist nicht eingezäunt — Kinder sollten beaufsichtigt werden. Das untere Zimmer mit zwei Einzelbetten eignet sich gut für ältere Kinder oder Jugendliche.",
+            "Ja. Ein Kinderbett und ein Hochstuhl sind auf Anfrage verfügbar. Der Pool ist nicht eingezäunt, Kinder sollten beaufsichtigt werden. Das untere Zimmer mit zwei Einzelbetten eignet sich gut für ältere Kinder oder Jugendliche.",
         },
         {
           question: "Kann ich Vollzeit von hier aus arbeiten?",
@@ -680,7 +680,7 @@ const translations = {
         {
           question: "Gibt es Klimaanlage und Heizung?",
           answer:
-            "Ja. Klimaanlage und Zentralheizung im gesamten Haus.",
+            "Klimaanlage im gesamten Haus, und dieselben Geräte können bei Bedarf auf Heizen gestellt werden. Es gibt kein separates Zentralheizungssystem, aber das milde Klima der Südwestküste macht es selten nötig.",
         },
         {
           question: "Wo ist der nächste Supermarkt?",
@@ -695,14 +695,14 @@ const translations = {
         {
           question: "Wann sind Check-in und Check-out?",
           answer:
-            "Check-in ab 16:00 Uhr. Check-out bis 11:00 Uhr. Früher Check-in oder später Check-out sind je nach Verfügbarkeit möglich — fragen Sie bei der Buchung.",
+            "Check-in ab 16:00 Uhr. Check-out bis 11:00 Uhr. Früher Check-in oder später Check-out sind je nach Verfügbarkeit möglich. Fragen Sie bei der Buchung.",
         },
       ],
     },
     remoteWork: {
       title: "Arbeiten von Madeiras ruhiger Seite",
       intro:
-        "Die Casa Amani ist eine private Villa mit Arbeitsplätzen, Glasfaser-WLAN und einem externen Monitor — an Madeiras Südwestküste, wo die Sonne am beständigsten scheint und die Menschenmassen fehlen. Gedacht für Aufenthalte ab einer Woche, gleichermaßen geeignet für konzentriertes Arbeiten allein und für arbeitende Paare.",
+        "Die Casa Amani ist eine private Villa mit Arbeitsplätzen, Glasfaser-WLAN und einem externen Monitor, an Madeiras Südwestküste, wo die Sonne am beständigsten scheint. Gedacht für Aufenthalte ab einer Woche, gleichermaßen geeignet für konzentriertes Arbeiten allein und für arbeitende Paare.",
       setupTitle: "die Ausstattung",
       setup: {
         wifi: {
@@ -723,28 +723,28 @@ const translations = {
         },
         quiet: {
           label: "Ruhe",
-          text: "Arco da Calheta ist ein Hangdorf. Kein Verkehrslärm, kein Barlärm, keine Hotelkorridore.",
+          text: "Arco da Calheta ist ein Hangdorf. Die Art von Stille, die man erst nach ein paar Tagen bemerkt und noch länger braucht, um sie zu verlassen.",
         },
         minimumStay: {
           label: "Mindestaufenthalt",
           text: "Sieben Nächte. Die meisten Remote-Arbeiter bleiben zwei bis vier Wochen.",
         },
       },
-      colivingTitle: "kein Coliving",
+      colivingTitle: "privat, nicht geteilt",
       colivingP1:
-        "Vielleicht erwägen Sie auch Outsite (Ponta do Sol) oder Homeoffice Madeira (Santo da Serra). Das sind gemeinschaftsorientierte Wohngemeinschaften — gemeinsame Mahlzeiten, Sozialprogramm, Mehrbett- oder Zweibettoptionen. Geeignet für Alleinreisende, die ein Netzwerk aufbauen möchten.",
+        "Vielleicht erwägen Sie auch Outsite (Ponta do Sol) oder Homeoffice Madeira (Santo da Serra). Das sind gemeinschaftsorientierte Wohngemeinschaften, mit gemeinsamen Mahlzeiten, Sozialprogramm und Mehrbett- oder Zweibettoptionen. Geeignet für Alleinreisende, die ein Netzwerk aufbauen möchten.",
       colivingP2:
-        "Die Casa Amani ist die private Alternative. Ihr eigenes Haus, Ihr eigener Pool, Ihr eigener Rhythmus. Keine Fremden morgens in der Küche. Geeignet für Paare, Familien und kleine Gruppen, die den Fokus eines eigenen Raums wollen — ohne die Reibung des gemeinsamen Wohnens.",
+        "Die Casa Amani ist privat. Das Haus gehört Ihnen, der Pool gehört Ihnen, die Küche gehört Ihnen. Geeignet für Paare, Familien und kleine Gruppen, die einen eigenen Arbeitsplatz und die Ruhe eines ungeteilten Zuhauses wollen, in einem längeren Rhythmus als ein Wochenende.",
       islandTitle: "die Insel für Remote-Arbeit",
       islandP1:
         "Madeira ist ein anerkanntes Ziel für digitale Nomaden. Das Digital Nomad Village in Ponta do Sol (30 Minuten östlich) betreibt einen Coworking-Space und ein Gemeinschaftsprogramm. Funchal hat mehrere Coworking-Spaces für einen Tapetenwechsel. Portugals D8-Visum macht Aufenthalte über 90 Tage für Nicht-EU-Bürger unkompliziert.",
       islandP2:
-        "Das Klima hilft. Die Südwestküste hat im Jahresdurchschnitt 17–24°C, mit mehr Sonnenstunden als Funchal. Morgens arbeiten, nach dem Mittagessen schwimmen, vor dem Abendessen die Levadas entlangwandern. Der Rhythmus stellt sich schnell ein.",
+        "Das Klima hilft. Die Südwestküste hat im Jahresdurchschnitt 17 bis 24°C, mit mehr Sonnenstunden als Funchal. Morgens arbeiten, nach dem Mittagessen schwimmen, vor dem Abendessen die Levadas entlangwandern. Der Rhythmus stellt sich schnell ein.",
     },
     thePlace: {
       title: "Arco da Calheta, Madeira",
       intro:
-        "Arco da Calheta ist eine Gemeinde im Kreis Calheta, an der Südwestküste der Insel Madeira, Portugal. Sie liegt an einem Hang oberhalb des Atlantiks, nach Süden ausgerichtet — der ruhigste, sonnigste Abschnitt einer Insel, die bereits eines der mildesten Klimate Europas hat. Das Dorf ist klein. Das Licht ist beständig. Das Tempo ist langsam — absichtlich, nicht zufällig.",
+        "Arco da Calheta ist eine Gemeinde im Kreis Calheta, an der Südwestküste der Insel Madeira, Portugal. Sie liegt an einem Hang oberhalb des Atlantiks, nach Süden ausgerichtet, der ruhigste und sonnigste Abschnitt einer Insel, die bereits eines der mildesten Klimate Europas hat. Das Dorf ist klein. Das Licht ist beständig. Das Tempo ist langsam, absichtlich, nicht zufällig.",
       distancesTitle: "Entfernungen",
       distances: [
         ["Strand und Jachthafen Calheta", "6 km / 5 min"],
@@ -758,19 +758,19 @@ const translations = {
       ],
       westCoastTitle: "die Westküste",
       westCoastP1:
-        "Die meisten Besucher Madeiras übernachten in Funchal oder an der Südostküste. Die Westseite — von Ribeira Brava bis Porto Moniz — ist, wo die Insel sich öffnet. Weniger Hotels, weniger Reisebusse, weiterer Blick. Die Südwestküste hat mehr Sonnenstunden als jeder andere Ort der Insel, geschützt vor den Nordostpassatwinden durch das zentrale Gebirge.",
+        "Die meisten Besucher Madeiras übernachten in Funchal oder an der Südostküste. Die Westseite, von Ribeira Brava bis Porto Moniz, ist, wo die Insel sich öffnet. Weniger Hotels, weniger Reisebusse, weiterer Blick. Die Südwestküste hat mehr Sonnenstunden als jeder andere Ort der Insel, geschützt vor den Nordostpassatwinden durch das zentrale Gebirge.",
       westCoastP2:
-        "Der Kreis Calheta ist das Herz dieses Abschnitts. Sein Jachthafen hat einen der wenigen Sandstrände der Insel (aufgeschüttet, aber angenehm). Das Dorf Jardim do Mar, zehn Minuten bergab, ist ein anerkannter Surfspot. Paul do Mar, weiter die Küste entlang, ist noch ruhiger. Im Landesinneren durchziehen die Levadas — Madeiras Netz von Bewässerungskanälen — Lorbeerwald, der hier war, bevor die Insel besiedelt wurde.",
+        "Der Kreis Calheta ist das Herz dieses Abschnitts. Sein Jachthafen hat einen der wenigen Sandstrände der Insel (aufgeschüttet, aber angenehm). Das Dorf Jardim do Mar, zehn Minuten bergab, ist ein anerkannter Surfspot. Paul do Mar, weiter die Küste entlang, ist noch ruhiger. Im Landesinneren durchziehen die Levadas (Madeiras Netz von Bewässerungskanälen) Lorbeerwald, der hier war, bevor die Insel besiedelt wurde.",
       climateTitle: "das Klima",
       climateP1:
-        "Madeiras Südwestküste ist das ganze Jahr über mild. Der Sommer hat durchschnittlich 22–26°C; im Winter sinkt die Temperatur selten unter 16°C. Regen fällt hauptsächlich auf der Nordseite und in den Bergen — der Südwesten ist die trockene Seite. Die Wassertemperatur liegt zwischen 18°C im Winter und 24°C im Sommer — warm genug zum Schwimmen während des größten Teils des Jahres.",
+        "Madeiras Südwestküste ist das ganze Jahr über mild. Der Sommer hat durchschnittlich 22 bis 26°C; im Winter sinkt die Temperatur selten unter 16°C. Regen fällt hauptsächlich auf der Nordseite und in den Bergen; der Südwesten ist die trockene Seite. Die Wassertemperatur liegt zwischen 18°C im Winter und 24°C im Sommer, warm genug zum Schwimmen während des größten Teils des Jahres.",
       climateP2:
-        "Es gibt keine schlechte Jahreszeit. Die Insel ist im Winter am grünsten, im August am belebtesten und im April und Oktober am ausgeglichensten — warm ohne Menschenmassen, überall blühend, die Levadas auf ihrem höchsten Wasserstand.",
+        "Es gibt keine schlechte Jahreszeit. Die Insel ist im Winter am grünsten, im August am belebtesten und im April und Oktober am ausgeglichensten. Warm ohne Menschenmassen, überall blühend, die Levadas auf ihrem höchsten Wasserstand.",
       gettingHereTitle: "Anreise",
       gettingHereP1:
         "Der internationale Flughafen Madeira (FNC) hat ganzjährig Direktflüge ab London, Frankfurt, Amsterdam, Paris, Lissabon, Porto, Warschau und einem Dutzend weiterer europäischer Städte. Billigfluggesellschaften (easyJet, Ryanair, Wizz Air) und Linienfluggesellschaften (TAP, British Airways, Condor) bedienen die Insel.",
       gettingHereP2:
-        "Vom Flughafen ist Arco da Calheta etwa 50 Minuten westlich über die Schnellstraße VR1 erreichbar. Ein Mietwagen wird empfohlen — die Westseite erkundet man am besten im eigenen Tempo, und die Straßen sind gut.",
+        "Vom Flughafen ist Arco da Calheta etwa 50 Minuten westlich über die Schnellstraße VR1 erreichbar. Ein Mietwagen wird empfohlen. Die Westseite erkundet man am besten im eigenen Tempo, und die Straßen sind gut.",
     },
     privacy: {
       title: "Datenschutz",
@@ -854,18 +854,18 @@ const translations = {
     faq: {
       title: "questions fréquentes",
       subtitle:
-        "Réponses directes sur la Casa Amani — la maison, le lieu et ce à quoi s'attendre.",
+        "Réponses directes sur la Casa Amani : la maison, le lieu et ce à quoi s'attendre.",
       contact: "Vous ne trouvez pas ce que vous cherchez ?",
       items: [
         {
           question: "Où se trouve exactement la Casa Amani ?",
           answer:
-            "La Casa Amani se trouve à Arco da Calheta, un village sur la côte sud-ouest de l'île de Madère, au Portugal. Elle est à environ 50 minutes en voiture (48 km) de l'aéroport international de Madère (FNC), et la plage et la marina de Calheta sont à 6 km — environ cinq minutes en voiture.",
+            "La Casa Amani se trouve à Arco da Calheta, un village sur la côte sud-ouest de l'île de Madère, au Portugal. Elle est à environ 50 minutes en voiture (48 km) de l'aéroport international de Madère (FNC), et la plage et la marina de Calheta sont à 6 km, environ cinq minutes en voiture.",
         },
         {
           question: "À quelle distance se trouve l'aéroport ?",
           answer:
-            "L'aéroport international de Madère (FNC) est à 48 km de la maison — environ 50 minutes en voiture. Funchal est à environ 30 minutes.",
+            "L'aéroport international de Madère (FNC) est à 48 km de la maison, environ 50 minutes en voiture. Funchal est à environ 30 minutes.",
         },
         {
           question: "La Casa Amani est-elle adaptée au télétravail ?",
@@ -889,7 +889,7 @@ const translations = {
         {
           question: "Quelle est la durée minimale de séjour ?",
           answer:
-            "Sept nuits. La maison est conçue pour des séjours longs — des semaines, pas des week-ends.",
+            "Sept nuits. La maison est conçue pour des séjours longs, des semaines, pas des week-ends.",
         },
         {
           question: "Y a-t-il un parking ?",
@@ -914,7 +914,7 @@ const translations = {
         {
           question: "Quel est le climat en hiver ?",
           answer:
-            "Doux. Les températures diurnes sur la côte sud-ouest varient généralement entre 17–22°C en hiver, avec plus d'heures d'ensoleillement qu'à Funchal. Madère n'a pas de saison froide comme le nord de l'Europe — elle a une saison plus calme.",
+            "Doux. Les températures diurnes sur la côte sud-ouest varient généralement entre 17 et 22°C en hiver, avec plus d'heures d'ensoleillement qu'à Funchal. Madère n'a pas de saison froide comme le nord de l'Europe. Elle a une saison plus calme.",
         },
         {
           question: "La maison convient-elle aux familles ?",
@@ -939,7 +939,7 @@ const translations = {
         {
           question: "Y a-t-il la climatisation et le chauffage ?",
           answer:
-            "Oui. Climatisation et chauffage central dans toute la maison.",
+            "Climatisation dans toute la maison, et les mêmes unités peuvent être réglées en mode chauffage si nécessaire. Il n'y a pas de système de chauffage central séparé, mais le climat doux de la côte sud-ouest en justifie rarement le besoin.",
         },
         {
           question: "Où est le supermarché le plus proche ?",
@@ -954,14 +954,14 @@ const translations = {
         {
           question: "Quels sont les horaires d'arrivée et de départ ?",
           answer:
-            "L'arrivée se fait à partir de 16h00. Le départ est avant 11h00. Une arrivée anticipée ou un départ tardif peuvent être possibles selon la disponibilité — demandez lors de la réservation.",
+            "L'arrivée se fait à partir de 16h00. Le départ est avant 11h00. Une arrivée anticipée ou un départ tardif peuvent être possibles selon la disponibilité. Demandez lors de la réservation.",
         },
       ],
     },
     remoteWork: {
       title: "travailler depuis le côté calme de Madère",
       intro:
-        "La Casa Amani est une villa privée avec des espaces de travail dédiés, le Wi-Fi fibre et un écran externe — sur la côte sud-ouest de Madère, où le soleil est le plus constant et les foules absentes. Conçue pour des séjours d'une semaine ou plus, aussi adaptée au travail concentré en solo qu'aux couples qui travaillent à distance.",
+        "La Casa Amani est une villa privée avec des espaces de travail dédiés, le Wi-Fi fibre et un écran externe, sur la côte sud-ouest de Madère où le soleil est le plus constant. Conçue pour des séjours d'une semaine ou plus, aussi adaptée au travail concentré en solo qu'aux couples qui travaillent à distance.",
       setupTitle: "l'équipement",
       setup: {
         wifi: {
@@ -982,28 +982,28 @@ const translations = {
         },
         quiet: {
           label: "Calme",
-          text: "Arco da Calheta est un village à flanc de colline. Pas de bruit de circulation, pas de bruit de bar, pas de couloirs d'hôtel.",
+          text: "Arco da Calheta est un village à flanc de colline. Le genre de calme qu'il faut quelques jours pour remarquer et plus longtemps pour quitter.",
         },
         minimumStay: {
           label: "Séjour minimum",
           text: "Sept nuits. La plupart des télétravailleurs restent deux à quatre semaines.",
         },
       },
-      colivingTitle: "pas du coliving",
+      colivingTitle: "privée, pas partagée",
       colivingP1:
-        "Vous envisagez peut-être aussi Outsite (Ponta do Sol) ou Homeoffice Madeira (Santo da Serra). Ce sont des maisons partagées axées sur la communauté — repas de groupe, calendriers sociaux, lits superposés ou jumeaux. Adapté aux voyageurs solo qui cherchent à se créer un réseau.",
+        "Vous envisagez peut-être aussi Outsite (Ponta do Sol) ou Homeoffice Madeira (Santo da Serra). Ce sont des maisons partagées axées sur la communauté, avec repas de groupe, calendriers sociaux et lits superposés ou jumeaux. Adapté aux voyageurs solo qui cherchent à se créer un réseau.",
       colivingP2:
-        "La Casa Amani est l'alternative privée. Votre propre maison, votre propre piscine, votre propre rythme. Pas d'inconnus dans la cuisine au petit-déjeuner. Elle convient aux couples, familles et petits groupes qui veulent le calme d'un espace dédié sans les contraintes de la vie en communauté.",
+        "La Casa Amani est privée. La maison est à vous, la piscine est à vous, la cuisine est à vous. Elle convient aux couples, familles et petits groupes qui veulent un espace de travail dédié et le calme d'une maison non partagée, sur un rythme plus long qu'un week-end.",
       islandTitle: "l'île pour le télétravail",
       islandP1:
         "Madère est une destination reconnue pour les nomades numériques. Le Digital Nomad Village à Ponta do Sol (30 minutes à l'est) propose un espace de coworking et un programme communautaire. Funchal dispose de plusieurs espaces de coworking pour changer de décor. Le visa D8 du Portugal facilite les séjours de plus de 90 jours pour les ressortissants hors UE.",
       islandP2:
-        "Le climat aide. La côte sud-ouest affiche en moyenne 17–24°C toute l'année, avec plus d'heures de soleil qu'à Funchal. On travaille le matin, on nage après le déjeuner, on parcourt les levadas avant le dîner. Le rythme s'installe vite.",
+        "Le climat aide. La côte sud-ouest affiche en moyenne 17 à 24°C toute l'année, avec plus d'heures de soleil qu'à Funchal. On travaille le matin, on nage après le déjeuner, on parcourt les levadas avant le dîner. Le rythme s'installe vite.",
     },
     thePlace: {
       title: "Arco da Calheta, Madeira",
       intro:
-        "Arco da Calheta est une paroisse de la municipalité de Calheta, sur la côte sud-ouest de l'île de Madère, au Portugal. Elle se situe à flanc de colline au-dessus de l'Atlantique, orientée sud — le tronçon le plus calme et le plus ensoleillé d'une île qui possède déjà l'un des climats les plus doux d'Europe. Le village est petit. La lumière est constante. Le rythme est lent par choix, pas par hasard.",
+        "Arco da Calheta est une paroisse de la municipalité de Calheta, sur la côte sud-ouest de l'île de Madère, au Portugal. Elle se situe à flanc de colline au-dessus de l'Atlantique, orientée sud, le tronçon le plus calme et le plus ensoleillé d'une île qui possède déjà l'un des climats les plus doux d'Europe. Le village est petit. La lumière est constante. Le rythme est lent par choix, pas par hasard.",
       distancesTitle: "distances",
       distances: [
         ["Plage et marina de Calheta", "6 km / 5 min"],
@@ -1017,19 +1017,19 @@ const translations = {
       ],
       westCoastTitle: "la côte ouest",
       westCoastP1:
-        "La plupart des visiteurs de Madère séjournent à Funchal ou le long de la côte sud-est. Le côté ouest — de Ribeira Brava à Porto Moniz — est là où l'île s'ouvre. Moins d'hôtels, moins de cars touristiques, des vues plus longues. La côte sud-ouest en particulier bénéficie de plus d'heures de soleil que partout ailleurs sur l'île, protégée des alizés du nord-est par la chaîne de montagnes centrale.",
+        "La plupart des visiteurs de Madère séjournent à Funchal ou le long de la côte sud-est. Le côté ouest, de Ribeira Brava à Porto Moniz, est là où l'île s'ouvre. Moins d'hôtels, moins de cars touristiques, des vues plus longues. La côte sud-ouest en particulier bénéficie de plus d'heures de soleil que partout ailleurs sur l'île, protégée des alizés du nord-est par la chaîne de montagnes centrale.",
       westCoastP2:
-        "La municipalité de Calheta est le cœur de ce tronçon. Sa marina possède l'une des rares plages de sable de l'île (importé, mais agréable). Le village de Jardim do Mar, dix minutes en contrebas, est un spot de surf reconnu. Paul do Mar, plus loin sur la côte, est plus calme encore. À l'intérieur des terres, les levadas — le réseau de canaux d'irrigation de Madère — traversent une forêt de lauriers présente depuis avant le peuplement de l'île.",
+        "La municipalité de Calheta est le cœur de ce tronçon. Sa marina possède l'une des rares plages de sable de l'île (importé, mais agréable). Le village de Jardim do Mar, dix minutes en contrebas, est un spot de surf reconnu. Paul do Mar, plus loin sur la côte, est plus calme encore. À l'intérieur des terres, les levadas (le réseau de canaux d'irrigation de Madère) traversent une forêt de lauriers présente depuis avant le peuplement de l'île.",
       climateTitle: "le climat",
       climateP1:
-        "La côte sud-ouest de Madère est douce toute l'année. L'été affiche en moyenne 22–26°C ; l'hiver descend rarement sous 16°C. La pluie tombe surtout au nord et en montagne — le sud-ouest est le côté sec. La température de la mer varie de 18°C en hiver à 24°C en été, assez chaude pour se baigner la majeure partie de l'année.",
+        "La côte sud-ouest de Madère est douce toute l'année. L'été affiche en moyenne 22 à 26°C ; l'hiver descend rarement sous 16°C. La pluie tombe surtout au nord et en montagne ; le sud-ouest est le côté sec. La température de la mer varie de 18°C en hiver à 24°C en été, assez chaude pour se baigner la majeure partie de l'année.",
       climateP2:
-        "Il n'y a pas de mauvaise saison. L'île est la plus verte en hiver, la plus fréquentée en août, et la plus équilibrée en avril et octobre — chaleur sans les foules, floraison partout, les levadas à leur débit maximal.",
+        "Il n'y a pas de mauvaise saison. L'île est la plus verte en hiver, la plus fréquentée en août, et la plus équilibrée en avril et octobre. Chaleur sans les foules, floraison partout, les levadas à leur débit maximal.",
       gettingHereTitle: "comment venir",
       gettingHereP1:
         "L'aéroport international de Madère (FNC) propose des vols directs toute l'année depuis Londres, Francfort, Amsterdam, Paris, Lisbonne, Porto, Varsovie et une dizaine d'autres villes européennes. Compagnies low-cost (easyJet, Ryanair, Wizz Air) et compagnies régulières (TAP, British Airways, Condor) desservent l'île.",
       gettingHereP2:
-        "Depuis l'aéroport, Arco da Calheta est à environ 50 minutes vers l'ouest par l'autoroute VR1. La location de voiture est recommandée — le côté ouest se découvre mieux à votre rythme, et les routes sont bonnes.",
+        "Depuis l'aéroport, Arco da Calheta est à environ 50 minutes vers l'ouest par l'autoroute VR1. La location de voiture est recommandée. Le côté ouest se découvre mieux à votre rythme, et les routes sont bonnes.",
     },
     privacy: {
       title: "confidentialité",
@@ -1113,18 +1113,18 @@ const translations = {
     faq: {
       title: "najczęściej zadawane pytania",
       subtitle:
-        "Bezpośrednie odpowiedzi o Casa Amani — dom, lokalizacja i czego się spodziewać.",
+        "Bezpośrednie odpowiedzi o Casa Amani: dom, lokalizacja i czego się spodziewać.",
       contact: "Nie znalazłeś tego, czego szukasz?",
       items: [
         {
           question: "Gdzie dokładnie znajduje się Casa Amani?",
           answer:
-            "Casa Amani znajduje się w Arco da Calheta, wiosce na południowo-zachodnim wybrzeżu wyspy Madera, Portugalia. Jest to około 50 minut jazdy samochodem (48 km) od międzynarodowego lotniska na Maderze (FNC), a plaża i marina w Calheta są oddalone o 6 km — około pięciu minut jazdy.",
+            "Casa Amani znajduje się w Arco da Calheta, wiosce na południowo-zachodnim wybrzeżu wyspy Madera, Portugalia. Jest to około 50 minut jazdy samochodem (48 km) od międzynarodowego lotniska na Maderze (FNC), a plaża i marina w Calheta są oddalone o 6 km, około pięciu minut jazdy.",
         },
         {
           question: "Jak daleko jest lotnisko?",
           answer:
-            "Międzynarodowe lotnisko na Maderze (FNC) jest oddalone od domu o 48 km — około 50 minut jazdy samochodem. Funchal jest w odległości około 30 minut.",
+            "Międzynarodowe lotnisko na Maderze (FNC) jest oddalone od domu o 48 km, około 50 minut jazdy samochodem. Funchal jest w odległości około 30 minut.",
         },
         {
           question: "Czy Casa Amani nadaje się do pracy zdalnej?",
@@ -1148,7 +1148,7 @@ const translations = {
         {
           question: "Jaki jest minimalny pobyt?",
           answer:
-            "Siedem nocy. Dom jest zaprojektowany na dłuższe pobyty — tygodnie, nie weekendy.",
+            "Siedem nocy. Dom jest zaprojektowany na dłuższe pobyty, tygodnie, nie weekendy.",
         },
         {
           question: "Czy jest parking?",
@@ -1173,7 +1173,7 @@ const translations = {
         {
           question: "Jaki jest klimat zimą?",
           answer:
-            "Łagodny. Dzienne temperatury na południowo-zachodnim wybrzeżu wynoszą zwykle 17–22°C zimą, z większą liczbą godzin słonecznych niż w Funchal. Madera nie ma zimnej pory roku w rozumieniu Europy Północnej — ma spokojniejszą porę roku.",
+            "Łagodny. Dzienne temperatury na południowo-zachodnim wybrzeżu wynoszą zwykle od 17 do 22°C zimą, z większą liczbą godzin słonecznych niż w Funchal. Madera nie ma zimnej pory roku w rozumieniu Europy Północnej. Ma spokojniejszą porę roku.",
         },
         {
           question: "Czy dom jest przyjazny rodzinom?",
@@ -1198,7 +1198,7 @@ const translations = {
         {
           question: "Czy jest klimatyzacja i ogrzewanie?",
           answer:
-            "Tak. Klimatyzacja i centralne ogrzewanie w całym domu.",
+            "Klimatyzacja w całym domu, a te same jednostki mogą pracować w trybie grzania w razie potrzeby. Nie ma osobnego systemu centralnego ogrzewania, ale łagodny klimat południowo-zachodniego wybrzeża rzadko go wymaga.",
         },
         {
           question: "Gdzie jest najbliższy supermarket?",
@@ -1213,14 +1213,14 @@ const translations = {
         {
           question: "Jakie są godziny zameldowania i wymeldowania?",
           answer:
-            "Zameldowanie od 16:00. Wymeldowanie do 11:00. Wcześniejsze zameldowanie lub późniejsze wymeldowanie może być możliwe w zależności od dostępności — zapytaj przy rezerwacji.",
+            "Zameldowanie od 16:00. Wymeldowanie do 11:00. Wcześniejsze zameldowanie lub późniejsze wymeldowanie może być możliwe w zależności od dostępności. Zapytaj przy rezerwacji.",
         },
       ],
     },
     remoteWork: {
       title: "praca z cichej strony Madery",
       intro:
-        "Casa Amani to prywatna willa z dedykowanymi przestrzeniami do pracy, Wi-Fi światłowodowym i zewnętrznym monitorem — na południowo-zachodnim wybrzeżu Madery, gdzie słońce jest najbardziej stałe, a tłumów nie ma. Zaprojektowana na pobyty od tygodnia wzwyż, równie odpowiednia do skupionej pracy w pojedynkę, jak i dla pracujących par.",
+        "Casa Amani to prywatna willa z dedykowanymi przestrzeniami do pracy, Wi-Fi światłowodowym i zewnętrznym monitorem, na południowo-zachodnim wybrzeżu Madery, gdzie słońce jest najbardziej stałe. Zaprojektowana na pobyty od tygodnia wzwyż, równie odpowiednia do skupionej pracy w pojedynkę, jak i dla pracujących par.",
       setupTitle: "wyposażenie",
       setup: {
         wifi: {
@@ -1241,28 +1241,28 @@ const translations = {
         },
         quiet: {
           label: "Cisza",
-          text: "Arco da Calheta to wioska na zboczu. Bez hałasu ulicznego, bez hałasu z barów, bez hotelowych korytarzy.",
+          text: "Arco da Calheta to wioska na zboczu. Taka cisza, którą zauważasz po kilku dniach, a opuszczasz jeszcze dłużej.",
         },
         minimumStay: {
           label: "Minimalny pobyt",
           text: "Siedem nocy. Większość pracowników zdalnych zostaje od dwóch do czterech tygodni.",
         },
       },
-      colivingTitle: "to nie coliving",
+      colivingTitle: "prywatna, nie dzielona",
       colivingP1:
-        "Być może rozważasz również Outsite (Ponta do Sol) lub Homeoffice Madeira (Santo da Serra). To domy dzielone z duchem społeczności — wspólne posiłki, kalendarze towarzyskie, opcje łóżek piętrowych lub dwuosobowych. Dobre dla samotnych podróżnych budujących sieć kontaktów.",
+        "Być może rozważasz również Outsite (Ponta do Sol) lub Homeoffice Madeira (Santo da Serra). To domy dzielone z duchem społeczności, ze wspólnymi posiłkami, kalendarzami towarzyskimi i opcjami łóżek piętrowych lub dwuosobowych. Dobre dla samotnych podróżnych budujących sieć kontaktów.",
       colivingP2:
-        "Casa Amani to prywatna alternatywa. Własny dom, własny basen, własny rytm. Bez obcych w kuchni przy śniadaniu. Odpowiednia dla par, rodzin i małych grup, które chcą skupienia własnej przestrzeni bez tarć wspólnego mieszkania.",
+        "Casa Amani jest prywatna. Dom jest twój, basen jest twój, kuchnia jest twoja. Odpowiednia dla par, rodzin i małych grup, które chcą dedykowanej przestrzeni do pracy i spokoju niedzielonego domu, w dłuższym rytmie niż weekend.",
       islandTitle: "wyspa do pracy zdalnej",
       islandP1:
         "Madera jest uznanym celem dla cyfrowych nomadów. Digital Nomad Village w Ponta do Sol (30 minut na wschód) prowadzi przestrzeń coworkingową i program społeczności. Funchal ma kilka przestrzeni coworkingowych na zmianę scenerii. Wiza D8 Portugalii ułatwia pobyty dłuższe niż 90 dni obywatelom spoza UE.",
       islandP2:
-        "Klimat pomaga. Południowo-zachodnie wybrzeże ma średnio 17–24°C przez cały rok, z większą liczbą godzin słonecznych niż Funchal. Rano się pracuje, po obiedzie się pływa, przed kolacją spaceruje się po lewadach. Rytm ustala się szybko.",
+        "Klimat pomaga. Południowo-zachodnie wybrzeże ma średnio od 17 do 24°C przez cały rok, z większą liczbą godzin słonecznych niż Funchal. Rano się pracuje, po obiedzie się pływa, przed kolacją spaceruje się po lewadach. Rytm ustala się szybko.",
     },
     thePlace: {
       title: "Arco da Calheta, Madera",
       intro:
-        "Arco da Calheta to parafia w gminie Calheta, na południowo-zachodnim wybrzeżu wyspy Madera, Portugalia. Leży na zboczu wzgórza nad Atlantykiem, zwrócona na południe — najspokojniejszy, najsłoneczniejszy odcinek wyspy, która i tak ma jeden z najłagodniejszych klimatów w Europie. Wioska jest mała. Światło jest stałe. Tempo jest wolne z zamysłu, nie z przypadku.",
+        "Arco da Calheta to parafia w gminie Calheta, na południowo-zachodnim wybrzeżu wyspy Madera, Portugalia. Leży na zboczu wzgórza nad Atlantykiem, zwrócona na południe, najspokojniejszy i najsłoneczniejszy odcinek wyspy, która i tak ma jeden z najłagodniejszych klimatów w Europie. Wioska jest mała. Światło jest stałe. Tempo jest wolne z zamysłu, nie z przypadku.",
       distancesTitle: "odległości",
       distances: [
         ["Plaża i marina Calheta", "6 km / 5 min"],
@@ -1276,19 +1276,19 @@ const translations = {
       ],
       westCoastTitle: "zachodnie wybrzeże",
       westCoastP1:
-        "Większość odwiedzających Maderę nocuje w Funchal lub wzdłuż południowo-wschodniego wybrzeża. Zachodnia strona — od Ribeira Brava do Porto Moniz — to miejsce, gdzie wyspa się otwiera. Mniej hoteli, mniej autokarów turystycznych, dłuższe widoki. Południowo-zachodnie wybrzeże ma szczególnie więcej godzin słonecznych niż jakiekolwiek inne miejsce na wyspie, osłonięte od północno-wschodnich wiatrów pasatowych przez centralny łańcuch górski.",
+        "Większość odwiedzających Maderę nocuje w Funchal lub wzdłuż południowo-wschodniego wybrzeża. Zachodnia strona, od Ribeira Brava do Porto Moniz, to miejsce, gdzie wyspa się otwiera. Mniej hoteli, mniej autokarów turystycznych, dłuższe widoki. Południowo-zachodnie wybrzeże ma szczególnie więcej godzin słonecznych niż jakiekolwiek inne miejsce na wyspie, osłonięte od północno-wschodnich wiatrów pasatowych przez centralny łańcuch górski.",
       westCoastP2:
-        "Gmina Calheta jest sercem tego odcinka. Jej marina ma jedną z nielicznych piaszczystych plaż na wyspie (nawieziony piasek, ale przyjemna). Wioska Jardim do Mar, dziesięć minut w dół zbocza, jest uznanym miejscem do surfowania. Paul do Mar, dalej wzdłuż wybrzeża, jest jeszcze spokojniejsze. W głębi lądu lewady — sieć kanałów nawadniających Madery — prowadzą przez laurowy las, który istniał tu, zanim wyspa została zasiedlona.",
+        "Gmina Calheta jest sercem tego odcinka. Jej marina ma jedną z nielicznych piaszczystych plaż na wyspie (nawieziony piasek, ale przyjemna). Wioska Jardim do Mar, dziesięć minut w dół zbocza, jest uznanym miejscem do surfowania. Paul do Mar, dalej wzdłuż wybrzeża, jest jeszcze spokojniejsze. W głębi lądu lewady (sieć kanałów nawadniających Madery) prowadzą przez laurowy las, który istniał tu, zanim wyspa została zasiedlona.",
       climateTitle: "klimat",
       climateP1:
-        "Południowo-zachodnie wybrzeże Madery jest łagodne przez cały rok. Lato ma średnio 22–26°C; zima rzadko spada poniżej 16°C. Deszcz pada głównie po północnej stronie i w górach — południowy zachód to strona sucha. Temperatura morza waha się od 18°C zimą do 24°C latem, wystarczająco ciepło do pływania przez większość roku.",
+        "Południowo-zachodnie wybrzeże Madery jest łagodne przez cały rok. Lato ma średnio od 22 do 26°C; zima rzadko spada poniżej 16°C. Deszcz pada głównie po północnej stronie i w górach; południowy zachód to strona sucha. Temperatura morza waha się od 18°C zimą do 24°C latem, wystarczająco ciepło do pływania przez większość roku.",
       climateP2:
-        "Nie ma złej pory roku. Wyspa jest najzieleńsza zimą, najbardziej zatłoczona w sierpniu i najbardziej zrównoważona w kwietniu i październiku — ciepło bez tłumów, kwitnienie wszędzie, lewady przy najwyższym stanie wody.",
+        "Nie ma złej pory roku. Wyspa jest najzieleńsza zimą, najbardziej zatłoczona w sierpniu i najbardziej zrównoważona w kwietniu i październiku. Ciepło bez tłumów, kwitnienie wszędzie, lewady przy najwyższym stanie wody.",
       gettingHereTitle: "jak dotrzeć",
       gettingHereP1:
         "Międzynarodowe lotnisko na Maderze (FNC) ma bezpośrednie loty przez cały rok z Londynu, Frankfurtu, Amsterdamu, Paryża, Lizbony, Porto, Warszawy i kilkunastu innych miast europejskich. Tanie linie (easyJet, Ryanair, Wizz Air) i linie tradycyjne (TAP, British Airways, Condor) obsługują wyspę.",
       gettingHereP2:
-        "Z lotniska Arco da Calheta jest w odległości około 50 minut na zachód autostradą VR1. Zaleca się wynajem samochodu — zachodnią stronę najlepiej zwiedzać we własnym tempie, a drogi są dobre.",
+        "Z lotniska Arco da Calheta jest w odległości około 50 minut na zachód autostradą VR1. Zaleca się wynajem samochodu. Zachodnią stronę najlepiej zwiedzać we własnym tempie, a drogi są dobre.",
     },
     privacy: {
       title: "prywatność",

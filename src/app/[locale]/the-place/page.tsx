@@ -7,9 +7,9 @@ import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Arco da Calheta — Casa Amani Madeira | West Coast",
+  title: "Arco da Calheta | Casa Amani Madeira | West Coast",
   description:
-    "Arco da Calheta sits on the south-west coast of Madeira — the quietest, sunniest stretch of the island. A village on a hill above the Atlantic, 30 minutes from Funchal.",
+    "Arco da Calheta sits on the south-west coast of Madeira, the quietest, sunniest stretch of the island. A village on a hill above the Atlantic, 30 minutes from Funchal.",
   alternates: {
     canonical: "/the-place",
   },

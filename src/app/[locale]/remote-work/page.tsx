@@ -7,9 +7,9 @@ import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Remote Work — Casa Amani Madeira | Arco da Calheta",
+  title: "Remote Work | Casa Amani Madeira | Arco da Calheta",
   description:
-    "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor — Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
+    "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor. Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
   alternates: {
     canonical: "/remote-work",
   },
@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: "How is Casa Amani different from coliving in Madeira?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Coliving spaces like Outsite (Ponta do Sol) or Homeoffice Madeira (Santo da Serra) are community-driven shared houses. Casa Amani is a private villa — your own home for the duration of your stay. No shared rooms, no social calendar, no strangers. It suits couples, families, or small groups who want privacy and focus alongside the social life of the island.",
+        text: "Coliving spaces like Outsite (Ponta do Sol) or Homeoffice Madeira (Santo da Serra) are community-driven shared houses. Casa Amani is a private villa, your own home for the duration of your stay. No shared rooms, no social calendar, no strangers. It suits couples, families, or small groups who want privacy and focus alongside the social life of the island.",
       },
     },
     {
@@ -49,7 +49,7 @@ const faqJsonLd = {
       name: "What time zone is Madeira?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "GMT/WET (same as London). UTC+0 in winter, UTC+1 in summer. This overlaps comfortably with UK, Western Europe, and the US East Coast morning — making it one of the easiest remote-work time zones in Southern Europe.",
+        text: "GMT/WET (same as London). UTC+0 in winter, UTC+1 in summer. This overlaps comfortably with UK, Western Europe, and the US East Coast morning, making it one of the easiest remote-work time zones in Southern Europe.",
       },
     },
   ],

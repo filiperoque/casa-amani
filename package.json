@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "bash scripts/check-em-dashes.sh",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "check-em-dashes": "bash scripts/check-em-dashes.sh"
   },
   "engines": {
     "node": ">=22"

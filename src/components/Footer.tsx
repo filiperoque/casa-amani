@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="bg-warm px-6 py-12 text-cream/60 md:px-16 lg:px-[120px]">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-start md:justify-between">
         <div>
-          <p className="mb-2 font-display text-lg text-cream">casa amani — Arco da Calheta, Madeira</p>
+          <p className="mb-2 font-display text-lg text-cream">casa amani | Arco da Calheta, Madeira</p>
           <p className="text-sm">Portugal</p>
           <p className="text-sm">AL 176882/AL</p>
         </div>
