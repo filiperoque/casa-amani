@@ -40,14 +40,8 @@ export default async function LandingPage({
             </Reveal>
 
             <Reveal>
-              <p className="mb-4 text-lg leading-8 text-brown/80 md:text-xl">
-                {t.landing.introP1}
-              </p>
-            </Reveal>
-
-            <Reveal>
-              <p className="text-lg leading-8 text-brown/70 md:text-xl">
-                {t.landing.introP2}
+              <p className="text-lg leading-8 text-brown/80 md:text-xl">
+                {t.landing.introP1} {t.landing.introP2}
               </p>
             </Reveal>
           </div>
