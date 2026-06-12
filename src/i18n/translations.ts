@@ -8,6 +8,9 @@ const translations = {
       title: "casa amani",
       subtitle: "ARCO DA CALHETA, MADEIRA",
       cta: "STAY WITH US",
+      introHeading: "Made for slow stays on Madeira's quiet side",
+      introP1: "Above the village, a house. The Atlantic in front, the laurel behind. The light is clear, the days slow.",
+      introP2: "Windows open. Birdsong. The pool, the sun, the afternoon.",
     },
     header: { menu: "MENU" },
     tagline: {
@@ -266,6 +269,9 @@ const translations = {
       title: "casa amani",
       subtitle: "ARCO DA CALHETA, MADEIRA",
       cta: "FIQUE CONNOSCO",
+      introHeading: "Feita para estadias longas, no lado calmo da Madeira",
+      introP1: "Acima da aldeia, uma casa. O Atlantico em frente, o loureiro atras. A luz e clara, os dias lentos.",
+      introP2: "Janelas abertas. Passaros. A piscina, o sol, a tarde.",
     },
     header: { menu: "MENU" },
     tagline: {
@@ -525,6 +531,9 @@ const translations = {
       title: "casa amani",
       subtitle: "ARCO DA CALHETA, MADEIRA",
       cta: "BEI UNS WOHNEN",
+      introHeading: "Fur lange Aufenthalte, auf Madeiras ruhiger Seite",
+      introP1: "Oberhalb des Dorfes ein Haus. Der Atlantik davor, der Lorbeerwald dahinter. Das Licht ist klar, die Tage langsam.",
+      introP2: "Fenster offen. Vogelgesang. Der Pool, die Sonne, der Nachmittag.",
     },
     header: { menu: "MENÜ" },
     tagline: {
@@ -784,6 +793,9 @@ const translations = {
       title: "casa amani",
       subtitle: "ARCO DA CALHETA, MADEIRA",
       cta: "SÉJOURNEZ CHEZ NOUS",
+      introHeading: "Pour les longs sejours, du cote calme de Madere",
+      introP1: "Au-dessus du village, une maison. L'Atlantique devant, le laurier derriere. La lumiere est claire, les jours lents.",
+      introP2: "Fenetres ouvertes. Chant d'oiseaux. La piscine, le soleil, l'apres-midi.",
     },
     header: { menu: "MENU" },
     tagline: {
@@ -1043,6 +1055,9 @@ const translations = {
       title: "casa amani",
       subtitle: "ARCO DA CALHETA, MADEIRA",
       cta: "ZAMIESZKAJ Z NAMI",
+      introHeading: "Na dlugie pobyty, po cichej stronie Madery",
+      introP1: "Powyzej wioski dom. Atlantyk z przodu, wawrzyn z tylu. Swiatlo jest czyste, dni wolne.",
+      introP2: "Okna otwarte. Spiew ptakow. Basen, slonce, popoludnie.",
     },
     header: { menu: "MENU" },
     tagline: {
