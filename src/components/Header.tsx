@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { locales, type Locale } from "@/i18n/translations";
 
 const localeLabels: Record<Locale, string> = {
@@ -15,6 +15,7 @@ const localeLabels: Record<Locale, string> = {
 const navItems = [
   { href: "/house", label: "The House" },
   { href: "/the-place", label: "The Place" },
+  { href: "/the-island", label: "The Island" },
   { href: "/remote-work", label: "Remote Work" },
   { href: "/faq", label: "FAQ" },
 ];
@@ -27,6 +28,8 @@ export default function Header({ menuLabel = "MENU" }: { menuLabel?: string }) {
   const subpage = pathname.replace(base, "") || "";
 
   const [open, setOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
 
   const close = useCallback(() => setOpen(false), []);
 
@@ -47,34 +50,94 @@ export default function Header({ menuLabel = "MENU" }: { menuLabel?: string }) {
     close();
   }, [pathname, close]);
 
+  useEffect(() => {
+    if (!langOpen) return;
+    const onClick = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, [langOpen]);
+
   return (
     <>
+      {/* Toggle button — fixed above everything so it animates in place */}
+      <button
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-label={open ? "Close menu" : "Open menu"}
+        className={`fixed left-8 top-4 z-[60] flex h-10 w-10 flex-col items-center justify-center gap-[7px] transition-opacity duration-300 hover:opacity-70 lg:left-[120px] ${
+          open ? "" : "animate-fade-up"
+        }`}
+      >
+        <span
+          className="block h-[2px] w-6 bg-cream transition-all duration-300 ease-out"
+          style={{
+            transform: open
+              ? "translateY(4.5px) rotate(45deg)"
+              : "none",
+          }}
+        />
+        <span
+          className="block h-[2px] w-6 bg-cream transition-all duration-300 ease-out"
+          style={{
+            transform: open
+              ? "translateY(-4.5px) rotate(-45deg)"
+              : "none",
+          }}
+        />
+      </button>
+
       <header className="animate-fade-up flex items-center justify-between px-8 py-4 lg:px-[120px]">
-        <button
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-label={open ? "Close menu" : "Open menu"}
-          className="font-body text-2xl font-medium tracking-wide text-cream transition-opacity duration-300 hover:opacity-70 lg:text-[32px]"
-        >
-          {menuLabel}
-        </button>
-        <div className="flex gap-1 text-lg font-medium lg:text-2xl" aria-label="Change language">
-          {locales.map((locale, i) => (
-            <span key={locale}>
-              {i > 0 && <span className="text-cream/40"> / </span>}
+        {/* Spacer matching the fixed button */}
+        <div className="h-10 w-10" />
+
+        <div ref={langRef} className="relative">
+          <button
+            onClick={() => setLangOpen((v) => !v)}
+            aria-expanded={langOpen}
+            aria-label="Change language"
+            className="flex items-center gap-1.5 text-lg font-medium text-cream transition-opacity duration-300 hover:opacity-70 lg:text-2xl"
+          >
+            {localeLabels[currentLocale]}
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              className={`transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`}
+            >
+              <path d="M3 5L6 8L9 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          <div
+            className={`absolute right-0 top-full mt-2 flex min-w-[80px] flex-col overflow-hidden bg-warm shadow-lg transition-all duration-200 ${
+              langOpen
+                ? "pointer-events-auto translate-y-0 opacity-100"
+                : "pointer-events-none -translate-y-1 opacity-0"
+            }`}
+          >
+            {locales.map((locale) => (
               <a
+                key={locale}
                 href={`/${locale}${subpage}`}
-                className={`transition-opacity duration-300 ${
+                onClick={() => {
+                  localStorage.setItem("locale", locale);
+                  setLangOpen(false);
+                }}
+                className={`px-4 py-2.5 text-center text-sm font-medium transition-colors ${
                   locale === currentLocale
-                    ? "text-cream"
-                    : "text-cream/50 hover:text-cream/80"
+                    ? "bg-cream/10 text-cream"
+                    : "text-cream/60 hover:bg-cream/5 hover:text-cream"
                 }`}
-                onClick={() => localStorage.setItem("locale", locale)}
               >
                 {localeLabels[locale]}
               </a>
-            </span>
-          ))}
+            ))}
+          </div>
         </div>
       </header>
 
@@ -89,19 +152,11 @@ export default function Header({ menuLabel = "MENU" }: { menuLabel?: string }) {
 
       {/* Drawer */}
       <nav
-        className={`fixed inset-y-0 left-0 z-50 flex w-[280px] flex-col bg-warm px-8 py-4 transition-transform duration-250 ease-out ${
+        className={`fixed inset-y-0 left-0 z-50 flex w-[280px] flex-col bg-warm px-8 pt-18 transition-transform duration-250 ease-out ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Main navigation"
       >
-        <button
-          onClick={close}
-          aria-label="Close menu"
-          className="mb-12 self-start font-body text-2xl font-medium tracking-wide text-cream transition-opacity duration-300 hover:opacity-70 lg:text-[32px]"
-        >
-          {menuLabel}
-        </button>
-
         <div className="flex flex-col gap-6">
           {navItems.map(({ href, label }) => (
             <a

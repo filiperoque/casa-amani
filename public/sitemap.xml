@@ -336,4 +336,33 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://casa-amani.com/pl/privacy"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/privacy"/>
   </url>
+
+  <url>
+    <loc>https://casa-amani.com/en/the-island</loc>
+    <lastmod>2026-06-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-island"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-island"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/en/the-island/restaurants</loc>
+    <lastmod>2026-06-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-island/restaurants"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-island/restaurants"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/en/the-island/bars</loc>
+    <lastmod>2026-06-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-island/bars"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-island/bars"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/en/the-island/surf</loc>
+    <lastmod>2026-06-15</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-island/surf"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-island/surf"/>
+  </url>
 </urlset>

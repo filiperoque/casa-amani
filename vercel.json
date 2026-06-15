@@ -4,7 +4,9 @@
     { "source": "/faq", "destination": "/en/faq", "statusCode": 301 },
     { "source": "/remote-work", "destination": "/en/remote-work", "statusCode": 301 },
     { "source": "/the-place", "destination": "/en/the-place", "statusCode": 301 },
-    { "source": "/privacy", "destination": "/en/privacy", "statusCode": 301 }
+    { "source": "/privacy", "destination": "/en/privacy", "statusCode": 301 },
+    { "source": "/the-island", "destination": "/en/the-island", "statusCode": 301 },
+    { "source": "/the-island/:path*", "destination": "/en/the-island/:path*", "statusCode": 301 }
   ],
   "headers": [
     {

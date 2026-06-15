@@ -21,6 +21,7 @@ export default function Footer() {
         <nav aria-label="Site pages" className="flex flex-col gap-2 text-sm">
           <a href={`${base}/house`} className="transition-colors hover:text-cream">The House</a>
           <a href={`${base}/the-place`} className="transition-colors hover:text-cream">The Place</a>
+          <a href={`${base}/the-island`} className="transition-colors hover:text-cream">The Island</a>
           <a href={`${base}/remote-work`} className="transition-colors hover:text-cream">Remote Work</a>
           <a href={`${base}/faq`} className="transition-colors hover:text-cream">FAQ</a>
         </nav>
