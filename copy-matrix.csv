@@ -13,6 +13,33 @@ HOUSE,title,the house,a casa,das Haus,la maison,dom,Done
 HOUSE,features,2 bedrooms · 3 bathrooms · 219 m² · atlantic-facing · heated pool,2 quartos · 3 casas de banho · 219 m² · virada para o Atlântico · piscina aquecida,2 Schlafzimmer · 3 Badezimmer · 219 m² · Atlantikblick · beheizbarer Pool,2 chambres · 3 salles de bain · 219 m² · face à l'Atlantique · piscine chauffée,2 sypialnie · 3 łazienki · 219 m² · widok na Atlantyk · podgrzewany basen,Done
 HOUSE,features2,workspaces · fibre wifi · outdoor dining & barbecue · garage for 2 cars,espaços de trabalho · fibra óptica · refeições ao ar livre e churrasqueira · garagem para 2 carros,Arbeitsplätze · Glasfaser-WLAN · Außenküche mit Grill · Garage für 2 Autos,espaces de travail · fibre optique · repas en plein air et barbecue · garage pour 2 voitures,przestrzenie do pracy · światłowód · jadalnia na świeżym powietrzu i grill · garaż na 2 samochody,Done
 ,,,,,,
+STAYS INCLUDE,page.title,All stays include,,,,,"Translating, agent in progress"
+STAYS INCLUDE,item1,"Bed linens, bath towels, hand towels, pool towels and beach towels",,,,,"Translating, agent in progress"
+STAYS INCLUDE,item2,Pre-arrival cleaning and weekly housekeeping,,,,,"Translating, agent in progress"
+STAYS INCLUDE,item3,Mid-stay linen and towel change for stays over seven nights,,,,,"Translating, agent in progress"
+STAYS INCLUDE,item4,Weekly pool maintenance and garden upkeep,,,,,"Translating, agent in progress"
+STAYS INCLUDE,item5,"Starter pack: coffee capsules, sugar, dishwashing supplies, laundry tablets, garbage bags, hand soap, toilet paper",,,,,"Translating, agent in progress"
+STAYS INCLUDE,item6,"Self check-in via smart lock, with access codes shared 48 hours before arrival",,,,,"Translating, agent in progress"
+STAYS INCLUDE,item7,Welcome booklet in four languages,,,,,"Translating, agent in progress"
+STAYS INCLUDE,item8,24-hour guest assistance line,,,,,"Translating, agent in progress"
+,,,,,,
+AMENITIES,page.title,Amenities,,,,,"Translating, agent in progress"
+AMENITIES,item1,Two bedrooms with desks; external monitor in the guest bedroom,,,,,"Translating, agent in progress"
+AMENITIES,item2,Three bathrooms; en-suite to the main bedroom,,,,,"Translating, agent in progress"
+AMENITIES,item3,"Heated 7-metre pool with sea view",,,,,"Translating, agent in progress"
+AMENITIES,item4,Outdoor dining area with gas barbecue,,,,,"Translating, agent in progress"
+AMENITIES,item5,Open-plan living facing the Atlantic,,,,,"Translating, agent in progress"
+AMENITIES,item6,"Fully equipped kitchen: induction hob, oven, microwave, dishwasher, espresso machine, toaster, kettle",,,,,"Translating, agent in progress"
+AMENITIES,item7,"Smart TV with Netflix, Bluetooth speaker and stereo system",,,,,"Translating, agent in progress"
+AMENITIES,item8,Fibre Wi-Fi throughout the house and terrace,,,,,"Translating, agent in progress"
+AMENITIES,item9,Air conditioning in every room (cooling and heating),,,,,"Translating, agent in progress"
+AMENITIES,item10,Washing machine and tumble dryer,,,,,"Translating, agent in progress"
+AMENITIES,item11,Hair dryer; iron and ironing board,,,,,"Translating, agent in progress"
+AMENITIES,item12,Safe deposit,,,,,"Translating, agent in progress"
+AMENITIES,item13,"Smoke detector, carbon monoxide detector, fire extinguisher and first aid kit",,,,,"Translating, agent in progress"
+AMENITIES,item14,Cot and high chair on request,,,,,"Translating, agent in progress"
+AMENITIES,item15,Private garage for two cars,,,,,"Translating, agent in progress"
+,,,,,,
 ROOMS,mainBedroom.title,THE MAIN BEDROOM,O QUARTO PRINCIPAL,DAS HAUPTSCHLAFZIMMER,LA CHAMBRE PRINCIPALE,GŁÓWNA SYPIALNIA,Done
 ROOMS,mainBedroom.desc,"king bed facing the atlantic, with an en-suite bathroom and a desk behind the bed for early work or reading.","cama king virada para o Atlântico, com casa de banho privativa e uma secretária atrás da cama para trabalhar ou ler.","Kingsize-Bett mit Atlantikblick, eigenem Bad und einem Schreibtisch hinter dem Bett zum Arbeiten oder Lesen.","lit king face à l'Atlantique, avec salle de bain privative et un bureau derrière le lit pour travailler ou lire.","łóżko king z widokiem na Atlantyk, z prywatną łazienką i biurkiem za łóżkiem do pracy lub czytania.",Done
 ROOMS,guestBedroom.title,THE GUEST BEDROOM,O QUARTO DE HÓSPEDES,DAS GÄSTEZIMMER,LA CHAMBRE D'AMIS,POKÓJ GOŚCINNY,Done
@@ -95,6 +122,25 @@ REMOTE WORK,island.title,the island for remote work,,,,,"Translating, agent in p
 REMOTE WORK,island.p1,"Madeira is a recognised digital nomad destination. The Digital Nomad Village in Ponta do Sol (30 minutes east) runs a coworking space and community programme. Funchal has several coworking spaces if you want a change of scene. Portugal's D8 visa makes stays longer than 90 days straightforward for non-EU nationals.",,,,,"Translating, agent in progress"
 REMOTE WORK,island.p2,"The climate helps. The south-west coast averages 17 to 24°C year-round, with more sunshine hours than Funchal. You work in the morning, swim after lunch, walk the levadas before dinner. The rhythm settles quickly.",,,,,"Translating, agent in progress"
 ,,,,,,
+EXPERIENCES,page.title,Experiences,,,,,"Translating, agent in progress"
+EXPERIENCES,page.intro,"Arrangements made at the house. With notice, ahead of arrival or during the stay.",,,,,"Translating, agent in progress"
+EXPERIENCES,golf.title,Golf,,,,,"Translating, agent in progress"
+EXPERIENCES,golf.desc,"Tee times arranged at Palheiro Golf and Santo da Serra, with transport to and from the course. Equipment hire and lessons on request.",,,,,"Translating, agent in progress"
+EXPERIENCES,chef.title,Private chef,,,,,"Translating, agent in progress"
+EXPERIENCES,chef.desc,"Chefs who cook in the kitchen. From a casual lunch on the terrace to a tasting menu over wine.",,,,,"Translating, agent in progress"
+EXPERIENCES,massage.title,Massage and bodywork,,,,,"Translating, agent in progress"
+EXPERIENCES,massage.desc,Therapists who come to the house. Indoors or on the terrace.,,,,,"Translating, agent in progress"
+EXPERIENCES,training.title,Personal training,,,,,"Translating, agent in progress"
+EXPERIENCES,training.desc,A trainer for sessions on the terrace or along the village paths.,,,,,"Translating, agent in progress"
+EXPERIENCES,yoga.title,Yoga,,,,,"Translating, agent in progress"
+EXPERIENCES,yoga.desc,"A teacher comes to the house. Morning or evening, on the terrace.",,,,,"Translating, agent in progress"
+EXPERIENCES,stocking.title,Pre-arrival stocking,,,,,"Translating, agent in progress"
+EXPERIENCES,stocking.desc,"The kitchen full when you arrive. Your list, on the counter.",,,,,"Translating, agent in progress"
+EXPERIENCES,babysitting.title,Babysitting,,,,,"Translating, agent in progress"
+EXPERIENCES,babysitting.desc,Babysitters who come to the house. English and Portuguese.,,,,,"Translating, agent in progress"
+EXPERIENCES,florist.title,Flowers,,,,,"Translating, agent in progress"
+EXPERIENCES,florist.desc,Flowers in the house at arrival. For an anniversary or a longer stay.,,,,,"Translating, agent in progress"
+,,,,,,
 THE PLACE,title,"Arco da Calheta, Madeira",,,,,"Translating, agent in progress"
 THE PLACE,intro,"Arco da Calheta is a parish in Calheta municipality, on the south-west coast of Madeira island, Portugal. It sits on a hillside above the Atlantic, facing south, the quietest and sunniest stretch of an island that already has one of Europe's mildest climates. The village is small. The light is consistent. The pace is slow by design, not by accident.",,,,,"Translating, agent in progress"
 THE PLACE,distances.title,distances,,,,,"Translating, agent in progress"
@@ -107,6 +153,14 @@ THE PLACE,climate.p2,"There is no bad season. The island is greenest in winter, 
 THE PLACE,gettinghere.title,getting here,,,,,"Translating, agent in progress"
 THE PLACE,gettinghere.p1,"Madeira International Airport (FNC) has direct flights year-round from London, Frankfurt, Amsterdam, Paris, Lisbon, Porto, Warsaw, and a dozen other European cities. Low-cost carriers (easyJet, Ryanair, Wizz Air) and full-service airlines (TAP, British Airways, Condor) both serve the island.",,,,,"Translating, agent in progress"
 THE PLACE,gettinghere.p2,"From the airport, Arco da Calheta is about 50 minutes west along the VR1 motorway. A hire car is recommended. The west side is best explored at your own pace, and the roads are good.",,,,,"Translating, agent in progress"
+THE PLACE,golf.title,golf,,,,,"Translating, agent in progress"
+THE PLACE,golf.p1,"Madeira has three eighteen-hole courses. Palheiro Golf sits above Funchal on the south coast, designed by Cabell Robinson and laid into the hillside above the bay. Santo da Serra Golf, designed by Robert Trent Jones Sr., hosts the Madeira Open and runs through laurel forest at altitude. Porto Santo Golf, designed by Seve Ballesteros, occupies the neighbouring island and is reached by ferry or a short flight from Funchal.",,,,,"Translating, agent in progress"
+THE PLACE,golf.p2,"From Arco da Calheta, Palheiro and Santo da Serra are forty-five to fifty minutes by car. Tee times can be arranged from the house, with transport to and from the course on request.",,,,,"Translating, agent in progress"
+,,,,,,
+RESERVATION,page.title,Make a reservation,,,,,"Translating, agent in progress"
+RESERVATION,email,stay@casa-amani.com,stay@casa-amani.com,stay@casa-amani.com,stay@casa-amani.com,stay@casa-amani.com,Done
+RESERVATION,phone,+351 291 761 997,+351 291 761 997,+351 291 761 997,+351 291 761 997,+351 291 761 997,Done
+RESERVATION,availability,Check availability on Airbnb,Verificar disponibilidade no Airbnb,Verfügbarkeit auf Airbnb prüfen,Vérifier les disponibilités sur Airbnb,Sprawdź dostępność na Airbnb,Done
 ,,,,,,
 PRIVACY,title,privacy,,,,,"Translating, agent in progress"
 PRIVACY,p1,"We use Plausible Analytics, a privacy-respecting tool that helps us understand how this site is used. Plausible does not use cookies, does not store personal data, and does not track you across other sites. Aggregated usage statistics are stored in the European Union.",,,,,"Translating, agent in progress"

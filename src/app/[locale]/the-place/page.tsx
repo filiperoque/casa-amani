@@ -133,6 +133,18 @@ export default async function ThePlacePage({
 
             <Reveal>
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
+                {t.thePlace.golfTitle}
+              </h2>
+              <p className="mb-4 leading-8 text-brown/70">
+                {t.thePlace.golfP1}
+              </p>
+              <p className="mb-16 leading-8 text-brown/70">
+                {t.thePlace.golfP2}
+              </p>
+            </Reveal>
+
+            <Reveal>
+              <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 {t.thePlace.gettingHereTitle}
               </h2>
               <p className="mb-4 leading-8 text-brown/70">

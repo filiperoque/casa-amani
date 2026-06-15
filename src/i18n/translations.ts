@@ -255,6 +255,42 @@ const translations = {
         "Madeira International Airport (FNC) has direct flights year-round from London, Frankfurt, Amsterdam, Paris, Lisbon, Porto, Warsaw, and a dozen other European cities. Low-cost carriers (easyJet, Ryanair, Wizz Air) and full-service airlines (TAP, British Airways, Condor) both serve the island.",
       gettingHereP2:
         "From the airport, Arco da Calheta is about 50 minutes west along the VR1 motorway. A hire car is recommended. The west side is best explored at your own pace, and the roads are good.",
+      golfTitle: "golf",
+      golfP1:
+        "Madeira has three eighteen-hole courses. Palheiro Golf sits above Funchal on the south coast, designed by Cabell Robinson and laid into the hillside above the bay. Santo da Serra Golf, designed by Robert Trent Jones Sr., hosts the Madeira Open and runs through laurel forest at altitude. Porto Santo Golf, designed by Seve Ballesteros, occupies the neighbouring island and is reached by ferry or a short flight from Funchal.",
+      golfP2:
+        "From Arco da Calheta, Palheiro and Santo da Serra are forty-five to fifty minutes by car. Tee times can be arranged from the house, with transport to and from the course on request.",
+    },
+    experiences: {
+      title: "Experiences",
+      intro:
+        "Arrangements made at the house. With notice, ahead of arrival or during the stay.",
+      items: [
+        { title: "Golf", description: "Tee times arranged at Palheiro Golf and Santo da Serra, with transport to and from the course. Equipment hire and lessons on request." },
+        { title: "Private chef", description: "Chefs who cook in the kitchen. From a casual lunch on the terrace to a tasting menu over wine." },
+        { title: "Massage and bodywork", description: "Therapists who come to the house. Indoors or on the terrace." },
+        { title: "Personal training", description: "A trainer for sessions on the terrace or along the village paths." },
+        { title: "Yoga", description: "A teacher comes to the house. Morning or evening, on the terrace." },
+        { title: "Pre-arrival stocking", description: "The kitchen full when you arrive. Your list, on the counter." },
+        { title: "Babysitting", description: "Babysitters who come to the house. English and Portuguese." },
+        { title: "Flowers", description: "Flowers in the house at arrival. For an anniversary or a longer stay." },
+      ],
+    },
+    reservation: {
+      title: "Make a reservation",
+      email: "stay@casa-amani.com",
+      phone: "+351 291 761 997",
+      availability: "Check availability on Airbnb",
+    },
+    footer: {
+      theHouse: "The House",
+      thePlace: "The Place",
+      theIsland: "The Island",
+      remoteWork: "Remote Work",
+      experiences: "Experiences",
+      faq: "FAQ",
+      bookOnAirbnb: "Book on Airbnb",
+      privacy: "Privacy",
     },
     privacy: {
       title: "privacy",
@@ -516,6 +552,42 @@ const translations = {
         "O aeroporto da Madeira tem voos diretos o ano todo a partir de Londres, Frankfurt, Amesterdão, Paris, Lisboa, Porto, Varsóvia e mais de uma dezena de cidades europeias. Há low-cost (easyJet, Ryanair, Wizz Air) e companhias regulares (TAP, British Airways, Condor).",
       gettingHereP2:
         "Do aeroporto, Arco da Calheta fica a uns 50 minutos para oeste pela VR1. Convém alugar carro. O lado oeste explora-se melhor ao seu ritmo, e as estradas são boas.",
+      golfTitle: "golf",
+      golfP1:
+        "Madeira has three eighteen-hole courses. Palheiro Golf sits above Funchal on the south coast, designed by Cabell Robinson and laid into the hillside above the bay. Santo da Serra Golf, designed by Robert Trent Jones Sr., hosts the Madeira Open and runs through laurel forest at altitude. Porto Santo Golf, designed by Seve Ballesteros, occupies the neighbouring island and is reached by ferry or a short flight from Funchal.",
+      golfP2:
+        "From Arco da Calheta, Palheiro and Santo da Serra are forty-five to fifty minutes by car. Tee times can be arranged from the house, with transport to and from the course on request.",
+    },
+    experiences: {
+      title: "Experiences",
+      intro:
+        "Arrangements made at the house. With notice, ahead of arrival or during the stay.",
+      items: [
+        { title: "Golf", description: "Tee times arranged at Palheiro Golf and Santo da Serra, with transport to and from the course. Equipment hire and lessons on request." },
+        { title: "Private chef", description: "Chefs who cook in the kitchen. From a casual lunch on the terrace to a tasting menu over wine." },
+        { title: "Massage and bodywork", description: "Therapists who come to the house. Indoors or on the terrace." },
+        { title: "Personal training", description: "A trainer for sessions on the terrace or along the village paths." },
+        { title: "Yoga", description: "A teacher comes to the house. Morning or evening, on the terrace." },
+        { title: "Pre-arrival stocking", description: "The kitchen full when you arrive. Your list, on the counter." },
+        { title: "Babysitting", description: "Babysitters who come to the house. English and Portuguese." },
+        { title: "Flowers", description: "Flowers in the house at arrival. For an anniversary or a longer stay." },
+      ],
+    },
+    reservation: {
+      title: "Fazer uma reserva",
+      email: "stay@casa-amani.com",
+      phone: "+351 291 761 997",
+      availability: "Verificar disponibilidade no Airbnb",
+    },
+    footer: {
+      theHouse: "A Casa",
+      thePlace: "O Lugar",
+      theIsland: "A Ilha",
+      remoteWork: "Trabalho Remoto",
+      experiences: "Experiencias",
+      faq: "FAQ",
+      bookOnAirbnb: "Reservar no Airbnb",
+      privacy: "Privacidade",
     },
     privacy: {
       title: "privacidade",
@@ -777,6 +849,42 @@ const translations = {
         "Der internationale Flughafen Madeira (FNC) hat ganzjährig Direktflüge ab London, Frankfurt, Amsterdam, Paris, Lissabon, Porto, Warschau und einem Dutzend weiterer europäischer Städte. Billigfluggesellschaften (easyJet, Ryanair, Wizz Air) und Linienfluggesellschaften (TAP, British Airways, Condor) bedienen die Insel.",
       gettingHereP2:
         "Vom Flughafen ist Arco da Calheta etwa 50 Minuten westlich über die Schnellstraße VR1 erreichbar. Ein Mietwagen wird empfohlen. Die Westseite erkundet man am besten im eigenen Tempo, und die Straßen sind gut.",
+      golfTitle: "golf",
+      golfP1:
+        "Madeira has three eighteen-hole courses. Palheiro Golf sits above Funchal on the south coast, designed by Cabell Robinson and laid into the hillside above the bay. Santo da Serra Golf, designed by Robert Trent Jones Sr., hosts the Madeira Open and runs through laurel forest at altitude. Porto Santo Golf, designed by Seve Ballesteros, occupies the neighbouring island and is reached by ferry or a short flight from Funchal.",
+      golfP2:
+        "From Arco da Calheta, Palheiro and Santo da Serra are forty-five to fifty minutes by car. Tee times can be arranged from the house, with transport to and from the course on request.",
+    },
+    experiences: {
+      title: "Experiences",
+      intro:
+        "Arrangements made at the house. With notice, ahead of arrival or during the stay.",
+      items: [
+        { title: "Golf", description: "Tee times arranged at Palheiro Golf and Santo da Serra, with transport to and from the course. Equipment hire and lessons on request." },
+        { title: "Private chef", description: "Chefs who cook in the kitchen. From a casual lunch on the terrace to a tasting menu over wine." },
+        { title: "Massage and bodywork", description: "Therapists who come to the house. Indoors or on the terrace." },
+        { title: "Personal training", description: "A trainer for sessions on the terrace or along the village paths." },
+        { title: "Yoga", description: "A teacher comes to the house. Morning or evening, on the terrace." },
+        { title: "Pre-arrival stocking", description: "The kitchen full when you arrive. Your list, on the counter." },
+        { title: "Babysitting", description: "Babysitters who come to the house. English and Portuguese." },
+        { title: "Flowers", description: "Flowers in the house at arrival. For an anniversary or a longer stay." },
+      ],
+    },
+    reservation: {
+      title: "Reservierung vornehmen",
+      email: "stay@casa-amani.com",
+      phone: "+351 291 761 997",
+      availability: "Verfügbarkeit auf Airbnb prüfen",
+    },
+    footer: {
+      theHouse: "Das Haus",
+      thePlace: "Der Ort",
+      theIsland: "Die Insel",
+      remoteWork: "Remote-Arbeit",
+      experiences: "Erlebnisse",
+      faq: "FAQ",
+      bookOnAirbnb: "Auf Airbnb buchen",
+      privacy: "Datenschutz",
     },
     privacy: {
       title: "Datenschutz",
@@ -1038,6 +1146,42 @@ const translations = {
         "L'aéroport international de Madère (FNC) propose des vols directs toute l'année depuis Londres, Francfort, Amsterdam, Paris, Lisbonne, Porto, Varsovie et une dizaine d'autres villes européennes. Compagnies low-cost (easyJet, Ryanair, Wizz Air) et compagnies régulières (TAP, British Airways, Condor) desservent l'île.",
       gettingHereP2:
         "Depuis l'aéroport, Arco da Calheta est à environ 50 minutes vers l'ouest par l'autoroute VR1. La location de voiture est recommandée. Le côté ouest se découvre mieux à votre rythme, et les routes sont bonnes.",
+      golfTitle: "golf",
+      golfP1:
+        "Madeira has three eighteen-hole courses. Palheiro Golf sits above Funchal on the south coast, designed by Cabell Robinson and laid into the hillside above the bay. Santo da Serra Golf, designed by Robert Trent Jones Sr., hosts the Madeira Open and runs through laurel forest at altitude. Porto Santo Golf, designed by Seve Ballesteros, occupies the neighbouring island and is reached by ferry or a short flight from Funchal.",
+      golfP2:
+        "From Arco da Calheta, Palheiro and Santo da Serra are forty-five to fifty minutes by car. Tee times can be arranged from the house, with transport to and from the course on request.",
+    },
+    experiences: {
+      title: "Experiences",
+      intro:
+        "Arrangements made at the house. With notice, ahead of arrival or during the stay.",
+      items: [
+        { title: "Golf", description: "Tee times arranged at Palheiro Golf and Santo da Serra, with transport to and from the course. Equipment hire and lessons on request." },
+        { title: "Private chef", description: "Chefs who cook in the kitchen. From a casual lunch on the terrace to a tasting menu over wine." },
+        { title: "Massage and bodywork", description: "Therapists who come to the house. Indoors or on the terrace." },
+        { title: "Personal training", description: "A trainer for sessions on the terrace or along the village paths." },
+        { title: "Yoga", description: "A teacher comes to the house. Morning or evening, on the terrace." },
+        { title: "Pre-arrival stocking", description: "The kitchen full when you arrive. Your list, on the counter." },
+        { title: "Babysitting", description: "Babysitters who come to the house. English and Portuguese." },
+        { title: "Flowers", description: "Flowers in the house at arrival. For an anniversary or a longer stay." },
+      ],
+    },
+    reservation: {
+      title: "Faire une reservation",
+      email: "stay@casa-amani.com",
+      phone: "+351 291 761 997",
+      availability: "Vérifier les disponibilités sur Airbnb",
+    },
+    footer: {
+      theHouse: "La Maison",
+      thePlace: "Le Lieu",
+      theIsland: "L'ile",
+      remoteWork: "Teletravail",
+      experiences: "Experiences",
+      faq: "FAQ",
+      bookOnAirbnb: "Reserver sur Airbnb",
+      privacy: "Confidentialite",
     },
     privacy: {
       title: "confidentialité",
@@ -1299,6 +1443,42 @@ const translations = {
         "Międzynarodowe lotnisko na Maderze (FNC) ma bezpośrednie loty przez cały rok z Londynu, Frankfurtu, Amsterdamu, Paryża, Lizbony, Porto, Warszawy i kilkunastu innych miast europejskich. Tanie linie (easyJet, Ryanair, Wizz Air) i linie tradycyjne (TAP, British Airways, Condor) obsługują wyspę.",
       gettingHereP2:
         "Z lotniska Arco da Calheta jest w odległości około 50 minut na zachód autostradą VR1. Zaleca się wynajem samochodu. Zachodnią stronę najlepiej zwiedzać we własnym tempie, a drogi są dobre.",
+      golfTitle: "golf",
+      golfP1:
+        "Madeira has three eighteen-hole courses. Palheiro Golf sits above Funchal on the south coast, designed by Cabell Robinson and laid into the hillside above the bay. Santo da Serra Golf, designed by Robert Trent Jones Sr., hosts the Madeira Open and runs through laurel forest at altitude. Porto Santo Golf, designed by Seve Ballesteros, occupies the neighbouring island and is reached by ferry or a short flight from Funchal.",
+      golfP2:
+        "From Arco da Calheta, Palheiro and Santo da Serra are forty-five to fifty minutes by car. Tee times can be arranged from the house, with transport to and from the course on request.",
+    },
+    experiences: {
+      title: "Experiences",
+      intro:
+        "Arrangements made at the house. With notice, ahead of arrival or during the stay.",
+      items: [
+        { title: "Golf", description: "Tee times arranged at Palheiro Golf and Santo da Serra, with transport to and from the course. Equipment hire and lessons on request." },
+        { title: "Private chef", description: "Chefs who cook in the kitchen. From a casual lunch on the terrace to a tasting menu over wine." },
+        { title: "Massage and bodywork", description: "Therapists who come to the house. Indoors or on the terrace." },
+        { title: "Personal training", description: "A trainer for sessions on the terrace or along the village paths." },
+        { title: "Yoga", description: "A teacher comes to the house. Morning or evening, on the terrace." },
+        { title: "Pre-arrival stocking", description: "The kitchen full when you arrive. Your list, on the counter." },
+        { title: "Babysitting", description: "Babysitters who come to the house. English and Portuguese." },
+        { title: "Flowers", description: "Flowers in the house at arrival. For an anniversary or a longer stay." },
+      ],
+    },
+    reservation: {
+      title: "Dokonaj rezerwacji",
+      email: "stay@casa-amani.com",
+      phone: "+351 291 761 997",
+      availability: "Sprawdź dostępność na Airbnb",
+    },
+    footer: {
+      theHouse: "Dom",
+      thePlace: "Miejsce",
+      theIsland: "Wyspa",
+      remoteWork: "Praca Zdalna",
+      experiences: "Doswiadczenia",
+      faq: "FAQ",
+      bookOnAirbnb: "Rezerwuj na Airbnb",
+      privacy: "Prywatnosc",
     },
     privacy: {
       title: "prywatność",

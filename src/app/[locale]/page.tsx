@@ -1,5 +1,6 @@
 import { type Locale, getTranslations } from "@/i18n/translations";
 import LandingScene from "@/components/LandingScene";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default async function LandingPage({
@@ -11,28 +12,19 @@ export default async function LandingPage({
   const t = getTranslations(locale as Locale);
 
   return (
-    <>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/images/landing-bg.jpg"
-          fetchPriority="high"
+    <div id="main">
+      <Header menuLabel={t.header.menu} overlay />
+      <div className="relative flex h-dvh items-center justify-center overflow-hidden bg-[#bb9669]">
+        <LandingScene
+          title={t.landing.title}
+          subtitle={t.landing.subtitle}
+          intro={t.landing.intro}
+          cta={t.landing.cta}
+          ctaHref="https://www.airbnb.co.uk/rooms/1695506665949683620"
         />
-      </head>
-      <div id="main">
-        <div className="relative flex h-dvh items-center justify-center overflow-hidden bg-[#bb9669]">
-          <LandingScene
-            title={t.landing.title}
-            subtitle={t.landing.subtitle}
-            intro={t.landing.intro}
-            cta={t.landing.cta}
-            ctaHref="https://www.airbnb.co.uk/rooms/1695506665949683620"
-          />
-        </div>
-
-        <Footer />
       </div>
-    </>
+
+      <Footer />
+    </div>
   );
 }

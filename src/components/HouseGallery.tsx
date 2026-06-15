@@ -34,7 +34,7 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
         </div>
       </Reveal>
 
-      <div className="mt-12 overflow-x-auto lg:mt-20">
+      <div className="no-scrollbar mt-12 overflow-x-auto lg:mt-20">
         <div className="flex gap-6 px-6 pb-6 lg:gap-10 lg:px-[120px]">
           {rooms.map((room, i) => (
             <Reveal key={room.title} delay={i * 80} className="shrink-0">
