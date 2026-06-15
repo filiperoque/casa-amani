@@ -5,18 +5,17 @@ import Reveal from "@/components/Reveal";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 import {
-  westCoastBars,
-  ponchaSpots,
-  eventBars,
-  type Bar,
-} from "@/content/bars";
+  westCoastRestaurants,
+  furtherRestaurants,
+  type Restaurant,
+} from "@/content/restaurants";
 
 export const metadata: Metadata = {
   title:
-    "Bars and Nightlife Near Casa Amani | West Madeira After Dark",
+    "Where to Eat Near Casa Amani | Restaurants in Calheta, Madeira",
   description:
-    "Sunset drinks, tiki cocktails, poncha bars, and the places the west coast of Madeira goes after dark. Curated by the owners of Casa Amani.",
-  alternates: { canonical: "/the-island/bars" },
+    "Restaurants we send guests to, from grilled fish in Paul do Mar to tasting menus in Estreito da Calheta. Curated by the owners of Casa Amani Madeira.",
+  alternates: { canonical: "/the-guide/restaurants" },
 };
 
 const breadcrumbJsonLd = {
@@ -32,14 +31,14 @@ const breadcrumbJsonLd = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "The Island",
-      item: "https://casa-amani.com/the-island",
+      name: "The Guide",
+      item: "https://casa-amani.com/the-guide",
     },
     {
       "@type": "ListItem",
       position: 3,
-      name: "Bars",
-      item: "https://casa-amani.com/the-island/bars",
+      name: "Restaurants",
+      item: "https://casa-amani.com/the-guide/restaurants",
     },
   ],
 };
@@ -47,10 +46,10 @@ const breadcrumbJsonLd = {
 const collectionJsonLd = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Bars and nightlife near Casa Amani Madeira",
+  name: "Restaurants near Casa Amani Madeira",
   description:
-    "Curated bars, poncha spots, and evening venues on the west coast of Madeira, near Arco da Calheta.",
-  url: "https://casa-amani.com/the-island/bars",
+    "Curated restaurants on the west coast of Madeira, within 20 minutes of Casa Amani in Arco da Calheta.",
+  url: "https://casa-amani.com/the-guide/restaurants",
   isPartOf: {
     "@type": "WebSite",
     name: "Casa Amani Madeira",
@@ -64,46 +63,54 @@ const faqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is poncha?",
+      name: "Are there restaurants within walking distance of Casa Amani?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Poncha is Madeira's traditional drink, made from sugar cane rum (aguardente de cana), lemon or other citrus, and honey. Every village has its own version. Poncha do Emanuel in Arco da Calheta, a few minutes from Casa Amani, makes a rosemary-infused poncha that is worth the visit.",
+        text: "The nearest bar (Monteiros) and restaurant (Melton's Kitchen) are about 1 km from the house. Most of the restaurants on this list are a short drive away. A car is recommended.",
       },
     },
     {
       "@type": "Question",
-      name: "Is there nightlife on the west coast of Madeira?",
+      name: "Where is the best seafood near Calheta, Madeira?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The west coast is quieter than Funchal, but it has its own rhythm. Paul do Mar has sunset bars (Maktub, Bar da Pedra), Estreito da Calheta has Pukiki Tiki Bar, and Calhau Beach Club at Saccharum runs DJ afternoons and Fire Pit dinners in summer. For bigger nights, Doca do Cavacas in Funchal is 45 minutes by car.",
+        text: "Saboramar in Paul do Mar is our top pick for grilled fish, straight off the morning boats. Restaurante Moreia in Madalena do Mar is the best for arroz de marisco. Both are within 15 minutes of Casa Amani.",
       },
     },
     {
       "@type": "Question",
-      name: "Where can I watch the sunset near Calheta?",
+      name: "Is there fine dining near Arco da Calheta?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Paul do Mar is the go-to: Maktub and Bar da Pedra sit right on the seafront, facing west. Sunspot Cafe in Ponta do Sol is another good option. Both are within 15 minutes of Casa Amani.",
+        text: "Razao by Octavio Freitas at Socalco Nature Estate in Estreito da Calheta offers a farm-to-table tasting menu. It is a 10-minute drive from Casa Amani. Reserve well ahead.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do we need to book restaurants in advance in Madeira?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "For casual spots like Sunspot Cafe or Golden Calheta, walk-ins are usually fine outside peak summer. For Saboramar, Razao, Vila do Peixe, and Vila da Carne, reservations are recommended, especially for dinner and on weekends.",
       },
     },
   ],
 };
 
-function BarCard({ bar }: { bar: Bar }) {
+function RestaurantCard({ restaurant }: { restaurant: Restaurant }) {
   return (
     <div className="border-t border-brown/10 py-8 first:border-t-0 first:pt-0">
       <div className="mb-2 flex items-baseline gap-3">
         <h3 className="font-display text-xl text-brown md:text-2xl">
-          {bar.name}
+          {restaurant.name}
         </h3>
-        <span className="text-sm text-brown/50">{bar.location}</span>
+        <span className="text-sm text-brown/50">{restaurant.location}</span>
       </div>
-      <p className="leading-7 text-brown/70">{bar.editorial}</p>
+      <p className="leading-7 text-brown/70">{restaurant.editorial}</p>
     </div>
   );
 }
 
-export default async function BarsPage({
+export default async function RestaurantsPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -127,59 +134,40 @@ export default async function BarsPage({
       />
 
       <main id="main">
-        <div className="bg-warm">
-          <Header menuLabel={t.header.menu} />
-        </div>
+        <Header menuLabel={t.header.menu} />
 
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-3xl">
             <Reveal>
               <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
-                where to drink
+                where to eat
               </h1>
               <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
-                The west coast is not Funchal. The evenings are slower, the
-                options fewer, the quality higher when you find the right ones.
-                Sunset bars on the seafront, tiki cocktails above Calheta, and
-                the island's traditional drink in a plain room with locals.
+                Restaurants we return to and send guests to, from grilled fish
+                on the seafront in Paul do Mar to tasting menus in the vineyard
+                terraces above Calheta. All within twenty minutes of Casa Amani
+                unless noted. A car is needed for most.
               </p>
             </Reveal>
 
             <Reveal>
               <h2 className="mb-8 font-display text-2xl text-brown md:text-3xl">
-                sunset and evening
+                the west coast
               </h2>
               <div className="mb-16">
-                {westCoastBars.map((b) => (
-                  <BarCard key={b.name} bar={b} />
+                {westCoastRestaurants.map((r) => (
+                  <RestaurantCard key={r.name} restaurant={r} />
                 ))}
               </div>
             </Reveal>
 
             <Reveal>
               <h2 className="mb-8 font-display text-2xl text-brown md:text-3xl">
-                poncha
-              </h2>
-              <p className="mb-8 leading-7 text-brown/70">
-                Poncha is Madeira's drink: sugar cane rum, lemon or other
-                citrus, honey. Every village has its own version; every poncha
-                bar has its own opinion. Worth treating as its own category
-                because the experience is distinctly Madeiran.
-              </p>
-              <div className="mb-16">
-                {ponchaSpots.map((b) => (
-                  <BarCard key={b.name} bar={b} />
-                ))}
-              </div>
-            </Reveal>
-
-            <Reveal>
-              <h2 className="mb-8 font-display text-2xl text-brown md:text-3xl">
-                events and community
+                worth the drive
               </h2>
               <div className="mb-16">
-                {eventBars.map((b) => (
-                  <BarCard key={b.name} bar={b} />
+                {furtherRestaurants.map((r) => (
+                  <RestaurantCard key={r.name} restaurant={r} />
                 ))}
               </div>
             </Reveal>
@@ -212,7 +200,7 @@ export default async function BarsPage({
 
             <Reveal>
               <div className="border-t border-brown/10 pt-8">
-                <BookCTA placement="bars-cta" label={t.bookCta} />
+                <BookCTA placement="restaurants-cta" label={t.bookCta} />
               </div>
             </Reveal>
           </div>

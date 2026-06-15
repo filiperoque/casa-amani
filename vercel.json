@@ -3,10 +3,13 @@
     { "source": "/house", "destination": "/en/house", "statusCode": 301 },
     { "source": "/faq", "destination": "/en/faq", "statusCode": 301 },
     { "source": "/remote-work", "destination": "/en/remote-work", "statusCode": 301 },
-    { "source": "/the-place", "destination": "/en/the-place", "statusCode": 301 },
+    { "source": "/the-place", "destination": "/en/calheta", "statusCode": 308 },
     { "source": "/privacy", "destination": "/en/privacy", "statusCode": 301 },
-    { "source": "/the-island", "destination": "/en/the-island", "statusCode": 301 },
-    { "source": "/the-island/:path*", "destination": "/en/the-island/:path*", "statusCode": 301 },
+    { "source": "/the-island", "destination": "/en/the-guide", "statusCode": 308 },
+    { "source": "/the-island/:path*", "destination": "/en/the-guide/:path*", "statusCode": 308 },
+    { "source": "/:locale(en|pt|de|fr|pl)/the-place", "destination": "/:locale/calheta", "statusCode": 308 },
+    { "source": "/:locale(en|pt|de|fr|pl)/the-island", "destination": "/:locale/the-guide", "statusCode": 308 },
+    { "source": "/:locale(en|pt|de|fr|pl)/the-island/:path*", "destination": "/:locale/the-guide/:path*", "statusCode": 308 },
     { "source": "/experiences", "destination": "/en/experiences", "statusCode": 301 }
   ],
   "headers": [

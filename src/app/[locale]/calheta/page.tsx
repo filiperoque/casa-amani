@@ -7,11 +7,11 @@ import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Arco da Calheta | Casa Amani Madeira | West Coast",
+  title: "Calheta | Casa Amani Madeira | West Coast",
   description:
     "Arco da Calheta sits on the south-west coast of Madeira, the quietest, sunniest stretch of the island. A village on a hill above the Atlantic, 30 minutes from Funchal.",
   alternates: {
-    canonical: "/the-place",
+    canonical: "/calheta",
   },
 };
 
@@ -42,7 +42,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Casa Amani", item: "https://casa-amani.com" },
-    { "@type": "ListItem", position: 2, name: "The Place", item: "https://casa-amani.com/the-place" },
+    { "@type": "ListItem", position: 2, name: "Calheta", item: "https://casa-amani.com/calheta" },
   ],
 };
 
@@ -66,9 +66,7 @@ export default async function ThePlacePage({
       />
 
       <main id="main">
-        <div className="bg-warm">
-          <Header menuLabel={t.header.menu} />
-        </div>
+        <Header menuLabel={t.header.menu} />
 
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-3xl">

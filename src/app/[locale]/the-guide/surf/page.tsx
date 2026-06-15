@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "surf villa madeira",
     "surf accommodation madeira west coast",
   ],
-  alternates: { canonical: "/the-island/surf" },
+  alternates: { canonical: "/the-guide/surf" },
 };
 
 const breadcrumbJsonLd = {
@@ -34,14 +34,14 @@ const breadcrumbJsonLd = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "The Island",
-      item: "https://casa-amani.com/the-island",
+      name: "The Guide",
+      item: "https://casa-amani.com/the-guide",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Surf",
-      item: "https://casa-amani.com/the-island/surf",
+      item: "https://casa-amani.com/the-guide/surf",
     },
   ],
 };
@@ -105,9 +105,7 @@ export default async function SurfPage({
       />
 
       <main id="main">
-        <div className="bg-warm">
-          <Header menuLabel={t.header.menu} />
-        </div>
+        <Header menuLabel={t.header.menu} />
 
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-3xl">

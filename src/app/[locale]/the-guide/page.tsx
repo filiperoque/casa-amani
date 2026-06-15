@@ -5,28 +5,28 @@ import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "The Island | Casa Amani Madeira | West Coast Guide",
+  title: "The Guide | Casa Amani Madeira | West Coast Guide",
   description:
     "A curated guide to the west coast of Madeira from Casa Amani: restaurants, bars, surf, and more in Calheta, Paul do Mar, and Ponta do Sol.",
-  alternates: { canonical: "/the-island" },
+  alternates: { canonical: "/the-guide" },
 };
 
 const categories = [
   {
     title: "restaurants",
-    href: "the-island/restaurants",
+    href: "the-guide/restaurants",
     description:
       "Grilled fish in Paul do Mar, espetada in Calheta, tasting menus in the vineyard terraces.",
   },
   {
     title: "bars",
-    href: "the-island/bars",
+    href: "the-guide/bars",
     description:
       "Sunset drinks, tiki cocktails, and the places the west coast goes after dark.",
   },
   {
     title: "surf",
-    href: "the-island/surf",
+    href: "the-guide/surf",
     description:
       "Jardim do Mar, Paul do Mar, Ponta Pequena. The west coast breaks, ten minutes away.",
   },
@@ -43,15 +43,13 @@ export default async function TheIslandPage({
 
   return (
     <main id="main">
-      <div className="bg-warm">
-        <Header menuLabel={t.header.menu} />
-      </div>
+      <Header menuLabel={t.header.menu} />
 
       <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
-              the island
+              the guide
             </h1>
             <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
               Places we go and send guests to on the west coast of Madeira. Each
@@ -65,7 +63,7 @@ export default async function TheIslandPage({
               <Reveal key={cat.title}>
                 <a
                   href={`${base}/${cat.href}`}
-                  className="flex flex-col gap-3 border border-brown/10 p-6 transition-colors hover:border-brown/30"
+                  className="flex h-full flex-col gap-3 border border-brown/10 p-6 transition-colors hover:border-brown/30"
                 >
                   <h2 className="font-display text-xl text-brown">
                     {cat.title}

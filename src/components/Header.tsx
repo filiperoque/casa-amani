@@ -24,8 +24,17 @@ const primaryNav = [
     text: "Two bedrooms, a heated pool, a kitchen used daily.",
   },
   {
-    href: "/the-place",
-    label: "The Place",
+    href: "/the-guide",
+    label: "The Guide",
+    image: "/images/location.jpg",
+    text: "Arco da Calheta, the south-west coast of Madeira.",
+  },
+];
+
+const secondaryNav = [
+  {
+    href: "/calheta",
+    label: "Calheta",
     image: "/images/location.jpg",
     text: "Arco da Calheta, the south-west coast of Madeira.",
   },
@@ -35,9 +44,6 @@ const primaryNav = [
     image: "/images/guest-bedroom.jpg",
     text: "Desks in both bedrooms, fibre internet, a quiet hillside village.",
   },
-];
-
-const secondaryNav = [
   {
     href: "/experiences",
     label: "Experiences",
@@ -55,18 +61,19 @@ const secondaryNav = [
 const allNav = [...primaryNav, ...secondaryNav];
 const DEFAULT_IMAGE = "/images/landing-bg.jpg";
 
-export default function Header({ menuLabel = "MENU", overlay = false }: { menuLabel?: string; overlay?: boolean }) {
+export default function Header({ menuLabel = "MENU", overlay = false, mode = "content" }: { menuLabel?: string; overlay?: boolean; mode?: "hero" | "house" | "content" }) {
   const pathname = usePathname();
   const currentLocale = (locales.find((l) => pathname.startsWith(`/${l}`)) ||
     "en") as Locale;
   const base = `/${currentLocale}`;
   const subpage = pathname.replace(base, "") || "";
-  const hasHero = subpage === "" || subpage === "/" || subpage === "/house";
+  const isLanding = subpage === "" || subpage === "/";
+  const hasHero = isLanding || subpage === "/house";
 
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(hasHero);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const langRef = useRef<HTMLDivElement>(null);
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -84,7 +91,7 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
   const activeText =
     hoveredIndex !== null ? allNav[hoveredIndex]?.text : null;
 
-  const showBrand = scrollProgress > 0.3 || !hasHero;
+  const showBrand = !open && mode === "content" && (scrollProgress > 0.3 || !hasHero);
 
   const close = useCallback(() => {
     setOpen(false);
@@ -138,9 +145,11 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
     };
     document.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
+    document.documentElement.dataset.menuOpen = "true";
     return () => {
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
+      document.documentElement.dataset.menuOpen = "false";
     };
   }, [open, close]);
 
@@ -173,11 +182,13 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
         style={{
           backgroundColor: open
             ? "var(--color-warm)"
-            : isDark
-              ? `rgba(184, 149, 110, ${scrollProgress * 0.92})`
-              : `rgba(242, 236, 226, ${scrollProgress * 0.95})`,
-          backdropFilter: open ? "none" : `blur(${scrollProgress * 12}px)`,
-          WebkitBackdropFilter: open ? "none" : `blur(${scrollProgress * 12}px)`,
+            : isLanding
+              ? "transparent"
+              : isDark
+                ? `rgba(184, 149, 110, ${scrollProgress * 0.92})`
+                : `rgba(242, 236, 226, ${scrollProgress * 0.95})`,
+          backdropFilter: open || isLanding ? "none" : `blur(${scrollProgress * 12}px)`,
+          WebkitBackdropFilter: open || isLanding ? "none" : `blur(${scrollProgress * 12}px)`,
           transition: `background-color var(--motion-tide) ${CALM}`,
         }}
       >
@@ -389,9 +400,9 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
           </nav>
 
           {/* Image preview (Drift tier) */}
-          <div className="hidden lg:flex lg:w-[55%] lg:flex-col lg:justify-center lg:py-8">
+          <div className="hidden lg:flex lg:w-[55%] lg:items-center lg:py-8">
             <div
-              className={`flex flex-col ${
+              className={`relative h-full w-full overflow-hidden ${
                 open
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-4 scale-[0.97] opacity-0"
@@ -401,44 +412,43 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
                 transitionDelay: open ? "600ms" : "0ms",
               }}
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
-                {[...new Set([DEFAULT_IMAGE, ...allNav.filter((n) => n.image).map((n) => n.image!)])].map(
-                  (src) => (
-                    <Image
-                      key={src}
-                      src={src}
-                      alt=""
-                      fill
-                      className={`object-cover ${
-                        src === activeImage ? "opacity-100" : "opacity-0"
-                      }`}
-                      style={{ transition: `opacity var(--motion-drift) ${CALM}` }}
-                      sizes="50vw"
-                      priority={src === DEFAULT_IMAGE}
-                    />
-                  )
+              {[...new Set([DEFAULT_IMAGE, ...allNav.filter((n) => n.image).map((n) => n.image!)])].map(
+                (src) => (
+                  <Image
+                    key={src}
+                    src={src}
+                    alt=""
+                    fill
+                    className={`object-cover ${
+                      src === activeImage ? "opacity-100" : "opacity-0"
+                    }`}
+                    style={{ transition: `opacity var(--motion-drift) ${CALM}` }}
+                    sizes="50vw"
+                    priority={src === DEFAULT_IMAGE}
+                  />
+                )
+              )}
+              <div
+                className="absolute inset-x-0 bottom-0 p-8 pt-20"
+                style={{
+                  background: "linear-gradient(to top, rgba(122,95,64,0.7) 0%, transparent 100%)",
+                  opacity: activeText ? 1 : 0,
+                  transition: `opacity var(--motion-drift) ${CALM}`,
+                }}
+              >
+                <p className="max-w-[32ch] font-display text-base leading-relaxed text-cream/90">
+                  {activeText}
+                </p>
+                {hoveredIndex !== null && allNav[hoveredIndex]?.href && (
+                  <a
+                    href={`${base}${allNav[hoveredIndex].href}`}
+                    className="mt-2 inline-block font-display text-sm text-cream/70 hover:text-cream"
+                    style={{ transition: `color var(--motion-tide) ${CALM}` }}
+                  >
+                    Discover more &rarr;
+                  </a>
                 )}
               </div>
-
-              {activeText && (
-                <div
-                  className="mt-6"
-                  style={{ transition: `opacity var(--motion-drift) ${CALM}` }}
-                >
-                  <p className="max-w-[32ch] font-display text-base leading-relaxed text-cream/80">
-                    {activeText}
-                  </p>
-                  {hoveredIndex !== null && allNav[hoveredIndex]?.href && (
-                    <a
-                      href={`${base}${allNav[hoveredIndex].href}`}
-                      className="mt-3 inline-block font-display text-base text-cream/60 hover:text-cream"
-                      style={{ transition: `opacity var(--motion-tide) ${CALM}` }}
-                    >
-                      Discover more &rarr;
-                    </a>
-                  )}
-                </div>
-              )}
             </div>
           </div>
         </div>

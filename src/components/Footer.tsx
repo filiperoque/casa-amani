@@ -28,8 +28,8 @@ export default function Footer() {
           {/* Column 2: Pages */}
           <nav aria-label="Site pages" className="flex flex-col gap-2 md:pt-[calc(1.875rem+0.75rem)]">
             <a href={`${base}/house`} className="transition-colors hover:text-cream">{t.footer.theHouse}</a>
-            <a href={`${base}/the-place`} className="transition-colors hover:text-cream">{t.footer.thePlace}</a>
-            <a href={`${base}/the-island`} className="transition-colors hover:text-cream">{t.footer.theIsland}</a>
+            <a href={`${base}/calheta`} className="transition-colors hover:text-cream">{t.footer.calheta}</a>
+            <a href={`${base}/the-guide`} className="transition-colors hover:text-cream">{t.footer.theGuide}</a>
             <a href={`${base}/remote-work`} className="transition-colors hover:text-cream">{t.footer.remoteWork}</a>
             <a href={`${base}/experiences`} className="transition-colors hover:text-cream">{t.footer.experiences}</a>
             <a href={`${base}/faq`} className="transition-colors hover:text-cream">{t.footer.faq}</a>

@@ -106,9 +106,7 @@ export default async function FaqPage({
       />
 
       <main id="main" className="bg-cream min-h-dvh">
-        <div className="bg-warm">
-          <Header menuLabel={t.header.menu} />
-        </div>
+        <Header menuLabel={t.header.menu} />
 
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-24 lg:py-32">
           <Reveal>

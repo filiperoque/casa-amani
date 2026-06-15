@@ -84,9 +84,7 @@ export default async function RemoteWorkPage({
       />
 
       <main id="main">
-        <div className="bg-warm">
-          <Header menuLabel={t.header.menu} />
-        </div>
+        <Header menuLabel={t.header.menu} />
 
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-3xl">

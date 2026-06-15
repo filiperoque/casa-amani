@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import HouseHeroWordmark from "@/components/HouseHeroWordmark";
+import OptimizedImage from "@/components/OptimizedImage";
 import Tagline from "@/components/Tagline";
 import HouseGallery from "@/components/HouseGallery";
 import Location from "@/components/Location";
@@ -26,25 +27,47 @@ export default async function HousePage({
   const t = getTranslations(locale as Locale);
 
   return (
-    <main id="main">
+    <>
       <div className="bg-warm">
-        <Header menuLabel={t.header.menu} />
-        <Hero title={t.landing.title} subtitle={t.landing.subtitle} />
+        <Header menuLabel={t.header.menu} mode="house" />
       </div>
-      <Reveal>
-        <Tagline
-          heading={t.tagline.heading}
-          subheading={t.tagline.subheading}
-        />
-      </Reveal>
-      <HouseGallery t={t} />
-      <Reveal>
-        <Location
-          heading={t.location.heading}
-          description={t.location.description}
-        />
-      </Reveal>
-      <Footer />
-    </main>
+
+      <main id="main">
+        <HouseHeroWordmark text={t.landing.title} />
+
+        <section className="bg-warm pb-0">
+          <div className="flex flex-col items-center px-6 lg:px-[120px]">
+            <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">
+              {t.landing.subtitle}
+            </p>
+            <div className="animate-fade-up animate-delay-2 relative mt-4 h-[43vh] w-full overflow-hidden sm:h-[400px] md:h-[500px] lg:h-[654px]">
+              <OptimizedImage
+                src="/images/hero.jpg"
+                alt="Interior view of Casa Amani with ocean views"
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+            </div>
+          </div>
+        </section>
+
+        <Reveal>
+          <Tagline
+            heading={t.tagline.heading}
+            subheading={t.tagline.subheading}
+          />
+        </Reveal>
+        <HouseGallery t={t} />
+        <Reveal>
+          <Location
+            heading={t.location.heading}
+            description={t.location.description}
+          />
+        </Reveal>
+        <Footer />
+      </main>
+    </>
   );
 }
