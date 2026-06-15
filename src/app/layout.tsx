@@ -120,7 +120,7 @@ const jsonLd = {
     { "@type": "LocationFeatureSpecification", name: "Fully equipped kitchen with induction hob, oven, dishwasher, espresso machine", value: true },
     { "@type": "LocationFeatureSpecification", name: "BBQ", value: true },
     { "@type": "LocationFeatureSpecification", name: "Washer and dryer", value: true },
-    { "@type": "LocationFeatureSpecification", name: "Air conditioning and central heating", value: true },
+    { "@type": "LocationFeatureSpecification", name: "Air conditioning throughout; same units heat when needed", value: true },
     { "@type": "LocationFeatureSpecification", name: "Private garage for two cars", value: true },
     { "@type": "LocationFeatureSpecification", name: "Safe deposit", value: true },
     { "@type": "LocationFeatureSpecification", name: "Cot and high chair available", value: true },

@@ -1,6 +1,5 @@
 import { type Locale, getTranslations } from "@/i18n/translations";
 import LandingScene from "@/components/LandingScene";
-import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
 export default async function LandingPage({
@@ -26,26 +25,11 @@ export default async function LandingPage({
           <LandingScene
             title={t.landing.title}
             subtitle={t.landing.subtitle}
+            intro={t.landing.intro}
             cta={t.landing.cta}
             ctaHref="https://www.airbnb.co.uk/rooms/1695506665949683620"
           />
         </div>
-
-        <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
-          <div className="mx-auto max-w-3xl">
-            <Reveal>
-              <h2 className="mb-8 font-display text-2xl text-brown md:text-3xl lg:text-4xl">
-                {t.landing.introHeading}
-              </h2>
-            </Reveal>
-
-            <Reveal>
-              <p className="text-lg leading-8 text-brown/80 md:text-xl">
-                {t.landing.introP1} {t.landing.introP2}
-              </p>
-            </Reveal>
-          </div>
-        </section>
 
         <Footer />
       </div>

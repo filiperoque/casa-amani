@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: "How is Casa Amani different from coliving in Madeira?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Coliving spaces like Outsite (Ponta do Sol) or Homeoffice Madeira (Santo da Serra) are community-driven shared houses. Casa Amani is a private villa, your own home for the duration of your stay. No shared rooms, no social calendar, no strangers. It suits couples, families, or small groups who want privacy and focus alongside the social life of the island.",
+        text: "Coliving spaces like Outsite (Ponta do Sol) or Homeoffice Madeira (Santo da Serra) are community-driven shared houses, with group meals, social calendars, and bunk or twin options. Casa Amani is private. The house is yours, the pool is yours, the kitchen is yours. It suits couples, families, and small groups who want a dedicated workspace and the calm of an unshared home, on a longer rhythm than a weekend.",
       },
     },
     {

@@ -6,12 +6,13 @@ set -euo pipefail
 
 EMDASH=$'\xe2\x80\x94'
 
-hits=$(grep -rn "$EMDASH" src/ \
+hits=$(grep -rn "$EMDASH" src/ public/ \
   --include='*.tsx' \
   --include='*.ts' \
   --include='*.md' \
   --include='*.json' \
-  --include='*.csv' || true)
+  --include='*.csv' \
+  --include='*.txt' || true)
 
 if [ -n "$hits" ]; then
   echo "ERROR: Em-dash characters (U+2014) found in src/:"

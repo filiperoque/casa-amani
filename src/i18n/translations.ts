@@ -6,11 +6,10 @@ const translations = {
   en: {
     landing: {
       title: "casa amani",
-      subtitle: "ARCO DA CALHETA, MADEIRA",
+      subtitle: "ARCO DA CALHETA MADEIRA",
       cta: "STAY WITH US",
-      introHeading: "Made for slow stays on Madeira's quiet side",
-      introP1: "Above the village, a house. The Atlantic in front, the laurel behind. The light is clear, the days slow.",
-      introP2: "Windows open. Birdsong. The pool, the sun, the afternoon.",
+      intro:
+        "Above the village, a house. The Atlantic in front, the laurel behind. The light is clear, the days slow. Windows open. Birds singing. The pool, the sun, the afternoon. Made for slow stays on Madeira's quiet side.",
     },
     header: { menu: "MENU" },
     tagline: {
@@ -267,11 +266,10 @@ const translations = {
   pt: {
     landing: {
       title: "casa amani",
-      subtitle: "ARCO DA CALHETA, MADEIRA",
+      subtitle: "ARCO DA CALHETA MADEIRA",
       cta: "FIQUE CONNOSCO",
-      introHeading: "Feita para estadias longas, no lado calmo da Madeira",
-      introP1: "Acima da aldeia, uma casa. O Atlantico em frente, o loureiro atras. A luz e clara, os dias lentos.",
-      introP2: "Janelas abertas. Passaros. A piscina, o sol, a tarde.",
+      intro:
+        "Acima da aldeia, uma casa. O Atlântico em frente, o loureiro atrás. A luz é clara, os dias lentos. Janelas abertas. Pássaros a cantar. A piscina, o sol, a tarde. Feita para estadias longas, no lado calmo da Madeira.",
     },
     header: { menu: "MENU" },
     tagline: {
@@ -417,7 +415,7 @@ const translations = {
         {
           question: "Como reservo?",
           answer:
-            "De momento, as reservas são feitas pelo Airbnb. Carregue em qualquer botão \"Fique connosco\" para ver disponibilidade. A Casa Amani também aparece no Booking.com, VRBO, OurMadeira e Casai através do gestor do imóvel, mas para simplificar encaminhamos tudo para o Airbnb a partir deste site.",
+            "De momento, as reservas são feitas pelo [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620). Carregue em qualquer botão \"Fique connosco\" para ver disponibilidade. A Casa Amani também aparece no Booking.com, VRBO, OurMadeira e Casai através do gestor do imóvel, mas para simplificar encaminhamos tudo para o Airbnb a partir deste site.",
         },
         {
           question: "Inclui pequeno-almoço?",
@@ -529,11 +527,10 @@ const translations = {
   de: {
     landing: {
       title: "casa amani",
-      subtitle: "ARCO DA CALHETA, MADEIRA",
+      subtitle: "ARCO DA CALHETA MADEIRA",
       cta: "BEI UNS WOHNEN",
-      introHeading: "Fur lange Aufenthalte, auf Madeiras ruhiger Seite",
-      introP1: "Oberhalb des Dorfes ein Haus. Der Atlantik davor, der Lorbeerwald dahinter. Das Licht ist klar, die Tage langsam.",
-      introP2: "Fenster offen. Vogelgesang. Der Pool, die Sonne, der Nachmittag.",
+      intro:
+        "Oberhalb des Dorfes ein Haus. Der Atlantik davor, der Lorbeerwald dahinter. Das Licht ist klar, die Tage langsam. Fenster offen. Vögel singen. Der Pool, die Sonne, der Nachmittag. Für lange Aufenthalte, auf Madeiras ruhiger Seite.",
     },
     header: { menu: "MENÜ" },
     tagline: {
@@ -679,7 +676,7 @@ const translations = {
         {
           question: "Wie buche ich?",
           answer:
-            "Wir nehmen Buchungen derzeit ausschließlich über Airbnb entgegen. Tippen Sie auf einen beliebigen \"Bei uns wohnen\"-Button, um Verfügbarkeit zu prüfen und zu reservieren. Die Casa Amani ist auch auf Booking.com, VRBO, OurMadeira und Casai über unseren Hausverwalter gelistet. Für ein einheitliches Erlebnis leiten wir Gäste jedoch von dieser Seite zum Airbnb-Inserat weiter.",
+            "Wir nehmen Buchungen derzeit ausschließlich über [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620) entgegen. Tippen Sie auf einen beliebigen \"Bei uns wohnen\"-Button, um Verfügbarkeit zu prüfen und zu reservieren. Die Casa Amani ist auch auf Booking.com, VRBO, OurMadeira und Casai über unseren Hausverwalter gelistet. Für ein einheitliches Erlebnis leiten wir Gäste jedoch von dieser Seite zum Airbnb-Inserat weiter.",
         },
         {
           question: "Ist Frühstück inbegriffen?",
@@ -791,11 +788,10 @@ const translations = {
   fr: {
     landing: {
       title: "casa amani",
-      subtitle: "ARCO DA CALHETA, MADEIRA",
+      subtitle: "ARCO DA CALHETA MADEIRA",
       cta: "SÉJOURNEZ CHEZ NOUS",
-      introHeading: "Pour les longs sejours, du cote calme de Madere",
-      introP1: "Au-dessus du village, une maison. L'Atlantique devant, le laurier derriere. La lumiere est claire, les jours lents.",
-      introP2: "Fenetres ouvertes. Chant d'oiseaux. La piscine, le soleil, l'apres-midi.",
+      intro:
+        "Au-dessus du village, une maison. L'Atlantique devant, le laurier derrière. La lumière est claire, les jours lents. Fenêtres ouvertes. Chant d'oiseaux. La piscine, le soleil, l'après-midi. Pour les longs séjours, du côté calme de Madère.",
     },
     header: { menu: "MENU" },
     tagline: {
@@ -941,7 +937,7 @@ const translations = {
         {
           question: "Comment réserver ?",
           answer:
-            "Nous acceptons actuellement les réservations exclusivement via Airbnb. Appuyez sur n'importe quel bouton \"Séjournez chez nous\" pour vérifier la disponibilité et réserver. La Casa Amani est également référencée sur Booking.com, VRBO, OurMadeira et Casai via notre gestionnaire de propriété, mais pour une expérience cohérente, nous orientons les clients vers l'annonce Airbnb depuis ce site.",
+            "Nous acceptons actuellement les réservations exclusivement via [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620). Appuyez sur n'importe quel bouton \"Séjournez chez nous\" pour vérifier la disponibilité et réserver. La Casa Amani est également référencée sur Booking.com, VRBO, OurMadeira et Casai via notre gestionnaire de propriété, mais pour une expérience cohérente, nous orientons les clients vers l'annonce Airbnb depuis ce site.",
         },
         {
           question: "Le petit-déjeuner est-il inclus ?",
@@ -1053,11 +1049,10 @@ const translations = {
   pl: {
     landing: {
       title: "casa amani",
-      subtitle: "ARCO DA CALHETA, MADEIRA",
+      subtitle: "ARCO DA CALHETA MADEIRA",
       cta: "ZAMIESZKAJ Z NAMI",
-      introHeading: "Na dlugie pobyty, po cichej stronie Madery",
-      introP1: "Powyzej wioski dom. Atlantyk z przodu, wawrzyn z tylu. Swiatlo jest czyste, dni wolne.",
-      introP2: "Okna otwarte. Spiew ptakow. Basen, slonce, popoludnie.",
+      intro:
+        "Powyżej wioski dom. Atlantyk z przodu, wawrzyn z tyłu. Światło jest czyste, dni wolne. Okna otwarte. Śpiew ptaków. Basen, słońce, popołudnie. Na długie pobyty, po cichej stronie Madery.",
     },
     header: { menu: "MENU" },
     tagline: {
@@ -1203,7 +1198,7 @@ const translations = {
         {
           question: "Jak zarezerwować?",
           answer:
-            "Obecnie przyjmujemy rezerwacje wyłącznie przez Airbnb. Kliknij dowolny przycisk \"Zamieszkaj z nami\", aby sprawdzić dostępność i zarezerwować. Casa Amani jest również wymieniona na Booking.com, VRBO, OurMadeira i Casai za pośrednictwem naszego zarządcy nieruchomości, ale dla spójnego doświadczenia kierujemy gości do ogłoszenia na Airbnb z tej strony.",
+            "Obecnie przyjmujemy rezerwacje wyłącznie przez [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620). Kliknij dowolny przycisk \"Zamieszkaj z nami\", aby sprawdzić dostępność i zarezerwować. Casa Amani jest również wymieniona na Booking.com, VRBO, OurMadeira i Casai za pośrednictwem naszego zarządcy nieruchomości, ale dla spójnego doświadczenia kierujemy gości do ogłoszenia na Airbnb z tej strony.",
         },
         {
           question: "Czy śniadanie jest wliczone?",

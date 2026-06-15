@@ -1,0 +1,114 @@
+PAGE,KEY,EN,PT,DE,FR,PL,STATUS
+,,,,,,
+LANDING,title,casa amani,casa amani,casa amani,casa amani,casa amani,Done
+LANDING,subtitle,ARCO DA CALHETA MADEIRA,ARCO DA CALHETA MADEIRA,ARCO DA CALHETA MADEIRA,ARCO DA CALHETA MADEIRA,ARCO DA CALHETA MADEIRA,Done
+LANDING,intro,"Above the village, a house. The Atlantic in front, the laurel behind. The light is clear, the days slow. Windows open. Birds singing. The pool, the sun, the afternoon. Made for slow stays on Madeira's quiet side.",,,,,"Translating, agent in progress"
+LANDING,cta,STAY WITH US,FIQUE CONNOSCO,BEI UNS WOHNEN,SÉJOURNEZ CHEZ NOUS,ZAMIESZKAJ Z NAMI,Done
+HEADER,menu,MENU,MENU,MENÜ,MENU,MENU,Done
+,,,,,,
+TAGLINE,heading,"your home, briefly.","a sua casa, por uns dias.","Ihr Zuhause, auf Zeit.","chez vous, le temps d'un séjour.","Twój dom, na chwilę.",Done
+TAGLINE,subheading,"made to be lived in slowly, on Madeira's sunny side.","feita para ser vivida devagar, no lado soalheiro da Madeira.","Gemacht, um langsam gelebt zu werden, auf Madeiras Sonnenseite.","faite pour être vécue lentement, du côté ensoleillé de Madère.","stworzona, by żyć w niej powoli, po słonecznej stronie Madery.",Done
+,,,,,,
+HOUSE,title,the house,a casa,das Haus,la maison,dom,Done
+HOUSE,features,2 bedrooms · 3 bathrooms · 219 m² · atlantic-facing · heated pool,2 quartos · 3 casas de banho · 219 m² · virada para o Atlântico · piscina aquecida,2 Schlafzimmer · 3 Badezimmer · 219 m² · Atlantikblick · beheizbarer Pool,2 chambres · 3 salles de bain · 219 m² · face à l'Atlantique · piscine chauffée,2 sypialnie · 3 łazienki · 219 m² · widok na Atlantyk · podgrzewany basen,Done
+HOUSE,features2,workspaces · fibre wifi · outdoor dining & barbecue · garage for 2 cars,espaços de trabalho · fibra óptica · refeições ao ar livre e churrasqueira · garagem para 2 carros,Arbeitsplätze · Glasfaser-WLAN · Außenküche mit Grill · Garage für 2 Autos,espaces de travail · fibre optique · repas en plein air et barbecue · garage pour 2 voitures,przestrzenie do pracy · światłowód · jadalnia na świeżym powietrzu i grill · garaż na 2 samochody,Done
+,,,,,,
+ROOMS,mainBedroom.title,THE MAIN BEDROOM,O QUARTO PRINCIPAL,DAS HAUPTSCHLAFZIMMER,LA CHAMBRE PRINCIPALE,GŁÓWNA SYPIALNIA,Done
+ROOMS,mainBedroom.desc,"king bed facing the atlantic, with an en-suite bathroom and a desk behind the bed for early work or reading.","cama king virada para o Atlântico, com casa de banho privativa e uma secretária atrás da cama para trabalhar ou ler.","Kingsize-Bett mit Atlantikblick, eigenem Bad und einem Schreibtisch hinter dem Bett zum Arbeiten oder Lesen.","lit king face à l'Atlantique, avec salle de bain privative et un bureau derrière le lit pour travailler ou lire.","łóżko king z widokiem na Atlantyk, z prywatną łazienką i biurkiem za łóżkiem do pracy lub czytania.",Done
+ROOMS,guestBedroom.title,THE GUEST BEDROOM,O QUARTO DE HÓSPEDES,DAS GÄSTEZIMMER,LA CHAMBRE D'AMIS,POKÓJ GOŚCINNY,Done
+ROOMS,guestBedroom.desc,"king bed just off the living space, with a built-in desk and monitor for both rest and remote work.","cama king junto à sala, com secretária e monitor para descanso e trabalho remoto.","Kingsize-Bett direkt neben dem Wohnbereich, mit Schreibtisch und Monitor für Ruhe und Remote-Arbeit.","lit king à côté du séjour, avec bureau intégré et écran pour le repos et le télétravail.","łóżko king przy salonie, z biurkiem i monitorem do odpoczynku i pracy zdalnej.",Done
+ROOMS,familyBathroom.title,THE FAMILY BATHROOM,A CASA DE BANHO FAMILIAR,DAS FAMILIENBAD,LA SALLE DE BAIN FAMILIALE,ŁAZIENKA RODZINNA,Done
+ROOMS,familyBathroom.desc,"microcement throughout, with a rain shower and built-in sound. warm, soft, and easy to use day to day.","microcimento em todo o espaço, com chuveiro de chuva e som integrado. quente, suave e fácil de usar no dia a dia.","Mikrozement durchgehend, mit Regendusche und integriertem Sound. Warm, weich und alltagstauglich.","microciment intégral, avec douche pluie et son intégré. chaud, doux et facile à vivre au quotidien.","mikrocementowe wykończenie, z prysznicem deszczowym i wbudowanym nagłośnieniem. ciepła, miękka i wygodna na co dzień.",Done
+ROOMS,swimmingPool.title,THE SWIMMING POOL,A PISCINA,DER POOL,LA PISCINE,BASEN,Done
+ROOMS,swimmingPool.desc,"private pool set into the terrace, with seating and surrounding plants. used at different times of day.","piscina privada integrada no terraço, com assentos e plantas ao redor. usada a diferentes horas do dia.","Privatpool in die Terrasse eingelassen, mit Sitzgelegenheiten und Pflanzen. Zu jeder Tageszeit genutzt.","piscine privée intégrée à la terrasse, avec assises et plantes. utilisée à différents moments de la journée.","prywatny basen wbudowany w taras, z siedziskami i roślinami. używany o różnych porach dnia.",Done
+ROOMS,livingSpace.title,THE LIVING SPACE,A SALA DE ESTAR,DER WOHNBEREICH,L'ESPACE DE VIE,PRZESTRZEŃ DZIENNA,Done
+ROOMS,livingSpace.desc,"open-plan living with direct access to the terrace and pool, where most of the day moves between inside and out.","sala de estar aberta com acesso direto ao terraço e à piscina, onde a maior parte do dia se passa entre interior e exterior.","Offener Wohnbereich mit direktem Zugang zu Terrasse und Pool, der Tag bewegt sich ganz natürlich zwischen drinnen und draußen.","séjour ouvert avec accès direct à la terrasse et à la piscine, où la journée oscille entre intérieur et extérieur.","otwarty salon z bezpośrednim wyjściem na taras i basen, gdzie dzień toczy się pomiędzy wnętrzem a zewnętrzem.",Done
+ROOMS,kitchen.title,THE KITCHEN,A COZINHA,DIE KÜCHE,LA CUISINE,KUCHNIA,Done
+ROOMS,kitchen.desc,"fully equipped kitchen set just off the living space, used daily from morning coffee to longer meals later on.","cozinha totalmente equipada junto à sala, usada diariamente desde o café da manhã até refeições mais longas.","Voll ausgestattete Küche direkt neben dem Wohnbereich, täglich genutzt vom Morgenkaffee bis zu längeren Mahlzeiten.","cuisine entièrement équipée à côté du séjour, utilisée chaque jour du café du matin aux repas plus longs.","w pełni wyposażona kuchnia przy salonie, używana codziennie od porannej kawy po dłuższe posiłki.",Done
+ROOMS,lowerRoom.title,THE LOWER ROOM,O QUARTO INFERIOR,DAS UNTERE ZIMMER,LA CHAMBRE DU BAS,POKÓJ DOLNY,Done
+ROOMS,lowerRoom.desc,"downstairs room with two single beds and its own bathroom, more private and comfortable, though without a window.","quarto no piso inferior com duas camas de solteiro e casa de banho própria, mais privado e confortável, embora sem janela.","Zimmer im Untergeschoss mit zwei Einzelbetten und eigenem Bad, privater und ruhig, allerdings ohne Fenster.","chambre en bas avec deux lits simples et sa propre salle de bain, plus intime et confortable, bien que sans fenêtre.","pokój na dole z dwoma łóżkami pojedynczymi i własną łazienką, bardziej prywatny i wygodny, choć bez okna.",Done
+ROOMS,outdoorDining.title,THE OUTDOOR DINING AREA,A ZONA DE REFEIÇÕES EXTERIOR,DER AUSSENESSBEREICH,L'ESPACE REPAS EXTÉRIEUR,JADALNIA NA ŚWIEŻYM POWIETRZU,Done
+ROOMS,outdoorDining.desc,"outdoor table and gas barbecue set just beyond the living space. meals tend to move outside without much planning.","mesa exterior e churrasqueira a gás junto à sala. as refeições tendem a passar para fora sem grande planeamento.","Esstisch und Gasgrill direkt hinter dem Wohnbereich. Mahlzeiten verlagern sich ganz von selbst nach draußen.","table extérieure et barbecue à gaz juste au-delà du séjour. les repas se déplacent dehors sans trop y penser.","stół na zewnątrz i grill gazowy tuż za salonem. posiłki przenoszą się na zewnątrz bez większego planowania.",Done
+ROOMS,garage.title,THE GARAGE,A GARAGEM,DIE GARAGE,LE GARAGE,GARAŻ,Done
+ROOMS,garage.desc,"private garage with space for two cars, directly connected to the house for straightforward arrival and departure.","garagem privada com espaço para dois carros, ligada diretamente à casa para chegadas e partidas simples.","Privatgarage für zwei Autos, direkt mit dem Haus verbunden, unkompliziertes Ankommen und Abreisen.","garage privé pour deux voitures, directement relié à la maison pour des arrivées et départs simples.","prywatny garaż na dwa samochody, bezpośrednio połączony z domem dla wygodnego przyjazdu i odjazdu.",Done
+,,,,,,
+LOCATION,heading,madeira. the pearl of the atlantic.,madeira. a pérola do atlântico.,Madeira. Die Perle des Atlantiks.,madère. la perle de l'atlantique.,madera. perła atlantyku.,Done
+LOCATION,description,"The house sits on the hills of Arco da Calheta, on Madeira's south-west coast. The Atlantic faces it directly. The village is 1 kilometre downhill; Funchal is thirty minutes by car; the airport about fifty.","A casa fica nas colinas de Arco da Calheta, na costa sudoeste da Madeira. O Atlântico fica mesmo em frente. A vila está a 1 quilómetro encosta abaixo; o Funchal a trinta minutos de carro; o aeroporto a cerca de cinquenta.","Das Haus liegt auf den Hügeln von Arco da Calheta, an Madeiras Südwestküste. Der Atlantik liegt direkt davor. Das Dorf ist einen Kilometer bergab; Funchal dreißig Autominuten entfernt, der Flughafen etwa fünfzig.","La maison se trouve sur les collines d'Arco da Calheta, sur la côte sud-ouest de Madère. L'Atlantique lui fait face. Le village est à 1 kilomètre en contrebas ; Funchal à trente minutes en voiture ; l'aéroport à cinquante environ.","Dom stoi na wzgórzach Arco da Calheta, na południowo-zachodnim wybrzeżu Madery. Atlantyk jest tuż naprzeciwko. Wioska leży 1 kilometr w dół; Funchal to trzydzieści minut jazdy samochodem; lotnisko około pięćdziesięciu.",Done
+,,,,,,
+FAQ,page.title,frequently asked questions,,,,,"Translating, agent in progress"
+FAQ,page.subtitle,"Direct answers about Casa Amani: the house, the location, and what to expect.",,,,,"Translating, agent in progress"
+FAQ,page.contact,Can't find what you need?,,,,,"Translating, agent in progress"
+FAQ,q1,Where exactly is Casa Amani?,,,,,"Translating, agent in progress"
+FAQ,a1,"Casa Amani is in Arco da Calheta, a village on the south-west coast of Madeira island, Portugal. It's about 50 minutes by car (48 km) from Madeira International Airport (FNC), and Calheta beach and marina are 6 km away, roughly a five-minute drive.",,,,,"Translating, agent in progress"
+FAQ,q2,How far is the airport?,,,,,"Translating, agent in progress"
+FAQ,a2,"Madeira International Airport (FNC) is 48 km from the house, approximately 50 minutes by car. Funchal is about 30 minutes.",,,,,"Translating, agent in progress"
+FAQ,q3,Is Casa Amani suitable for remote work?,,,,,"Translating, agent in progress"
+FAQ,a3,"Yes. Both bedrooms have a desk, and the guest bedroom has an external monitor that can be connected to a laptop. Free Wi-Fi runs throughout the villa and terrace, and stays of one week or longer are encouraged. Madeira is a recognised digital nomad destination, with the Digital Nomad Village in nearby Ponta do Sol.",,,,,"Translating, agent in progress"
+FAQ,q4,Is there a pool?,,,,,"Translating, agent in progress"
+FAQ,a4,"Yes. A private 7-metre pool set into the terrace, with the option of heating (available at extra cost). It faces the Atlantic.",,,,,"Translating, agent in progress"
+FAQ,q5,How many people does Casa Amani sleep?,,,,,"Translating, agent in progress"
+FAQ,a5,"Up to six. The two bedrooms each have a king-size bed (the guest bedroom king can be split into two single mattresses), and two single beds can be set up on the lower level for a fifth and sixth guest.",,,,,"Translating, agent in progress"
+FAQ,q6,Are pets allowed?,,,,,"Translating, agent in progress"
+FAQ,a6,No. Casa Amani does not accept pets.,,,,,"Translating, agent in progress"
+FAQ,q7,What's the minimum stay?,,,,,"Translating, agent in progress"
+FAQ,a7,"Seven nights. The house is designed for slow stays, weeks rather than weekends.",,,,,"Translating, agent in progress"
+FAQ,q8,Is there parking?,,,,,"Translating, agent in progress"
+FAQ,a8,"Yes. A private garage with space for two cars, directly connected to the house.",,,,,"Translating, agent in progress"
+FAQ,q9,What's the Wi-Fi like?,,,,,"Translating, agent in progress"
+FAQ,a9,"Fibre broadband throughout the villa and terrace. Fast enough for video calls, large uploads, and streaming simultaneously.",,,,,"Translating, agent in progress"
+FAQ,q10,Are there restaurants within walking distance?,,,,,"Translating, agent in progress"
+FAQ,a10,"The nearest bar (Monteiros) and restaurant (Melton's Kitchen) are about 1 km from the house. Calheta's marina restaurants are a 5-minute drive. A car is recommended for most dining.",,,,,"Translating, agent in progress"
+FAQ,q11,Do I need a car?,,,,,"Translating, agent in progress"
+FAQ,a11,"Yes, for most things. Arco da Calheta is a hillside village; the nearest shops, restaurants, and beaches are a short drive away. Car hire on the island is straightforward and affordable.",,,,,"Translating, agent in progress"
+FAQ,q12,What's the climate like in winter?,,,,,"Translating, agent in progress"
+FAQ,a12,"Mild. Daytime temperatures on the south-west coast typically range from 17 to 22°C in winter, with more sunshine hours than Funchal. Madeira doesn't have a cold season in the way Northern Europe does. It has a quieter season.",,,,,"Translating, agent in progress"
+FAQ,q13,Is the house family-friendly?,,,,,"Translating, agent in progress"
+FAQ,a13,"Yes. A cot and high chair are available on request. The pool is unfenced, so children should be supervised. The lower room with two single beds works well for older children or teenagers.",,,,,"Translating, agent in progress"
+FAQ,q14,Can I work from the house full-time?,,,,,"Translating, agent in progress"
+FAQ,a14,"Yes. That's what it's built for. Dedicated desks in both bedrooms, an external monitor in the guest bedroom, fibre Wi-Fi, and a time zone (GMT/WET) that overlaps comfortably with the UK, most of Europe, and the US East Coast morning.",,,,,"Translating, agent in progress"
+FAQ,q15,How do I book?,,,,,"Translating, agent in progress"
+FAQ,a15,"We currently take bookings exclusively through [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620). You can check availability and reserve there directly, or tap any 'Stay with us' button on this site. Casa Amani is also listed on Booking.com, VRBO, OurMadeira, and Casai through our property manager, but for a consistent experience we direct guests to the Airbnb listing from this site.",,,,,"Translating, agent in progress"
+FAQ,q16,Is breakfast included?,,,,,"Translating, agent in progress"
+FAQ,a16,"No. Casa Amani is self-catering. The kitchen is fully equipped with an induction hob, oven, dishwasher, and espresso machine. A private chef can be arranged on request.",,,,,"Translating, agent in progress"
+FAQ,q17,Is there air conditioning and heating?,,,,,"Translating, agent in progress"
+FAQ,a17,"Air conditioning throughout the house, and the same units can be set to heat when needed. There is no separate central heating system, but the south-west coast's mild climate rarely calls for one.",,,,,"Translating, agent in progress"
+FAQ,q18,What's the nearest supermarket?,,,,,"Translating, agent in progress"
+FAQ,a18,"There is a small local shop in Arco da Calheta. For a full supermarket, Pingo Doce in Calheta is about 5 minutes by car.",,,,,"Translating, agent in progress"
+FAQ,q19,Are towels and linens provided?,,,,,"Translating, agent in progress"
+FAQ,a19,"Yes. All bed linen, bath towels, and pool towels are provided and changed weekly.",,,,,"Translating, agent in progress"
+FAQ,q20,What are the check-in and check-out times?,,,,,"Translating, agent in progress"
+FAQ,a20,"Check-in is from 16:00. Check-out is by 11:00. Early check-in or late check-out may be possible depending on availability. Ask when you book.",,,,,"Translating, agent in progress"
+,,,,,,
+REMOTE WORK,title,work from Madeira's quiet side,,,,,"Translating, agent in progress"
+REMOTE WORK,intro,"Casa Amani is a private villa with dedicated workspaces, fibre Wi-Fi, and an external monitor, set on the south-west coast of Madeira where the sun is most consistent. Designed for stays of a week or longer, equally suited to focused solo work and working couples.",,,,,"Translating, agent in progress"
+REMOTE WORK,setup.title,the setup,,,,,"Translating, agent in progress"
+REMOTE WORK,setup.wifi,"Fibre broadband. Fast enough for video calls, large uploads, and streaming simultaneously.",,,,,"Translating, agent in progress"
+REMOTE WORK,setup.desks,Dedicated desk in both bedrooms. The main bedroom desk faces the Atlantic.,,,,,"Translating, agent in progress"
+REMOTE WORK,setup.monitor,"External monitor in the guest bedroom, ready to connect to your laptop.",,,,,"Translating, agent in progress"
+REMOTE WORK,setup.timezone,GMT/WET (same as London). Overlaps with most of Europe and the US East Coast morning.,,,,,"Translating, agent in progress"
+REMOTE WORK,setup.quiet,"Arco da Calheta is a hillside village. The kind of quiet that takes a few days to notice and longer to leave.",,,,,"Translating, agent in progress"
+REMOTE WORK,setup.minstay,Seven nights. Most remote workers stay two to four weeks.,,,,,"Translating, agent in progress"
+REMOTE WORK,coliving.title,"private, not shared",,,,,"Translating, agent in progress"
+REMOTE WORK,coliving.p1,"You may also be considering Outsite (Ponta do Sol) or Homeoffice Madeira (Santo da Serra). They're community-driven shared houses, with group meals, social calendars, and bunk or twin options. Good if you're a solo traveller building a network.",,,,,"Translating, agent in progress"
+REMOTE WORK,coliving.p2,"Casa Amani is private. The house is yours, the pool is yours, the kitchen is yours. It suits couples, families, and small groups who want a dedicated workspace and the calm of an unshared home, on a longer rhythm than a weekend.",,,,,"Translating, agent in progress"
+REMOTE WORK,island.title,the island for remote work,,,,,"Translating, agent in progress"
+REMOTE WORK,island.p1,"Madeira is a recognised digital nomad destination. The Digital Nomad Village in Ponta do Sol (30 minutes east) runs a coworking space and community programme. Funchal has several coworking spaces if you want a change of scene. Portugal's D8 visa makes stays longer than 90 days straightforward for non-EU nationals.",,,,,"Translating, agent in progress"
+REMOTE WORK,island.p2,"The climate helps. The south-west coast averages 17 to 24°C year-round, with more sunshine hours than Funchal. You work in the morning, swim after lunch, walk the levadas before dinner. The rhythm settles quickly.",,,,,"Translating, agent in progress"
+,,,,,,
+THE PLACE,title,"Arco da Calheta, Madeira",,,,,"Translating, agent in progress"
+THE PLACE,intro,"Arco da Calheta is a parish in Calheta municipality, on the south-west coast of Madeira island, Portugal. It sits on a hillside above the Atlantic, facing south, the quietest and sunniest stretch of an island that already has one of Europe's mildest climates. The village is small. The light is consistent. The pace is slow by design, not by accident.",,,,,"Translating, agent in progress"
+THE PLACE,distances.title,distances,,,,,"Translating, agent in progress"
+THE PLACE,westcoast.title,the west coast,,,,,"Translating, agent in progress"
+THE PLACE,westcoast.p1,"Most visitors to Madeira stay in Funchal or along the south-east coast. The west side, from Ribeira Brava to Porto Moniz, is where the island opens up. Fewer hotels, fewer tour buses, longer views. The south-west coast in particular gets more sun hours than anywhere else on the island, sheltered from the north-east trade winds by the central mountain range.",,,,,"Translating, agent in progress"
+THE PLACE,westcoast.p2,"Calheta municipality is the heart of this stretch. Its marina has one of the island's only sand beaches (imported, but pleasant). The village of Jardim do Mar, ten minutes downhill, is a recognised surf break. Paul do Mar, further along the coast, is quieter still. Inland, the levadas (Madeira's network of irrigation channels) thread through laurel forest that's been here since before the island was settled.",,,,,"Translating, agent in progress"
+THE PLACE,climate.title,the climate,,,,,"Translating, agent in progress"
+THE PLACE,climate.p1,"Madeira's south-west coast is mild year-round. Summer averages 22 to 26°C; winter rarely drops below 16°C. Rain falls mostly on the north side and in the mountains; the south-west is the dry side. The sea temperature ranges from 18°C in winter to 24°C in summer, warm enough for swimming most of the year.",,,,,"Translating, agent in progress"
+THE PLACE,climate.p2,"There is no bad season. The island is greenest in winter, busiest in August, and at its most balanced in April and October. Warm without the crowds, flowering everywhere, the levadas at their fullest.",,,,,"Translating, agent in progress"
+THE PLACE,gettinghere.title,getting here,,,,,"Translating, agent in progress"
+THE PLACE,gettinghere.p1,"Madeira International Airport (FNC) has direct flights year-round from London, Frankfurt, Amsterdam, Paris, Lisbon, Porto, Warsaw, and a dozen other European cities. Low-cost carriers (easyJet, Ryanair, Wizz Air) and full-service airlines (TAP, British Airways, Condor) both serve the island.",,,,,"Translating, agent in progress"
+THE PLACE,gettinghere.p2,"From the airport, Arco da Calheta is about 50 minutes west along the VR1 motorway. A hire car is recommended. The west side is best explored at your own pace, and the roads are good.",,,,,"Translating, agent in progress"
+,,,,,,
+PRIVACY,title,privacy,,,,,"Translating, agent in progress"
+PRIVACY,p1,"We use Plausible Analytics, a privacy-respecting tool that helps us understand how this site is used. Plausible does not use cookies, does not store personal data, and does not track you across other sites. Aggregated usage statistics are stored in the European Union.",,,,,"Translating, agent in progress"
+PRIVACY,p2,"If you sign up for our email list, we keep your email address until you ask us to remove it. We use it only to email you when we open for direct bookings or have something useful to share. We do not sell, share, or rent your email to anyone.",,,,,"Translating, agent in progress"
+PRIVACY,p3,"To request removal of your email or to ask questions, write to stay@casa-amani.com.",,,,,"Translating, agent in progress"
