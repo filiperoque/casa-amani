@@ -124,10 +124,10 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
       if (headerEl) headerEl.style.pointerEvents = "";
       if (el) {
         let node: HTMLElement | null = el as HTMLElement;
-        let dark = true;
+        let dark = false;
         while (node && node !== document.body) {
-          if (node.classList.contains("bg-cream")) { dark = false; break; }
           if (node.classList.contains("bg-warm")) { dark = true; break; }
+          if (node.classList.contains("bg-cream")) { dark = false; break; }
           node = node.parentElement as HTMLElement | null;
         }
         setIsDark(dark);
