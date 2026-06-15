@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import OptimizedImage from "@/components/OptimizedImage";
 import { useEffect, useState } from "react";
 import { landingBlurDataURL } from "./blur-placeholder";
 
@@ -56,7 +56,7 @@ export default function LandingScene({
         }`}
       >
         <div className="absolute inset-0 animate-ken-burns">
-          <Image
+          <OptimizedImage
             src="/images/landing-bg.jpg"
             alt="Close-up of handcrafted wood and textile details at Casa Amani"
             fill

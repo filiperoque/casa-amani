@@ -1,4 +1,4 @@
-import Image from "next/image";
+import OptimizedImage from "@/components/OptimizedImage";
 
 interface RoomCardProps {
   image: string;
@@ -16,7 +16,7 @@ export default function RoomCard({
   return (
     <div className="group flex w-[280px] flex-col gap-6 md:w-[340px] lg:w-[399px]">
       <div className="relative h-[340px] w-full overflow-hidden md:h-[420px] lg:h-[525px]">
-        <Image
+        <OptimizedImage
           src={image}
           alt={alt}
           fill

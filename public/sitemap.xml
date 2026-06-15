@@ -365,4 +365,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-island/surf"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-island/surf"/>
   </url>
+  <url>
+    <loc>https://casa-amani.com/en/experiences</loc>
+    <lastmod>2026-06-15</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/experiences"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/experiences"/>
+  </url>
 </urlset>

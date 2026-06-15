@@ -1,4 +1,4 @@
-import Image from "next/image";
+import OptimizedImage from "@/components/OptimizedImage";
 
 interface LocationProps {
   heading: string;
@@ -18,7 +18,7 @@ export default function Location({ heading, description }: LocationProps) {
       </div>
 
       <div className="relative h-[350px] w-full overflow-hidden sm:h-[450px] md:h-[550px] lg:h-[654px] lg:w-[560px] lg:shrink-0">
-        <Image
+        <OptimizedImage
           src="/images/location.jpg"
           alt="Aerial view of Casa Amani overlooking the Atlantic Ocean"
           fill

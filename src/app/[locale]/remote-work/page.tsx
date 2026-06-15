@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
-import Image from "next/image";
+import OptimizedImage from "@/components/OptimizedImage";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import BookCTA from "@/components/BookCTA";
@@ -101,7 +101,7 @@ export default async function RemoteWorkPage({
 
             <Reveal>
               <div className="relative mb-16 h-[300px] overflow-hidden md:h-[400px] lg:h-[500px]">
-                <Image
+                <OptimizedImage
                   src="/images/guest-bedroom.jpg"
                   alt="Guest bedroom workspace at Casa Amani with desk, external monitor, and natural light"
                   fill

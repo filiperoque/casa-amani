@@ -28,6 +28,7 @@
   --color-warm: #b8956e;
   --color-cream: #f2ece2;
   --color-brown: #7a5f40;
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @theme inline {

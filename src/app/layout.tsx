@@ -139,6 +139,9 @@ export default function RootLayout({
       <head>
         <link rel="preload" href="/fonts/GT-Sectra-Display-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/GT-Walsheim-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/GT-Walsheim-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" as="image" href="/images/landing-bg.avif" type="image/avif" />
+        <link rel="preload" as="image" href="/images/hero.avif" type="image/avif" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

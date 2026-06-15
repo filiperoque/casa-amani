@@ -1,4 +1,4 @@
-import Image from "next/image";
+import OptimizedImage from "@/components/OptimizedImage";
 
 interface HeroProps {
   title: string;
@@ -16,7 +16,7 @@ export default function Hero({ title, subtitle }: HeroProps) {
       </p>
 
       <div className="animate-fade-up animate-delay-2 relative mt-4 h-[43vh] w-full overflow-hidden sm:h-[400px] md:h-[500px] lg:h-[654px]">
-        <Image
+        <OptimizedImage
           src="/images/hero.jpg"
           alt="Interior view of Casa Amani with ocean views"
           fill

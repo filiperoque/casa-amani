@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState, useCallback, useRef } from "react";
 import { locales, type Locale } from "@/i18n/translations";
 
+const EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
+
 const localeLabels: Record<Locale, string> = {
   en: "English",
   pt: "Português",
@@ -50,7 +52,6 @@ const secondaryNav = [
 ];
 
 const allNav = [...primaryNav, ...secondaryNav];
-
 const DEFAULT_IMAGE = "/images/landing-bg.jpg";
 
 export default function Header({ menuLabel = "MENU", overlay = false }: { menuLabel?: string; overlay?: boolean }) {
@@ -62,7 +63,8 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
   const hasHero = subpage === "" || subpage === "/" || subpage === "/house";
   const [open, setOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [isDark, setIsDark] = useState(true);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const langRef = useRef<HTMLDivElement>(null);
   const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -80,6 +82,8 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
   const activeText =
     hoveredIndex !== null ? allNav[hoveredIndex]?.text : null;
 
+  const showBrand = scrollProgress > 0.3 || !hasHero;
+
   const close = useCallback(() => {
     setOpen(false);
     setHoveredIndex(null);
@@ -96,13 +100,29 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
   const handleHoverLeave = useCallback(() => {
     hoverTimeoutRef.current = setTimeout(() => {
       setHoveredIndex(null);
-    }, 150);
+    }, 80);
   }, []);
 
   useEffect(() => {
     const onScroll = () => {
-      const threshold = Math.min(window.innerHeight * 0.45, 200);
-      setScrolled(window.scrollY > threshold);
+      const scrollRange = Math.min(window.innerHeight * 0.45, 200);
+      const progress = Math.min(window.scrollY / scrollRange, 1);
+      setScrollProgress(progress);
+
+      const headerEl = document.querySelector("header");
+      if (headerEl) headerEl.style.pointerEvents = "none";
+      const el = document.elementFromPoint(window.innerWidth / 2, 60);
+      if (headerEl) headerEl.style.pointerEvents = "";
+      if (el) {
+        let node: HTMLElement | null = el as HTMLElement;
+        let dark = true;
+        while (node && node !== document.body) {
+          if (node.classList.contains("bg-cream")) { dark = false; break; }
+          if (node.classList.contains("bg-warm")) { dark = true; break; }
+          node = node.parentElement as HTMLElement | null;
+        }
+        setIsDark(dark);
+      }
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -143,57 +163,94 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
     };
   }, []);
 
-  const showBrand = scrolled || !hasHero;
-
   return (
     <>
       {/* Fixed header bar */}
       <header
-        className={`fixed inset-x-0 top-0 z-[60] flex h-14 items-center justify-between px-6 transition-[background-color,backdrop-filter] duration-300 lg:px-[120px] ${
-          scrolled && !open
-            ? "bg-warm/90 backdrop-blur-md"
-            : "bg-transparent"
-        }`}
+        className="fixed inset-x-0 top-0 z-[60] flex h-14 items-center justify-between px-6 lg:px-[120px]"
+        style={{
+          backgroundColor: open
+            ? "var(--color-warm)"
+            : isDark
+              ? `rgba(184, 149, 110, ${scrollProgress * 0.92})`
+              : `rgba(242, 236, 226, ${scrollProgress * 0.95})`,
+          backdropFilter: open ? "none" : `blur(${scrollProgress * 12}px)`,
+          WebkitBackdropFilter: open ? "none" : `blur(${scrollProgress * 12}px)`,
+          transition: `background-color 600ms ${EASE}`,
+        }}
       >
         {/* Hamburger / X */}
         <button
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-[7px] transition-opacity duration-300 hover:opacity-70"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-[7px] hover:opacity-70"
+          style={{ transition: `opacity 400ms ${EASE}` }}
         >
           <span
-            className="block h-[2px] w-6 bg-cream transition-all duration-300 ease-out"
+            className="block h-[2px] w-6"
             style={{
+              backgroundColor: open || isDark ? "var(--color-cream)" : "var(--color-brown)",
               transform: open ? "translateY(4.5px) rotate(45deg)" : "none",
+              transition: `transform 500ms ${EASE}, background-color 600ms ${EASE}`,
             }}
           />
           <span
-            className="block h-[2px] w-6 bg-cream transition-all duration-300 ease-out"
+            className="block h-[2px] w-6"
             style={{
+              backgroundColor: open || isDark ? "var(--color-cream)" : "var(--color-brown)",
               transform: open ? "translateY(-4.5px) rotate(-45deg)" : "none",
+              transition: `transform 500ms ${EASE}, background-color 600ms ${EASE}`,
             }}
           />
         </button>
 
-        {/* Brand mark, absolutely centred */}
+        {/* Brand mark */}
         <a
           href={base || "/en"}
-          className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[26px] text-cream transition-[opacity,letter-spacing] duration-500 hover:tracking-[0.03em] lg:text-[30px] ${
+          className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[55%] font-display text-[26px] hover:tracking-[0.03em] lg:text-[30px] ${
             showBrand ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
+          style={{
+            color: isDark ? "var(--color-cream)" : "var(--color-brown)",
+            transition: `opacity 500ms ${EASE}, letter-spacing 600ms ${EASE}, color 600ms ${EASE}`,
+          }}
           aria-label="Casa Amani Madeira, home"
         >
           casa amani
         </a>
 
-        {/* Language picker */}
-        <div ref={langRef} className="relative">
+        {/* Language picker / Stay CTA share the same right-side slot */}
+        <div className="relative">
+          <a
+            href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=menu-header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border px-5 py-2.5 font-display text-xs tracking-[4.8px] ${
+              isDark
+                ? "border-cream/60 text-cream/90 hover:border-cream hover:bg-cream/10 hover:text-cream"
+                : "border-brown/40 text-brown/80 hover:border-brown hover:bg-brown/5 hover:text-brown"
+            } ${
+              open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
+            }`}
+            style={{ transition: `opacity 500ms ${EASE}, border-color 400ms ${EASE}, background-color 400ms ${EASE}, color 400ms ${EASE}` }}
+          >
+            STAY WITH US
+          </a>
+          <div
+            ref={langRef}
+            className={`${open ? "pointer-events-none opacity-0" : "opacity-100"}`}
+            style={{ transition: `opacity 500ms ${EASE}` }}
+          >
           <button
             onClick={() => setLangOpen((v) => !v)}
             aria-expanded={langOpen}
             aria-label="Change language"
-            className="flex h-10 items-center gap-2 text-sm font-medium text-cream transition-opacity duration-300 hover:opacity-70 lg:text-base"
+            className="flex h-10 items-center gap-2 text-sm font-medium hover:opacity-70 lg:text-base"
+            style={{
+              color: isDark ? "var(--color-cream)" : "var(--color-brown)",
+              transition: `opacity 400ms ${EASE}, color 600ms ${EASE}`,
+            }}
           >
             {localeLabels[currentLocale]}
             <svg
@@ -201,7 +258,10 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
               height="10"
               viewBox="0 0 16 10"
               fill="none"
-              className={`transition-transform duration-200 ease-out ${langOpen ? "rotate-180" : ""}`}
+              style={{
+                transform: langOpen ? "rotate(180deg)" : "rotate(0deg)",
+                transition: `transform 400ms ${EASE}`,
+              }}
             >
               <path
                 d="M2 2L8 8L14 2"
@@ -214,11 +274,12 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
           </button>
 
           <div
-            className={`absolute right-0 top-full mt-2 flex min-w-[160px] flex-col rounded bg-cream shadow-lg transition-all duration-200 ${
+            className={`absolute right-0 top-full mt-2 flex min-w-[160px] flex-col rounded bg-warm shadow-lg ${
               langOpen
                 ? "pointer-events-auto translate-y-0 opacity-100"
-                : "pointer-events-none -translate-y-1 opacity-0"
+                : "pointer-events-none -translate-y-2 opacity-0"
             }`}
+            style={{ transition: `opacity 400ms ${EASE}, transform 400ms ${EASE}` }}
           >
             {locales.map((locale) => (
               <a
@@ -228,16 +289,18 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
                   localStorage.setItem("locale", locale);
                   setLangOpen(false);
                 }}
-                className={`px-5 py-3 text-sm transition-colors ${
+                className={`px-5 py-3 text-sm ${
                   locale === currentLocale
-                    ? "font-medium text-brown"
-                    : "text-brown/50 hover:bg-brown/5 hover:text-brown"
+                    ? "font-medium text-cream"
+                    : "text-cream/50 hover:bg-cream/10 hover:text-cream"
                 }`}
+                style={{ transition: `color 400ms ${EASE}, background-color 400ms ${EASE}` }}
               >
                 {localeLabels[locale]}
               </a>
             ))}
           </div>
+        </div>
         </div>
       </header>
 
@@ -245,11 +308,12 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
 
       {/* Full-screen menu overlay */}
       <div
-        className={`fixed inset-0 z-50 bg-warm transition-opacity duration-[350ms] ease-out ${
+        className={`fixed inset-0 z-50 bg-warm ${
           open
             ? "pointer-events-auto opacity-100"
             : "pointer-events-none opacity-0"
         }`}
+        style={{ transition: `opacity 500ms ${EASE}` }}
         role="dialog"
         aria-modal="true"
         aria-label="Site navigation"
@@ -266,42 +330,62 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
                   href={`${base}${href}`}
                   onMouseEnter={() => handleHoverEnter(i)}
                   onMouseLeave={handleHoverLeave}
-                  className={`font-display text-[32px] leading-none transition-opacity duration-200 lg:text-[48px] ${
-                    subpage === href
-                      ? "text-cream"
-                      : "text-cream/60 hover:text-cream"
-                  }`}
-                  style={{ paddingTop: "0.6em", paddingBottom: "0.6em" }}
+                  className="font-display text-[32px] leading-none text-cream lg:text-[48px]"
+                  style={{
+                    paddingTop: "0.6em",
+                    paddingBottom: "0.6em",
+                    opacity: !open ? 0 : hoveredIndex !== null && hoveredIndex !== i ? 0.35 : 1,
+                    transition: open
+                      ? `opacity 250ms ${EASE}`
+                      : `opacity 600ms ${EASE}`,
+                    transitionDelay: !open ? "0ms" : hoveredIndex !== null ? "0ms" : `${200 + i * 80}ms`,
+                  }}
                 >
                   {label}
                 </a>
               ))}
 
               <div className="mt-4 flex flex-col lg:mt-6">
-                {secondaryNav.map(({ href, label }, i) => (
-                  <a
-                    key={href}
-                    href={`${base}${href}`}
-                    onMouseEnter={() => handleHoverEnter(primaryNav.length + i)}
-                    onMouseLeave={handleHoverLeave}
-                    className={`font-display text-xl leading-none transition-opacity duration-200 lg:text-2xl ${
-                      subpage === href
-                        ? "text-cream"
-                        : "text-cream/60 hover:text-cream"
-                    }`}
-                    style={{ paddingTop: "0.55em", paddingBottom: "0.55em" }}
-                  >
-                    {label}
-                  </a>
-                ))}
+                {secondaryNav.map(({ href, label }, i) => {
+                  const idx = primaryNav.length + i;
+                  return (
+                    <a
+                      key={href}
+                      href={`${base}${href}`}
+                      onMouseEnter={() => handleHoverEnter(idx)}
+                      onMouseLeave={handleHoverLeave}
+                      className="font-display text-xl leading-none text-cream/70 lg:text-2xl"
+                      style={{
+                        paddingTop: "0.55em",
+                        paddingBottom: "0.55em",
+                        opacity: !open ? 0 : hoveredIndex !== null && hoveredIndex !== idx ? 0.3 : 1,
+                        transition: open
+                          ? `opacity 250ms ${EASE}`
+                          : `opacity 600ms ${EASE}`,
+                        transitionDelay: !open ? "0ms" : hoveredIndex !== null ? "0ms" : `${200 + idx * 80}ms`,
+                      }}
+                    >
+                      {label}
+                    </a>
+                  );
+                })}
                 <a
-                  href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=menu"
+                  href="https://www.instagram.com/casa.amani.calheta/"
                   target="_blank"
                   rel="noopener noreferrer"
                   onMouseEnter={() => handleHoverLeave()}
-                  className="plausible-event-name=outbound-airbnb mt-4 inline-block border border-cream/60 px-4 py-2.5 text-center font-display text-xs tracking-[4.8px] text-cream/80 transition-all duration-300 hover:border-cream hover:bg-cream/10 hover:text-cream lg:mt-6"
+                  className="plausible-event-name=outbound-instagram font-display text-xl leading-none text-cream/70 lg:text-2xl"
+                  style={{
+                    paddingTop: "0.55em",
+                    paddingBottom: "0.55em",
+                    opacity: !open ? 0 : hoveredIndex !== null ? 0.3 : 1,
+                    transition: open
+                      ? `opacity 250ms ${EASE}`
+                      : `opacity 600ms ${EASE}`,
+                    transitionDelay: !open ? "0ms" : hoveredIndex !== null ? "0ms" : `${200 + (primaryNav.length + secondaryNav.length) * 80}ms`,
+                  }}
                 >
-                  STAY WITH US
+                  Instagram
                 </a>
               </div>
             </div>
@@ -309,12 +393,15 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
 
           <div className="hidden lg:flex lg:w-[55%] lg:items-center lg:py-8">
             <div
-              className={`relative h-full w-full overflow-hidden transition-all duration-500 ease-out ${
+              className={`relative h-full w-full overflow-hidden ${
                 open
                   ? "translate-y-0 scale-100 opacity-100"
                   : "translate-y-4 scale-[0.97] opacity-0"
               }`}
-              style={{ transitionDelay: open ? "150ms" : "0ms" }}
+              style={{
+                transition: `opacity 700ms ${EASE}, transform 700ms ${EASE}`,
+                transitionDelay: open ? "500ms" : "0ms",
+              }}
             >
               {[...new Set([DEFAULT_IMAGE, ...allNav.filter((n) => n.image).map((n) => n.image!)])].map(
                 (src) => (
@@ -323,16 +410,20 @@ export default function Header({ menuLabel = "MENU", overlay = false }: { menuLa
                     src={src}
                     alt=""
                     fill
-                    className={`object-cover transition-opacity duration-[300ms] ease-out ${
+                    className={`object-cover ${
                       src === activeImage ? "opacity-100" : "opacity-0"
                     }`}
+                    style={{ transition: `opacity 500ms ${EASE}` }}
                     sizes="50vw"
                     priority={src === DEFAULT_IMAGE}
                   />
                 )
               )}
               {activeText && (
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-warm/80 to-transparent p-8 pt-16">
+                <div
+                  className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-warm/80 to-transparent p-8 pt-16"
+                  style={{ transition: `opacity 500ms ${EASE}` }}
+                >
                   <p className="text-base leading-relaxed text-cream/80">
                     {activeText}
                   </p>
