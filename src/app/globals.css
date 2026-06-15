@@ -83,7 +83,7 @@ html:hover::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: var(--color-warm);
+  background: var(--color-cream);
   color: var(--color-cream);
   font-family: var(--font-body);
 }
