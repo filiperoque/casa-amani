@@ -28,7 +28,16 @@
   --color-warm: #b8956e;
   --color-cream: #f2ece2;
   --color-brown: #7a5f40;
-  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --ease-out-natural: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-calm: cubic-bezier(0.45, 0, 0.15, 1);
+  --ease-ambient: cubic-bezier(0.4, 0, 0.6, 1);
+
+  --motion-breath: 300ms;
+  --motion-tide: 600ms;
+  --motion-drift: 1000ms;
+  --motion-settle: 1600ms;
+  --motion-ambient: 25s;
 }
 
 @theme inline {
@@ -79,7 +88,7 @@ body {
   font-family: var(--font-body);
 }
 
-/* Ken Burns — slow drift on landing background */
+/* Ken Burns — ambient drift */
 @keyframes ken-burns {
   0% {
     transform: scale(1);
@@ -90,10 +99,10 @@ body {
 }
 
 .animate-ken-burns {
-  animation: ken-burns 25s ease-out forwards;
+  animation: ken-burns var(--motion-ambient) var(--ease-ambient) forwards;
 }
 
-/* Staggered entrance — fade up from below */
+/* Staggered entrance — fade up (Drift tier) */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -106,7 +115,7 @@ body {
 }
 
 .animate-fade-up {
-  animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fade-up var(--motion-drift) var(--ease-out-natural) both;
 }
 
 .animate-delay-1 {
@@ -121,12 +130,12 @@ body {
   animation-delay: 0.6s;
 }
 
-/* Scroll-triggered reveal — starts invisible, animated by IntersectionObserver */
+/* Scroll-triggered reveal (Drift tier, entrance) */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(24px);
+  transition: opacity var(--motion-drift) var(--ease-out-natural),
+    transform var(--motion-drift) var(--ease-out-natural);
 }
 
 .reveal.is-visible {
@@ -134,12 +143,36 @@ body {
   transform: translateY(0);
 }
 
-/* Image fade-in on load */
+/* Image fade-in on load (Drift tier, entrance) */
 .img-reveal {
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transition: opacity var(--motion-drift) var(--ease-out-natural);
 }
 
 .img-reveal.loaded {
   opacity: 1;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-breath: 200ms;
+    --motion-tide: 400ms;
+    --motion-drift: 500ms;
+    --motion-settle: 500ms;
+    --motion-ambient: 0s;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-property: opacity, color, background-color, border-color !important;
+  }
+
+  .animate-ken-burns {
+    animation: none !important;
+    transform: none !important;
+  }
 }
