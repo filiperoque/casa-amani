@@ -58,7 +58,7 @@ export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: st
     let ticking = false;
 
     const easeOutNatural = (t: number) => {
-      return 1 - Math.pow(1 - t, 3);
+      return 1 - Math.pow(1 - t, 5);
     };
 
     const update = () => {
