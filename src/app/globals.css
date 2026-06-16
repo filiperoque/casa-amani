@@ -52,6 +52,7 @@ html {
   scroll-behavior: smooth;
   overflow-y: scroll;
   scrollbar-width: none;
+  background: var(--color-warm);
 }
 
 @supports (overflow-y: overlay) {
