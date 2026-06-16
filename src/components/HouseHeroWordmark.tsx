@@ -49,7 +49,7 @@ export default function HouseHeroWordmark({ text }: { text: string }) {
       const headerHeight = headerRect.height;
 
       scaleRatio = headerHeight / heroHeight;
-      threshold = heroTopAbsolute - STICKY_TOP_PX;
+      threshold = (heroTopAbsolute - STICKY_TOP_PX) * 1.4;
       if (threshold < 1) threshold = 1;
     };
 
@@ -57,9 +57,14 @@ export default function HouseHeroWordmark({ text }: { text: string }) {
 
     let ticking = false;
 
+    const easeOutNatural = (t: number) => {
+      return 1 - Math.pow(1 - t, 3);
+    };
+
     const update = () => {
       const scrollY = window.scrollY;
-      const progress = Math.min(Math.max(scrollY / threshold, 0), 1);
+      const rawProgress = Math.min(Math.max(scrollY / threshold, 0), 1);
+      const progress = easeOutNatural(rawProgress);
       const scale = 1 + (scaleRatio - 1) * progress;
       wordmark.style.transform = `scale(${scale})`;
 
