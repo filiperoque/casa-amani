@@ -33,13 +33,13 @@ export default async function HousePage({
       </div>
 
       <main id="main">
-        <section className="bg-warm pb-0">
+        <section className="bg-warm pb-0 pt-8 lg:pt-12">
           <HouseHeroWordmark text={t.landing.title} />
-          <div className="flex flex-col items-center px-6 lg:px-[120px]">
+          <div className="flex flex-col items-center gap-6 px-6 lg:px-[120px]">
             <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">
               {t.landing.subtitle}
             </p>
-            <div className="animate-fade-up animate-delay-2 relative mt-4 h-[43vh] w-full overflow-hidden sm:h-[400px] md:h-[500px] lg:h-[654px]">
+            <div className="animate-fade-up animate-delay-2 relative mt-2 h-[43vh] w-full overflow-hidden sm:h-[400px] md:h-[500px] lg:h-[654px]">
               <OptimizedImage
                 src="/images/hero.jpg"
                 alt="Interior view of Casa Amani with ocean views"
