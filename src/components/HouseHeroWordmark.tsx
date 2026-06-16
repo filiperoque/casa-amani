@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const STICKY_TOP_PX = 14;
+const STICKY_TOP_PX = 10;
 
 export default function HouseHeroWordmark({ text }: { text: string }) {
   const wordmarkRef = useRef<HTMLHeadingElement>(null);
