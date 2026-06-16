@@ -15,7 +15,7 @@ export default function Hero({ title, subtitle }: HeroProps) {
         {subtitle}
       </p>
 
-      <div className="animate-fade-up animate-delay-2 relative mt-4 h-[43vh] w-full overflow-hidden sm:h-[400px] md:h-[500px] lg:h-[654px]">
+      <div className="animate-fade-up animate-delay-2 relative mt-4 h-[43svh] w-full overflow-hidden sm:h-[400px] md:h-[500px] lg:h-[654px]">
         <OptimizedImage
           src="/images/hero.jpg"
           alt="Interior view of Casa Amani with ocean views"
