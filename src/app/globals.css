@@ -89,15 +89,8 @@ body {
 }
 
 .hero-full {
-  height: 100dvh;
-  min-height: 100dvh;
-}
-
-@supports not (height: 100dvh) {
-  .hero-full {
-    height: 100vh;
-    min-height: 100vh;
-  }
+  height: 100vh;
+  height: 100svh;
 }
 
 /* Ken Burns — ambient drift */
