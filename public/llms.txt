@@ -30,9 +30,12 @@ Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the
 - [The House](https://casa-amani.com/en/house): rooms, layout, amenities
 - [Remote Work](https://casa-amani.com/en/remote-work): workspace setup, why Madeira for remote work, coliving comparison
 - [Calheta](https://casa-amani.com/en/calheta): Arco da Calheta, west Madeira, distances, climate, getting here
-- [The Guide](https://casa-amani.com/en/the-guide): curated guide to west Madeira (restaurants, bars, surf)
-- [Restaurants](https://casa-amani.com/en/the-guide/restaurants): where to eat near Calheta, from grilled fish to tasting menus
-- [Bars](https://casa-amani.com/en/the-guide/bars): sunset bars, poncha spots, and nightlife on the west coast
+- [The Guide](https://casa-amani.com/en/the-guide): curated guide to west Madeira across five categories
+- [Land](https://casa-amani.com/en/the-guide/land): hikes, levadas, viewpoints, and inland adventures on the west coast
+- [Sea](https://casa-amani.com/en/the-guide/sea): beaches, natural pools, boat trips, and coastal activities
+- [Table](https://casa-amani.com/en/the-guide/table): restaurants, bars, poncha spots, and where to eat and drink near Calheta
+- [Culture](https://casa-amani.com/en/the-guide/culture): museums, markets, festivals, and local traditions in west Madeira
+- [Practical](https://casa-amani.com/en/the-guide/practical): getting around, groceries, pharmacies, and day-to-day essentials
 - [Surf](https://casa-amani.com/en/the-guide/surf): guide to surfing west Madeira, Jardim do Mar, Paul do Mar, Ponta Pequena
 - [FAQ](https://casa-amani.com/en/faq): 20 common questions answered directly
 

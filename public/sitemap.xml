@@ -345,18 +345,39 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide"/>
   </url>
   <url>
-    <loc>https://casa-amani.com/en/the-guide/restaurants</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://casa-amani.com/en/the-guide/land</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-guide/restaurants"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide/restaurants"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-guide/land"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide/land"/>
   </url>
   <url>
-    <loc>https://casa-amani.com/en/the-guide/bars</loc>
-    <lastmod>2026-06-15</lastmod>
+    <loc>https://casa-amani.com/en/the-guide/sea</loc>
+    <lastmod>2026-06-16</lastmod>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-guide/bars"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide/bars"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-guide/sea"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide/sea"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/en/the-guide/table</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-guide/table"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide/table"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/en/the-guide/culture</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-guide/culture"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide/culture"/>
+  </url>
+  <url>
+    <loc>https://casa-amani.com/en/the-guide/practical</loc>
+    <lastmod>2026-06-16</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://casa-amani.com/en/the-guide/practical"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://casa-amani.com/en/the-guide/practical"/>
   </url>
   <url>
     <loc>https://casa-amani.com/en/the-guide/surf</loc>

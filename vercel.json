@@ -10,7 +10,11 @@
     { "source": "/:locale(en|pt|de|fr|pl)/the-place", "destination": "/:locale/calheta", "statusCode": 308 },
     { "source": "/:locale(en|pt|de|fr|pl)/the-island", "destination": "/:locale/the-guide", "statusCode": 308 },
     { "source": "/:locale(en|pt|de|fr|pl)/the-island/:path*", "destination": "/:locale/the-guide/:path*", "statusCode": 308 },
-    { "source": "/experiences", "destination": "/en/experiences", "statusCode": 301 }
+    { "source": "/experiences", "destination": "/en/experiences", "statusCode": 301 },
+    { "source": "/:locale(en|pt|de|fr|pl)/the-guide/restaurants", "destination": "/:locale/the-guide/table", "statusCode": 308 },
+    { "source": "/:locale(en|pt|de|fr|pl)/the-guide/bars", "destination": "/:locale/the-guide/table", "statusCode": 308 },
+    { "source": "/the-guide/restaurants", "destination": "/en/the-guide/table", "statusCode": 308 },
+    { "source": "/the-guide/bars", "destination": "/en/the-guide/table", "statusCode": 308 }
   ],
   "headers": [
     {
