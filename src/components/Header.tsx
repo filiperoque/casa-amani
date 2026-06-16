@@ -118,7 +118,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
       const progress = Math.min(window.scrollY / scrollRange, 1);
       setScrollProgress(progress);
 
-      if (!hasHero) {
+      if (!isLanding) {
         const headerEl = document.querySelector("header");
         if (headerEl) headerEl.style.pointerEvents = "none";
         const el = document.elementFromPoint(window.innerWidth / 2, 70);
