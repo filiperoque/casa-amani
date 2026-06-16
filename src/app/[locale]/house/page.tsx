@@ -33,9 +33,8 @@ export default async function HousePage({
       </div>
 
       <main id="main">
-        <HouseHeroWordmark text={t.landing.title} />
-
         <section className="bg-warm pb-0">
+          <HouseHeroWordmark text={t.landing.title} />
           <div className="flex flex-col items-center px-6 lg:px-[120px]">
             <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">
               {t.landing.subtitle}

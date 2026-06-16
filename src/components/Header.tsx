@@ -118,19 +118,21 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
       const progress = Math.min(window.scrollY / scrollRange, 1);
       setScrollProgress(progress);
 
-      const headerEl = document.querySelector("header");
-      if (headerEl) headerEl.style.pointerEvents = "none";
-      const el = document.elementFromPoint(window.innerWidth / 2, 70);
-      if (headerEl) headerEl.style.pointerEvents = "";
-      if (el) {
-        let node: HTMLElement | null = el as HTMLElement;
-        let dark = false;
-        while (node && node !== document.body) {
-          if (node.classList.contains("bg-warm")) { dark = true; break; }
-          if (node.classList.contains("bg-cream")) { dark = false; break; }
-          node = node.parentElement as HTMLElement | null;
+      if (!hasHero) {
+        const headerEl = document.querySelector("header");
+        if (headerEl) headerEl.style.pointerEvents = "none";
+        const el = document.elementFromPoint(window.innerWidth / 2, 70);
+        if (headerEl) headerEl.style.pointerEvents = "";
+        if (el) {
+          let node: HTMLElement | null = el as HTMLElement;
+          let dark = false;
+          while (node && node !== document.body) {
+            if (node.classList.contains("bg-warm")) { dark = true; break; }
+            if (node.classList.contains("bg-cream")) { dark = false; break; }
+            node = node.parentElement as HTMLElement | null;
+          }
+          setIsDark(dark);
         }
-        setIsDark(dark);
       }
     };
     onScroll();
