@@ -33,7 +33,7 @@ export default async function HousePage({
       </div>
 
       <main id="main" className="bg-warm">
-        <HouseHeroWordmark text={t.landing.title} />
+        <HouseHeroWordmark text={t.landing.title} homeHref={`/${locale}`} />
 
         <div className="flex flex-col items-center gap-6 px-6 pt-4 lg:px-[120px] lg:pt-6">
           <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">

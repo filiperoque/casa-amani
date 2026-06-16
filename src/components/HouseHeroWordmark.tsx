@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const STICKY_TOP_PX = 10;
 
-export default function HouseHeroWordmark({ text }: { text: string }) {
+export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: string; homeHref?: string }) {
   const wordmarkRef = useRef<HTMLHeadingElement>(null);
   const headerAnchorRef = useRef<HTMLDivElement>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -125,7 +125,7 @@ export default function HouseHeroWordmark({ text }: { text: string }) {
     <>
       <h1
         ref={wordmarkRef}
-        className="pointer-events-none z-[61] text-center font-display text-5xl md:text-7xl lg:text-[88px] lg:leading-[80px]"
+        className="z-[61] text-center font-display text-5xl md:text-7xl lg:text-[88px] lg:leading-[80px]"
         style={{
           position: "sticky",
           top: `${STICKY_TOP_PX}px`,
@@ -134,11 +134,18 @@ export default function HouseHeroWordmark({ text }: { text: string }) {
           color: "var(--color-cream)",
           opacity: menuOpen ? 0 : 1,
           visibility: menuOpen ? "hidden" : "visible",
-          transition: "opacity var(--motion-tide) var(--ease-in-out-calm), color var(--motion-tide) var(--ease-in-out-calm)",
+          transition: "opacity var(--motion-tide) var(--ease-in-out-calm), color var(--motion-tide) var(--ease-in-out-calm), letter-spacing var(--motion-tide) var(--ease-in-out-calm)",
           margin: 0,
         }}
       >
-        {text}
+        <a
+          href={homeHref}
+          aria-label="Casa Amani Madeira, home"
+          className="hover:tracking-[0.03em]"
+          style={{ transition: "letter-spacing var(--motion-tide) var(--ease-in-out-calm)" }}
+        >
+          {text}
+        </a>
       </h1>
 
       <div
