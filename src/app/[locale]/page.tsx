@@ -12,7 +12,7 @@ export default async function LandingPage({
   const t = getTranslations(locale as Locale);
 
   return (
-    <div id="main" className="bg-warm">
+    <div id="main" className="min-h-screen bg-warm">
       <Header menuLabel={t.header.menu} overlay mode="hero" />
       <div className="hero-full relative flex items-center justify-center overflow-hidden bg-[#bb9669]">
         <LandingScene
