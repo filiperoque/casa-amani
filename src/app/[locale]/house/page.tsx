@@ -58,6 +58,33 @@ export default async function HousePage({
           />
         </Reveal>
         <HouseGallery t={t} />
+
+        <section className="bg-cream px-6 py-16 md:py-24 lg:px-[120px] lg:py-32">
+          <div className="mx-auto max-w-5xl">
+            <Reveal>
+              <h2 className="mb-10 font-display text-2xl text-brown md:text-3xl lg:text-4xl">
+                {t.staysInclude.title}
+              </h2>
+              <ul className="mb-20 grid grid-cols-1 gap-4 text-sm leading-7 text-brown/70 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+                {t.staysInclude.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </Reveal>
+
+            <Reveal>
+              <h2 className="mb-10 font-display text-2xl text-brown md:text-3xl lg:text-4xl">
+                {t.amenities.title}
+              </h2>
+              <ul className="grid grid-cols-1 gap-4 text-sm leading-7 text-brown/70 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+                {t.amenities.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </section>
+
         <Reveal>
           <Location
             heading={t.location.heading}
