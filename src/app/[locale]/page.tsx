@@ -14,7 +14,7 @@ export default async function LandingPage({
   return (
     <div id="main" className="bg-warm">
       <Header menuLabel={t.header.menu} overlay mode="hero" />
-      <div className="relative flex h-svh min-h-svh items-center justify-center overflow-hidden bg-[#bb9669]">
+      <div className="hero-full relative flex items-center justify-center overflow-hidden bg-[#bb9669]">
         <LandingScene
           title={t.landing.title}
           subtitle={t.landing.subtitle}

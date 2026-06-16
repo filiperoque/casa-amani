@@ -86,6 +86,13 @@ body {
   background: var(--color-cream);
   color: var(--color-cream);
   font-family: var(--font-body);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.hero-full {
+  height: 100svh;
+  height: -webkit-fill-available;
 }
 
 /* Ken Burns — ambient drift */
