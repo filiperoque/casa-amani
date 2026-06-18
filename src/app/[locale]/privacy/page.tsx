@@ -37,7 +37,10 @@ export default async function PrivacyPage({
                 {t.privacy.p2}
               </p>
               <p>
-                {t.privacy.p3}{" "}
+                {t.privacy.p3}
+              </p>
+              <p>
+                {t.privacy.p4}{" "}
                 <a
                   href="mailto:stay@casa-amani.com"
                   className="plausible-event-name=email-click text-brown underline"

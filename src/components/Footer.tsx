@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { locales, type Locale, getTranslations } from "@/i18n/translations";
 import Reveal from "./Reveal";
+import SubscribeBlock from "./SubscribeBlock";
 
 const AIRBNB_URL =
   "https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=footer";
@@ -15,8 +16,10 @@ export default function Footer() {
   const t = getTranslations(currentLocale);
 
   return (
-    <footer className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
-      <Reveal>
+    <>
+      <SubscribeBlock />
+      <footer className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
+        <Reveal>
         <div className="grid grid-cols-1 gap-10 text-sm text-cream/80 md:grid-cols-3 md:gap-8">
           {/* Column 1: Brand + location */}
           <div>
@@ -75,5 +78,6 @@ export default function Footer() {
         <a href={`${base}/privacy`} className="transition-colors hover:text-cream">{t.footer.privacy}</a>
       </div>
     </footer>
+    </>
   );
 }
