@@ -1,0 +1,5 @@
+extends: existence
+message: "No em-dashes. Use commas, periods, semicolons, or parentheses."
+level: error
+raw:
+  - "—"

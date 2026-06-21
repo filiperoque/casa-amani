@@ -1,0 +1,38 @@
+extends: existence
+message: "'%s' is not Casa Amani register. Use declarative facts and sensory specifics instead."
+level: error
+ignorecase: true
+tokens:
+  - stunning
+  - breathtaking
+  - magnificent
+  - spectacular
+  - exhilarating
+  - unforgettable
+  - magical
+  - wondrous
+  - extraordinary
+  - sublime
+  - paradise
+  - hidden gem
+  - must-visit
+  - must-do
+  - iconic
+  - world-class
+  - luxurious
+  - luxury
+  - exclusive
+  - prestigious
+  - immerse yourself
+  - lose yourself
+  - you'll find
+  - you'll fall in love
+  - you'll be amazed
+  - set sail on
+  - thrilling adventure
+  - don't miss
+  - can't miss
+  - epic
+  - gem
+  - jewel
+  - newsletter

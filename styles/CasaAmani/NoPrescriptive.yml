@@ -1,0 +1,16 @@
+extends: existence
+message: "'%s' is prescriptive. Describe what is, not what someone should do."
+level: warning
+ignorecase: true
+tokens:
+  - you must
+  - you should
+  - you need to
+  - make sure to
+  - be sure to
+  - don't forget to
+  - remember to
+  - we recommend
+  - we suggest
+  - join our community
+  - subscribe to our

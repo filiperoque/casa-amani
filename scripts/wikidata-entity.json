@@ -1,0 +1,44 @@
+{
+  "labels": {
+    "en": { "language": "en", "value": "Casa Amani Madeira" },
+    "pt": { "language": "pt", "value": "Casa Amani Madeira" },
+    "de": { "language": "de", "value": "Casa Amani Madeira" },
+    "fr": { "language": "fr", "value": "Casa Amani Madeira" },
+    "pl": { "language": "pl", "value": "Casa Amani Madeira" }
+  },
+  "descriptions": {
+    "en": { "language": "en", "value": "Two-bedroom contemporary rental villa in Arco da Calheta, Madeira" },
+    "pt": { "language": "pt", "value": "Moradia contemporanea de dois quartos para arrendamento em Arco da Calheta, Madeira" },
+    "de": { "language": "de", "value": "Zeitgenossische Ferienvilla mit zwei Schlafzimmern in Arco da Calheta, Madeira" },
+    "fr": { "language": "fr", "value": "Villa contemporaine de deux chambres en location a Arco da Calheta, Madere" },
+    "pl": { "language": "pl", "value": "Wspolczesna willa z dwoma sypialniami do wynajecia w Arco da Calheta, Madera" }
+  },
+  "aliases": {
+    "en": [
+      { "language": "en", "value": "Casa Amani Calheta" },
+      { "language": "en", "value": "Casa Amani, Arco da Calheta" }
+    ]
+  },
+  "claims": {
+    "P31": [{ "value": { "entity-type": "item", "id": "Q2143825" }, "type": "wikibase-entityid" }],
+    "P17": [{ "value": { "entity-type": "item", "id": "Q45" }, "type": "wikibase-entityid" }],
+    "P131": [{ "value": { "entity-type": "item", "id": "Q1026877" }, "type": "wikibase-entityid" }],
+    "P625": [{ "value": { "latitude": 32.715988, "longitude": -17.140852, "precision": 0.0001 }, "type": "globecoordinate" }],
+    "P856": [{ "value": "https://casa-amani.com", "type": "string" }],
+    "P973": [
+      { "value": "https://www.airbnb.co.uk/rooms/1695506665949683620", "type": "url" },
+      { "value": "https://www.ourmadeira.com/regions/calheta-area/amani/", "type": "url" },
+      { "value": "https://www.vrbo.com/en-gb/p12152433", "type": "url" },
+      { "value": "https://www.booking.com/hotel/pt/superb-modern-villa-with-pool-in-calhetaamani.en-gb.html", "type": "url" },
+      { "value": "https://www.casai.com/property/ourmadeira-amani/BC-16564906", "type": "url" }
+    ]
+  },
+  "_notes": {
+    "P31": "instance of: vacation rental (Q2143825)",
+    "P17": "country: Portugal (Q45)",
+    "P131": "located in: Arco da Calheta (Q1026877 - verify this Q-ID exists)",
+    "P625": "coordinate location",
+    "P856": "official website",
+    "P973": "described at URL (OTA listings)"
+  }
+}
