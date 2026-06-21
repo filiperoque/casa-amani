@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <>
-      <SubscribeBlock />
+      {/* <SubscribeBlock /> — hidden until Notes from Madeira PDF is ready */}
       <footer className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
         <Reveal>
         <div className="grid grid-cols-1 gap-10 text-sm text-cream/80 md:grid-cols-3 md:gap-8">
