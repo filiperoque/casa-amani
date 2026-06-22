@@ -199,7 +199,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-[7px]"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-[7px] hover:opacity-80"
           style={{ transition: `opacity var(--motion-breath) ${CALM}` }}
         >
           <span
@@ -244,7 +244,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
             href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=menu-header"
             target="_blank"
             rel="noopener noreferrer"
-            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream/60 px-5 py-2.5 font-display text-xs tracking-[4.8px] text-cream/90 ${
+            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream/60 px-5 py-2.5 font-display text-xs tracking-[4.8px] text-cream/90 hover:border-cream hover:bg-cream/10 active:scale-[0.96] ${
               open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
             }`}
             style={{ transition: `opacity var(--motion-drift) ${CALM}, border-color var(--motion-tide) ${CALM}, background-color var(--motion-tide) ${CALM}` }}
@@ -262,7 +262,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
               onClick={() => setLangOpen((v) => !v)}
               aria-expanded={langOpen}
               aria-label="Change language"
-              className="flex h-10 items-center gap-2 text-sm font-medium lg:text-base"
+              className="flex h-10 items-center gap-2 text-sm font-medium hover:opacity-80 lg:text-base"
               style={{
                 color: isDark ? "var(--color-cream)" : "var(--color-brown)",
                 transition: `opacity var(--motion-breath) ${CALM}, color var(--motion-tide) ${CALM}`,

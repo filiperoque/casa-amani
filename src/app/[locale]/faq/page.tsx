@@ -122,7 +122,7 @@ export default async function FaqPage({
             {t.faq.items.map((item, i) => (
               <Reveal key={i} delay={Math.min(i * 40, 200)}>
                 <details className="group border-t border-brown/10 py-6 last:border-b">
-                  <summary className="flex cursor-pointer items-start justify-between gap-4 text-brown marker:content-none [&::-webkit-details-marker]:hidden">
+                  <summary className="flex cursor-pointer items-start justify-between gap-4 text-brown transition-opacity hover:opacity-70 marker:content-none [&::-webkit-details-marker]:hidden">
                     <span className="text-base font-medium md:text-lg">
                       {item.question}
                     </span>
