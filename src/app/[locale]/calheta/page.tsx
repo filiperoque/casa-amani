@@ -180,6 +180,16 @@ export default async function ThePlacePage({
             </Reveal>
           </div>
         </section>
+        <Reveal>
+          <section className="bg-cream px-6 py-12 lg:px-[120px]">
+            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown/60">
+              <a href={`/${locale}/house`} className="transition-colors hover:text-brown">The house</a>
+              <a href={`/${locale}/the-guide`} className="transition-colors hover:text-brown">The Guide</a>
+              <a href={`/${locale}/the-guide/surf`} className="transition-colors hover:text-brown">Surfing west Madeira</a>
+              <a href={`/${locale}/experiences`} className="transition-colors hover:text-brown">Experiences</a>
+            </div>
+          </section>
+        </Reveal>
         <Footer />
       </main>
     </>

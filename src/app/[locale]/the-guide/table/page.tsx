@@ -42,9 +42,37 @@ export default async function TablePage({
   const { locale } = await params;
   const t = getTranslations(locale as Locale);
 
+  const restaurantSchemas = restaurants.map((r) => ({
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    name: r.title,
+    description: r.body,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: r.location,
+      addressRegion: "Madeira",
+      addressCountry: "PT",
+    },
+    ...(r.distanceKm && {
+      geo: {
+        "@type": "GeoCoordinates",
+        description: `${r.distanceKm} km from Casa Amani`,
+      },
+    }),
+  }));
+
   return (
-    <main id="main">
-      <Header menuLabel={t.header.menu} />
+    <>
+      {restaurantSchemas.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
+
+      <main id="main">
+        <Header menuLabel={t.header.menu} />
 
       <section className="bg-cream px-6 py-16 md:py-24 lg:px-[120px] lg:py-32">
         <div className="mx-auto max-w-3xl">
@@ -84,5 +112,6 @@ export default async function TablePage({
       </section>
       <Footer />
     </main>
+    </>
   );
 }

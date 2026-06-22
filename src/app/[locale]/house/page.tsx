@@ -87,6 +87,16 @@ export default async function HousePage({
             description={t.location.description}
           />
         </Reveal>
+        <Reveal>
+          <section className="bg-cream px-6 py-12 lg:px-[120px]">
+            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown/60">
+              <a href={`/${locale}/remote-work`} className="transition-colors hover:text-brown">Remote work from Casa Amani</a>
+              <a href={`/${locale}/experiences`} className="transition-colors hover:text-brown">Experiences</a>
+              <a href={`/${locale}/the-guide/table`} className="transition-colors hover:text-brown">Where to eat</a>
+              <a href={`/${locale}/calheta`} className="transition-colors hover:text-brown">About Calheta</a>
+            </div>
+          </section>
+        </Reveal>
         <Footer />
       </main>
     </>
