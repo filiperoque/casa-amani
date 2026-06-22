@@ -22,7 +22,7 @@ export default function OptimizedImage({
   const basePath = src.replace(/\.jpg$/, "");
 
   return (
-    <picture className="relative">
+    <picture>
       <source srcSet={`${basePath}.avif`} type="image/avif" />
       <source srcSet={`${basePath}.webp`} type="image/webp" />
       <Image
@@ -33,10 +33,6 @@ export default function OptimizedImage({
         sizes={sizes}
         className={className}
         onLoad={onLoad}
-        style={{
-          outline: "1px solid rgba(0, 0, 0, 0.08)",
-          outlineOffset: "-1px",
-        }}
       />
     </picture>
   );
