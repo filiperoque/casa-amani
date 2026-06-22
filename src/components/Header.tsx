@@ -199,7 +199,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-[7px] hover:opacity-80"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-[7px] hover:scale-[1.02] hover:opacity-80 active:scale-[0.96]"
           style={{ transition: `opacity var(--motion-breath) ${CALM}` }}
         >
           <span
@@ -262,7 +262,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
               onClick={() => setLangOpen((v) => !v)}
               aria-expanded={langOpen}
               aria-label="Change language"
-              className="flex h-10 items-center gap-2 text-sm font-medium hover:opacity-80 lg:text-base"
+              className="flex h-10 items-center gap-2 text-sm font-medium hover:scale-[1.02] hover:opacity-80 active:scale-[0.96] lg:text-base"
               style={{
                 color: isDark ? "var(--color-cream)" : "var(--color-brown)",
                 transition: `opacity var(--motion-breath) ${CALM}, color var(--motion-tide) ${CALM}`,
