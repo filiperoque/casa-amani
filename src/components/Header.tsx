@@ -244,7 +244,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
             href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=menu-header"
             target="_blank"
             rel="noopener noreferrer"
-            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream/60 px-5 py-2.5 font-display text-xs tracking-[4.8px] text-cream/90 hover:border-cream hover:bg-cream/10 active:scale-[0.96] ${
+            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream/60 px-5 py-2.5 font-display text-xs tracking-[4.8px] text-cream/90 hover:scale-[1.02] hover:border-cream hover:bg-cream/10 active:scale-[0.96] ${
               open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
             }`}
             style={{ transition: `opacity var(--motion-drift) ${CALM}, border-color var(--motion-tide) ${CALM}, background-color var(--motion-tide) ${CALM}` }}
