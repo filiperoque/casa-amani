@@ -19,6 +19,28 @@ export const metadata: Metadata = {
     "surf accommodation madeira west coast",
   ],
   alternates: { canonical: "/the-guide/surf" },
+  openGraph: {
+    title:
+      "Surfing West Madeira | A Guide from Casa Amani | Jardim do Mar, Paul do Mar",
+    description:
+      "Surf breaks within 15 minutes of Casa Amani: Jardim do Mar, Paul do Mar, Ponta Pequena. What each is good for, when to go, and what a surf week on Madeira's west coast looks like.",
+    images: [
+      {
+        url: "/images/swimming-pool.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Swimming pool at Casa Amani overlooking the Atlantic",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Surfing West Madeira | A Guide from Casa Amani | Jardim do Mar, Paul do Mar",
+    description:
+      "Surf breaks within 15 minutes of Casa Amani: Jardim do Mar, Paul do Mar, Ponta Pequena. What each is good for, when to go, and what a surf week on Madeira's west coast looks like.",
+    images: ["/images/swimming-pool.jpg"],
+  },
 };
 
 const breadcrumbJsonLd = {

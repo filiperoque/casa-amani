@@ -9,6 +9,26 @@ export const metadata: Metadata = {
   description:
     "The household management of the trip. Taxis, car hire, emergency contacts, pharmacy, babysitting, apps to download.",
   alternates: { canonical: "/the-guide/practical" },
+  openGraph: {
+    title: "Practical | Casa Amani Madeira | Getting Around, Safety, Contacts",
+    description:
+      "The household management of the trip. Taxis, car hire, emergency contacts, pharmacy, babysitting, apps to download.",
+    images: [
+      {
+        url: "/images/living-space.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Open-plan living space at Casa Amani",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Practical | Casa Amani Madeira | Getting Around, Safety, Contacts",
+    description:
+      "The household management of the trip. Taxis, car hire, emergency contacts, pharmacy, babysitting, apps to download.",
+    images: ["/images/living-space.jpg"],
+  },
 };
 
 const sections = [

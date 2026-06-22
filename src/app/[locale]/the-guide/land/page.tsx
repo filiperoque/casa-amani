@@ -9,6 +9,26 @@ export const metadata: Metadata = {
   description:
     "On foot and on wheels. Walks, levadas, viewpoints, mountain biking, golf, gardens. From Casa Amani in Arco da Calheta, Madeira.",
   alternates: { canonical: "/the-guide/land" },
+  openGraph: {
+    title: "Land | Casa Amani Madeira | Walks, Levadas, Golf",
+    description:
+      "On foot and on wheels. Walks, levadas, viewpoints, mountain biking, golf, gardens. From Casa Amani in Arco da Calheta, Madeira.",
+    images: [
+      {
+        url: "/images/location.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aerial view of the coast at Arco da Calheta, Madeira",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Land | Casa Amani Madeira | Walks, Levadas, Golf",
+    description:
+      "On foot and on wheels. Walks, levadas, viewpoints, mountain biking, golf, gardens. From Casa Amani in Arco da Calheta, Madeira.",
+    images: ["/images/location.jpg"],
+  },
 };
 
 const sections = [

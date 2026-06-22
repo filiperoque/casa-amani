@@ -13,6 +13,26 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/calheta",
   },
+  openGraph: {
+    title: "Calheta | Casa Amani Madeira | West Coast",
+    description:
+      "Arco da Calheta sits on the south-west coast of Madeira, the quietest, sunniest stretch of the island. A village on a hill above the Atlantic, 30 minutes from Funchal.",
+    images: [
+      {
+        url: "/images/location.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aerial view of the coast at Arco da Calheta, Madeira",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Calheta | Casa Amani Madeira | West Coast",
+    description:
+      "Arco da Calheta sits on the south-west coast of Madeira, the quietest, sunniest stretch of the island. A village on a hill above the Atlantic, 30 minutes from Funchal.",
+    images: ["/images/location.jpg"],
+  },
 };
 
 const placeJsonLd = {

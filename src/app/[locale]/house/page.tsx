@@ -16,6 +16,26 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/house",
   },
+  openGraph: {
+    title: "The House | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "A 219 m² split-level contemporary villa with 2 bedrooms, 3 bathrooms, heated pool, sea view, and workspaces. Sleeps up to 6 in Arco da Calheta, Madeira.",
+    images: [
+      {
+        url: "/images/hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Interior of Casa Amani with ocean view through floor-to-ceiling windows",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The House | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "A 219 m² split-level contemporary villa with 2 bedrooms, 3 bathrooms, heated pool, sea view, and workspaces. Sleeps up to 6 in Arco da Calheta, Madeira.",
+    images: ["/images/hero.jpg"],
+  },
 };
 
 export default async function HousePage({

@@ -9,6 +9,26 @@ export const metadata: Metadata = {
   description:
     "Everything on or in the water around Madeira's west coast. Surf breaks, boat charters, swimming spots, diving. From Casa Amani in Arco da Calheta.",
   alternates: { canonical: "/the-guide/sea" },
+  openGraph: {
+    title: "Sea | Casa Amani Madeira | Surf, Boats, Swimming",
+    description:
+      "Everything on or in the water around Madeira's west coast. Surf breaks, boat charters, swimming spots, diving. From Casa Amani in Arco da Calheta.",
+    images: [
+      {
+        url: "/images/swimming-pool.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Swimming pool at Casa Amani overlooking the Atlantic",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sea | Casa Amani Madeira | Surf, Boats, Swimming",
+    description:
+      "Everything on or in the water around Madeira's west coast. Surf breaks, boat charters, swimming spots, diving. From Casa Amani in Arco da Calheta.",
+    images: ["/images/swimming-pool.jpg"],
+  },
 };
 
 const sections = [

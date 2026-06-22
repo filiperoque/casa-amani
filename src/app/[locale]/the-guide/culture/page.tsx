@@ -9,6 +9,26 @@ export const metadata: Metadata = {
   description:
     "Contemporary art at MUDAS, music nights, festivals, whale and dolphin watching. Cultural life on Madeira's west coast.",
   alternates: { canonical: "/the-guide/culture" },
+  openGraph: {
+    title: "Culture | Casa Amani Madeira | Art, Music, Festivals",
+    description:
+      "Contemporary art at MUDAS, music nights, festivals, whale and dolphin watching. Cultural life on Madeira's west coast.",
+    images: [
+      {
+        url: "/images/location.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aerial view of the coast at Arco da Calheta, Madeira",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Culture | Casa Amani Madeira | Art, Music, Festivals",
+    description:
+      "Contemporary art at MUDAS, music nights, festivals, whale and dolphin watching. Cultural life on Madeira's west coast.",
+    images: ["/images/location.jpg"],
+  },
 };
 
 const sections = [

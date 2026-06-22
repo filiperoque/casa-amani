@@ -13,6 +13,26 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/remote-work",
   },
+  openGraph: {
+    title: "Remote Work | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor. Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
+    images: [
+      {
+        url: "/images/guest-bedroom.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Guest bedroom workspace at Casa Amani with desk and external monitor",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Remote Work | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor. Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
+    images: ["/images/guest-bedroom.jpg"],
+  },
 };
 
 const breadcrumbJsonLd = {

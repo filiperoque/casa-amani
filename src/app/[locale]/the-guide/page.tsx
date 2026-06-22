@@ -9,6 +9,26 @@ export const metadata: Metadata = {
   description:
     "A curated guide to the west coast of Madeira from Casa Amani. Land, sea, table, culture, practical. Every entry is somewhere we have been.",
   alternates: { canonical: "/the-guide" },
+  openGraph: {
+    title: "The Guide | Casa Amani Madeira | West Coast Directory",
+    description:
+      "A curated guide to the west coast of Madeira from Casa Amani. Land, sea, table, culture, practical. Every entry is somewhere we have been.",
+    images: [
+      {
+        url: "/images/location.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Aerial view of the coast at Arco da Calheta, Madeira",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Guide | Casa Amani Madeira | West Coast Directory",
+    description:
+      "A curated guide to the west coast of Madeira from Casa Amani. Land, sea, table, culture, practical. Every entry is somewhere we have been.",
+    images: ["/images/location.jpg"],
+  },
 };
 
 const categories = [

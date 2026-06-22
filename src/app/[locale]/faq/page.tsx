@@ -12,6 +12,26 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/faq",
   },
+  openGraph: {
+    title: "FAQ | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "Common questions about Casa Amani: location, remote work, pool, capacity, booking, and more. Direct answers about this contemporary villa in Arco da Calheta, Madeira.",
+    images: [
+      {
+        url: "/images/living-space.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Open-plan living space at Casa Amani",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "Common questions about Casa Amani: location, remote work, pool, capacity, booking, and more. Direct answers about this contemporary villa in Arco da Calheta, Madeira.",
+    images: ["/images/living-space.jpg"],
+  },
 };
 
 const breadcrumbJsonLd = {

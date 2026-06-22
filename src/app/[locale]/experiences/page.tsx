@@ -9,6 +9,26 @@ export const metadata: Metadata = {
   description:
     "Services arranged at Casa Amani Madeira: private chef, massage, yoga, golf, pre-arrival stocking, babysitting, and flowers. With notice, ahead of arrival or during the stay.",
   alternates: { canonical: "/experiences" },
+  openGraph: {
+    title: "Experiences | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "Services arranged at Casa Amani Madeira: private chef, massage, yoga, golf, pre-arrival stocking, babysitting, and flowers. With notice, ahead of arrival or during the stay.",
+    images: [
+      {
+        url: "/images/outdoor-dining.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Outdoor terrace dining at Casa Amani",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Experiences | Casa Amani Madeira | Arco da Calheta",
+    description:
+      "Services arranged at Casa Amani Madeira: private chef, massage, yoga, golf, pre-arrival stocking, babysitting, and flowers. With notice, ahead of arrival or during the stay.",
+    images: ["/images/outdoor-dining.jpg"],
+  },
 };
 
 const breadcrumbJsonLd = {
