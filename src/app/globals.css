@@ -87,6 +87,16 @@ body {
   background: var(--color-cream);
   color: var(--color-cream);
   font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p, li, dd {
+  text-wrap: pretty;
 }
 
 .hero-full {

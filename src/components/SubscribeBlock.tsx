@@ -99,8 +99,8 @@ export default function SubscribeBlock() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="whitespace-nowrap border border-cream/60 px-5 py-3 font-display text-xs tracking-[3px] text-cream/90 hover:border-cream hover:bg-cream/10 hover:text-cream disabled:opacity-50"
-                  style={{ transition: `all var(--motion-tide) ${CALM}` }}
+                  className="whitespace-nowrap border border-cream/60 px-5 py-3 font-display text-xs tracking-[3px] text-cream/90 hover:border-cream hover:bg-cream/10 hover:text-cream active:scale-[0.96] disabled:opacity-50"
+                  style={{ transition: `background-color var(--motion-tide) ${CALM}, border-color var(--motion-tide) ${CALM}, color var(--motion-tide) ${CALM}, transform 150ms ${CALM}` }}
                 >
                   {status === "submitting"
                     ? t.subscribe.buttonSubmitting
