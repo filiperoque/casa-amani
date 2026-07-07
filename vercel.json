@@ -1,6 +1,11 @@
 {
   "redirects": [
+    { "source": "/", "destination": "/en", "statusCode": 308 },
     { "source": "/house", "destination": "/en/house", "statusCode": 301 },
+    { "source": "/the-guide", "destination": "/en/the-guide", "statusCode": 308 },
+    { "source": "/the-guide/:path*", "destination": "/en/the-guide/:path*", "statusCode": 308 },
+    { "source": "/calheta", "destination": "/en/calheta", "statusCode": 308 },
+    { "source": "/contact", "destination": "/en/contact", "statusCode": 308 },
     { "source": "/faq", "destination": "/en/faq", "statusCode": 301 },
     { "source": "/remote-work", "destination": "/en/remote-work", "statusCode": 301 },
     { "source": "/the-place", "destination": "/en/calheta", "statusCode": 308 },

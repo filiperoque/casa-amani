@@ -12,6 +12,24 @@ const translations = {
         "Above the village, a house. The Atlantic in front, the laurel behind. The light is clear, the days slow. Windows open. Birds singing. The pool, the sun, the afternoon. Made for slow stays on Madeira's quiet side.",
     },
     header: { menu: "MENU" },
+    home: {
+      briefTitle: "the house, briefly.",
+      briefBody:
+        "Two bedrooms, three bathrooms, 219 square metres above Arco da Calheta. A 7-metre pool facing the Atlantic. Fibre wifi and two places to work. Sleeps six. Stays start at seven nights.",
+      facts: ["2 bedrooms", "sleeps 6", "219 m²", "7 m pool", "fibre wifi", "from 7 nights"],
+      houseLink: "The house in detail",
+      bookingNote: "Availability and exact pricing on Airbnb.",
+      quietTitle: "the quiet side.",
+      quietBody:
+        "Arco da Calheta sits on Madeira's south-west coast, the sunniest stretch of the island. The village is one kilometre downhill.",
+      distances: [
+        ["Calheta beach", "6 km"],
+        ["Funchal", "30 min"],
+        ["Airport (FNC)", "50 min"],
+        ["Jardim do Mar", "10 min"],
+      ],
+      calhetaLink: "About Calheta",
+    },
     tagline: {
       heading: "your home, briefly.",
       subheading: "made to be lived in slowly, on Madeira's sunny side.",
@@ -19,7 +37,7 @@ const translations = {
     house: {
       title: "the house",
       features:
-        "2 bedrooms · 3 bathrooms · 219 m² · atlantic-facing · heated pool",
+        "2 bedrooms · 3 bathrooms · 219 m² · atlantic-facing · pool with optional heating",
       features2:
         "workspaces · fibre wifi · outdoor dining & barbecue · garage for 2 cars",
     },
@@ -40,14 +58,14 @@ const translations = {
           "microcement throughout, with a rain shower and built-in sound. warm, soft, and easy to use day to day.",
       },
       swimmingPool: {
-        title: "THE HEATED POOL",
+        title: "THE POOL",
         description:
-          "private heated pool set into the terrace, with seating and surrounding plants. used at different times of day.",
+          "private 7-metre pool set into the terrace, with seating and surrounding plants. heating available at extra cost.",
       },
       livingSpace: {
         title: "THE LIVING SPACE",
         description:
-          "open-plan living with direct access to the terrace and heated pool, where most of the day moves between inside and out.",
+          "open-plan living with direct access to the terrace and pool, where most of the day moves between inside and out.",
       },
       kitchen: {
         title: "THE KITCHEN",
@@ -93,7 +111,7 @@ const translations = {
       items: [
         "Two bedrooms with desks; external monitor in the guest bedroom",
         "Three bathrooms; en-suite to the main bedroom",
-        "Heated 7-metre pool with sea view",
+        "7-metre pool with sea view; heating available at extra cost",
         "Outdoor dining area with gas barbecue",
         "Open-plan living facing the Atlantic",
         "Fully equipped kitchen: induction hob, oven, microwave, dishwasher, espresso machine, toaster, kettle",
@@ -110,18 +128,18 @@ const translations = {
     },
     subscribe: {
       heading: "Notes from Madeira",
-      bodyP1: "Our 30-page field guide to the west coast. Where we eat, walk, and send people. Updated each year. Subscribers get the new edition.",
+      bodyP1: "Occasional notes from Madeira's west coast. Where we eat, walk, and send people. Subscribers get the field guide when each new edition is ready.",
       placeholder: "Email",
-      buttonDefault: "Send me the guide",
+      buttonDefault: "Keep me posted",
       buttonSubmitting: "Sending",
       confirmHeading: "Check your inbox",
-      confirmBody: "We sent a confirmation link to that address. Click it and your guide is on the way.",
-      confirmAlready: "You're already on the list. Your guide is on its way.",
+      confirmBody: "We sent a confirmation link to that address. Click it and you're on the list.",
+      confirmAlready: "You're already on the list.",
       errorInvalid: "That doesn't look like a valid email. Try again.",
       errorGeneric: "Something went wrong. Try again in a moment.",
       privacyLine: "We send the occasional letter when something is worth saying. Unsubscribe any time.",
       confirmedHeading: "Welcome",
-      confirmedBody: "Your guide is on its way to your inbox. Give it five minutes. If it doesn't arrive, check your spam folder. We send from stay@casa-amani.com.",
+      confirmedBody: "You're on the list. We write when something is worth saying, and the field guide will reach you when the new edition is ready. We send from stay@casa-amani.com.",
     },
     bookCta: "Book a stay",
     faq: {
@@ -229,7 +247,38 @@ const translations = {
           answer:
             "Check-in is from 16:00. Check-out is by 11:00. Early check-in or late check-out may be possible depending on availability. Ask when you book.",
         },
+        {
+          question: "How much does it cost to stay?",
+          answer:
+            "Rates vary by season and are set on the [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620) listing, together with live availability. The listing shows the exact total for your dates before you book.",
+        },
+        {
+          question: "Why do you only take bookings through Airbnb?",
+          answer:
+            "It keeps availability, pricing, and payment protection in one place. If you have questions before booking, write to stay@casa-amani.com and we will answer directly.",
+        },
+        {
+          question: "Can I stay for a month or longer?",
+          answer:
+            "Yes. Stays start at seven nights and longer stays are welcome; most remote workers stay two to four weeks. For stays over seven nights, linens and towels are changed mid-stay.",
+        },
+        {
+          question: "Who runs Casa Amani?",
+          answer:
+            "Casa Amani is privately owned and managed together with OurMadeira, a Madeira-based property management company. Guests have a 24-hour assistance line during their stay.",
+        },
+        {
+          question: "What is the cancellation policy?",
+          answer:
+            "The cancellation policy is shown on the [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620) listing for your dates, before you confirm the booking.",
+        },
       ],
+      groups: {
+        house: "the house",
+        location: "location and getting around",
+        booking: "booking and stay terms",
+        working: "working from here",
+      },
     },
     remoteWork: {
       title: "work from Madeira's quiet side",
@@ -337,8 +386,30 @@ const translations = {
       remoteWork: "Remote Work",
       experiences: "Experiences",
       faq: "FAQ",
+      contact: "Contact",
       bookOnAirbnb: "Book on Airbnb",
       privacy: "Privacy",
+    },
+    nav: {
+      previews: {
+        house: "Two bedrooms, a pool, a kitchen used daily.",
+        guide: "Where we eat, walk, and send people on the west coast.",
+        calheta: "Arco da Calheta, the south-west coast of Madeira.",
+        remoteWork: "Desks in both bedrooms, fibre internet, a quiet hillside village.",
+        experiences: "Private chef, massage, yoga, and more. Arranged with notice.",
+      },
+      discoverMore: "Discover more",
+    },
+    contact: {
+      title: "contact",
+      intro:
+        "Questions before you book, or during a stay. We read everything and reply as soon as we can.",
+      bookingNote:
+        "Availability and exact pricing live on the Airbnb listing. For everything else, email works best.",
+      emailLabel: "Email",
+      phoneLabel: "Phone",
+      instagramLabel: "Instagram",
+      availabilityCta: "Check availability on Airbnb",
     },
     privacy: {
       title: "privacy",
@@ -357,6 +428,24 @@ const translations = {
         "Acima da aldeia, uma casa. O Atlântico em frente, o loureiro atrás. A luz é clara, os dias lentos. Janelas abertas. Pássaros a cantar. A piscina, o sol, a tarde. Feita para estadias longas, no lado calmo da Madeira.",
     },
     header: { menu: "MENU" },
+    home: {
+      briefTitle: "a casa, em resumo.",
+      briefBody:
+        "Dois quartos, três casas de banho, 219 metros quadrados sobre o Arco da Calheta. Uma piscina de 7 metros virada para o Atlântico. Wi-Fi de fibra e dois lugares para trabalhar. Dorme até seis pessoas. Estadias a partir de sete noites.",
+      facts: ["2 quartos", "até 6 pessoas", "219 m²", "piscina de 7 m", "Wi-Fi de fibra", "desde 7 noites"],
+      houseLink: "A casa em detalhe",
+      bookingNote: "Disponibilidade e preços exatos no Airbnb.",
+      quietTitle: "o lado calmo.",
+      quietBody:
+        "O Arco da Calheta fica na costa sudoeste da Madeira, o troço mais soalheiro da ilha. A aldeia está a um quilómetro, encosta abaixo.",
+      distances: [
+        ["Praia da Calheta", "6 km"],
+        ["Funchal", "30 min"],
+        ["Aeroporto (FNC)", "50 min"],
+        ["Jardim do Mar", "10 min"],
+      ],
+      calhetaLink: "Sobre a Calheta",
+    },
     tagline: {
       heading: "a sua casa, por uns dias.",
       subheading:
@@ -365,7 +454,7 @@ const translations = {
     house: {
       title: "a casa",
       features:
-        "2 quartos · 3 casas de banho · 219 m² · virada para o Atlântico · piscina aquecida",
+        "2 quartos · 3 casas de banho · 219 m² · virada para o Atlântico · piscina com aquecimento opcional",
       features2:
         "espaços de trabalho · fibra óptica · refeições ao ar livre e churrasqueira · garagem para 2 carros",
     },
@@ -388,7 +477,7 @@ const translations = {
       swimmingPool: {
         title: "A PISCINA",
         description:
-          "piscina privada integrada no terraço, com lugares sentados e plantas à volta. usa-se a horas diferentes do dia.",
+          "piscina privada de 7 metros integrada no terraço, com lugares sentados e plantas à volta. aquecimento disponível com custo extra.",
       },
       livingSpace: {
         title: "A SALA",
@@ -439,7 +528,7 @@ const translations = {
       items: [
         "Dois quartos com secretária; monitor externo no quarto de hóspedes",
         "Três casas de banho; uma privativa no quarto principal",
-        "Piscina aquecida de 7 metros com vista mar",
+        "Piscina de 7 metros com vista mar; aquecimento disponível com custo extra",
         "Zona de refeições ao ar livre com churrasqueira a gás",
         "Sala aberta virada para o Atlântico",
         "Cozinha totalmente equipada: placa de indução, forno, micro-ondas, máquina de lavar loiça, máquina de café, torradeira, chaleira",
@@ -456,18 +545,18 @@ const translations = {
     },
     subscribe: {
       heading: "Notas da Madeira",
-      bodyP1: "O nosso guia de 30 páginas sobre a costa oeste. Onde comemos, caminhamos e mandamos as pessoas. Atualizado todos os anos. Quem subscreve recebe a nova edição.",
+      bodyP1: "Notas ocasionais da costa oeste da Madeira. Onde comemos, caminhamos e mandamos as pessoas. Quem subscreve recebe o guia quando cada nova edição fica pronta.",
       placeholder: "Email",
-      buttonDefault: "Enviem-me o guia",
+      buttonDefault: "Mantenham-me a par",
       buttonSubmitting: "A enviar",
       confirmHeading: "Verifique a sua caixa de entrada",
-      confirmBody: "Enviámos um link de confirmação para esse endereço. Clique nele e o guia segue a caminho.",
-      confirmAlready: "Já está na lista. O guia vai a caminho.",
+      confirmBody: "Enviámos um link de confirmação para esse endereço. Clique nele e fica na lista.",
+      confirmAlready: "Já está na lista.",
       errorInvalid: "Isso não parece um email válido. Tente outra vez.",
       errorGeneric: "Algo correu mal. Tente novamente daqui a um momento.",
       privacyLine: "Enviamos uma carta ocasional quando algo vale a pena dizer. Cancele a subscrição a qualquer momento.",
       confirmedHeading: "Bem-vindo",
-      confirmedBody: "O guia vai a caminho da sua caixa de entrada. Dê-lhe cinco minutos. Se não chegar, verifique a pasta de spam. Enviamos a partir de stay@casa-amani.com.",
+      confirmedBody: "Está na lista. Escrevemos quando algo vale a pena dizer, e o guia chega quando a nova edição estiver pronta. Enviamos a partir de stay@casa-amani.com.",
     },
     bookCta: "Reservar estadia",
     faq: {
@@ -575,7 +664,38 @@ const translations = {
           answer:
             "Check-in a partir das 16:00. Check-out até às 11:00. Entradas antecipadas ou saídas tardias podem ser possíveis consoante a disponibilidade. Pergunte ao reservar.",
         },
+        {
+          question: "Quanto custa a estadia?",
+          answer:
+            "Os preços variam consoante a época e estão definidos no anúncio do [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620), junto com a disponibilidade em tempo real. O anúncio mostra o total exato para as suas datas antes de reservar.",
+        },
+        {
+          question: "Porque é que as reservas são só pelo Airbnb?",
+          answer:
+            "Mantém a disponibilidade, os preços e a proteção de pagamento num só lugar. Se tiver dúvidas antes de reservar, escreva para stay@casa-amani.com e respondemos diretamente.",
+        },
+        {
+          question: "Posso ficar um mês ou mais?",
+          answer:
+            "Pode. As estadias começam nas sete noites e estadias mais longas são bem-vindas; a maioria de quem trabalha remotamente fica duas a quatro semanas. Em estadias de mais de sete noites, a roupa de cama e as toalhas são mudadas a meio.",
+        },
+        {
+          question: "Quem gere a Casa Amani?",
+          answer:
+            "A Casa Amani é privada e é gerida em conjunto com a OurMadeira, uma empresa de gestão de propriedades sediada na Madeira. Os hóspedes têm uma linha de apoio 24 horas durante a estadia.",
+        },
+        {
+          question: "Qual é a política de cancelamento?",
+          answer:
+            "A política de cancelamento aparece no anúncio do [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620) para as suas datas, antes de confirmar a reserva.",
+        },
       ],
+      groups: {
+        house: "a casa",
+        location: "localização e deslocações",
+        booking: "reservas e condições de estadia",
+        working: "trabalhar a partir daqui",
+      },
     },
     remoteWork: {
       title: "trabalhar a partir do lado calmo da Madeira",
@@ -683,14 +803,36 @@ const translations = {
       remoteWork: "Trabalho Remoto",
       experiences: "Experiências",
       faq: "FAQ",
+      contact: "Contacto",
       bookOnAirbnb: "Reservar no Airbnb",
       privacy: "Privacidade",
+    },
+    nav: {
+      previews: {
+        house: "Dois quartos, uma piscina, uma cozinha usada todos os dias.",
+        guide: "Onde comemos, caminhamos e mandamos as pessoas na costa oeste.",
+        calheta: "Arco da Calheta, a costa sudoeste da Madeira.",
+        remoteWork: "Secretárias nos dois quartos, internet de fibra, uma aldeia calma na encosta.",
+        experiences: "Chef privado, massagem, yoga e mais. Organizado com aviso prévio.",
+      },
+      discoverMore: "Descubra mais",
+    },
+    contact: {
+      title: "contacto",
+      intro:
+        "Dúvidas antes de reservar, ou durante a estadia. Lemos tudo e respondemos assim que pudermos.",
+      bookingNote:
+        "A disponibilidade e os preços exatos estão no anúncio do Airbnb. Para tudo o resto, o email é o melhor caminho.",
+      emailLabel: "Email",
+      phoneLabel: "Telefone",
+      instagramLabel: "Instagram",
+      availabilityCta: "Verificar disponibilidade no Airbnb",
     },
     privacy: {
       title: "privacidade",
       p1: "Usamos o Plausible Analytics para perceber como o site é utilizado. O Plausible não usa cookies, não guarda dados pessoais e não o segue para outros sites. Os dados agregados ficam armazenados na União Europeia.",
       p2: "Se se inscrever na nossa lista, guardamos o seu email até nos pedir para o apagar. Usamos apenas para avisar quando abrirmos reservas diretas ou tivermos algo útil. Não vendemos nem partilhamos o seu email com ninguém.",
-      p3: "We use MailerLite (operated by MailerLite Limited, Dublin, Ireland) to manage subscriptions to Notes from Madeira and to send the guide and occasional letters. When you subscribe, we collect your email address and your detected language preference. We store this data with MailerLite. We do not share it with any third party other than MailerLite, and we do not use it for advertising or profiling. You can unsubscribe from any email using the link in that email's footer.",
+      p3: "Usamos o MailerLite (operado pela MailerLite Limited, Dublin, Irlanda) para gerir as subscrições das Notas da Madeira e enviar o guia e cartas ocasionais. Quando subscreve, recolhemos o seu endereço de email e a preferência de idioma detetada. Guardamos estes dados no MailerLite. Não os partilhamos com terceiros além do MailerLite, nem os usamos para publicidade ou definição de perfis. Pode cancelar a subscrição em qualquer email através do link no rodapé desse email.",
       p4: "Para pedir a remoção do email ou tirar dúvidas, escreva para",
     },
   },
@@ -703,6 +845,24 @@ const translations = {
         "Oberhalb des Dorfes ein Haus. Der Atlantik davor, der Lorbeerwald dahinter. Das Licht ist klar, die Tage langsam. Fenster offen. Vögel singen. Der Pool, die Sonne, der Nachmittag. Für lange Aufenthalte, auf Madeiras ruhiger Seite.",
     },
     header: { menu: "MENÜ" },
+    home: {
+      briefTitle: "das Haus, in Kürze.",
+      briefBody:
+        "Zwei Schlafzimmer, drei Bäder, 219 Quadratmeter oberhalb von Arco da Calheta. Ein 7-Meter-Pool mit Blick auf den Atlantik. Glasfaser-WLAN und zwei Arbeitsplätze. Platz für sechs Gäste. Aufenthalte ab sieben Nächten.",
+      facts: ["2 Schlafzimmer", "bis zu 6 Gäste", "219 m²", "7-m-Pool", "Glasfaser-WLAN", "ab 7 Nächten"],
+      houseLink: "Das Haus im Detail",
+      bookingNote: "Verfügbarkeit und genaue Preise auf Airbnb.",
+      quietTitle: "die ruhige Seite.",
+      quietBody:
+        "Arco da Calheta liegt an der Südwestküste Madeiras, dem sonnigsten Abschnitt der Insel. Das Dorf liegt einen Kilometer weiter unten.",
+      distances: [
+        ["Strand von Calheta", "6 km"],
+        ["Funchal", "30 min"],
+        ["Flughafen (FNC)", "50 min"],
+        ["Jardim do Mar", "10 min"],
+      ],
+      calhetaLink: "Über Calheta",
+    },
     tagline: {
       heading: "Ihr Zuhause, auf Zeit.",
       subheading:
@@ -711,7 +871,7 @@ const translations = {
     house: {
       title: "das Haus",
       features:
-        "2 Schlafzimmer · 3 Badezimmer · 219 m² · Atlantikblick · beheizbarer Pool",
+        "2 Schlafzimmer · 3 Badezimmer · 219 m² · Atlantikblick · Pool mit optionaler Beheizung",
       features2:
         "Arbeitsplätze · Glasfaser-WLAN · Außenküche mit Grill · Garage für 2 Autos",
     },
@@ -734,7 +894,7 @@ const translations = {
       swimmingPool: {
         title: "DER POOL",
         description:
-          "Privatpool in die Terrasse eingelassen, mit Sitzgelegenheiten und Pflanzen. Zu jeder Tageszeit genutzt.",
+          "Privater 7-Meter-Pool, in die Terrasse eingelassen, mit Sitzgelegenheiten und Pflanzen. Beheizung gegen Aufpreis möglich.",
       },
       livingSpace: {
         title: "DER WOHNBEREICH",
@@ -785,7 +945,7 @@ const translations = {
       items: [
         "Zwei Schlafzimmer mit Schreibtisch; externer Monitor im Gästezimmer",
         "Drei Badezimmer; eines en suite im Hauptschlafzimmer",
-        "Beheizbarer 7-Meter-Pool mit Meerblick",
+        "7-Meter-Pool mit Meerblick; Beheizung gegen Aufpreis",
         "Außenessbereich mit Gasgrill",
         "Offener Wohnbereich mit Atlantikblick",
         "Voll ausgestattete Küche: Induktionsherd, Backofen, Mikrowelle, Geschirrspüler, Espressomaschine, Toaster, Wasserkocher",
@@ -802,18 +962,18 @@ const translations = {
     },
     subscribe: {
       heading: "Notizen aus Madeira",
-      bodyP1: "Unser 30-seitiger Reiseführer für die Westküste. Wo wir essen, wandern und Gäste hinschicken. Jährlich aktualisiert. Abonnenten erhalten die neue Ausgabe.",
+      bodyP1: "Gelegentliche Notizen von Madeiras Westküste. Wo wir essen, wandern und Gäste hinschicken. Abonnenten erhalten den Guide, sobald eine neue Ausgabe fertig ist.",
       placeholder: "E-Mail",
-      buttonDefault: "Guide zusenden",
+      buttonDefault: "Auf dem Laufenden bleiben",
       buttonSubmitting: "Wird gesendet",
       confirmHeading: "Prüfen Sie Ihren Posteingang",
-      confirmBody: "Wir haben einen Bestätigungslink an diese Adresse geschickt. Klicken Sie darauf und Ihr Guide ist unterwegs.",
-      confirmAlready: "Sie stehen bereits auf der Liste. Ihr Guide ist unterwegs.",
+      confirmBody: "Wir haben einen Bestätigungslink an diese Adresse geschickt. Klicken Sie darauf und Sie stehen auf der Liste.",
+      confirmAlready: "Sie stehen bereits auf der Liste.",
       errorInvalid: "Das sieht nicht nach einer gültigen E-Mail-Adresse aus. Versuchen Sie es erneut.",
       errorGeneric: "Etwas ist schiefgegangen. Versuchen Sie es in einem Moment erneut.",
       privacyLine: "Wir schreiben gelegentlich, wenn es etwas zu sagen gibt. Abmeldung jederzeit möglich.",
       confirmedHeading: "Willkommen",
-      confirmedBody: "Ihr Guide ist unterwegs in Ihren Posteingang. Geben Sie ihm fünf Minuten. Falls er nicht ankommt, prüfen Sie Ihren Spam-Ordner. Wir senden von stay@casa-amani.com.",
+      confirmedBody: "Sie stehen auf der Liste. Wir schreiben, wenn es etwas zu sagen gibt, und der Guide erreicht Sie, sobald die neue Ausgabe fertig ist. Wir senden von stay@casa-amani.com.",
     },
     bookCta: "Aufenthalt buchen",
     faq: {
@@ -921,7 +1081,38 @@ const translations = {
           answer:
             "Check-in ab 16:00 Uhr. Check-out bis 11:00 Uhr. Früher Check-in oder später Check-out sind je nach Verfügbarkeit möglich. Fragen Sie bei der Buchung.",
         },
+        {
+          question: "Was kostet ein Aufenthalt?",
+          answer:
+            "Die Preise variieren je nach Saison und stehen im [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620)-Inserat, zusammen mit der aktuellen Verfügbarkeit. Das Inserat zeigt vor der Buchung den genauen Gesamtpreis für Ihre Daten.",
+        },
+        {
+          question: "Warum nehmen Sie Buchungen nur über Airbnb entgegen?",
+          answer:
+            "So bleiben Verfügbarkeit, Preise und Zahlungsschutz an einem Ort. Wenn Sie vor der Buchung Fragen haben, schreiben Sie an stay@casa-amani.com und wir antworten direkt.",
+        },
+        {
+          question: "Kann ich einen Monat oder länger bleiben?",
+          answer:
+            "Ja. Aufenthalte beginnen bei sieben Nächten, längere Aufenthalte sind willkommen; die meisten Remote-Arbeiter bleiben zwei bis vier Wochen. Bei Aufenthalten über sieben Nächten werden Bettwäsche und Handtücher zur Mitte des Aufenthalts gewechselt.",
+        },
+        {
+          question: "Wer führt die Casa Amani?",
+          answer:
+            "Die Casa Amani ist in Privatbesitz und wird gemeinsam mit OurMadeira geführt, einer Hausverwaltung mit Sitz auf Madeira. Gäste haben während des Aufenthalts eine Betreuung rund um die Uhr.",
+        },
+        {
+          question: "Wie sind die Stornierungsbedingungen?",
+          answer:
+            "Die Stornierungsbedingungen werden im [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620)-Inserat für Ihre Daten angezeigt, bevor Sie die Buchung bestätigen.",
+        },
       ],
+      groups: {
+        house: "das Haus",
+        location: "Lage und Fortbewegung",
+        booking: "Buchung und Aufenthaltsbedingungen",
+        working: "von hier aus arbeiten",
+      },
     },
     remoteWork: {
       title: "Arbeiten von Madeiras ruhiger Seite",
@@ -1029,14 +1220,36 @@ const translations = {
       remoteWork: "Remote-Arbeit",
       experiences: "Erlebnisse",
       faq: "FAQ",
+      contact: "Kontakt",
       bookOnAirbnb: "Auf Airbnb buchen",
       privacy: "Datenschutz",
+    },
+    nav: {
+      previews: {
+        house: "Zwei Schlafzimmer, ein Pool, eine täglich genutzte Küche.",
+        guide: "Wo wir an der Westküste essen, wandern und Gäste hinschicken.",
+        calheta: "Arco da Calheta, die Südwestküste Madeiras.",
+        remoteWork: "Schreibtische in beiden Schlafzimmern, Glasfaser-Internet, ein ruhiges Hangdorf.",
+        experiences: "Privatkoch, Massage, Yoga und mehr. Mit Vorlauf organisiert.",
+      },
+      discoverMore: "Mehr entdecken",
+    },
+    contact: {
+      title: "Kontakt",
+      intro:
+        "Fragen vor der Buchung oder während eines Aufenthalts. Wir lesen alles und antworten, sobald wir können.",
+      bookingNote:
+        "Verfügbarkeit und genaue Preise finden Sie im Airbnb-Inserat. Für alles andere ist E-Mail der beste Weg.",
+      emailLabel: "E-Mail",
+      phoneLabel: "Telefon",
+      instagramLabel: "Instagram",
+      availabilityCta: "Verfügbarkeit auf Airbnb prüfen",
     },
     privacy: {
       title: "Datenschutz",
       p1: "Wir nutzen Plausible Analytics, ein datenschutzfreundliches Werkzeug, das uns hilft zu verstehen, wie diese Website genutzt wird. Plausible verwendet keine Cookies, speichert keine personenbezogenen Daten und verfolgt Sie nicht auf anderen Websites. Aggregierte Nutzungsstatistiken werden in der Europäischen Union gespeichert.",
       p2: "Wenn Sie sich für unsere E-Mail-Liste anmelden, bewahren wir Ihre E-Mail-Adresse auf, bis Sie uns bitten, sie zu entfernen. Wir verwenden sie ausschließlich, um Ihnen mitzuteilen, wenn wir Direktbuchungen öffnen oder etwas Nützliches zu teilen haben. Wir verkaufen, teilen oder vermieten Ihre E-Mail-Adresse nicht.",
-      p3: "We use MailerLite (operated by MailerLite Limited, Dublin, Ireland) to manage subscriptions to Notes from Madeira and to send the guide and occasional letters. When you subscribe, we collect your email address and your detected language preference. We store this data with MailerLite. We do not share it with any third party other than MailerLite, and we do not use it for advertising or profiling. You can unsubscribe from any email using the link in that email's footer.",
+      p3: "Wir nutzen MailerLite (betrieben von MailerLite Limited, Dublin, Irland), um die Abonnements der Notizen aus Madeira zu verwalten und den Guide sowie gelegentliche Briefe zu versenden. Bei der Anmeldung erfassen wir Ihre E-Mail-Adresse und die erkannte Sprachpräferenz. Wir speichern diese Daten bei MailerLite. Wir geben sie an keine Dritten außer MailerLite weiter und nutzen sie nicht für Werbung oder Profilbildung. Sie können sich von jeder E-Mail über den Link in der Fußzeile abmelden.",
       p4: "Um die Entfernung Ihrer E-Mail-Adresse zu beantragen oder Fragen zu stellen, schreiben Sie an",
     },
   },
@@ -1049,6 +1262,24 @@ const translations = {
         "Au-dessus du village, une maison. L'Atlantique devant, le laurier derrière. La lumière est claire, les jours lents. Fenêtres ouvertes. Chant d'oiseaux. La piscine, le soleil, l'après-midi. Pour les longs séjours, du côté calme de Madère.",
     },
     header: { menu: "MENU" },
+    home: {
+      briefTitle: "la maison, en bref.",
+      briefBody:
+        "Deux chambres, trois salles de bain, 219 mètres carrés au-dessus d'Arco da Calheta. Une piscine de 7 mètres face à l'Atlantique. Wi-Fi fibre et deux espaces de travail. Jusqu'à six personnes. Séjours à partir de sept nuits.",
+      facts: ["2 chambres", "jusqu'à 6 personnes", "219 m²", "piscine de 7 m", "Wi-Fi fibre", "dès 7 nuits"],
+      houseLink: "La maison en détail",
+      bookingNote: "Disponibilités et prix exacts sur Airbnb.",
+      quietTitle: "le côté calme.",
+      quietBody:
+        "Arco da Calheta se trouve sur la côte sud-ouest de Madère, la partie la plus ensoleillée de l'île. Le village est à un kilomètre en contrebas.",
+      distances: [
+        ["Plage de Calheta", "6 km"],
+        ["Funchal", "30 min"],
+        ["Aéroport (FNC)", "50 min"],
+        ["Jardim do Mar", "10 min"],
+      ],
+      calhetaLink: "À propos de Calheta",
+    },
     tagline: {
       heading: "chez vous, le temps d'un séjour.",
       subheading:
@@ -1057,7 +1288,7 @@ const translations = {
     house: {
       title: "la maison",
       features:
-        "2 chambres · 3 salles de bain · 219 m² · face à l'Atlantique · piscine chauffée",
+        "2 chambres · 3 salles de bain · 219 m² · face à l'Atlantique · piscine avec chauffage en option",
       features2:
         "espaces de travail · fibre optique · repas en plein air et barbecue · garage pour 2 voitures",
     },
@@ -1080,7 +1311,7 @@ const translations = {
       swimmingPool: {
         title: "LA PISCINE",
         description:
-          "piscine privée intégrée à la terrasse, avec assises et plantes. utilisée à différents moments de la journée.",
+          "piscine privée de 7 mètres intégrée à la terrasse, avec assises et plantes. chauffage disponible en supplément.",
       },
       livingSpace: {
         title: "L'ESPACE DE VIE",
@@ -1131,7 +1362,7 @@ const translations = {
       items: [
         "Deux chambres avec bureau ; écran externe dans la chambre d'amis",
         "Trois salles de bain ; une privative dans la chambre principale",
-        "Piscine chauffée de 7 mètres avec vue mer",
+        "Piscine de 7 mètres avec vue mer ; chauffage disponible en supplément",
         "Espace repas extérieur avec barbecue à gaz",
         "Séjour ouvert face à l'Atlantique",
         "Cuisine entièrement équipée : plaque à induction, four, micro-ondes, lave-vaisselle, machine à expresso, grille-pain, bouilloire",
@@ -1148,18 +1379,18 @@ const translations = {
     },
     subscribe: {
       heading: "Notes de Madère",
-      bodyP1: "Notre guide de 30 pages sur la côte ouest. Où nous mangeons, marchons et envoyons nos hôtes. Mis à jour chaque année. Les abonnés reçoivent la nouvelle édition.",
+      bodyP1: "Des notes occasionnelles depuis la côte ouest de Madère. Où nous mangeons, marchons et envoyons nos hôtes. Les abonnés reçoivent le guide dès qu'une nouvelle édition est prête.",
       placeholder: "E-mail",
-      buttonDefault: "Envoyez-moi le guide",
+      buttonDefault: "Tenez-moi au courant",
       buttonSubmitting: "Envoi en cours",
       confirmHeading: "Vérifiez votre boîte de réception",
-      confirmBody: "Nous avons envoyé un lien de confirmation à cette adresse. Cliquez dessus et votre guide est en route.",
-      confirmAlready: "Vous êtes déjà inscrit. Votre guide est en chemin.",
+      confirmBody: "Nous avons envoyé un lien de confirmation à cette adresse. Cliquez dessus et vous êtes inscrit.",
+      confirmAlready: "Vous êtes déjà inscrit.",
       errorInvalid: "Cela ne ressemble pas à une adresse e-mail valide. Réessayez.",
       errorGeneric: "Quelque chose n'a pas fonctionné. Réessayez dans un instant.",
       privacyLine: "Nous écrivons de temps en temps, quand quelque chose vaut la peine d'être dit. Désabonnement possible à tout moment.",
       confirmedHeading: "Bienvenue",
-      confirmedBody: "Votre guide est en route vers votre boîte de réception. Comptez cinq minutes. S'il n'arrive pas, vérifiez votre dossier spam. Nous envoyons depuis stay@casa-amani.com.",
+      confirmedBody: "Vous êtes inscrit. Nous écrivons quand quelque chose vaut la peine d'être dit, et le guide vous parviendra dès que la nouvelle édition sera prête. Nous envoyons depuis stay@casa-amani.com.",
     },
     bookCta: "Réserver un séjour",
     faq: {
@@ -1267,7 +1498,38 @@ const translations = {
           answer:
             "L'arrivée se fait à partir de 16h00. Le départ est avant 11h00. Une arrivée anticipée ou un départ tardif peuvent être possibles selon la disponibilité. Demandez lors de la réservation.",
         },
+        {
+          question: "Combien coûte un séjour ?",
+          answer:
+            "Les tarifs varient selon la saison et sont fixés sur l'annonce [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620), avec la disponibilité en temps réel. L'annonce affiche le total exact pour vos dates avant de réserver.",
+        },
+        {
+          question: "Pourquoi les réservations passent-elles uniquement par Airbnb ?",
+          answer:
+            "Cela regroupe la disponibilité, les tarifs et la protection des paiements au même endroit. Si vous avez des questions avant de réserver, écrivez à stay@casa-amani.com et nous vous répondrons directement.",
+        },
+        {
+          question: "Puis-je rester un mois ou plus ?",
+          answer:
+            "Oui. Les séjours commencent à sept nuits et les séjours plus longs sont bienvenus ; la plupart des télétravailleurs restent deux à quatre semaines. Pour les séjours de plus de sept nuits, les draps et les serviettes sont changés à mi-séjour.",
+        },
+        {
+          question: "Qui gère la Casa Amani ?",
+          answer:
+            "La Casa Amani appartient à des particuliers et est gérée avec OurMadeira, une société de gestion de propriétés basée à Madère. Les hôtes disposent d'une ligne d'assistance 24 heures sur 24 pendant leur séjour.",
+        },
+        {
+          question: "Quelle est la politique d'annulation ?",
+          answer:
+            "La politique d'annulation est affichée sur l'annonce [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620) pour vos dates, avant de confirmer la réservation.",
+        },
       ],
+      groups: {
+        house: "la maison",
+        location: "localisation et déplacements",
+        booking: "réservation et conditions de séjour",
+        working: "travailler d'ici",
+      },
     },
     remoteWork: {
       title: "travailler depuis le côté calme de Madère",
@@ -1375,14 +1637,36 @@ const translations = {
       remoteWork: "Télétravail",
       experiences: "Expériences",
       faq: "FAQ",
+      contact: "Contact",
       bookOnAirbnb: "Réserver sur Airbnb",
       privacy: "Confidentialité",
+    },
+    nav: {
+      previews: {
+        house: "Deux chambres, une piscine, une cuisine utilisée chaque jour.",
+        guide: "Où nous mangeons, marchons et envoyons nos hôtes sur la côte ouest.",
+        calheta: "Arco da Calheta, la côte sud-ouest de Madère.",
+        remoteWork: "Des bureaux dans les deux chambres, la fibre, un village calme à flanc de colline.",
+        experiences: "Chef privé, massage, yoga et plus. Organisés avec préavis.",
+      },
+      discoverMore: "En découvrir plus",
+    },
+    contact: {
+      title: "contact",
+      intro:
+        "Des questions avant de réserver, ou pendant un séjour. Nous lisons tout et répondons dès que possible.",
+      bookingNote:
+        "La disponibilité et les tarifs exacts se trouvent sur l'annonce Airbnb. Pour tout le reste, l'e-mail est le plus simple.",
+      emailLabel: "E-mail",
+      phoneLabel: "Téléphone",
+      instagramLabel: "Instagram",
+      availabilityCta: "Vérifier les disponibilités sur Airbnb",
     },
     privacy: {
       title: "confidentialité",
       p1: "Nous utilisons Plausible Analytics, un outil respectueux de la vie privée qui nous aide à comprendre comment ce site est utilisé. Plausible n'utilise pas de cookies, ne stocke pas de données personnelles et ne vous suit pas sur d'autres sites. Les statistiques d'utilisation agrégées sont stockées dans l'Union européenne.",
       p2: "Si vous vous inscrivez à notre liste de diffusion, nous conservons votre adresse e-mail jusqu'à ce que vous nous demandiez de la supprimer. Nous l'utilisons uniquement pour vous contacter lorsque nous ouvrons les réservations directes ou avons quelque chose d'utile à partager. Nous ne vendons, ne partageons ni ne louons votre adresse e-mail.",
-      p3: "We use MailerLite (operated by MailerLite Limited, Dublin, Ireland) to manage subscriptions to Notes from Madeira and to send the guide and occasional letters. When you subscribe, we collect your email address and your detected language preference. We store this data with MailerLite. We do not share it with any third party other than MailerLite, and we do not use it for advertising or profiling. You can unsubscribe from any email using the link in that email's footer.",
+      p3: "Nous utilisons MailerLite (exploité par MailerLite Limited, Dublin, Irlande) pour gérer les abonnements aux Notes de Madère et envoyer le guide et les lettres occasionnelles. Lors de votre inscription, nous recueillons votre adresse e-mail et votre préférence de langue détectée. Nous stockons ces données chez MailerLite. Nous ne les partageons avec aucun tiers autre que MailerLite et ne les utilisons ni pour la publicité ni pour le profilage. Vous pouvez vous désabonner depuis n'importe quel e-mail via le lien en pied de page.",
       p4: "Pour demander la suppression de votre adresse e-mail ou poser des questions, écrivez à",
     },
   },
@@ -1395,6 +1679,24 @@ const translations = {
         "Powyżej wioski dom. Atlantyk z przodu, wawrzyn z tyłu. Światło jest czyste, dni wolne. Okna otwarte. Śpiew ptaków. Basen, słońce, popołudnie. Na długie pobyty, po cichej stronie Madery.",
     },
     header: { menu: "MENU" },
+    home: {
+      briefTitle: "dom, w skrócie.",
+      briefBody:
+        "Dwie sypialnie, trzy łazienki, 219 metrów kwadratowych nad Arco da Calheta. Basen o długości 7 metrów z widokiem na Atlantyk. Światłowodowe Wi-Fi i dwa miejsca do pracy. Do sześciu osób. Pobyty od siedmiu nocy.",
+      facts: ["2 sypialnie", "do 6 osób", "219 m²", "basen 7 m", "Wi-Fi światłowodowe", "od 7 nocy"],
+      houseLink: "Dom w szczegółach",
+      bookingNote: "Dostępność i dokładne ceny na Airbnb.",
+      quietTitle: "spokojna strona.",
+      quietBody:
+        "Arco da Calheta leży na południowo-zachodnim wybrzeżu Madery, najbardziej słonecznym odcinku wyspy. Wioska jest kilometr niżej.",
+      distances: [
+        ["Plaża Calheta", "6 km"],
+        ["Funchal", "30 min"],
+        ["Lotnisko (FNC)", "50 min"],
+        ["Jardim do Mar", "10 min"],
+      ],
+      calhetaLink: "O Calhecie",
+    },
     tagline: {
       heading: "Twój dom, na chwilę.",
       subheading:
@@ -1403,7 +1705,7 @@ const translations = {
     house: {
       title: "dom",
       features:
-        "2 sypialnie · 3 łazienki · 219 m² · widok na Atlantyk · podgrzewany basen",
+        "2 sypialnie · 3 łazienki · 219 m² · widok na Atlantyk · basen z opcjonalnym podgrzewaniem",
       features2:
         "przestrzenie do pracy · światłowód · jadalnia na świeżym powietrzu i grill · garaż na 2 samochody",
     },
@@ -1426,7 +1728,7 @@ const translations = {
       swimmingPool: {
         title: "BASEN",
         description:
-          "prywatny basen wbudowany w taras, z siedziskami i roślinami. używany o różnych porach dnia.",
+          "prywatny 7-metrowy basen wbudowany w taras, z siedziskami i roślinami. ogrzewanie dostępne za dodatkową opłatą.",
       },
       livingSpace: {
         title: "PRZESTRZEŃ DZIENNA",
@@ -1477,7 +1779,7 @@ const translations = {
       items: [
         "Dwie sypialnie z biurkami; monitor zewnętrzny w pokoju gościnnym",
         "Trzy łazienki; jedna prywatna przy głównej sypialni",
-        "Podgrzewany basen 7-metrowy z widokiem na morze",
+        "Basen 7-metrowy z widokiem na morze; ogrzewanie dostępne za dodatkową opłatą",
         "Jadalnia na świeżym powietrzu z grillem gazowym",
         "Otwarty salon z widokiem na Atlantyk",
         "W pełni wyposażona kuchnia: płyta indukcyjna, piekarnik, mikrofalówka, zmywarka, ekspres do kawy, toster, czajnik",
@@ -1494,18 +1796,18 @@ const translations = {
     },
     subscribe: {
       heading: "Notatki z Madery",
-      bodyP1: "Nasz 30-stronicowy przewodnik po zachodnim wybrzeżu. Gdzie jemy, spacerujemy i dokąd kierujemy gości. Aktualizowany co roku. Subskrybenci otrzymują nowe wydanie.",
+      bodyP1: "Notatki z zachodniego wybrzeża Madery, od czasu do czasu. Gdzie jemy, spacerujemy i dokąd kierujemy gości. Subskrybenci otrzymują przewodnik, gdy nowe wydanie jest gotowe.",
       placeholder: "E-mail",
-      buttonDefault: "Wyślijcie mi przewodnik",
+      buttonDefault: "Chcę być na bieżąco",
       buttonSubmitting: "Wysyłanie",
       confirmHeading: "Sprawdź swoją skrzynkę",
-      confirmBody: "Wysłaliśmy link potwierdzający na ten adres. Kliknij go, a przewodnik jest w drodze.",
-      confirmAlready: "Już jesteś na liście. Przewodnik jest w drodze.",
+      confirmBody: "Wysłaliśmy link potwierdzający na ten adres. Kliknij go i jesteś na liście.",
+      confirmAlready: "Już jesteś na liście.",
       errorInvalid: "To nie wygląda na prawidłowy adres e-mail. Spróbuj ponownie.",
       errorGeneric: "Coś poszło nie tak. Spróbuj ponownie za chwilę.",
       privacyLine: "Piszemy od czasu do czasu, gdy jest o czym mówić. Rezygnacja z subskrypcji w dowolnym momencie.",
       confirmedHeading: "Witamy",
-      confirmedBody: "Przewodnik jest w drodze do Twojej skrzynki. Daj mu pięć minut. Jeśli nie dotrze, sprawdź folder spam. Wysyłamy z adresu stay@casa-amani.com.",
+      confirmedBody: "Jesteś na liście. Piszemy, gdy jest o czym mówić, a przewodnik dotrze do Ciebie, gdy nowe wydanie będzie gotowe. Wysyłamy z adresu stay@casa-amani.com.",
     },
     bookCta: "Zarezerwuj pobyt",
     faq: {
@@ -1613,7 +1915,38 @@ const translations = {
           answer:
             "Zameldowanie od 16:00. Wymeldowanie do 11:00. Wcześniejsze zameldowanie lub późniejsze wymeldowanie może być możliwe w zależności od dostępności. Zapytaj przy rezerwacji.",
         },
+        {
+          question: "Ile kosztuje pobyt?",
+          answer:
+            "Ceny zależą od sezonu i są ustalone w ogłoszeniu na [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620), razem z aktualną dostępnością. Ogłoszenie pokazuje dokładną kwotę za Twoje daty przed rezerwacją.",
+        },
+        {
+          question: "Dlaczego rezerwacje przyjmowane są tylko przez Airbnb?",
+          answer:
+            "Dostępność, ceny i ochrona płatności są dzięki temu w jednym miejscu. Jeśli masz pytania przed rezerwacją, napisz na stay@casa-amani.com, a odpowiemy bezpośrednio.",
+        },
+        {
+          question: "Czy mogę zostać miesiąc lub dłużej?",
+          answer:
+            "Tak. Pobyty zaczynają się od siedmiu nocy, a dłuższe pobyty są mile widziane; większość pracowników zdalnych zostaje od dwóch do czterech tygodni. Przy pobytach dłuższych niż siedem nocy pościel i ręczniki są zmieniane w połowie pobytu.",
+        },
+        {
+          question: "Kto prowadzi Casa Amani?",
+          answer:
+            "Casa Amani jest własnością prywatną i jest zarządzana wspólnie z OurMadeira, firmą zarządzającą nieruchomościami z siedzibą na Maderze. Goście mają do dyspozycji całodobową linię pomocy podczas pobytu.",
+        },
+        {
+          question: "Jaka jest polityka anulowania?",
+          answer:
+            "Polityka anulowania jest widoczna w ogłoszeniu na [Airbnb](https://www.airbnb.co.uk/rooms/1695506665949683620) dla Twoich dat, przed potwierdzeniem rezerwacji.",
+        },
       ],
+      groups: {
+        house: "dom",
+        location: "lokalizacja i poruszanie się",
+        booking: "rezerwacja i warunki pobytu",
+        working: "praca stąd",
+      },
     },
     remoteWork: {
       title: "praca z cichej strony Madery",
@@ -1721,14 +2054,36 @@ const translations = {
       remoteWork: "Praca Zdalna",
       experiences: "Doświadczenia",
       faq: "FAQ",
+      contact: "Kontakt",
       bookOnAirbnb: "Rezerwuj na Airbnb",
       privacy: "Prywatność",
+    },
+    nav: {
+      previews: {
+        house: "Dwie sypialnie, basen, kuchnia używana codziennie.",
+        guide: "Gdzie jemy, spacerujemy i dokąd kierujemy gości na zachodnim wybrzeżu.",
+        calheta: "Arco da Calheta, południowo-zachodnie wybrzeże Madery.",
+        remoteWork: "Biurka w obu sypialniach, światłowód, cicha wioska na zboczu.",
+        experiences: "Prywatny szef kuchni, masaż, yoga i więcej. Organizowane z wyprzedzeniem.",
+      },
+      discoverMore: "Odkryj więcej",
+    },
+    contact: {
+      title: "kontakt",
+      intro:
+        "Pytania przed rezerwacją lub w trakcie pobytu. Czytamy wszystko i odpowiadamy najszybciej, jak możemy.",
+      bookingNote:
+        "Dostępność i dokładne ceny znajdują się w ogłoszeniu na Airbnb. W pozostałych sprawach najlepiej napisać e-mail.",
+      emailLabel: "E-mail",
+      phoneLabel: "Telefon",
+      instagramLabel: "Instagram",
+      availabilityCta: "Sprawdź dostępność na Airbnb",
     },
     privacy: {
       title: "prywatność",
       p1: "Korzystamy z Plausible Analytics, narzędzia szanującego prywatność, które pomaga nam zrozumieć, jak ta strona jest używana. Plausible nie używa plików cookie, nie przechowuje danych osobowych i nie śledzi Cię na innych stronach. Zagregowane statystyki użytkowania są przechowywane w Unii Europejskiej.",
       p2: "Jeśli zapiszesz się na naszą listę mailową, przechowujemy Twój adres e-mail do momentu, gdy poprosisz o jego usunięcie. Używamy go wyłącznie, aby poinformować Cię, gdy otworzymy rezerwacje bezpośrednie lub będziemy mieć coś przydatnego do przekazania. Nie sprzedajemy, nie udostępniamy ani nie wynajmujemy Twojego adresu e-mail nikomu.",
-      p3: "We use MailerLite (operated by MailerLite Limited, Dublin, Ireland) to manage subscriptions to Notes from Madeira and to send the guide and occasional letters. When you subscribe, we collect your email address and your detected language preference. We store this data with MailerLite. We do not share it with any third party other than MailerLite, and we do not use it for advertising or profiling. You can unsubscribe from any email using the link in that email's footer.",
+      p3: "Korzystamy z MailerLite (obsługiwanego przez MailerLite Limited, Dublin, Irlandia), aby zarządzać subskrypcjami Notatek z Madery oraz wysyłać przewodnik i okazjonalne listy. Przy zapisie zbieramy Twój adres e-mail i wykrytą preferencję językową. Przechowujemy te dane w MailerLite. Nie udostępniamy ich żadnym podmiotom trzecim poza MailerLite i nie używamy ich do reklamy ani profilowania. Z subskrypcji możesz zrezygnować w każdym e-mailu, korzystając z linku w jego stopce.",
       p4: "Aby poprosić o usunięcie adresu e-mail lub zadać pytania, napisz do",
     },
   },

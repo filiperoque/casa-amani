@@ -1,35 +1,25 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Sea | Casa Amani Madeira | Surf, Boats, Swimming",
-  description:
-    "Everything on or in the water around Madeira's west coast. Surf breaks, boat charters, swimming spots, diving. From Casa Amani in Arco da Calheta.",
-  alternates: { canonical: "/the-guide/sea" },
-  openGraph: {
-    title: "Sea | Casa Amani Madeira | Surf, Boats, Swimming",
-    description:
-      "Everything on or in the water around Madeira's west coast. Surf breaks, boat charters, swimming spots, diving. From Casa Amani in Arco da Calheta.",
-    images: [
-      {
-        url: "/images/swimming-pool.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Swimming pool at Casa Amani overlooking the Atlantic",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Sea | Casa Amani Madeira | Surf, Boats, Swimming",
-    description:
-      "Everything on or in the water around Madeira's west coast. Surf breaks, boat charters, swimming spots, diving. From Casa Amani in Arco da Calheta.",
-    images: ["/images/swimming-pool.jpg"],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/the-guide/sea",
+    page: "guideSea",
+    image: "/images/swimming-pool.jpg",
+    imageAlt: "Swimming pool at Casa Amani overlooking the Atlantic",
+    noindex: true,
+  });
+}
 
 const sections = [
   {

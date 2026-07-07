@@ -1,48 +1,26 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import OptimizedImage from "@/components/OptimizedImage";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Remote Work | Casa Amani Madeira | Arco da Calheta",
-  description:
-    "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor. Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
-  alternates: {
-    canonical: "/remote-work",
-  },
-  openGraph: {
-    title: "Remote Work | Casa Amani Madeira | Arco da Calheta",
-    description:
-      "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor. Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
-    images: [
-      {
-        url: "/images/guest-bedroom.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Guest bedroom workspace at Casa Amani with desk and external monitor",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Remote Work | Casa Amani Madeira | Arco da Calheta",
-    description:
-      "A private villa with dedicated workspaces, fibre Wi-Fi, and external monitor. Madeira's quiet alternative to coliving. Designed for stays of a week or longer.",
-    images: ["/images/guest-bedroom.jpg"],
-  },
-};
-
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Casa Amani", item: "https://casa-amani.com" },
-    { "@type": "ListItem", position: 2, name: "Remote Work", item: "https://casa-amani.com/remote-work" },
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/remote-work",
+    page: "remoteWork",
+    image: "/images/guest-bedroom.jpg",
+    imageAlt: "Guest bedroom workspace at Casa Amani with desk and external monitor",
+  });
+}
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -82,6 +60,9 @@ export default async function RemoteWorkPage({
 }) {
   const { locale } = await params;
   const t = getTranslations(locale as Locale);
+  const breadcrumbs = breadcrumbJsonLd(locale as Locale, [
+    { name: "Remote Work", path: "/remote-work" },
+  ]);
 
   const setupItems = [
     t.remoteWork.setup.wifi,
@@ -96,7 +77,7 @@ export default async function RemoteWorkPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
       <script
         type="application/ld+json"

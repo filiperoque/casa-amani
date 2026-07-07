@@ -6,33 +6,22 @@ import GuideEntryCard from "@/components/GuideEntryCard";
 import Footer from "@/components/Footer";
 import { restaurants } from "@/content/guide/table/restaurants";
 import { bars } from "@/content/guide/table/bars";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Table | Casa Amani Madeira | Where to Eat and Drink",
-  description:
-    "Restaurants, bars, poncha spots, and wine on the west coast of Madeira. Curated by the owners of Casa Amani.",
-  alternates: { canonical: "/the-guide/table" },
-  openGraph: {
-    title: "Table | Casa Amani Madeira | Where to Eat and Drink",
-    description:
-      "Restaurants, bars, poncha spots, and wine on the west coast of Madeira. Curated by the owners of Casa Amani.",
-    images: [
-      {
-        url: "/images/outdoor-dining.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Outdoor terrace dining at Casa Amani",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Table | Casa Amani Madeira | Where to Eat and Drink",
-    description:
-      "Restaurants, bars, poncha spots, and wine on the west coast of Madeira. Curated by the owners of Casa Amani.",
-    images: ["/images/outdoor-dining.jpg"],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/the-guide/table",
+    page: "guideTable",
+    image: "/images/outdoor-dining.jpg",
+    imageAlt: "Outdoor terrace dining at Casa Amani",
+  });
+}
 
 export default async function TablePage({
   params,

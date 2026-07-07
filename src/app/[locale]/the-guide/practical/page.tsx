@@ -1,35 +1,25 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Practical | Casa Amani Madeira | Getting Around, Safety, Contacts",
-  description:
-    "The household management of the trip. Taxis, car hire, emergency contacts, pharmacy, babysitting, apps to download.",
-  alternates: { canonical: "/the-guide/practical" },
-  openGraph: {
-    title: "Practical | Casa Amani Madeira | Getting Around, Safety, Contacts",
-    description:
-      "The household management of the trip. Taxis, car hire, emergency contacts, pharmacy, babysitting, apps to download.",
-    images: [
-      {
-        url: "/images/living-space.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Open-plan living space at Casa Amani",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Practical | Casa Amani Madeira | Getting Around, Safety, Contacts",
-    description:
-      "The household management of the trip. Taxis, car hire, emergency contacts, pharmacy, babysitting, apps to download.",
-    images: ["/images/living-space.jpg"],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/the-guide/practical",
+    page: "guidePractical",
+    image: "/images/living-space.jpg",
+    imageAlt: "Open-plan living space at Casa Amani",
+    noindex: true,
+  });
+}
 
 const sections = [
   {

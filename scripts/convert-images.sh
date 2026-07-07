@@ -1,9 +1,21 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Converts full-size .jpg files to .webp/.avif (requires cwebp and avifenc).
+# Responsive width variants (<name>-768.*, <name>-1280.*) are generated
+# separately by scripts/generate-image-variants.mjs (requires sharp):
+#   node scripts/generate-image-variants.mjs
+# Run it after adding any new base .jpg, or this script will try to
+# convert the variants too (the glob below skips them).
+
 SRC="public/images"
 
 for jpg in "$SRC"/*.jpg; do
+  # Skip generated width variants like name-768.jpg / name-1280.jpg
+  if [[ "$jpg" =~ -[0-9]+\.jpg$ ]]; then
+    continue
+  fi
+
   base="${jpg%.jpg}"
   name="$(basename "$base")"
 
@@ -21,6 +33,9 @@ done
 echo ""
 echo "Done. Size comparison:"
 for jpg in "$SRC"/*.jpg; do
+  if [[ "$jpg" =~ -[0-9]+\.jpg$ ]]; then
+    continue
+  fi
   name="$(basename "${jpg%.jpg}")"
   jpg_size=$(stat -f%z "$jpg" 2>/dev/null || stat -c%s "$jpg" 2>/dev/null)
   webp_size=$(stat -f%z "${jpg%.jpg}.webp" 2>/dev/null || echo 0)

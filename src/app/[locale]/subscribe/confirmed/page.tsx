@@ -1,14 +1,25 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Confirmed | Casa Amani Madeira",
-  description: "Your subscription is confirmed. Your guide is on its way.",
-  robots: { index: false, follow: false },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/subscribe/confirmed",
+    page: "subscribeConfirmed",
+    image: "/images/hero.jpg",
+    imageAlt: "Interior of Casa Amani with ocean views across the Atlantic, Arco da Calheta, Madeira",
+    noindex: true,
+  });
+}
 
 export default async function SubscribeConfirmedPage({
   params,

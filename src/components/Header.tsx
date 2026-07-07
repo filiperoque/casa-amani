@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState, useCallback, useRef } from "react";
-import { locales, type Locale } from "@/i18n/translations";
+import { locales, type Locale, getTranslations } from "@/i18n/translations";
 
 const NATURAL = "var(--ease-out-natural)";
 const CALM = "var(--ease-in-out-calm)";
@@ -16,49 +16,6 @@ const localeLabels: Record<Locale, string> = {
   pl: "Polski",
 };
 
-const primaryNav = [
-  {
-    href: "/house",
-    label: "The House",
-    image: "/images/living-space.jpg",
-    text: "Two bedrooms, a heated pool, a kitchen used daily.",
-  },
-  {
-    href: "/the-guide",
-    label: "The Guide",
-    image: "/images/location.jpg",
-    text: "Arco da Calheta, the south-west coast of Madeira.",
-  },
-];
-
-const secondaryNav = [
-  {
-    href: "/calheta",
-    label: "Calheta",
-    image: "/images/location.jpg",
-    text: "Arco da Calheta, the south-west coast of Madeira.",
-  },
-  {
-    href: "/remote-work",
-    label: "Remote Work",
-    image: "/images/guest-bedroom.jpg",
-    text: "Desks in both bedrooms, fibre internet, a quiet hillside village.",
-  },
-  {
-    href: "/experiences",
-    label: "Experiences",
-    image: "/images/outdoor-dining.jpg",
-    text: "Private chef, massage, yoga, and more. Arranged with notice.",
-  },
-  {
-    href: "/faq",
-    label: "FAQ",
-    image: null,
-    text: null,
-  },
-];
-
-const allNav = [...primaryNav, ...secondaryNav];
 const DEFAULT_IMAGE = "/images/landing-bg.jpg";
 
 export default function Header({ menuLabel = "MENU", overlay = false, mode = "content" }: { menuLabel?: string; overlay?: boolean; mode?: "hero" | "house" | "content" }) {
@@ -66,6 +23,57 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
   const currentLocale = (locales.find((l) => pathname.startsWith(`/${l}`)) ||
     "en") as Locale;
   const base = `/${currentLocale}`;
+  const t = getTranslations(currentLocale);
+
+  const primaryNav = [
+    {
+      href: "/house",
+      label: t.footer.theHouse,
+      image: "/images/living-space.jpg",
+      text: t.nav.previews.house,
+    },
+    {
+      href: "/the-guide",
+      label: t.footer.theGuide,
+      image: "/images/location.jpg",
+      text: t.nav.previews.guide,
+    },
+  ];
+
+  const secondaryNav = [
+    {
+      href: "/calheta",
+      label: t.footer.calheta,
+      image: "/images/location.jpg",
+      text: t.nav.previews.calheta,
+    },
+    {
+      href: "/remote-work",
+      label: t.footer.remoteWork,
+      image: "/images/guest-bedroom.jpg",
+      text: t.nav.previews.remoteWork,
+    },
+    {
+      href: "/experiences",
+      label: t.footer.experiences,
+      image: "/images/outdoor-dining.jpg",
+      text: t.nav.previews.experiences,
+    },
+    {
+      href: "/faq",
+      label: t.footer.faq,
+      image: null,
+      text: null,
+    },
+    {
+      href: "/contact",
+      label: t.footer.contact,
+      image: null,
+      text: null,
+    },
+  ];
+
+  const allNav = [...primaryNav, ...secondaryNav];
   const subpage = pathname.replace(base, "") || "";
   const isLanding = subpage === "" || subpage === "/";
   const hasHero = isLanding || subpage === "/house";
@@ -249,7 +257,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
             }`}
             style={{ transition: `opacity var(--motion-drift) ${CALM}, border-color var(--motion-tide) ${CALM}, background-color var(--motion-tide) ${CALM}` }}
           >
-            STAY WITH US
+            {t.landing.cta}
           </a>
 
           {/* Language picker (hidden when menu open) */}
@@ -426,7 +434,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
                     }`}
                     style={{ transition: `opacity var(--motion-drift) ${CALM}` }}
                     sizes="50vw"
-                    priority={src === DEFAULT_IMAGE}
+                    loading="lazy"
                   />
                 )
               )}
@@ -447,7 +455,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
                     className="mt-2 inline-block font-display text-sm text-cream/70 hover:text-cream"
                     style={{ transition: `color var(--motion-tide) ${CALM}` }}
                   >
-                    Discover more &rarr;
+                    {t.nav.discoverMore} &rarr;
                   </a>
                 )}
               </div>

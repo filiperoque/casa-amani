@@ -2,7 +2,7 @@
 
 > Made for slow stays on Madeira's quiet side.
 
-Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the south-west coast of Madeira, Portugal. The house sits split-level above a private heated pool with a front-facing sea view, and is designed for slow stays, equally suited to travellers visiting Madeira, to remote-mobile workers using the island as a base, and to surfers based on the island's west-coast breaks. It sleeps up to six and is available for stays of one week or longer. Registered Alojamento Local 176882/AL.
+Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the south-west coast of Madeira, Portugal. The house sits split-level above a private pool with a front-facing sea view (pool heating available at extra cost), and is designed for slow stays, equally suited to travellers visiting Madeira, to remote-mobile workers using the island as a base, and to surfers based on the island's west-coast breaks. It sleeps up to six and is available for stays of one week or longer. Registered Alojamento Local 176882/AL.
 
 ## Property details
 
@@ -12,7 +12,7 @@ Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the
 - Bedrooms: 2 (two king beds; the guest bedroom king can split into two singles)
 - Lower level: two additional single beds for a fifth and sixth guest
 - Bathrooms: 3 (en-suite to the main bedroom, family bathroom on the main level, one on the lower level)
-- Pool: private heated pool, 7 metres, with panoramic sea view
+- Pool: private 7 m pool with panoramic sea view; heating available at extra cost
 - Sea view: yes, front-facing from the main level
 - Parking: private garage for two cars, directly connected to the house
 - Check-in: 16:00 via smart lock (access codes shared 48 hours before arrival)
@@ -38,7 +38,7 @@ Microcement throughout, with a rain shower and built-in Bluetooth sound. Warm, s
 
 ## The living space
 
-Open-plan living with direct access to the terrace and heated pool, where most of the day moves between inside and out.
+Open-plan living with direct access to the terrace and pool, where most of the day moves between inside and out.
 
 ## The kitchen
 
@@ -67,7 +67,7 @@ Outdoor table and gas barbecue set just beyond the living space. Meals tend to m
 
 - Two bedrooms with desks; external monitor in the guest bedroom
 - Three bathrooms; en-suite to the main bedroom
-- Heated 7-metre pool with sea view
+- 7-metre pool with sea view; heating available at extra cost
 - Outdoor dining area with gas barbecue
 - Open-plan living facing the Atlantic
 - Fully equipped kitchen: induction hob, oven, microwave, dishwasher, espresso machine, toaster, kettle
@@ -135,20 +135,21 @@ The west coast faces the open Atlantic with consistent swells year-round. Three 
 
 ## Pages
 
-- Home: https://casa-amani.com/en
-- The House: https://casa-amani.com/en/house
-- Remote Work: https://casa-amani.com/en/remote-work
-- Calheta: https://casa-amani.com/en/calheta
-- The Guide: https://casa-amani.com/en/the-guide
-- The Guide / Land: https://casa-amani.com/en/the-guide/land
-- The Guide / Sea: https://casa-amani.com/en/the-guide/sea
-- The Guide / Table: https://casa-amani.com/en/the-guide/table
-- The Guide / Culture: https://casa-amani.com/en/the-guide/culture
-- The Guide / Practical: https://casa-amani.com/en/the-guide/practical
-- The Guide / Surf: https://casa-amani.com/en/the-guide/surf
-- Experiences: https://casa-amani.com/en/experiences
-- FAQ: https://casa-amani.com/en/faq
-- Privacy: https://casa-amani.com/en/privacy
+- Home: https://www.casa-amani.com/en
+- The House: https://www.casa-amani.com/en/house
+- Remote Work: https://www.casa-amani.com/en/remote-work
+- Calheta: https://www.casa-amani.com/en/calheta
+- The Guide: https://www.casa-amani.com/en/the-guide
+- The Guide / Land: https://www.casa-amani.com/en/the-guide/land
+- The Guide / Sea: https://www.casa-amani.com/en/the-guide/sea
+- The Guide / Table: https://www.casa-amani.com/en/the-guide/table
+- The Guide / Culture: https://www.casa-amani.com/en/the-guide/culture
+- The Guide / Practical: https://www.casa-amani.com/en/the-guide/practical
+- The Guide / Surf: https://www.casa-amani.com/en/the-guide/surf
+- Experiences: https://www.casa-amani.com/en/experiences
+- FAQ: https://www.casa-amani.com/en/faq
+- Contact: https://www.casa-amani.com/en/contact
+- Privacy: https://www.casa-amani.com/en/privacy
 
 ## Languages
 
@@ -168,7 +169,7 @@ Bookings are taken exclusively through Airbnb via OurMadeira.
 - Email: stay@casa-amani.com
 - Phone: +351 291 761 997
 - Instagram: https://www.instagram.com/casa.amani.calheta/
-- Website: https://casa-amani.com
+- Website: https://www.casa-amani.com
 
 ## Frequently asked questions
 
@@ -179,7 +180,7 @@ Q: How many people does it sleep?
 A: Up to six. Two king beds plus two single beds on the lower level.
 
 Q: Is there a pool?
-A: Yes. A private heated 7-metre pool set into the terrace, facing the Atlantic.
+A: Yes. A private 7-metre pool set into the terrace, facing the Atlantic. Heating is available at extra cost.
 
 Q: Is it suitable for remote work?
 A: Yes. Both bedrooms have a desk. The guest bedroom has an external monitor. Fibre Wi-Fi throughout. GMT/WET time zone overlaps with the UK, most of Europe, and the US East Coast morning.
@@ -201,3 +202,5 @@ A: No. The house is self-catering. The kitchen is fully equipped. A private chef
 
 Q: Do I need a car?
 A: Yes, for most things. Car hire on the island is straightforward and affordable.
+
+Last updated: 2026-07-07

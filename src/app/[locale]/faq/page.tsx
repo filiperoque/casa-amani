@@ -1,60 +1,45 @@
 import type { Metadata } from "next";
 import type { ReactElement } from "react";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "FAQ | Casa Amani Madeira | Arco da Calheta",
-  description:
-    "Common questions about Casa Amani: location, remote work, pool, capacity, booking, and more. Direct answers about this contemporary villa in Arco da Calheta, Madeira.",
-  alternates: {
-    canonical: "/faq",
-  },
-  openGraph: {
-    title: "FAQ | Casa Amani Madeira | Arco da Calheta",
-    description:
-      "Common questions about Casa Amani: location, remote work, pool, capacity, booking, and more. Direct answers about this contemporary villa in Arco da Calheta, Madeira.",
-    images: [
-      {
-        url: "/images/living-space.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Open-plan living space at Casa Amani",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "FAQ | Casa Amani Madeira | Arco da Calheta",
-    description:
-      "Common questions about Casa Amani: location, remote work, pool, capacity, booking, and more. Direct answers about this contemporary villa in Arco da Calheta, Madeira.",
-    images: ["/images/living-space.jpg"],
-  },
-};
-
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Casa Amani",
-      item: "https://casa-amani.com",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "FAQ",
-      item: "https://casa-amani.com/faq",
-    },
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/faq",
+    page: "faq",
+    image: "/images/living-space.jpg",
+    imageAlt: "Open-plan living space at Casa Amani",
+  });
+}
 
 const AIRBNB_UTM =
   "?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=faq-how-to-book";
+
+/**
+ * Grouping of t.faq.items by index. The items array has the same order in
+ * every locale, so indices are stable across languages. New questions must
+ * be appended to the items array and added to a group here.
+ */
+const FAQ_GROUPS: { labelKey: "house" | "location" | "booking" | "working"; indices: number[] }[] = [
+  { labelKey: "house", indices: [3, 4, 7, 8, 12, 16] },
+  { labelKey: "location", indices: [0, 1, 9, 10, 11, 17] },
+  { labelKey: "booking", indices: [5, 6, 14, 15, 18, 19, 20, 21, 22, 23, 24] },
+  { labelKey: "working", indices: [2, 13] },
+];
+
+/** Converts markdown links to plain "text (url)" for JSON-LD output. */
+function plainAnswer(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1 ($2)");
+}
 
 function renderAnswer(text: string) {
   const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -109,10 +94,14 @@ export default async function FaqPage({
       name: item.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: item.answer,
+        text: plainAnswer(item.answer),
       },
     })),
   };
+
+  const breadcrumbs = breadcrumbJsonLd(locale as Locale, [
+    { name: "FAQ", path: "/faq" },
+  ]);
 
   return (
     <>
@@ -122,7 +111,7 @@ export default async function FaqPage({
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
 
       <main id="main" className="bg-cream min-h-dvh">
@@ -138,25 +127,38 @@ export default async function FaqPage({
             </p>
           </Reveal>
 
-          <div className="flex flex-col">
-            {t.faq.items.map((item, i) => (
-              <Reveal key={i} delay={Math.min(i * 40, 200)}>
-                <details className="group border-t border-brown/10 py-6 last:border-b">
-                  <summary className="flex cursor-pointer items-start justify-between gap-4 text-brown transition-opacity hover:opacity-70 marker:content-none [&::-webkit-details-marker]:hidden">
-                    <span className="text-base font-medium md:text-lg">
-                      {item.question}
-                    </span>
-                    <span className="mt-1 shrink-0 text-brown/40 transition-transform duration-300 group-open:rotate-45">
-                      +
-                    </span>
-                  </summary>
-                  <p className="mt-4 leading-7 text-brown/70 md:text-base">
-                    {renderAnswer(item.answer)}
-                  </p>
-                </details>
+          {FAQ_GROUPS.map((group) => (
+            <section key={group.labelKey} className="mb-12 last:mb-0">
+              <Reveal>
+                <h2 className="mb-2 font-display text-xl text-brown md:text-2xl">
+                  {t.faq.groups[group.labelKey]}
+                </h2>
               </Reveal>
-            ))}
-          </div>
+              <div className="flex flex-col">
+                {group.indices.map((i, pos) => {
+                  const item = t.faq.items[i];
+                  if (!item) return null;
+                  return (
+                    <Reveal key={i} delay={Math.min(pos * 40, 200)}>
+                      <details className="group border-t border-brown/10 py-6 last:border-b">
+                        <summary className="flex cursor-pointer items-start justify-between gap-4 text-brown transition-opacity hover:opacity-70 marker:content-none [&::-webkit-details-marker]:hidden">
+                          <span className="text-base font-medium md:text-lg">
+                            {item.question}
+                          </span>
+                          <span aria-hidden="true" className="mt-1 shrink-0 text-brown/40 transition-transform duration-300 group-open:rotate-45">
+                            +
+                          </span>
+                        </summary>
+                        <p className="mt-4 leading-7 text-brown/70 md:text-base">
+                          {renderAnswer(item.answer)}
+                        </p>
+                      </details>
+                    </Reveal>
+                  );
+                })}
+              </div>
+            </section>
+          ))}
 
           <Reveal>
             <div className="mt-16 border-t border-brown/10 pt-8 text-sm text-brown/50">

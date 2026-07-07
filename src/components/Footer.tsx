@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <>
-      {/* <SubscribeBlock /> hidden until Notes from Madeira PDF is ready */}
+      <SubscribeBlock />
       <footer className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
         <Reveal>
         <div className="grid grid-cols-1 gap-10 text-sm text-cream/80 md:grid-cols-3 md:gap-8">
@@ -36,6 +36,7 @@ export default function Footer() {
             <a href={`${base}/remote-work`} className="transition-colors hover:text-cream">{t.footer.remoteWork}</a>
             <a href={`${base}/experiences`} className="transition-colors hover:text-cream">{t.footer.experiences}</a>
             <a href={`${base}/faq`} className="transition-colors hover:text-cream">{t.footer.faq}</a>
+            <a href={`${base}/contact`} className="transition-colors hover:text-cream">{t.footer.contact}</a>
           </nav>
 
           {/* Column 3: Contact, booking, social */}

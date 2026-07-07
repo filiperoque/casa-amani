@@ -1,72 +1,25 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title:
-    "Surfing West Madeira | A Guide from Casa Amani | Jardim do Mar, Paul do Mar",
-  description:
-    "Surf breaks within 15 minutes of Casa Amani: Jardim do Mar, Paul do Mar, Ponta Pequena. What each is good for, when to go, and what a surf week on Madeira's west coast looks like.",
-  keywords: [
-    "surf madeira",
-    "jardim do mar surf",
-    "paul do mar surf",
-    "ponta pequena surf",
-    "surf villa madeira",
-    "surf accommodation madeira west coast",
-  ],
-  alternates: { canonical: "/the-guide/surf" },
-  openGraph: {
-    title:
-      "Surfing West Madeira | A Guide from Casa Amani | Jardim do Mar, Paul do Mar",
-    description:
-      "Surf breaks within 15 minutes of Casa Amani: Jardim do Mar, Paul do Mar, Ponta Pequena. What each is good for, when to go, and what a surf week on Madeira's west coast looks like.",
-    images: [
-      {
-        url: "/images/swimming-pool.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Swimming pool at Casa Amani overlooking the Atlantic",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Surfing West Madeira | A Guide from Casa Amani | Jardim do Mar, Paul do Mar",
-    description:
-      "Surf breaks within 15 minutes of Casa Amani: Jardim do Mar, Paul do Mar, Ponta Pequena. What each is good for, when to go, and what a surf week on Madeira's west coast looks like.",
-    images: ["/images/swimming-pool.jpg"],
-  },
-};
-
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Casa Amani",
-      item: "https://casa-amani.com",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "The Guide",
-      item: "https://casa-amani.com/the-guide",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Surf",
-      item: "https://casa-amani.com/the-guide/surf",
-    },
-  ],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/the-guide/surf",
+    page: "guideSurf",
+    image: "/images/swimming-pool.jpg",
+    imageAlt: "Swimming pool at Casa Amani overlooking the Atlantic",
+  });
+}
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -114,12 +67,16 @@ export default async function SurfPage({
 }) {
   const { locale } = await params;
   const t = getTranslations(locale as Locale);
+  const breadcrumbs = breadcrumbJsonLd(locale as Locale, [
+    { name: "The Guide", path: "/the-guide" },
+    { name: "Surf", path: "/the-guide/surf" },
+  ]);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
       />
       <script
         type="application/ld+json"

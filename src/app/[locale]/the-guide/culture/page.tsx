@@ -1,35 +1,25 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Culture | Casa Amani Madeira | Art, Music, Festivals",
-  description:
-    "Contemporary art at MUDAS, music nights, festivals, whale and dolphin watching. Cultural life on Madeira's west coast.",
-  alternates: { canonical: "/the-guide/culture" },
-  openGraph: {
-    title: "Culture | Casa Amani Madeira | Art, Music, Festivals",
-    description:
-      "Contemporary art at MUDAS, music nights, festivals, whale and dolphin watching. Cultural life on Madeira's west coast.",
-    images: [
-      {
-        url: "/images/location.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Aerial view of the coast at Arco da Calheta, Madeira",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Culture | Casa Amani Madeira | Art, Music, Festivals",
-    description:
-      "Contemporary art at MUDAS, music nights, festivals, whale and dolphin watching. Cultural life on Madeira's west coast.",
-    images: ["/images/location.jpg"],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/the-guide/culture",
+    page: "guideCulture",
+    image: "/images/location.jpg",
+    imageAlt: "Aerial view of the coast at Arco da Calheta, Madeira",
+    noindex: true,
+  });
+}
 
 const sections = [
   {

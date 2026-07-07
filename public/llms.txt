@@ -2,7 +2,7 @@
 
 > Made for slow stays on Madeira's quiet side.
 
-Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the south-west coast of Madeira, Portugal. The house sits split-level above a private heated pool with a front-facing sea view, and is designed for slow stays, equally suited to travellers visiting Madeira, to remote-mobile workers using the island as a base, and to surfers based on the island's west-coast breaks. It sleeps up to six and is available for stays of one week or longer. Registered Alojamento Local 176882/AL.
+Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the south-west coast of Madeira, Portugal. The house sits split-level above a private pool with a front-facing sea view (pool heating available at extra cost), and is designed for slow stays, equally suited to travellers visiting Madeira, to remote-mobile workers using the island as a base, and to surfers based on the island's west-coast breaks. It sleeps up to six and is available for stays of one week or longer. Registered Alojamento Local 176882/AL.
 
 ## Key facts
 - Location: Arco da Calheta, Calheta municipality, Madeira, Portugal
@@ -10,7 +10,7 @@ Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the
 - Bathrooms: 3 (one en-suite to the master, one family bathroom on the main level, one on the lower level)
 - House size: 219 m² on a 324 m² plot
 - Architecture: split-level contemporary
-- Pool: private heated pool, 7m, with panoramic sea view
+- Pool: private 7 m pool with panoramic sea view; heating available at extra cost
 - Sea view: yes (front-facing, main level)
 - Workspace: desk in both bedrooms; external monitor in the guest bedroom; free Wi-Fi throughout the villa and terrace
 - Parking: private garage for two cars
@@ -26,21 +26,25 @@ Casa Amani is a two-bedroom contemporary rental villa in Arco da Calheta, on the
 - Time zone: GMT/WET (same as London)
 
 ## Pages
-- [Home](https://casa-amani.com/en): brand overview and booking entry
-- [The House](https://casa-amani.com/en/house): rooms, layout, amenities
-- [Remote Work](https://casa-amani.com/en/remote-work): workspace setup, why Madeira for remote work, coliving comparison
-- [Calheta](https://casa-amani.com/en/calheta): Arco da Calheta, west Madeira, distances, climate, getting here
-- [The Guide](https://casa-amani.com/en/the-guide): curated guide to west Madeira across five categories
-- [Land](https://casa-amani.com/en/the-guide/land): hikes, levadas, viewpoints, and inland adventures on the west coast
-- [Sea](https://casa-amani.com/en/the-guide/sea): beaches, natural pools, boat trips, and coastal activities
-- [Table](https://casa-amani.com/en/the-guide/table): restaurants, bars, poncha spots, and where to eat and drink near Calheta
-- [Culture](https://casa-amani.com/en/the-guide/culture): museums, markets, festivals, and local traditions in west Madeira
-- [Practical](https://casa-amani.com/en/the-guide/practical): getting around, groceries, pharmacies, and day-to-day essentials
-- [Surf](https://casa-amani.com/en/the-guide/surf): guide to surfing west Madeira, Jardim do Mar, Paul do Mar, Ponta Pequena
-- [FAQ](https://casa-amani.com/en/faq): 20 common questions answered directly
+- [Home](https://www.casa-amani.com/en): brand overview and booking entry
+- [The House](https://www.casa-amani.com/en/house): rooms, layout, amenities
+- [Remote Work](https://www.casa-amani.com/en/remote-work): workspace setup, why Madeira for remote work, coliving comparison
+- [Calheta](https://www.casa-amani.com/en/calheta): Arco da Calheta, west Madeira, distances, climate, getting here
+- [The Guide](https://www.casa-amani.com/en/the-guide): curated guide to west Madeira across five categories
+- [Land](https://www.casa-amani.com/en/the-guide/land): hikes, levadas, viewpoints, and inland adventures on the west coast
+- [Sea](https://www.casa-amani.com/en/the-guide/sea): beaches, natural pools, boat trips, and coastal activities
+- [Table](https://www.casa-amani.com/en/the-guide/table): restaurants, bars, poncha spots, and where to eat and drink near Calheta
+- [Culture](https://www.casa-amani.com/en/the-guide/culture): museums, markets, festivals, and local traditions in west Madeira
+- [Practical](https://www.casa-amani.com/en/the-guide/practical): getting around, groceries, pharmacies, and day-to-day essentials
+- [Surf](https://www.casa-amani.com/en/the-guide/surf): guide to surfing west Madeira, Jardim do Mar, Paul do Mar, Ponta Pequena
+- [FAQ](https://www.casa-amani.com/en/faq): 25 common questions answered directly
+- [Contact](https://www.casa-amani.com/en/contact): email, phone, Instagram, booking pointer
 
 ## Languages
 Available in English, Portuguese, German, French, and Polish.
+
+## Rates
+Rates vary by season and are set on the Airbnb listing, which shows live availability and the exact total for chosen dates. Minimum stay is 7 nights.
 
 ## Booking
 - Airbnb: https://www.airbnb.co.uk/rooms/1695506665949683620
@@ -48,3 +52,5 @@ Available in English, Portuguese, German, French, and Polish.
 - VRBO: https://www.vrbo.com/en-gb/p12152433
 - OurMadeira: https://www.ourmadeira.com/regions/calheta-area/amani/
 - Casai: https://www.casai.com/property/ourmadeira-amani/BC-16564906
+
+Last updated: 2026-07-07

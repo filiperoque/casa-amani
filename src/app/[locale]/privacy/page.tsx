@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "Privacy | Casa Amani Madeira",
-  description: "How Casa Amani Madeira handles your data. No cookies, no tracking across sites.",
-  alternates: { canonical: "/privacy" },
-  robots: { index: true, follow: true },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/privacy",
+    page: "privacy",
+    image: "/images/hero.jpg",
+    imageAlt: "Interior of Casa Amani with ocean views across the Atlantic, Arco da Calheta, Madeira",
+  });
+}
 
 export default async function PrivacyPage({
   params,

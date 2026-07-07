@@ -1,35 +1,24 @@
 import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
+import { pageMetadata } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Footer from "@/components/Footer";
 
-export const metadata: Metadata = {
-  title: "The Guide | Casa Amani Madeira | West Coast Directory",
-  description:
-    "A curated guide to the west coast of Madeira from Casa Amani. Land, sea, table, culture, practical. Every entry is somewhere we have been.",
-  alternates: { canonical: "/the-guide" },
-  openGraph: {
-    title: "The Guide | Casa Amani Madeira | West Coast Directory",
-    description:
-      "A curated guide to the west coast of Madeira from Casa Amani. Land, sea, table, culture, practical. Every entry is somewhere we have been.",
-    images: [
-      {
-        url: "/images/location.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Aerial view of the coast at Arco da Calheta, Madeira",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "The Guide | Casa Amani Madeira | West Coast Directory",
-    description:
-      "A curated guide to the west coast of Madeira from Casa Amani. Land, sea, table, culture, practical. Every entry is somewhere we have been.",
-    images: ["/images/location.jpg"],
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata({
+    locale: locale as Locale,
+    path: "/the-guide",
+    page: "guide",
+    image: "/images/location.jpg",
+    imageAlt: "Aerial view of the coast at Arco da Calheta, Madeira",
+  });
+}
 
 const categories = [
   {
@@ -41,6 +30,11 @@ const categories = [
     title: "sea",
     href: "the-guide/sea",
     description: "Surf, boats, swimming, diving. The Atlantic from in it.",
+  },
+  {
+    title: "surf",
+    href: "the-guide/surf",
+    description: "Jardim do Mar, Paul do Mar, Ponta Pequena. A dedicated guide to the west-coast breaks.",
   },
   {
     title: "table",

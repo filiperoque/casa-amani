@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 const STICKY_TOP_PX = 10;
 
 export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: string; homeHref?: string }) {
-  const wordmarkRef = useRef<HTMLHeadingElement>(null);
+  const wordmarkRef = useRef<HTMLParagraphElement>(null);
   const headerAnchorRef = useRef<HTMLDivElement>(null);
   const [reducedMotion, setReducedMotion] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -115,15 +115,15 @@ export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: st
 
   if (reducedMotion) {
     return (
-      <h1 className="animate-fade-up text-center font-display text-5xl text-cream md:text-7xl lg:text-[88px] lg:leading-[80px]">
+      <p className="animate-fade-up text-center font-display text-5xl text-cream md:text-7xl lg:text-[88px] lg:leading-[80px]">
         {text}
-      </h1>
+      </p>
     );
   }
 
   return (
     <>
-      <h1
+      <p
         ref={wordmarkRef}
         className="z-[61] text-center font-display text-5xl md:text-7xl lg:text-[88px] lg:leading-[80px]"
         style={{
@@ -146,7 +146,7 @@ export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: st
         >
           {text}
         </a>
-      </h1>
+      </p>
 
       <div
         ref={headerAnchorRef}

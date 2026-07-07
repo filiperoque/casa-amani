@@ -41,4 +41,4 @@ Allow: /
 User-agent: DuckAssistBot
 Allow: /
 
-Sitemap: https://casa-amani.com/sitemap.xml
+Sitemap: https://www.casa-amani.com/sitemap.xml
