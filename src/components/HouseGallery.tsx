@@ -29,7 +29,7 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
           <h2 className="font-display text-title md:text-title-lg lg:text-display">
             {t.house.title}
           </h2>
-          <p className="max-w-copy text-sm leading-7 md:text-intro lg:text-title-sm">
+          <p className="text-sm leading-7 md:text-intro lg:text-title-sm">
             {featureLines.map((line, li) => (
               <span key={li} className="block">
                 {line.split(" · ").map((fact, fi, arr) => (
