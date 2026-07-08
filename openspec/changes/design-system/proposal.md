@@ -40,4 +40,4 @@ usage rules, mirrored in openspec so future changes respect it.
 ## Open questions
 
 1. Cream-on-tan text cannot pass WCAG AA on `#b8956e`; `--color-warm-deep`
-   `#7f5f3e` is provisioned. Adopt for text-bearing tan sections?
+   `#846344` is provisioned. Adopt for text-bearing tan sections?

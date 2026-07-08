@@ -28,9 +28,9 @@
   --color-warm: #b8956e;
   --color-cream: #f2ece2;
   --color-brown: #7a5f40;
-  /* AA-safe tan for text-bearing sections (cream on it = 4.6:1).
+  /* AA-safe tan for text-bearing sections (cream on it 4.6:1).
      Provisioned per DESIGN.md; adopt if warm sections keep running text. */
-  --color-warm-deep: #7f5f3e;
+  --color-warm-deep: #846344;
 
   --ease-out-natural: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out-calm: cubic-bezier(0.45, 0, 0.15, 1);

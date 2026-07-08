@@ -4,7 +4,7 @@ colors:
   warm: "#b8956e"
   cream: "#f2ece2"
   brown: "#7a5f40"
-  warm-deep: "#7f5f3e"
+  warm-deep: "#846344"
 ---
 
 # Design System: Casa Amani Madeira
@@ -30,7 +30,7 @@ sections.
 - **Sun Cream** `#f2ece2` `--color-cream`: page background; text on tan.
 - **Sand Tan** `#b8956e` `--color-warm`: brand surface (heroes, footer, bands).
 - **Umber** `#7a5f40` `--color-brown`: all text on cream (5.0:1 AA).
-- **Deep Tan** `#7f5f3e` `--color-warm-deep`: provisioned AA-safe tan (cream on it 4.6:1). Open decision: adopt for text-bearing tan sections.
+- **Deep Tan** `#846344` `--color-warm-deep`: AA-safe tan (cream on it 4.6:1). ADOPTED as the primary CTA fill (Filipe 2026-07-08: CTA in the footer color family). Still open: adopt for the footer itself?
 - No accent color. Interactive elements borrow the surface's text color with a 1px border.
 
 Contrast rules (binding): text on cream is full umber, never `/40..70` alphas (70% ≈ 2.9:1, fails AA). Text on tan is full cream, 16px minimum; cream on tan is ~2.4:1 and cannot pass AA, so tan carries only minimal text until the warm-deep decision. Hover may dim to 80% (transient states exempt).
@@ -87,7 +87,7 @@ No sizes outside this ramp. The Header menu overlay (32/48 display links) is the
 ## 4. Components
 
 ### CTA system (the answer to "what font in CTAs?")
-- **Primary action** (always the Airbnb booking link): SOLID umber fill, cream text (5.0:1 AA on every surface), **GT Sectra Display**, `text-sm uppercase tracking-cta px-6 py-3`, no border. Hover: scale 1.02 + `bg-brown/90`. Exception: over photography (landing hero) the CTA keeps the outline treatment; solid fills fight the image and the blend.
+- **Primary action** (always the Airbnb booking link): SOLID deep-tan fill (`bg-warm-deep` #846344, footer color family), cream text (4.6:1 AA on every surface), **GT Sectra Display**, `text-sm uppercase tracking-cta px-6 py-3`, no border. Hover: scale 1.02 + `bg-warm-deep/90`. Exception: over photography (landing hero) the CTA keeps the outline treatment; solid fills fight the image and the blend.
 - **Secondary action** (newsletter submit and any non-booking boxed action): outline; 1px border and text in the surface's text color, transparent fill.
 - **Text link**: Walsheim, sentence case, underline in prose, trailing arrow for forward navigation. Never uppercase, never boxed.
 Never mix tiers on one intent; never invent a third style. (Solid/outline split approved by Filipe 2026-07-08.)

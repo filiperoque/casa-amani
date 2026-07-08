@@ -9,7 +9,7 @@ interface BookCTAProps {
 export default function BookCTA({
   placement,
   label = "Book a stay",
-  className = "inline-block bg-brown px-6 py-3 font-display text-sm uppercase tracking-cta text-cream transition-[background-color,transform] hover:scale-[1.02] hover:bg-brown/90 active:scale-[0.96]",
+  className = "inline-block bg-warm-deep px-6 py-3 font-display text-sm uppercase tracking-cta text-cream transition-[background-color,transform] hover:scale-[1.02] hover:bg-warm-deep/90 active:scale-[0.96]",
 }: BookCTAProps) {
   return (
     <a
