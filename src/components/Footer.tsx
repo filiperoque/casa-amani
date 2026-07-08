@@ -8,7 +8,7 @@ import SubscribeBlock from "./SubscribeBlock";
 const AIRBNB_URL =
   "https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=footer";
 
-export default function Footer() {
+export default function Footer({ subscribe = true }: { subscribe?: boolean }) {
   const pathname = usePathname();
   const currentLocale = (locales.find((l) => pathname.startsWith(`/${l}`)) ||
     "en") as Locale;
@@ -17,10 +17,10 @@ export default function Footer() {
 
   return (
     <>
-      <SubscribeBlock />
+      {subscribe && <SubscribeBlock />}
       <footer className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
         <Reveal>
-        <div className="grid grid-cols-1 gap-10 text-sm text-cream/80 md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-10 text-base text-cream md:grid-cols-3 md:gap-8">
           {/* Column 1: Brand + location */}
           <div>
             <p className="mb-3 font-display text-2xl text-cream lg:text-3xl">casa amani</p>
@@ -74,7 +74,7 @@ export default function Footer() {
       </Reveal>
 
       {/* Bottom bar */}
-      <div className="mt-12 flex flex-col gap-2 border-t border-cream/20 pt-6 text-sm text-cream/80 md:flex-row md:items-center md:justify-between lg:mt-16">
+      <div className="mt-12 flex flex-col gap-2 border-t border-cream/20 pt-6 text-sm text-cream md:flex-row md:items-center md:justify-between lg:mt-16">
         <p>&copy; {new Date().getFullYear()} Casa Amani Madeira. All rights reserved.</p>
         <a href={`${base}/privacy`} className="transition-colors hover:text-cream">{t.footer.privacy}</a>
       </div>

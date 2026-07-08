@@ -92,7 +92,7 @@ export default async function SurfPage({
               <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
                 surfing west Madeira
               </h1>
-              <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
+              <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
                 The west coast of Madeira is a serious surf destination that
                 most visitors to the island never discover. Three recognised
                 breaks sit within fifteen minutes of Casa Amani, picking up
@@ -106,7 +106,7 @@ export default async function SurfPage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 why the west coast
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 Madeira sits in the mid-Atlantic, exposed to the same swell
                 systems that light up the Canaries and the Portuguese mainland.
                 The island's central mountain range, rising above 1,800 metres,
@@ -114,7 +114,7 @@ export default async function SurfPage({
                 rain; the south and west coasts sit in the lee, warmer, drier,
                 and more consistent.
               </p>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 The west coast, from Calheta to Porto Moniz, faces the open
                 Atlantic with no landmass between it and the Caribbean. North-west
                 and west swells arrive with less refraction than on the south coast,
@@ -124,7 +124,7 @@ export default async function SurfPage({
                 the waves drop to waist-to-shoulder height, gentler and more
                 forgiving.
               </p>
-              <p className="mb-12 leading-8 text-brown/70">
+              <p className="mb-12 leading-8 text-brown">
                 Water temperature ranges from 18°C in February to 24°C in
                 September. A 3/2mm wetsuit is standard year-round. The air is
                 warm even when the water is cool. After a session you dry off in
@@ -140,10 +140,10 @@ export default async function SurfPage({
               <h3 className="mb-3 font-display text-lg text-brown md:text-xl">
                 Jardim do Mar
               </h3>
-              <p className="mb-2 text-sm text-brown/50">
+              <p className="mb-2 text-sm text-brown">
                 8 km / 10 minutes from Casa Amani
               </p>
-              <p className="mb-8 leading-8 text-brown/70">
+              <p className="mb-8 leading-8 text-brown">
                 The most famous wave on the island. A right-hand point break
                 that peels along the rocky coastline of the village, producing
                 long, walling rides when the swell is right. Best on
@@ -159,10 +159,10 @@ export default async function SurfPage({
               <h3 className="mb-3 font-display text-lg text-brown md:text-xl">
                 Paul do Mar
               </h3>
-              <p className="mb-2 text-sm text-brown/50">
+              <p className="mb-2 text-sm text-brown">
                 12 km / 15 minutes from Casa Amani
               </p>
-              <p className="mb-8 leading-8 text-brown/70">
+              <p className="mb-8 leading-8 text-brown">
                 A powerful right-hander that breaks along the boulder-strewn
                 coastline below the village. Heavier than Jardim do Mar, with
                 a faster, more hollow section on bigger swells. This is
@@ -176,10 +176,10 @@ export default async function SurfPage({
               <h3 className="mb-3 font-display text-lg text-brown md:text-xl">
                 Ponta Pequena
               </h3>
-              <p className="mb-2 text-sm text-brown/50">
+              <p className="mb-2 text-sm text-brown">
                 Approximately 15 minutes from Casa Amani
               </p>
-              <p className="mb-12 leading-8 text-brown/70">
+              <p className="mb-12 leading-8 text-brown">
                 A left-hand reef break that picks up swell from a slightly
                 different angle than the other two. Less crowded, less
                 documented, and often overlooked by visitors chasing the
@@ -195,7 +195,7 @@ export default async function SurfPage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 surf schools and board hire
               </h2>
-              <p className="mb-12 leading-8 text-brown/70">
+              <p className="mb-12 leading-8 text-brown">
                 Several operators run lessons and guided sessions from Paul do
                 Mar and Jardim do Mar during the season. Boards, wetsuits, and
                 transport to the breaks are typically included. We are
@@ -209,7 +209,7 @@ export default async function SurfPage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 a surf week at Casa Amani
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 The rhythm tends to settle by day two. You check the forecast
                 over coffee, drive ten minutes to whichever break is working,
                 surf for two or three hours, then come back to the house. The
@@ -218,7 +218,7 @@ export default async function SurfPage({
                 you're in Paul do Mar for dinner at Saboramar, watching the sun
                 set over the same water you surfed that morning.
               </p>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 The house works for this. The garage fits two cars and a rack of
                 boards. The outdoor shower rinses off salt and sand before you
                 step inside. The Wi-Fi means you can work between sessions
@@ -227,7 +227,7 @@ export default async function SurfPage({
                 swell directions, enough downtime to recover, enough evenings
                 to find the places that aren't in the guidebooks.
               </p>
-              <p className="mb-12 leading-8 text-brown/70">
+              <p className="mb-12 leading-8 text-brown">
                 Most surfers who stay here come back. The west coast is not
                 Bali, not the Algarve, not the Canaries. It is quieter, less
                 developed, and less crowded in the water. The waves are
@@ -240,7 +240,7 @@ export default async function SurfPage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 other water sports
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 <strong className="font-medium text-brown">
                   Stand-up paddleboard.
                 </strong>{" "}
@@ -249,7 +249,7 @@ export default async function SurfPage({
                 be hired at the marina. The water is clear and the views back
                 toward the mountains are worth the early start.
               </p>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 <strong className="font-medium text-brown">
                   Snorkelling and diving.
                 </strong>{" "}
@@ -260,7 +260,7 @@ export default async function SurfPage({
                 from Funchal. The south-west coast has its own quieter spots
                 for snorkelling from the rocks.
               </p>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 <strong className="font-medium text-brown">Kayak.</strong>{" "}
                 Guided kayak tours run along the south-west cliff line,
                 launching from Calheta or Ribeira Brava. The coastline is
@@ -268,7 +268,7 @@ export default async function SurfPage({
                 and views of the terraced hillsides that you cannot get from the
                 road.
               </p>
-              <p className="mb-12 leading-8 text-brown/70">
+              <p className="mb-12 leading-8 text-brown">
                 <strong className="font-medium text-brown">Sailing.</strong>{" "}
                 Yacht charters and sailing trips operate from Funchal and
                 Calheta marinas, ranging from sunset cruises to full-day trips
@@ -293,11 +293,11 @@ export default async function SurfPage({
                       <span className="text-base font-medium md:text-lg">
                         {item.name}
                       </span>
-                      <span className="mt-1 shrink-0 text-brown/40 transition-transform duration-300 group-open:rotate-45">
+                      <span className="mt-1 shrink-0 text-brown transition-transform duration-300 group-open:rotate-45">
                         +
                       </span>
                     </summary>
-                    <p className="mt-4 leading-7 text-brown/70 md:text-base">
+                    <p className="mt-4 leading-7 text-brown md:text-base">
                       {item.acceptedAnswer.text}
                     </p>
                   </details>

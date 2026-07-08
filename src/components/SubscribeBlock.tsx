@@ -50,40 +50,36 @@ export default function SubscribeBlock() {
   const isConfirmed = status === "success" || status === "already";
 
   return (
-    <section className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
-      <div className="flex flex-col gap-10 md:flex-row md:items-start md:gap-16">
-        <div className="md:w-1/2">
-          <h2 className="mb-4 font-display text-2xl text-cream lg:text-3xl">
+    <section className="border-b border-cream/20 bg-warm px-6 py-10 lg:px-[120px]">
+      <div className="flex flex-col gap-6 md:flex-row md:items-center md:gap-12">
+        <div className="md:w-2/5">
+          <h2 className="mb-2 font-display text-xl text-cream">
             {t.subscribe.heading}
           </h2>
-          <p className="leading-7 text-cream/70">
+          <p className="text-base leading-7 text-cream">
             {t.subscribe.bodyP1}
-          </p>
-          <p className="mt-4 text-xs text-cream/40">
-            {t.subscribe.privacyLine}
           </p>
         </div>
 
-        <div className="md:w-1/2">
+        <div className="md:w-3/5">
           {isConfirmed ? (
-            <div
+            <p
+              className="text-base leading-7 text-cream"
               style={{ transition: `opacity var(--motion-drift) ${CALM}` }}
             >
-              <h3 className="mb-2 font-display text-xl text-cream">
-                {status === "success"
-                  ? t.subscribe.confirmHeading
-                  : t.subscribe.confirmHeading}
-              </h3>
-              <p className="leading-7 text-cream/70">
-                {status === "success"
-                  ? t.subscribe.confirmBody
-                  : t.subscribe.confirmAlready}
-              </p>
-            </div>
+              <span className="font-display">{t.subscribe.confirmHeading}.</span>{" "}
+              {status === "success"
+                ? t.subscribe.confirmBody
+                : t.subscribe.confirmAlready}
+            </p>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-              <div className="flex gap-3">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <label htmlFor="subscribe-email" className="sr-only">
+                  {t.subscribe.placeholder}
+                </label>
                 <input
+                  id="subscribe-email"
                   type="email"
                   value={email}
                   onChange={(e) => {
@@ -93,14 +89,14 @@ export default function SubscribeBlock() {
                   placeholder={t.subscribe.placeholder}
                   disabled={status === "submitting"}
                   required
-                  className="flex-1 border border-cream/30 bg-transparent px-4 py-3 text-sm text-cream placeholder:text-cream/40 focus:border-cream/60 focus:outline-none"
+                  className="flex-1 border border-cream/70 bg-transparent px-4 py-3 text-base text-cream placeholder:text-cream/70 focus:border-cream focus:outline-none"
                   style={{ transition: `border-color var(--motion-tide) ${CALM}` }}
                 />
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="whitespace-nowrap border border-cream/60 px-5 py-3 font-display text-xs tracking-[3px] text-cream/90 hover:scale-[1.02] hover:border-cream hover:bg-cream/10 hover:text-cream active:scale-[0.96] disabled:opacity-50"
-                  style={{ transition: `background-color var(--motion-tide) ${CALM}, border-color var(--motion-tide) ${CALM}, color var(--motion-tide) ${CALM}, transform 150ms ${CALM}` }}
+                  className="whitespace-nowrap border border-cream px-6 py-3 font-display text-sm uppercase tracking-[4px] text-cream hover:scale-[1.02] hover:bg-cream/10 active:scale-[0.96] disabled:opacity-50"
+                  style={{ transition: `background-color var(--motion-tide) ${CALM}, border-color var(--motion-tide) ${CALM}, transform 150ms ${CALM}` }}
                 >
                   {status === "submitting"
                     ? t.subscribe.buttonSubmitting
@@ -108,11 +104,12 @@ export default function SubscribeBlock() {
                 </button>
               </div>
               {status === "error-invalid" && (
-                <p className="text-sm text-cream/60">{t.subscribe.errorInvalid}</p>
+                <p role="alert" className="text-base text-cream">{t.subscribe.errorInvalid}</p>
               )}
               {status === "error-generic" && (
-                <p className="text-sm text-cream/60">{t.subscribe.errorGeneric}</p>
+                <p role="alert" className="text-base text-cream">{t.subscribe.errorGeneric}</p>
               )}
+              <p className="text-sm text-cream">{t.subscribe.privacyLine}</p>
             </form>
           )}
         </div>

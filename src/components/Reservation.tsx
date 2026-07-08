@@ -21,7 +21,7 @@ export default function Reservation() {
             {t.reservation.title}
           </h2>
 
-          <div className="flex flex-col gap-4 text-cream/80">
+          <div className="flex flex-col gap-4 text-cream">
             <a
               href={`mailto:${t.reservation.email}`}
               className="plausible-event-name=email-click text-sm transition-colors hover:text-cream lg:text-base"

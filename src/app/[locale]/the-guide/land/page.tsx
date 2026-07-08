@@ -68,7 +68,7 @@ export default async function LandPage({
             <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               land
             </h1>
-            <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
+            <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
               On foot and on wheels. The levadas thread through laurel forest
               older than the island's settlement. The viewpoints face the
               Atlantic from altitude. The paths are maintained, the signage is
@@ -85,13 +85,13 @@ export default async function LandPage({
                     className="flex h-full flex-col gap-3 border border-brown/10 p-6 transition-colors hover:border-brown/30"
                   >
                     <h2 className="font-display text-xl text-brown">{s.title}</h2>
-                    <p className="text-sm leading-6 text-brown/60">{s.description}</p>
+                    <p className="text-sm leading-6 text-brown">{s.description}</p>
                   </a>
                 ) : (
                   <div className="flex h-full flex-col gap-3 border border-brown/10 p-6 opacity-60">
                     <h2 className="font-display text-xl text-brown">{s.title}</h2>
-                    <p className="text-sm leading-6 text-brown/60">{s.description}</p>
-                    <span className="mt-auto text-xs uppercase tracking-[3px] text-brown/30">coming soon</span>
+                    <p className="text-sm leading-6 text-brown">{s.description}</p>
+                    <span className="mt-auto text-sm uppercase tracking-[3px] text-brown">coming soon</span>
                   </div>
                 )}
               </Reveal>

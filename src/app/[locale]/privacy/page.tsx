@@ -38,7 +38,7 @@ export default async function PrivacyPage({
             <h1 className="mb-8 font-display text-3xl text-brown md:text-4xl">
               {t.privacy.title}
             </h1>
-            <div className="flex flex-col gap-6 leading-8 text-brown/70">
+            <div className="flex flex-col gap-6 leading-8 text-brown">
               <p>
                 {t.privacy.p1}
               </p>

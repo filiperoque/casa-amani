@@ -122,7 +122,7 @@ export default async function FaqPage({
             <h1 className="mb-4 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               {t.faq.title}
             </h1>
-            <p className="mb-16 text-brown/60 md:text-lg">
+            <p className="mb-16 text-brown md:text-lg">
               {t.faq.subtitle}
             </p>
           </Reveal>
@@ -145,11 +145,11 @@ export default async function FaqPage({
                           <span className="text-base font-medium md:text-lg">
                             {item.question}
                           </span>
-                          <span aria-hidden="true" className="mt-1 shrink-0 text-brown/40 transition-transform duration-300 group-open:rotate-45">
+                          <span aria-hidden="true" className="mt-1 shrink-0 text-brown transition-transform duration-300 group-open:rotate-45">
                             +
                           </span>
                         </summary>
-                        <p className="mt-4 leading-7 text-brown/70 md:text-base">
+                        <p className="mt-4 leading-7 text-brown md:text-base">
                           {renderAnswer(item.answer)}
                         </p>
                       </details>
@@ -161,12 +161,12 @@ export default async function FaqPage({
           ))}
 
           <Reveal>
-            <div className="mt-16 border-t border-brown/10 pt-8 text-sm text-brown/50">
+            <div className="mt-16 border-t border-brown/10 pt-8 text-sm text-brown">
               <p>
                 {t.faq.contact}{" "}
                 <a
                   href="mailto:stay@casa-amani.com"
-                  className="plausible-event-name=email-click text-brown/70 underline transition-colors hover:text-brown"
+                  className="plausible-event-name=email-click text-brown underline transition-colors hover:text-brown"
                 >
                   stay@casa-amani.com
                 </a>

@@ -13,7 +13,7 @@ export default function Location({ heading, description }: LocationProps) {
           <h2 className="font-display text-4xl leading-tight md:text-5xl lg:text-[56px] lg:leading-[64px]">
             {heading}
           </h2>
-          <p className="text-lg font-normal leading-8 text-cream/80 md:text-xl lg:text-2xl lg:leading-9">
+          <p className="text-lg font-normal leading-8 text-cream md:text-xl lg:text-2xl lg:leading-9">
             {description}
           </p>
         </div>

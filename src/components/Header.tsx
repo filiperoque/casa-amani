@@ -252,7 +252,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
             href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=menu-header"
             target="_blank"
             rel="noopener noreferrer"
-            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream/60 px-5 py-2.5 font-display text-xs tracking-[4.8px] text-cream/90 hover:scale-[1.02] hover:border-cream hover:bg-cream/10 active:scale-[0.96] ${
+            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream px-6 py-2.5 font-display text-sm uppercase tracking-[4px] text-cream hover:scale-[1.02] hover:bg-cream/10 active:scale-[0.96] ${
               open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
             }`}
             style={{ transition: `opacity var(--motion-drift) ${CALM}, border-color var(--motion-tide) ${CALM}, background-color var(--motion-tide) ${CALM}` }}
@@ -316,7 +316,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
                   className={`px-5 py-3 text-sm ${
                     locale === currentLocale
                       ? "font-medium text-cream"
-                      : "text-cream/50 hover:bg-cream/10 hover:text-cream"
+                      : "text-cream hover:bg-cream/10 hover:text-cream"
                   }`}
                   style={{ transition: `color var(--motion-breath) ${CALM}, background-color var(--motion-breath) ${CALM}` }}
                 >
@@ -376,7 +376,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
                       href={`${base}${href}`}
                       onMouseEnter={() => handleHoverEnter(idx)}
                       onMouseLeave={handleHoverLeave}
-                      className="font-display text-xl leading-none text-cream/70 lg:text-2xl"
+                      className="font-display text-xl leading-none text-cream lg:text-2xl"
                       style={{
                         paddingTop: "0.55em",
                         paddingBottom: "0.55em",
@@ -394,7 +394,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
                   target="_blank"
                   rel="noopener noreferrer"
                   onMouseEnter={() => handleHoverLeave()}
-                  className="plausible-event-name=outbound-instagram font-display text-xl leading-none text-cream/70 lg:text-2xl"
+                  className="plausible-event-name=outbound-instagram font-display text-xl leading-none text-cream lg:text-2xl"
                   style={{
                     paddingTop: "0.55em",
                     paddingBottom: "0.55em",
@@ -446,13 +446,13 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
                   transition: `opacity var(--motion-drift) ${CALM}`,
                 }}
               >
-                <p className="max-w-[32ch] font-display text-base leading-relaxed text-cream/90">
+                <p className="max-w-[32ch] font-display text-base leading-relaxed text-cream">
                   {activeText}
                 </p>
                 {hoveredIndex !== null && allNav[hoveredIndex]?.href && (
                   <a
                     href={`${base}${allNav[hoveredIndex].href}`}
-                    className="mt-2 inline-block font-display text-sm text-cream/70 hover:text-cream"
+                    className="mt-2 inline-block font-display text-sm text-cream hover:text-cream"
                     style={{ transition: `color var(--motion-tide) ${CALM}` }}
                   >
                     {t.nav.discoverMore} &rarr;

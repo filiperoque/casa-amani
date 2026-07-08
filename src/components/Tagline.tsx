@@ -9,7 +9,7 @@ export default function Tagline({ heading, subheading }: TaglineProps) {
       <h2 className="text-center font-display text-4xl md:text-5xl lg:text-[72px] lg:leading-[80px]">
         {heading}
       </h2>
-      <p className="text-center text-lg font-normal text-cream/70 md:text-2xl lg:text-[32px]">
+      <p className="text-center text-lg font-normal text-cream md:text-2xl lg:text-[32px]">
         {subheading}
       </p>
     </section>

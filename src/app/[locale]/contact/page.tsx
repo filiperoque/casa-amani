@@ -51,7 +51,7 @@ export default async function ContactPage({
             <h1 className="mb-4 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               {t.contact.title}
             </h1>
-            <p className="mb-12 leading-7 text-brown/70 md:text-lg">
+            <p className="mb-12 leading-7 text-brown md:text-lg">
               {t.contact.intro}
             </p>
           </Reveal>
@@ -59,7 +59,7 @@ export default async function ContactPage({
           <Reveal>
             <dl className="flex flex-col gap-6 border-t border-brown/10 pt-8">
               <div className="flex flex-col gap-1">
-                <dt className="text-sm uppercase tracking-wide text-brown/50">
+                <dt className="text-sm uppercase tracking-wide text-brown">
                   {t.contact.emailLabel}
                 </dt>
                 <dd>
@@ -72,7 +72,7 @@ export default async function ContactPage({
                 </dd>
               </div>
               <div className="flex flex-col gap-1">
-                <dt className="text-sm uppercase tracking-wide text-brown/50">
+                <dt className="text-sm uppercase tracking-wide text-brown">
                   {t.contact.phoneLabel}
                 </dt>
                 <dd>
@@ -85,7 +85,7 @@ export default async function ContactPage({
                 </dd>
               </div>
               <div className="flex flex-col gap-1">
-                <dt className="text-sm uppercase tracking-wide text-brown/50">
+                <dt className="text-sm uppercase tracking-wide text-brown">
                   {t.contact.instagramLabel}
                 </dt>
                 <dd>
@@ -104,7 +104,7 @@ export default async function ContactPage({
 
           <Reveal>
             <div className="mt-12 border-t border-brown/10 pt-8">
-              <p className="mb-4 leading-7 text-brown/70">
+              <p className="mb-4 leading-7 text-brown">
                 {t.contact.bookingNote}
               </p>
               <a

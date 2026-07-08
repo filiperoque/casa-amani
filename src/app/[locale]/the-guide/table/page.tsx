@@ -69,7 +69,7 @@ export default async function TablePage({
             <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               table
             </h1>
-            <p className="mb-16 text-lg leading-8 text-brown/70 md:text-xl">
+            <p className="mb-16 text-lg leading-8 text-brown md:text-xl">
               Where the food and drink lives. Every place listed is somewhere we
               have eaten or drunk, on the west coast of Madeira or worth the
               drive from Arco da Calheta. Nothing sponsored, nothing paid.

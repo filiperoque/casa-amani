@@ -74,7 +74,7 @@ export default async function ExperiencesPage({
               <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
                 {t.experiences.title}
               </h1>
-              <p className="mb-16 text-lg leading-8 text-brown/70 md:text-xl">
+              <p className="mb-16 text-lg leading-8 text-brown md:text-xl">
                 {t.experiences.intro}
               </p>
             </Reveal>
@@ -86,7 +86,7 @@ export default async function ExperiencesPage({
                     <h2 className="mb-2 font-display text-xl text-brown md:text-2xl">
                       {item.title}
                     </h2>
-                    <p className="leading-7 text-brown/70">
+                    <p className="leading-7 text-brown">
                       {item.description}
                     </p>
                   </div>
@@ -97,7 +97,7 @@ export default async function ExperiencesPage({
         </section>
         <Reveal>
           <section className="bg-cream px-6 py-12 lg:px-[120px]">
-            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown/60">
+            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown">
               <a href={`/${locale}/house`} className="transition-colors hover:text-brown">The house</a>
               <a href={`/${locale}/the-guide/table`} className="transition-colors hover:text-brown">Where to eat</a>
               <a href={`/${locale}/the-guide/sea`} className="transition-colors hover:text-brown">Sea activities</a>

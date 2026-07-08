@@ -63,7 +63,7 @@ export default async function CulturePage({
             <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               culture
             </h1>
-            <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
+            <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
               Things that are not food, water, or walking. Paulo David's
               architecture at MUDAS on the ridge above Calheta. Music nights
               that run late in Funchal. The festivals that mark the seasons.
@@ -80,13 +80,13 @@ export default async function CulturePage({
                     className="flex h-full flex-col gap-3 border border-brown/10 p-6 transition-colors hover:border-brown/30"
                   >
                     <h2 className="font-display text-xl text-brown">{s.title}</h2>
-                    <p className="text-sm leading-6 text-brown/60">{s.description}</p>
+                    <p className="text-sm leading-6 text-brown">{s.description}</p>
                   </a>
                 ) : (
                   <div className="flex h-full flex-col gap-3 border border-brown/10 p-6 opacity-60">
                     <h2 className="font-display text-xl text-brown">{s.title}</h2>
-                    <p className="text-sm leading-6 text-brown/60">{s.description}</p>
-                    <span className="mt-auto text-xs uppercase tracking-[3px] text-brown/30">coming soon</span>
+                    <p className="text-sm leading-6 text-brown">{s.description}</p>
+                    <span className="mt-auto text-sm uppercase tracking-[3px] text-brown">coming soon</span>
                   </div>
                 )}
               </Reveal>

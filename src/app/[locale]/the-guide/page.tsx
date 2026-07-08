@@ -72,7 +72,7 @@ export default async function GuidePage({
             <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               the guide
             </h1>
-            <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
+            <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
               Places we go and send guests to on the west coast of Madeira. Each
               entry is somewhere we have eaten, drunk, surfed, or spent time.
               Nothing sponsored, nothing paid. Updated when something changes.
@@ -89,7 +89,7 @@ export default async function GuidePage({
                   <h2 className="font-display text-xl text-brown">
                     {cat.title}
                   </h2>
-                  <p className="text-sm leading-6 text-brown/60">
+                  <p className="text-sm leading-6 text-brown">
                     {cat.description}
                   </p>
                 </a>

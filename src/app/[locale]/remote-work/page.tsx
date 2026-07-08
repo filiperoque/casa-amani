@@ -93,7 +93,7 @@ export default async function RemoteWorkPage({
               <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
                 {t.remoteWork.title}
               </h1>
-              <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
+              <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
                 {t.remoteWork.intro}
               </p>
             </Reveal>
@@ -130,10 +130,10 @@ export default async function RemoteWorkPage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 {t.remoteWork.colivingTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 {t.remoteWork.colivingP1}
               </p>
-              <p className="mb-16 leading-8 text-brown/70">
+              <p className="mb-16 leading-8 text-brown">
                 {t.remoteWork.colivingP2}
               </p>
             </Reveal>
@@ -142,10 +142,10 @@ export default async function RemoteWorkPage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 {t.remoteWork.islandTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 {t.remoteWork.islandP1}
               </p>
-              <p className="mb-16 leading-8 text-brown/70">
+              <p className="mb-16 leading-8 text-brown">
                 {t.remoteWork.islandP2}
               </p>
             </Reveal>
@@ -159,7 +159,7 @@ export default async function RemoteWorkPage({
         </section>
         <Reveal>
           <section className="bg-cream px-6 py-12 lg:px-[120px]">
-            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown/60">
+            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown">
               <a href={`/${locale}/house`} className="transition-colors hover:text-brown">The house</a>
               <a href={`/${locale}/calheta`} className="transition-colors hover:text-brown">About Calheta</a>
               <a href={`/${locale}/the-guide`} className="transition-colors hover:text-brown">The Guide</a>

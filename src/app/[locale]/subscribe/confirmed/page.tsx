@@ -39,7 +39,7 @@ export default async function SubscribeConfirmedPage({
             <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               {t.subscribe.confirmedHeading}
             </h1>
-            <p className="text-lg leading-8 text-brown/70">
+            <p className="text-lg leading-8 text-brown">
               {t.subscribe.confirmedBody}
             </p>
           </Reveal>

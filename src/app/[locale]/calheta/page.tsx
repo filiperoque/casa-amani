@@ -75,7 +75,7 @@ export default async function ThePlacePage({
               <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
                 {t.thePlace.title}
               </h1>
-              <p className="mb-12 text-lg leading-8 text-brown/70 md:text-xl">
+              <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
                 {t.thePlace.intro}
               </p>
             </Reveal>
@@ -100,7 +100,7 @@ export default async function ThePlacePage({
                 {t.thePlace.distances.map(([place, distance]) => (
                   <div key={place} className="flex justify-between border-b border-brown/10 pb-3">
                     <span>{place}</span>
-                    <span className="text-brown/50">{distance}</span>
+                    <span className="text-brown">{distance}</span>
                   </div>
                 ))}
               </dl>
@@ -110,10 +110,10 @@ export default async function ThePlacePage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 {t.thePlace.westCoastTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 {t.thePlace.westCoastP1}
               </p>
-              <p className="mb-16 leading-8 text-brown/70">
+              <p className="mb-16 leading-8 text-brown">
                 {t.thePlace.westCoastP2}
               </p>
             </Reveal>
@@ -122,10 +122,10 @@ export default async function ThePlacePage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 {t.thePlace.climateTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 {t.thePlace.climateP1}
               </p>
-              <p className="mb-16 leading-8 text-brown/70">
+              <p className="mb-16 leading-8 text-brown">
                 {t.thePlace.climateP2}
               </p>
             </Reveal>
@@ -134,10 +134,10 @@ export default async function ThePlacePage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 {t.thePlace.golfTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 {t.thePlace.golfP1}
               </p>
-              <p className="mb-16 leading-8 text-brown/70">
+              <p className="mb-16 leading-8 text-brown">
                 {t.thePlace.golfP2}
               </p>
             </Reveal>
@@ -146,10 +146,10 @@ export default async function ThePlacePage({
               <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
                 {t.thePlace.gettingHereTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown/70">
+              <p className="mb-4 leading-8 text-brown">
                 {t.thePlace.gettingHereP1}
               </p>
-              <p className="mb-16 leading-8 text-brown/70">
+              <p className="mb-16 leading-8 text-brown">
                 {t.thePlace.gettingHereP2}
               </p>
             </Reveal>
@@ -163,7 +163,7 @@ export default async function ThePlacePage({
         </section>
         <Reveal>
           <section className="bg-cream px-6 py-12 lg:px-[120px]">
-            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown/60">
+            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown">
               <a href={`/${locale}/house`} className="transition-colors hover:text-brown">The house</a>
               <a href={`/${locale}/the-guide`} className="transition-colors hover:text-brown">The Guide</a>
               <a href={`/${locale}/the-guide/surf`} className="transition-colors hover:text-brown">Surfing west Madeira</a>

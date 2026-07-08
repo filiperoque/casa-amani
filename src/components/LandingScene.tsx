@@ -94,7 +94,7 @@ export default function LandingScene({
         </div>
 
         <p
-          className="mx-auto max-w-[600px] text-center text-sm leading-[1.65] text-cream/80 md:text-base md:leading-[1.7]"
+          className="mx-auto max-w-[600px] text-center text-base leading-[1.65] text-cream md:text-lg md:leading-[1.7]"
           style={{
             opacity: stage >= 3 ? 1 : 0,
             transform: stage >= 3 ? "translateY(0)" : "translateY(14px)",
@@ -108,7 +108,7 @@ export default function LandingScene({
           href={`${ctaHref}${ctaHref.includes("?") ? "&" : "?"}utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=landing-hero`}
           target="_blank"
           rel="noopener noreferrer"
-          className="plausible-event-name=outbound-airbnb border border-cream bg-cream/[0.08] px-3 py-2.5 text-center font-display text-xs tracking-[4.8px] text-cream hover:scale-[1.02] active:scale-[0.96] md:px-4 md:py-3 md:text-base lg:px-4 lg:py-3 lg:text-xl lg:leading-5"
+          className="plausible-event-name=outbound-airbnb border border-cream bg-cream/[0.08] px-6 py-3 text-center font-display text-sm uppercase tracking-[4px] text-cream hover:scale-[1.02] active:scale-[0.96] md:text-base lg:text-lg"
           style={{
             opacity: stage >= 4 ? 1 : 0,
             transform: stage >= 4 ? "translateY(0)" : "translateY(12px)",
@@ -116,8 +116,8 @@ export default function LandingScene({
               ? `opacity var(--motion-drift) var(--ease-out-natural), transform var(--motion-drift) var(--ease-out-natural), background-color var(--motion-tide) var(--ease-in-out-calm), letter-spacing var(--motion-tide) var(--ease-in-out-calm)`
               : "none",
           }}
-          onMouseOver={(e) => { e.currentTarget.style.backgroundColor = "rgba(242,236,226,0.2)"; e.currentTarget.style.letterSpacing = "5.5px"; }}
-          onMouseOut={(e) => { e.currentTarget.style.backgroundColor = "rgba(242,236,226,0.08)"; e.currentTarget.style.letterSpacing = "4.8px"; }}
+          onMouseOver={(e) => { e.currentTarget.style.backgroundColor = "rgba(242,236,226,0.2)"; e.currentTarget.style.letterSpacing = "4.8px"; }}
+          onMouseOut={(e) => { e.currentTarget.style.backgroundColor = "rgba(242,236,226,0.08)"; e.currentTarget.style.letterSpacing = "4px"; }}
         >
           {cta}
         </a>
