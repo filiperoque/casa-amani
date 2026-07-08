@@ -1,5 +1,6 @@
 import RoomCard from "./RoomCard";
 import Reveal from "./Reveal";
+import GalleryStrip from "./GalleryStrip";
 import type { Translations } from "@/i18n/translations";
 
 interface HouseGalleryProps {
@@ -43,10 +44,13 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
         </div>
       </Reveal>
 
-      <div className="no-scrollbar mx-auto mt-12 w-full max-w-content overflow-x-auto lg:mt-24">
-        <div className="flex gap-6 pb-6 lg:gap-12">
+      <div className="-mx-gutter mt-12 lg:-mx-gutter-lg lg:mt-24">
+        <GalleryStrip
+          previousLabel={t.gallery.previous}
+          nextLabel={t.gallery.next}
+        >
           {rooms.map((room, i) => (
-            <Reveal key={room.title} delay={i * 80} className="shrink-0">
+            <Reveal key={room.title} delay={Math.min(i * 80, 400)} className="shrink-0">
               <RoomCard
                 image={room.image}
                 alt={room.alt}
@@ -56,7 +60,7 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
             </Reveal>
           ))}
           <div className="w-px shrink-0" aria-hidden="true" />
-        </div>
+        </GalleryStrip>
       </div>
     </section>
   );

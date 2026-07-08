@@ -42,27 +42,27 @@ export default async function HousePage({
       <main id="main" className="bg-warm">
         <h1 className="sr-only">{t.house.title}</h1>
 
-        {/* Hero sized so the first viewport shows wordmark + image +
-            the tagline below + a peek of the gallery (scroll affordance).
-            Image height = viewport minus the measured heights of those
-            blocks, with a floor for short windows. */}
-        <HouseHeroWordmark text={t.landing.title} homeHref={`/${locale}`} />
+        {/* Hero fills the viewport: wordmark + subtitle + image, with the
+            image flexing to the remaining height inside the content column. */}
+        <div className="flex min-h-[calc(100svh-3.5rem)] flex-col pb-6">
+          <HouseHeroWordmark text={t.landing.title} homeHref={`/${locale}`} />
 
-        <div className="px-gutter pt-4 lg:px-gutter-lg lg:pt-6">
-          <div className="mx-auto flex w-full max-w-content flex-col items-center gap-6">
-          <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-label text-cream md:text-intro lg:text-title-sm">
-            {t.landing.subtitle}
-          </p>
-          <div className="animate-fade-up animate-delay-2 relative mt-2 h-[calc(100svh-28rem)] min-h-[280px] w-full overflow-hidden md:h-[calc(100svh-34rem)] md:min-h-[320px] lg:h-[calc(100svh-43rem)] lg:min-h-[360px]">
-            <OptimizedImage
-              src="/images/hero.jpg"
-              alt="Interior view of Casa Amani with ocean views"
-              fill
-              className="object-cover"
-              priority
-              sizes="100vw"
-            />
-          </div>
+          <div className="flex flex-1 px-gutter pt-4 lg:px-gutter-lg lg:pt-6">
+            <div className="mx-auto flex w-full max-w-content flex-1 flex-col items-center gap-6">
+              <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-label text-cream md:text-intro lg:text-title-sm">
+                {t.landing.subtitle}
+              </p>
+              <div className="animate-fade-up animate-delay-2 relative mt-2 min-h-[320px] w-full flex-1 overflow-hidden">
+                <OptimizedImage
+                  src="/images/hero.jpg"
+                  alt="Interior view of Casa Amani with ocean views"
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="100vw"
+                />
+              </div>
+            </div>
           </div>
         </div>
 

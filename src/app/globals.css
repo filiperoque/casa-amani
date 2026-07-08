@@ -87,6 +87,18 @@
   --text-wordmark--line-height: 5rem;     /* 80, tight display serif */
 }
 
+/* Full-bleed scroll strip whose first item aligns with the content
+   column: leading padding = the column's computed edge, trailing
+   padding = one gutter so the last card can clear the fade. */
+@utility strip-edge {
+  padding-inline-start: max(var(--spacing-gutter), calc((100vw - var(--container-content)) / 2));
+  padding-inline-end: var(--spacing-gutter);
+  @media (min-width: 64rem) {
+    padding-inline-start: max(var(--spacing-gutter-lg), calc((100vw - var(--container-content)) / 2));
+    padding-inline-end: var(--spacing-gutter-lg);
+  }
+}
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;

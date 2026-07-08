@@ -400,6 +400,7 @@ const translations = {
       },
       discoverMore: "Discover more",
     },
+    gallery: { previous: "Previous rooms", next: "Next rooms" },
     contact: {
       title: "contact",
       intro:
@@ -817,6 +818,7 @@ const translations = {
       },
       discoverMore: "Descubra mais",
     },
+    gallery: { previous: "Divisões anteriores", next: "Divisões seguintes" },
     contact: {
       title: "contacto",
       intro:
@@ -1234,6 +1236,7 @@ const translations = {
       },
       discoverMore: "Mehr entdecken",
     },
+    gallery: { previous: "Vorherige Räume", next: "Weitere Räume" },
     contact: {
       title: "Kontakt",
       intro:
@@ -1651,6 +1654,7 @@ const translations = {
       },
       discoverMore: "En découvrir plus",
     },
+    gallery: { previous: "Pièces précédentes", next: "Pièces suivantes" },
     contact: {
       title: "contact",
       intro:
@@ -2068,6 +2072,7 @@ const translations = {
       },
       discoverMore: "Odkryj więcej",
     },
+    gallery: { previous: "Poprzednie wnętrza", next: "Kolejne wnętrza" },
     contact: {
       title: "kontakt",
       intro:
