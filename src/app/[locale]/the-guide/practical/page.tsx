@@ -73,14 +73,10 @@ export default async function PracticalPage({
         <div className="mx-auto max-w-copy">
           <Reveal>
             <Breadcrumbs
-              items={[
-                { label: "the guide", href: `${base}/the-guide` },
-                { label: "practical" },
-              ]}
+              parentLabel="the guide"
+              parentHref={`${base}/the-guide`}
+              title="practical"
             />
-            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
-              practical
-            </h1>
             <p className="mb-12 text-intro text-brown">
               The household management of the trip. How to get around, who to
               call, what to download. The things that make the difference

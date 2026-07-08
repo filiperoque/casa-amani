@@ -71,14 +71,10 @@ export default async function TablePage({
         <div className="mx-auto max-w-copy">
           <Reveal>
             <Breadcrumbs
-              items={[
-                { label: "the guide", href: `${base}/the-guide` },
-                { label: "table" },
-              ]}
+              parentLabel="the guide"
+              parentHref={`${base}/the-guide`}
+              title="table"
             />
-            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
-              table
-            </h1>
             <p className="mb-16 text-intro text-brown">
               Where the food and drink lives. Every place listed is somewhere we
               have eaten or drunk, on the west coast of Madeira or worth the

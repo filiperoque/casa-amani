@@ -63,14 +63,10 @@ export default async function CulturePage({
         <div className="mx-auto max-w-copy">
           <Reveal>
             <Breadcrumbs
-              items={[
-                { label: "the guide", href: `${base}/the-guide` },
-                { label: "culture" },
-              ]}
+              parentLabel="the guide"
+              parentHref={`${base}/the-guide`}
+              title="culture"
             />
-            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
-              culture
-            </h1>
             <p className="mb-12 text-intro text-brown">
               Things that are not food, water, or walking. Paulo David's
               architecture at MUDAS on the ridge above Calheta. Music nights

@@ -57,7 +57,7 @@ Numbered kickers (Kicker component) and pull quotes (PullQuote component, verbat
 - **THEN** its text exists verbatim elsewhere on the same page
 
 ### Requirement: Editorial breadcrumbs on guide subpages
-Guide subpages SHALL show an editorial breadcrumb ("the guide / <category>") above the h1, set in the display face at intro size, lowercase, inside nav[aria-label=Breadcrumb], with the parent crumb linking to the guide index. Card grids SHALL use text-body for descriptions (text-prose is reserved for reading columns) and SHALL NOT use opacity washes for state.
+Guide subpages SHALL show an editorial breadcrumb as the title composition itself: "the guide /" as a smaller linked prefix (intro/title-sm) baseline-aligned with the page h1 at full title scale, inside nav[aria-label=Breadcrumb]; the h1 contains only the page name. Card grids SHALL use text-body for descriptions (text-prose is reserved for reading columns) and SHALL NOT use opacity washes for state.
 
 #### Scenario: New guide subpage
 - **WHEN** a guide subpage renders

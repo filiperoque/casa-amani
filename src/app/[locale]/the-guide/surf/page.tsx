@@ -94,14 +94,10 @@ export default async function SurfPage({
           <div className="mx-auto max-w-copy">
             <Reveal>
               <Breadcrumbs
-                items={[
-                  { label: "the guide", href: `${base}/the-guide` },
-                  { label: "surf" },
-                ]}
+                parentLabel="the guide"
+                parentHref={`${base}/the-guide`}
+                title="surfing west Madeira"
               />
-              <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
-                surfing west Madeira
-              </h1>
               <p className="mb-12 text-intro text-brown">
                 The west coast of Madeira is a serious surf destination that
                 most visitors to the island never discover. Three recognised

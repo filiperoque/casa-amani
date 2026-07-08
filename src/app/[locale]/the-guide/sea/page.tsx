@@ -63,14 +63,10 @@ export default async function SeaPage({
         <div className="mx-auto max-w-copy">
           <Reveal>
             <Breadcrumbs
-              items={[
-                { label: "the guide", href: `${base}/the-guide` },
-                { label: "sea" },
-              ]}
+              parentLabel="the guide"
+              parentHref={`${base}/the-guide`}
+              title="sea"
             />
-            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
-              sea
-            </h1>
             <p className="mb-12 text-intro text-brown">
               Everything on or in the water. The west coast of Madeira faces the
               open Atlantic with consistent swells, warm water year-round, and

@@ -1,37 +1,38 @@
 /**
- * Editorial breadcrumb: set in the display face, lowercase, as part of
- * the heading composition ("the guide / land"). Semantically a nav
- * landmark; visually a typographic device. Editorial pages only.
+ * Editorial breadcrumb title: the page title IS the breadcrumb.
+ * "the guide / land" as one baseline-aligned composition; the parent
+ * is a smaller linked prefix (title-sm), the current page is the h1
+ * at full title scale. Semantically: nav landmark + clean h1.
+ * Editorial pages only.
  */
-interface Crumb {
-  label: string;
-  href?: string;
+interface BreadcrumbTitleProps {
+  parentLabel: string;
+  parentHref: string;
+  title: string;
 }
 
-export default function Breadcrumbs({ items }: { items: Crumb[] }) {
+export default function Breadcrumbs({
+  parentLabel,
+  parentHref,
+  title,
+}: BreadcrumbTitleProps) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-6">
-      <ol className="flex flex-wrap items-baseline gap-x-3 font-display text-intro text-brown">
-        {items.map((item, i) => (
-          <li key={item.label} className="flex items-baseline gap-x-3">
-            {i > 0 && (
-              <span aria-hidden="true" className="select-none">
-                /
-              </span>
-            )}
-            {item.href ? (
-              <a
-                href={item.href}
-                className="underline decoration-brown/30 underline-offset-4 transition-colors hover:decoration-brown"
-              >
-                {item.label}
-              </a>
-            ) : (
-              <span aria-current="page">{item.label}</span>
-            )}
-          </li>
-        ))}
-      </ol>
-    </nav>
+    <div className="mb-6 flex flex-wrap items-baseline gap-x-4">
+      <nav
+        aria-label="Breadcrumb"
+        className="font-display text-intro text-brown md:text-title-sm"
+      >
+        <a
+          href={parentHref}
+          className="underline decoration-brown/30 underline-offset-4 transition-colors hover:decoration-brown"
+        >
+          {parentLabel}
+        </a>
+        <span aria-hidden="true" className="select-none"> /</span>
+      </nav>
+      <h1 className="font-display text-title-sm text-brown md:text-title lg:text-title-lg">
+        {title}
+      </h1>
+    </div>
   );
 }

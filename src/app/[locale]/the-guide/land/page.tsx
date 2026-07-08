@@ -68,14 +68,10 @@ export default async function LandPage({
         <div className="mx-auto max-w-copy">
           <Reveal>
             <Breadcrumbs
-              items={[
-                { label: "the guide", href: `${base}/the-guide` },
-                { label: "land" },
-              ]}
+              parentLabel="the guide"
+              parentHref={`${base}/the-guide`}
+              title="land"
             />
-            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
-              land
-            </h1>
             <p className="mb-12 text-intro text-brown">
               On foot and on wheels. The levadas thread through laurel forest
               older than the island's settlement. The viewpoints face the
