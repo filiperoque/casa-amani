@@ -3,6 +3,8 @@ import { type Locale, getTranslations } from "@/i18n/translations";
 import { pageMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
+import Kicker from "@/components/Kicker";
+import PullQuote from "@/components/PullQuote";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
@@ -86,7 +88,7 @@ export default async function SurfPage({
       <main id="main">
         <Header menuLabel={t.header.menu} />
 
-        <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
+        <section className="bg-cream px-6 py-16 md:py-24 lg:py-40">
           <div className="mx-auto max-w-copy">
             <Reveal>
               <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
@@ -103,10 +105,11 @@ export default async function SurfPage({
             </Reveal>
 
             <Reveal>
+              <Kicker>01</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 why the west coast
               </h2>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 Madeira sits in the mid-Atlantic, exposed to the same swell
                 systems that light up the Canaries and the Portuguese mainland.
                 The island's central mountain range, rising above 1,800 metres,
@@ -114,7 +117,7 @@ export default async function SurfPage({
                 rain; the south and west coasts sit in the lee, warmer, drier,
                 and more consistent.
               </p>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 The west coast, from Calheta to Porto Moniz, faces the open
                 Atlantic with no landmass between it and the Caribbean. North-west
                 and west swells arrive with less refraction than on the south coast,
@@ -124,7 +127,7 @@ export default async function SurfPage({
                 the waves drop to waist-to-shoulder height, gentler and more
                 forgiving.
               </p>
-              <p className="mb-12 text-body text-brown">
+              <p className="mb-12 text-prose text-brown">
                 Water temperature ranges from 18°C in February to 24°C in
                 September. A 3/2mm wetsuit is standard year-round. The air is
                 warm even when the water is cool. After a session you dry off in
@@ -133,6 +136,7 @@ export default async function SurfPage({
             </Reveal>
 
             <Reveal>
+              <Kicker>02</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 three breaks within fifteen minutes
               </h2>
@@ -143,7 +147,7 @@ export default async function SurfPage({
               <p className="mb-2 text-sm text-brown">
                 8 km / 10 minutes from Casa Amani
               </p>
-              <p className="mb-8 text-body text-brown">
+              <p className="mb-8 text-prose text-brown">
                 The most famous wave on the island. A right-hand point break
                 that peels along the rocky coastline of the village, producing
                 long, walling rides when the swell is right. Best on
@@ -162,7 +166,7 @@ export default async function SurfPage({
               <p className="mb-2 text-sm text-brown">
                 12 km / 15 minutes from Casa Amani
               </p>
-              <p className="mb-8 text-body text-brown">
+              <p className="mb-8 text-prose text-brown">
                 A powerful right-hander that breaks along the boulder-strewn
                 coastline below the village. Heavier than Jardim do Mar, with
                 a faster, more hollow section on bigger swells. This is
@@ -179,7 +183,7 @@ export default async function SurfPage({
               <p className="mb-2 text-sm text-brown">
                 Approximately 15 minutes from Casa Amani
               </p>
-              <p className="mb-12 text-body text-brown">
+              <p className="mb-12 text-prose text-brown">
                 A left-hand reef break that picks up swell from a slightly
                 different angle than the other two. Less crowded, less
                 documented, and often overlooked by visitors chasing the
@@ -192,10 +196,15 @@ export default async function SurfPage({
             </Reveal>
 
             <Reveal>
+              <PullQuote>When it connects, the rides are long and the line-up is empty.</PullQuote>
+            </Reveal>
+
+            <Reveal>
+              <Kicker>03</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 surf schools and board hire
               </h2>
-              <p className="mb-12 text-body text-brown">
+              <p className="mb-12 text-prose text-brown">
                 Several operators run lessons and guided sessions from Paul do
                 Mar and Jardim do Mar during the season. Boards, wetsuits, and
                 transport to the breaks are typically included. We are
@@ -206,10 +215,11 @@ export default async function SurfPage({
             </Reveal>
 
             <Reveal>
+              <Kicker>04</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 a surf week at Casa Amani
               </h2>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 The rhythm tends to settle by day two. You check the forecast
                 over coffee, drive ten minutes to whichever break is working,
                 surf for two or three hours, then come back to the house. The
@@ -218,7 +228,7 @@ export default async function SurfPage({
                 you're in Paul do Mar for dinner at Saboramar, watching the sun
                 set over the same water you surfed that morning.
               </p>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 The house works for this. The garage fits two cars and a rack of
                 boards. The outdoor shower rinses off salt and sand before you
                 step inside. The Wi-Fi means you can work between sessions
@@ -227,7 +237,7 @@ export default async function SurfPage({
                 swell directions, enough downtime to recover, enough evenings
                 to find the places that aren't in the guidebooks.
               </p>
-              <p className="mb-12 text-body text-brown">
+              <p className="mb-12 text-prose text-brown">
                 Most surfers who stay here come back. The west coast is not
                 Bali, not the Algarve, not the Canaries. It is quieter, less
                 developed, and less crowded in the water. The waves are
@@ -237,10 +247,11 @@ export default async function SurfPage({
             </Reveal>
 
             <Reveal>
+              <Kicker>05</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 other water sports
               </h2>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 <strong className="font-medium text-brown">
                   Stand-up paddleboard.
                 </strong>{" "}
@@ -249,7 +260,7 @@ export default async function SurfPage({
                 be hired at the marina. The water is clear and the views back
                 toward the mountains are worth the early start.
               </p>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 <strong className="font-medium text-brown">
                   Snorkelling and diving.
                 </strong>{" "}
@@ -260,7 +271,7 @@ export default async function SurfPage({
                 from Funchal. The south-west coast has its own quieter spots
                 for snorkelling from the rocks.
               </p>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 <strong className="font-medium text-brown">Kayak.</strong>{" "}
                 Guided kayak tours run along the south-west cliff line,
                 launching from Calheta or Ribeira Brava. The coastline is
@@ -268,7 +279,7 @@ export default async function SurfPage({
                 and views of the terraced hillsides that you cannot get from the
                 road.
               </p>
-              <p className="mb-12 text-body text-brown">
+              <p className="mb-12 text-prose text-brown">
                 <strong className="font-medium text-brown">Sailing.</strong>{" "}
                 Yacht charters and sailing trips operate from Funchal and
                 Calheta marinas, ranging from sunset cruises to full-day trips
@@ -280,6 +291,7 @@ export default async function SurfPage({
             </Reveal>
 
             <Reveal>
+              <Kicker>06</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 common questions
               </h2>
@@ -290,14 +302,14 @@ export default async function SurfPage({
                     className="group border-t border-brown/10 py-6 last:border-b"
                   >
                     <summary className="flex cursor-pointer items-start justify-between gap-4 text-brown transition-opacity hover:opacity-70 marker:content-none [&::-webkit-details-marker]:hidden">
-                      <span className="text-body font-medium md:text-intro">
+                      <span className="text-prose font-medium md:text-intro">
                         {item.name}
                       </span>
                       <span className="mt-1 shrink-0 text-brown transition-transform duration-300 group-open:rotate-45">
                         +
                       </span>
                     </summary>
-                    <p className="mt-4 text-body text-brown">
+                    <p className="mt-4 text-prose text-brown">
                       {item.acceptedAnswer.text}
                     </p>
                   </details>

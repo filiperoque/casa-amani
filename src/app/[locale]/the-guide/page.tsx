@@ -66,7 +66,7 @@ export default async function GuidePage({
     <main id="main">
       <Header menuLabel={t.header.menu} />
 
-      <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-32">
+      <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-40">
         <div className="mx-auto max-w-copy">
           <Reveal>
             <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">

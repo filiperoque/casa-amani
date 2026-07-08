@@ -14,9 +14,9 @@ export default function GuideEntryCard({ entry }: { entry: GuideEntry }) {
         {entry.tagline && (
           <p className="mb-3 text-sm italic text-brown">{entry.tagline}</p>
         )}
-        <p className="text-body text-brown">{entry.body}</p>
+        <p className="text-prose text-brown">{entry.body}</p>
         {entry.body2 && (
-          <p className="mt-2 text-body text-brown">{entry.body2}</p>
+          <p className="mt-2 text-prose text-brown">{entry.body2}</p>
         )}
         <p className="mt-4 text-sm italic leading-6 text-brown">
           {entry.practical}

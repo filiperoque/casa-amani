@@ -23,7 +23,7 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
   const featureLines = [t.house.features, t.house.features2];
 
   return (
-    <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg">
+    <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-32">
       <Reveal>
         <div className="mx-auto flex w-full max-w-content flex-col items-center gap-4 text-center text-brown md:gap-6">
           <h2 className="font-display text-title md:text-title-lg lg:text-display">

@@ -41,3 +41,17 @@ Text on cream SHALL be full-strength `--color-brown` (no 40-70% alphas). Text on
 #### Scenario: Muted text is needed
 - **WHEN** a secondary text treatment is needed on cream
 - **THEN** hierarchy is expressed with size or font switch, not opacity
+
+### Requirement: Editorial pacing and prose tier
+Page-top containers SHALL use `py-16 md:py-24 lg:py-40` (160 desktop); standard sections `py-16 md:py-24 lg:py-32`; compact bands `py-12`. Long-form body on editorial pages (guide, FAQ, calheta, remote-work, privacy) SHALL use `text-prose` (18/32); UI and landing/house body stays `text-body` (16/28).
+
+#### Scenario: New editorial page
+- **WHEN** a new article or guide page is created
+- **THEN** its container uses the page-top tier and its body paragraphs use text-prose
+
+### Requirement: Editorial devices scoped to editorial pages
+Numbered kickers (Kicker component) and pull quotes (PullQuote component, verbatim lines from the page's own copy only) SHALL appear only on editorial pages (guide subpages, calheta, remote-work, future notes/articles) and SHALL NOT appear on the landing page, house page, FAQ, contact, or privacy.
+
+#### Scenario: Pull quote content
+- **WHEN** a pull quote is added
+- **THEN** its text exists verbatim elsewhere on the same page

@@ -20,7 +20,7 @@ New greenfield project — a single-page marketing site for Casa Amani, a vacati
 
 ## Decisions
 
-### 1. Static export with `output: 'export'`
+### 1. Static export with `output: 'export'` (AMENDED 2026-07-08: the site now runs a standard Vercel server build; the build-time sitemap route and the /api/subscribe MailerLite route require it. Static export is no longer a requirement.)
 The site is purely presentational with no dynamic data. Static export removes the need for a Node.js server and allows deployment to any CDN/static host.
 **Alternative**: SSR/ISR — unnecessary complexity for a brochure site.
 

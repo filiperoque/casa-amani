@@ -32,13 +32,13 @@ export default async function PrivacyPage({
     <main id="main">
       <Header menuLabel={t.header.menu} />
 
-      <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
+      <section className="bg-cream px-6 py-16 md:py-24 lg:py-40">
         <div className="mx-auto max-w-narrow">
           <Reveal>
             <h1 className="mb-8 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               {t.privacy.title}
             </h1>
-            <div className="flex flex-col gap-6 text-body text-brown">
+            <div className="flex flex-col gap-6 text-prose text-brown">
               <p>
                 {t.privacy.p1}
               </p>

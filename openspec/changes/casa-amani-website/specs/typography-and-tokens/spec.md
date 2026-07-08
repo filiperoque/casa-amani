@@ -1,7 +1,7 @@
 ## ADDED Requirements
 
-### Requirement: Custom fonts load via next/font/local
-The site SHALL load GT Sectra Display Trial (Regular), GT Sectra Fine Trial (Regular), and GT Walsheim Trial (Light, Regular, Medium) using `next/font/local` with `font-display: swap` and appropriate fallback stacks.
+### Requirement: Custom fonts load via @font-face
+The site SHALL load GT Sectra Display (Regular) and GT Walsheim (Regular, Medium) via `@font-face` declarations in `globals.css` with `font-display: swap`, woff2 sources in `public/fonts/`, preload hints in the locale layout, and Georgia/system-ui fallback stacks. (Amended 2026-07-08 per Filipe: spec updated to match production; next/font/local not used.)
 
 #### Scenario: Fonts load correctly
 - **WHEN** the page loads

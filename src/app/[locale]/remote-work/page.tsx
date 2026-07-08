@@ -4,6 +4,7 @@ import { pageMetadata, breadcrumbJsonLd } from "@/lib/seo";
 import OptimizedImage from "@/components/OptimizedImage";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
+import Kicker from "@/components/Kicker";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
 
@@ -87,7 +88,7 @@ export default async function RemoteWorkPage({
       <main id="main">
         <Header menuLabel={t.header.menu} />
 
-        <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
+        <section className="bg-cream px-6 py-16 md:py-24 lg:py-40">
           <div className="mx-auto max-w-copy">
             <Reveal>
               <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
@@ -111,6 +112,7 @@ export default async function RemoteWorkPage({
             </Reveal>
 
             <Reveal>
+              <Kicker>01</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.remoteWork.setupTitle}
               </h2>
@@ -127,25 +129,27 @@ export default async function RemoteWorkPage({
             </Reveal>
 
             <Reveal>
+              <Kicker>02</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.remoteWork.colivingTitle}
               </h2>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 {t.remoteWork.colivingP1}
               </p>
-              <p className="mb-16 text-body text-brown">
+              <p className="mb-16 text-prose text-brown">
                 {t.remoteWork.colivingP2}
               </p>
             </Reveal>
 
             <Reveal>
+              <Kicker>03</Kicker>
               <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.remoteWork.islandTitle}
               </h2>
-              <p className="mb-4 text-body text-brown">
+              <p className="mb-4 text-prose text-brown">
                 {t.remoteWork.islandP1}
               </p>
-              <p className="mb-16 text-body text-brown">
+              <p className="mb-16 text-prose text-brown">
                 {t.remoteWork.islandP2}
               </p>
             </Reveal>

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { type Locale, getTranslations } from "@/i18n/translations";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
+import Kicker from "@/components/Kicker";
+import PullQuote from "@/components/PullQuote";
 import GuideEntryCard from "@/components/GuideEntryCard";
 import Footer from "@/components/Footer";
 import { restaurants } from "@/content/guide/table/restaurants";
@@ -63,7 +65,7 @@ export default async function TablePage({
       <main id="main">
         <Header menuLabel={t.header.menu} />
 
-      <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-32">
+      <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-40">
         <div className="mx-auto max-w-copy">
           <Reveal>
             <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
@@ -77,6 +79,7 @@ export default async function TablePage({
           </Reveal>
 
           <Reveal>
+            <Kicker>01</Kicker>
             <h2 className="mb-8 font-display text-title-sm text-brown">
               restaurants
             </h2>
@@ -88,6 +91,11 @@ export default async function TablePage({
           </div>
 
           <Reveal>
+            <PullQuote>Same sunset, same ocean, different register.</PullQuote>
+          </Reveal>
+
+          <Reveal>
+            <Kicker>02</Kicker>
             <h2 className="mb-8 font-display text-title-sm text-brown">
               bars and poncha
             </h2>

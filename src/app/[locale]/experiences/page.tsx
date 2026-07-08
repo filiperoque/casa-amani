@@ -68,7 +68,7 @@ export default async function ExperiencesPage({
       <main id="main">
         <Header menuLabel={t.header.menu} />
 
-        <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
+        <section className="bg-cream px-6 py-16 md:py-24 lg:py-40">
           <div className="mx-auto max-w-copy">
             <Reveal>
               <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">

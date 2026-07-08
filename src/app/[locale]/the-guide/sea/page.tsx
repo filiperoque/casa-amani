@@ -3,6 +3,7 @@ import { type Locale, getTranslations } from "@/i18n/translations";
 import { pageMetadata } from "@/lib/seo";
 import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
+import Kicker from "@/components/Kicker";
 import Footer from "@/components/Footer";
 
 export async function generateMetadata({
@@ -57,7 +58,7 @@ export default async function SeaPage({
     <main id="main">
       <Header menuLabel={t.header.menu} />
 
-      <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-32">
+      <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-40">
         <div className="mx-auto max-w-copy">
           <Reveal>
             <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
@@ -71,20 +72,22 @@ export default async function SeaPage({
           </Reveal>
 
           <div className="grid gap-6 md:grid-cols-2">
-            {sections.map((s) => (
+            {sections.map((s, i) => (
               <Reveal key={s.title}>
                 {s.href ? (
                   <a
                     href={`${base}/${s.href}`}
                     className="flex h-full flex-col gap-3 border border-brown/10 p-6 transition-colors hover:border-brown/30"
                   >
+                    <Kicker>{String(i + 1).padStart(2, "0")}</Kicker>
                     <h2 className="font-display text-intro text-brown">{s.title}</h2>
-                    <p className="text-sm leading-6 text-brown">{s.description}</p>
+                    <p className="text-prose text-brown">{s.description}</p>
                   </a>
                 ) : (
                   <div className="flex h-full flex-col gap-3 border border-brown/10 p-6 opacity-60">
+                    <Kicker>{String(i + 1).padStart(2, "0")}</Kicker>
                     <h2 className="font-display text-intro text-brown">{s.title}</h2>
-                    <p className="text-sm leading-6 text-brown">{s.description}</p>
+                    <p className="text-prose text-brown">{s.description}</p>
                     <span className="mt-auto text-sm uppercase tracking-cta text-brown">coming soon</span>
                   </div>
                 )}

@@ -46,7 +46,7 @@ Pattern: `<section class="bg-x px-gutter lg:px-gutter-lg"><div class="mx-auto w-
 `px-gutter` 24 (mobile/tablet), `lg:px-gutter-lg` 120 (desktop).
 
 ### Spacing scale (8pt base, alternating 3:2 / 4:3 jumps for rhythm)
-**8, 12, 16, 24, 32, 48, 64, 96, 128.** 40 and 80 are retired from layout rhythm (40 remains only as the fixed control size `h-10`/`w-10`). Usage: 48 compact band (`py-12`), 64 section (`py-16`), 96 large section (`py-24`), 128 page-top (`lg:py-32`); 24 after headings (`mb-6`), 32 after intros (`mb-8`), 12 micro-gaps (`gap-3`).
+**8, 12, 16, 24, 32, 48, 64, 96, 128, 160.** 40 and 80 are retired from layout rhythm (40 remains only as the fixed control size `h-10`/`w-10`). Editorial pacing (Filipe, 2026-07-08): sections `py-16 md:py-24 lg:py-32` (64/96/128), page-top containers `py-16 md:py-24 lg:py-40` (160), compact bands `py-12` (48); 24 after headings (`mb-6`), 32 after intros (`mb-8`), 12 micro-gaps (`gap-3`).
 
 ### Letter-spacing
 `tracking-cta` 4px (CTAs, room labels, tags) and `tracking-label` 6px (hero place lines). The only sub-8 values in the system.
@@ -61,7 +61,8 @@ timid to reach an 88px wordmark) and Golden Ratio (no usable middle sizes).
 | Token class | Size/LH | Use |
 |---|---|---|
 | `text-sm` (caption) | 14/20 | captions, fine print, uppercase tracked labels; full contrast only |
-| `text-body` | 16/28 | all body copy, forms, nav lists |
+| `text-body` | 16/28 | UI body: forms, nav lists, landing/house copy, contact |
+| `text-prose` | 18/32 | editorial long-form body (guide, FAQ, calheta, remote-work, privacy); ~72ch in the copy column |
 | `text-intro` | 21/32 | ledes, FAQ questions (md+), compact-band headings |
 | `text-title-sm` | 28/36 | section h2, header wordmark, page h1 mobile |
 | `text-title` | 38/48 | page h1 (md), tagline mobile |
@@ -105,6 +106,10 @@ Fixed 56px header: hamburger, wordmark (28px), language picker. Full-screen tan 
 
 ### Newsletter band
 One quiet `py-12` band above the footer; heading + line left, inline form right; never a page section of its own. Excluded from the landing page.
+
+### Editorial devices (editorial pages ONLY: guide, calheta, remote-work, future notes/articles; never landing, house, faq, contact)
+- **Kicker** (`components/Kicker.tsx`): numbered label ("01", "02") in display face, `text-sm uppercase tracking-cta`, above each section h2. Language-free by design.
+- **Pull quote** (`components/PullQuote.tsx`): one per page at most, repeating a line that exists VERBATIM in the page's own copy, `text-title-sm`/`text-title` display with a hairline left border, breaking the column left on desktop. Never fabricate a quote.
 
 ## 5. Motion
 

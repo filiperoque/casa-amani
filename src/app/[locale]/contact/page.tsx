@@ -46,7 +46,7 @@ export default async function ContactPage({
       <main id="main" className="bg-cream min-h-dvh">
         <Header menuLabel={t.header.menu} />
 
-        <div className="mx-auto max-w-narrow px-6 py-16 md:py-24 lg:py-32">
+        <div className="mx-auto max-w-narrow px-6 py-16 md:py-24 lg:py-40">
           <Reveal>
             <h1 className="mb-4 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               {t.contact.title}

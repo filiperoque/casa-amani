@@ -28,12 +28,16 @@ usage rules, mirrored in openspec so future changes respect it.
   flush with the content column instead of viewport-edge peek).
 - Affected code: globals.css, all components and pages (token class sweep).
 
-## Open questions (flagged, not decided)
+## Resolved (Filipe, 2026-07-08)
 
-1. The original change specs `output: 'export'` static export; production
-   now runs a standard Vercel Next build (sitemap route, API route). Update
-   the spec or restore export?
-2. The original change specs fonts via `next/font/local`; implementation
-   uses `@font-face` in globals.css. Update the spec or migrate?
-3. Cream-on-tan text cannot pass WCAG AA on `#b8956e`; `--color-warm-deep`
+1. Static export: spec updated to reality (Vercel server build; sitemap
+   route and subscribe API require it).
+2. Fonts: spec updated to reality (@font-face in globals.css).
+3. Editorial refinements approved: pacing up one tier (page tops 160),
+   prose body 18/32 on editorial pages, kickers and pull quotes on
+   editorial pages only (never landing or house).
+
+## Open questions
+
+1. Cream-on-tan text cannot pass WCAG AA on `#b8956e`; `--color-warm-deep`
    `#7f5f3e` is provisioned. Adopt for text-bearing tan sections?
