@@ -88,7 +88,7 @@ export default async function GuidePage({
                   <h2 className="font-display text-intro text-brown">
                     {cat.title}
                   </h2>
-                  <p className="text-sm leading-6 text-brown">
+                  <p className="text-body text-brown">
                     {cat.description}
                   </p>
                 </a>

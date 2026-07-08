@@ -82,13 +82,13 @@ export default async function CulturePage({
                   >
                     <Kicker>{String(i + 1).padStart(2, "0")}</Kicker>
                     <h2 className="font-display text-intro text-brown">{s.title}</h2>
-                    <p className="text-prose text-brown">{s.description}</p>
+                    <p className="text-body text-brown">{s.description}</p>
                   </a>
                 ) : (
-                  <div className="flex h-full flex-col gap-3 border border-brown/10 p-6 opacity-60">
+                  <div className="flex h-full flex-col gap-3 border border-brown/10 p-6">
                     <Kicker>{String(i + 1).padStart(2, "0")}</Kicker>
                     <h2 className="font-display text-intro text-brown">{s.title}</h2>
-                    <p className="text-prose text-brown">{s.description}</p>
+                    <p className="text-body text-brown">{s.description}</p>
                     <span className="mt-auto text-sm uppercase tracking-cta text-brown">coming soon</span>
                   </div>
                 )}
