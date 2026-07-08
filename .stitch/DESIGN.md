@@ -87,10 +87,10 @@ No sizes outside this ramp. The Header menu overlay (32/48 display links) is the
 ## 4. Components
 
 ### CTA system (the answer to "what font in CTAs?")
-- **Primary action** (always the Airbnb booking link): bordered box, transparent fill, **GT Sectra Display**, `text-sm uppercase tracking-cta px-6 py-3`, text/border in the surface's text color. Hover: scale 1.02 + 10% fill tint. Labels from i18n; component renders uppercase.
-- **Form submit**: identical recipe, sized to its row.
+- **Primary action** (always the Airbnb booking link): SOLID umber fill, cream text (5.0:1 AA on every surface), **GT Sectra Display**, `text-sm uppercase tracking-cta px-6 py-3`, no border. Hover: scale 1.02 + `bg-brown/90`. Exception: over photography (landing hero) the CTA keeps the outline treatment; solid fills fight the image and the blend.
+- **Secondary action** (newsletter submit and any non-booking boxed action): outline; 1px border and text in the surface's text color, transparent fill.
 - **Text link**: Walsheim, sentence case, underline in prose, trailing arrow for forward navigation. Never uppercase, never boxed.
-Never mix tiers on one intent; never invent a second primary style.
+Never mix tiers on one intent; never invent a third style. (Solid/outline split approved by Filipe 2026-07-08.)
 
 ### Corner radius
 0 everywhere. The system has no rounded corners.
@@ -110,6 +110,8 @@ One quiet `py-12` band above the footer; heading + line left, inline form right;
 ### Editorial devices (editorial pages ONLY: guide, calheta, remote-work, future notes/articles; never landing, house, faq, contact)
 - **Kicker** (`components/Kicker.tsx`): numbered label ("01", "02") in display face, `text-sm uppercase tracking-cta`, above each section h2. Language-free by design.
 - **Pull quote** (`components/PullQuote.tsx`): one per page at most, repeating a line that exists VERBATIM in the page's own copy, `text-title-sm`/`text-title` display with a hairline left border, breaking the column left on desktop. Never fabricate a quote.
+- **Editorial breadcrumb** (`components/Breadcrumbs.tsx`): "the guide / land" set in the display face at `text-intro`, lowercase, part of the heading composition; parent crumbs are links with a soft underline. Semantically `nav[aria-label=Breadcrumb]`. Guide subpages and future article hierarchies only.
+- **Cards** (guide grids): title `text-intro` display, body `text-body` (never `text-prose`; prose is for reading columns), status tags `text-sm tracking-cta`. No opacity washes; state is expressed with tags and borders.
 
 ## 5. Motion
 

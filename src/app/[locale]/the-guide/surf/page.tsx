@@ -7,6 +7,7 @@ import Kicker from "@/components/Kicker";
 import PullQuote from "@/components/PullQuote";
 import BookCTA from "@/components/BookCTA";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export async function generateMetadata({
   params,
@@ -69,6 +70,7 @@ export default async function SurfPage({
 }) {
   const { locale } = await params;
   const t = getTranslations(locale as Locale);
+  const base = `/${locale}`;
   const breadcrumbs = breadcrumbJsonLd(locale as Locale, [
     { name: "The Guide", path: "/the-guide" },
     { name: "Surf", path: "/the-guide/surf" },
@@ -91,6 +93,12 @@ export default async function SurfPage({
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-40">
           <div className="mx-auto max-w-copy">
             <Reveal>
+              <Breadcrumbs
+                items={[
+                  { label: "the guide", href: `${base}/the-guide` },
+                  { label: "surf" },
+                ]}
+              />
               <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
                 surfing west Madeira
               </h1>

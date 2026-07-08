@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Reveal from "@/components/Reveal";
 import Kicker from "@/components/Kicker";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export async function generateMetadata({
   params,
@@ -71,6 +72,12 @@ export default async function PracticalPage({
       <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-40">
         <div className="mx-auto max-w-copy">
           <Reveal>
+            <Breadcrumbs
+              items={[
+                { label: "the guide", href: `${base}/the-guide` },
+                { label: "practical" },
+              ]}
+            />
             <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               practical
             </h1>

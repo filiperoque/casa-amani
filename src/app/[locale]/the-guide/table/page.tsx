@@ -6,6 +6,7 @@ import Kicker from "@/components/Kicker";
 import PullQuote from "@/components/PullQuote";
 import GuideEntryCard from "@/components/GuideEntryCard";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { restaurants } from "@/content/guide/table/restaurants";
 import { bars } from "@/content/guide/table/bars";
 import { pageMetadata } from "@/lib/seo";
@@ -32,6 +33,7 @@ export default async function TablePage({
 }) {
   const { locale } = await params;
   const t = getTranslations(locale as Locale);
+  const base = `/${locale}`;
 
   const restaurantSchemas = restaurants.map((r) => ({
     "@context": "https://schema.org",
@@ -68,6 +70,12 @@ export default async function TablePage({
       <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-40">
         <div className="mx-auto max-w-copy">
           <Reveal>
+            <Breadcrumbs
+              items={[
+                { label: "the guide", href: `${base}/the-guide` },
+                { label: "table" },
+              ]}
+            />
             <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               table
             </h1>

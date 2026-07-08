@@ -29,7 +29,7 @@ Every module SHALL align to `max-w-content` (1280px); prose uses `max-w-copy` (7
 - **THEN** their content columns share identical left and right edges, including hero images and the room-card strip (first card flush with the column's left edge)
 
 ### Requirement: CTA system and casing rules
-Primary actions (Airbnb booking) and form submits SHALL render in GT Sectra Display, uppercase, `tracking-cta`, 1px border, transparent fill. Text links SHALL render in GT Walsheim, sentence case, never uppercase or boxed. Casing: lowercase + trailing period for editorial display headings; UPPERCASE tracked for CTAs, micro-labels, and place lines; Title Case for nav/footer wayfinding; sentence case for body; the wordmark is always lowercase.
+Primary actions (Airbnb booking) SHALL render solid: umber fill, cream text, GT Sectra Display, uppercase, `tracking-cta`, no border (outline permitted only over photography, e.g. the landing hero). Secondary boxed actions (form submits) SHALL render outline: 1px border and text in the surface's text color, transparent fill. (Amended 2026-07-08 per Filipe: solid primary / outline secondary.) Text links SHALL render in GT Walsheim, sentence case, never uppercase or boxed. Casing: lowercase + trailing period for editorial display headings; UPPERCASE tracked for CTAs, micro-labels, and place lines; Title Case for nav/footer wayfinding; sentence case for body; the wordmark is always lowercase.
 
 #### Scenario: New booking CTA
 - **WHEN** a booking CTA is added anywhere
@@ -55,3 +55,10 @@ Numbered kickers (Kicker component) and pull quotes (PullQuote component, verbat
 #### Scenario: Pull quote content
 - **WHEN** a pull quote is added
 - **THEN** its text exists verbatim elsewhere on the same page
+
+### Requirement: Editorial breadcrumbs on guide subpages
+Guide subpages SHALL show an editorial breadcrumb ("the guide / <category>") above the h1, set in the display face at intro size, lowercase, inside nav[aria-label=Breadcrumb], with the parent crumb linking to the guide index. Card grids SHALL use text-body for descriptions (text-prose is reserved for reading columns) and SHALL NOT use opacity washes for state.
+
+#### Scenario: New guide subpage
+- **WHEN** a guide subpage renders
+- **THEN** the breadcrumb precedes the h1 and links back to the guide index
