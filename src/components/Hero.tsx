@@ -7,11 +7,11 @@ interface HeroProps {
 
 export default function Hero({ title, subtitle }: HeroProps) {
   return (
-    <section className="flex flex-col items-center gap-6 bg-warm px-6 pb-0 lg:px-[120px]">
+    <section className="flex flex-col items-center gap-6 bg-warm px-gutter pb-0 lg:px-gutter-lg">
       <h1 className="animate-fade-up font-display text-5xl text-cream md:text-7xl lg:text-[88px] lg:leading-[80px]">
         {title}
       </h1>
-      <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">
+      <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-label text-cream md:text-lg lg:text-2xl">
         {subtitle}
       </p>
 

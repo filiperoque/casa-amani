@@ -18,8 +18,8 @@ export default function Footer({ subscribe = true }: { subscribe?: boolean }) {
   return (
     <>
       {subscribe && <SubscribeBlock />}
-      <footer className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
-        <div className="mx-auto w-full max-w-6xl">
+      <footer className="bg-warm px-gutter py-16 lg:px-gutter-lg lg:py-20">
+        <div className="mx-auto w-full max-w-content">
         <Reveal>
         <div className="grid grid-cols-1 gap-10 text-base text-cream md:grid-cols-3 md:gap-8">
           {/* Column 1: Brand + location */}

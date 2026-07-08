@@ -14,8 +14,8 @@ export default function Reservation() {
   const t = getTranslations(currentLocale);
 
   return (
-    <section className="bg-warm px-6 py-12 md:py-16 lg:px-[120px]">
-      <div className="mx-auto w-full max-w-6xl">
+    <section className="bg-warm px-gutter py-12 md:py-16 lg:px-gutter-lg">
+      <div className="mx-auto w-full max-w-content">
       <Reveal>
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <h2 className="font-display text-2xl text-cream md:text-3xl lg:text-4xl">

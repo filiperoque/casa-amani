@@ -188,7 +188,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
     <>
       {/* Fixed header bar */}
       <header
-        className="fixed inset-x-0 top-0 z-[60] flex h-14 items-center justify-between px-6 lg:px-[120px]"
+        className="fixed inset-x-0 top-0 z-[60] flex h-14 items-center justify-between px-gutter lg:px-gutter-lg"
         style={{
           backgroundColor: open
             ? "var(--color-warm)"
@@ -207,14 +207,14 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-[7px] hover:scale-[1.02] hover:opacity-80 active:scale-[0.96]"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-2 hover:scale-[1.02] hover:opacity-80 active:scale-[0.96]"
           style={{ transition: `opacity var(--motion-breath) ${CALM}` }}
         >
           <span
             className="block h-[2px] w-6"
             style={{
               backgroundColor: open || isDark ? "var(--color-cream)" : "var(--color-brown)",
-              transform: open ? "translateY(4.5px) rotate(45deg)" : "none",
+              transform: open ? "translateY(5px) rotate(45deg)" : "none",
               transition: `transform var(--motion-drift) ${NATURAL}, background-color var(--motion-tide) ${CALM}`,
             }}
           />
@@ -222,7 +222,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
             className="block h-[2px] w-6"
             style={{
               backgroundColor: open || isDark ? "var(--color-cream)" : "var(--color-brown)",
-              transform: open ? "translateY(-4.5px) rotate(-45deg)" : "none",
+              transform: open ? "translateY(-5px) rotate(-45deg)" : "none",
               transition: `transform var(--motion-drift) ${NATURAL}, background-color var(--motion-tide) ${CALM}`,
             }}
           />
@@ -231,7 +231,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
         {/* Brand mark (Drift for entrance, Tide for hover/color) */}
         <a
           href={base || "/en"}
-          className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[55%] font-display text-[26px] lg:text-[30px] ${
+          className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[55%] font-display text-2xl lg:text-[32px] ${
             showBrand ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           style={{
@@ -252,7 +252,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
             href="https://www.airbnb.co.uk/rooms/1695506665949683620?utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=menu-header"
             target="_blank"
             rel="noopener noreferrer"
-            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream px-6 py-2.5 font-display text-sm uppercase tracking-[4px] text-cream hover:scale-[1.02] hover:bg-cream/10 active:scale-[0.96] ${
+            className={`plausible-event-name=outbound-airbnb absolute right-0 top-1/2 -translate-y-1/2 whitespace-nowrap border border-cream px-6 py-2 font-display text-sm uppercase tracking-cta text-cream hover:scale-[1.02] hover:bg-cream/10 active:scale-[0.96] ${
               open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
             }`}
             style={{ transition: `opacity var(--motion-drift) ${CALM}, border-color var(--motion-tide) ${CALM}, background-color var(--motion-tide) ${CALM}` }}
@@ -342,7 +342,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
         aria-modal="true"
         aria-label="Site navigation"
       >
-        <div className="flex h-full px-6 py-14 lg:px-[120px]">
+        <div className="flex h-full px-gutter py-14 lg:px-gutter-lg">
           <nav
             className="flex w-full flex-col justify-center lg:w-[45%]"
             aria-label="Main navigation"

@@ -88,7 +88,7 @@ export default async function RemoteWorkPage({
         <Header menuLabel={t.header.menu} />
 
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-copy">
             <Reveal>
               <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
                 {t.remoteWork.title}
@@ -117,7 +117,7 @@ export default async function RemoteWorkPage({
               <dl className="mb-16 grid grid-cols-1 gap-6 text-brown/80 md:grid-cols-2">
                 {setupItems.map((item) => (
                   <div key={item.label}>
-                    <dt className="mb-1 text-sm font-medium uppercase tracking-[3px] text-brown">
+                    <dt className="mb-1 text-sm font-medium uppercase tracking-cta text-brown">
                       {item.label}
                     </dt>
                     <dd>{item.text}</dd>
@@ -158,8 +158,8 @@ export default async function RemoteWorkPage({
           </div>
         </section>
         <Reveal>
-          <section className="bg-cream px-6 py-12 lg:px-[120px]">
-            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown">
+          <section className="bg-cream px-gutter py-12 lg:px-gutter-lg">
+            <div className="mx-auto max-w-copy flex flex-wrap gap-x-8 gap-y-2 text-sm text-brown">
               <a href={`/${locale}/house`} className="transition-colors hover:text-brown">The house</a>
               <a href={`/${locale}/calheta`} className="transition-colors hover:text-brown">About Calheta</a>
               <a href={`/${locale}/the-guide`} className="transition-colors hover:text-brown">The Guide</a>

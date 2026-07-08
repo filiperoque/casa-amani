@@ -69,7 +69,7 @@ export default function LandingScene({
         </div>
       </div>
 
-      <div className="relative z-10 flex w-full flex-1 flex-col items-center justify-center gap-8 px-6 pb-16 pt-10 mix-blend-lighten md:gap-10 md:px-[120px]">
+      <div className="relative z-10 flex w-full flex-1 flex-col items-center justify-center gap-8 px-6 pb-16 pt-10 mix-blend-lighten md:gap-10 md:px-gutter-lg">
         <div className="flex flex-col items-center gap-6 text-cream">
           <h1
             className="font-display text-5xl md:text-7xl lg:text-[88px] lg:leading-[80px]"
@@ -82,7 +82,7 @@ export default function LandingScene({
             {title}
           </h1>
           <p
-            className="text-center text-sm tracking-[5.76px] md:text-lg lg:text-2xl"
+            className="text-center text-sm tracking-label md:text-lg lg:text-2xl"
             style={{
               opacity: stage >= 2 ? 0.8 : 0,
               transform: stage >= 2 ? "translateY(0)" : "translateY(16px)",
@@ -94,7 +94,7 @@ export default function LandingScene({
         </div>
 
         <p
-          className="mx-auto max-w-[600px] text-center text-base leading-[1.65] text-cream md:text-lg md:leading-[1.7]"
+          className="mx-auto max-w-hero-copy text-center text-base leading-[1.65] text-cream md:text-lg md:leading-[1.7]"
           style={{
             opacity: stage >= 3 ? 1 : 0,
             transform: stage >= 3 ? "translateY(0)" : "translateY(14px)",
@@ -108,7 +108,7 @@ export default function LandingScene({
           href={`${ctaHref}${ctaHref.includes("?") ? "&" : "?"}utm_source=casa-amani.com&utm_medium=referral&utm_campaign=book&utm_content=landing-hero`}
           target="_blank"
           rel="noopener noreferrer"
-          className="plausible-event-name=outbound-airbnb border border-cream bg-cream/[0.08] px-6 py-3 text-center font-display text-sm uppercase tracking-[4px] text-cream hover:scale-[1.02] active:scale-[0.96] md:text-base lg:text-lg"
+          className="plausible-event-name=outbound-airbnb border border-cream bg-cream/[0.08] px-6 py-3 text-center font-display text-sm uppercase tracking-cta text-cream hover:scale-[1.02] active:scale-[0.96] md:text-base lg:text-lg"
           style={{
             opacity: stage >= 4 ? 1 : 0,
             transform: stage >= 4 ? "translateY(0)" : "translateY(12px)",

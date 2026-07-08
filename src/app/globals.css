@@ -47,8 +47,23 @@
   --color-warm: var(--color-warm);
   --color-cream: var(--color-cream);
   --color-brown: var(--color-brown);
+  --color-warm-deep: var(--color-warm-deep);
   --font-display: "GT Sectra Display", Georgia, "Times New Roman", serif;
   --font-body: "GT Walsheim", system-ui, -apple-system, sans-serif;
+
+  /* Layout containers (8pt grid: 1152 / 768 / 672 / 600px) */
+  --container-content: 72rem; /* standard module column */
+  --container-copy: 48rem;    /* prose column */
+  --container-narrow: 42rem;  /* short-form pages (contact, privacy) */
+  --container-hero-copy: 37.5rem; /* hero intro paragraph */
+
+  /* Gutters (8pt grid: 24 / 120px) */
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-lg: 7.5rem;
+
+  /* Letter-spacing tokens */
+  --tracking-cta: 0.25rem;   /* 4px: CTAs, room labels */
+  --tracking-label: 0.375rem; /* 6px: hero subtitle, place lines */
 }
 
 html {

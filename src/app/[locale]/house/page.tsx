@@ -48,8 +48,8 @@ export default async function HousePage({
             blocks, with a floor for short windows. */}
         <HouseHeroWordmark text={t.landing.title} homeHref={`/${locale}`} />
 
-        <div className="flex flex-col items-center gap-6 px-6 pt-4 lg:px-[120px] lg:pt-6">
-          <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">
+        <div className="mx-auto flex w-full max-w-content flex-col items-center gap-6 px-gutter pt-4 lg:pt-6">
+          <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-label text-cream md:text-lg lg:text-2xl">
             {t.landing.subtitle}
           </p>
           <div className="animate-fade-up animate-delay-2 relative mt-2 h-[calc(100svh-28rem)] min-h-[280px] w-full overflow-hidden md:h-[calc(100svh-34rem)] md:min-h-[320px] lg:h-[calc(100svh-43rem)] lg:min-h-[360px]">

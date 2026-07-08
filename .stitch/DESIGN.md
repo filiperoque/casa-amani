@@ -69,11 +69,41 @@ Fixed 56px header; hamburger + wordmark + language picker. Full-screen tan overl
 ### Newsletter band (compact rule)
 A single quiet band above the footer: heading + one line + inline form in one row on desktop, stacked on mobile. Max `py-10`. It must never read as a page section of its own.
 
-## 5. Layout Principles
+## 5. Layout Principles and Token Registry (binding)
 
-- Content column: `max-w-3xl` for prose, `max-w-5xl` for image grids; page gutter `px-6`, `lg:px-[120px]`.
-- Landing page = hero only (`100svh` scene + footer). Interior pages: h1 block, alternating cream sections; tan is used sparingly.
-- Spacing rhythm: sections `py-16 md:py-24`; inside sections, `mb-6` after headings, `gap-3/4` in lists.
+All values live in `src/app/globals.css` under `@theme`. Components must use
+the token classes, never raw arbitrary values. The grid is **8pt**: every
+spacing, container, and fixed dimension is a multiple of 8px (4px half-steps
+allowed only for micro-gaps like `gap-1`/`gap-3` inside components).
+
+### Containers (token → class → px)
+- `--container-content` → `max-w-content` → 1152 (8x144). The standard module column: heroes, footer, newsletter, tagline, gallery, location.
+- `--container-copy` → `max-w-copy` → 768. Prose columns (guide, FAQ, house sections).
+- `--container-narrow` → `max-w-narrow` → 672. Short-form pages (contact, privacy, confirmations).
+- `--container-hero-copy` → `max-w-hero-copy` → 600. The landing intro paragraph only.
+Every full-bleed section = background full width + exactly one of these inside. The house hero image uses `max-w-content` like every other module.
+
+### Gutters
+- `--spacing-gutter` → `px-gutter` → 24 (mobile/tablet page gutter).
+- `--spacing-gutter-lg` → `lg:px-gutter-lg` → 120 (desktop page gutter).
+
+### Spacing scale (8pt jumps, ascending rhythm)
+8, 16, 24 (gutter), 32, 40 (compact band `py-10`), 48, 64 (section `py-16`), 80, 96 (large section `md:py-24`), 128 (page top `lg:py-32`). Inside sections: 24 after h2 (`mb-6`), 32 after intro (`mb-8`), 12 list gaps (`gap-3`).
+
+### Fixed dimensions on grid
+Header bar 56 (`h-14`); touch targets minimum 40 (`h-10`); hamburger gap 8; house-hero height budget offsets 448/544/688 (28/34/43rem) with floors 280/320/360.
+
+### Letter-spacing tokens
+- `--tracking-cta` → `tracking-cta` → 4px: all CTAs, room labels, "coming soon" tags.
+- `--tracking-label` → `tracking-label` → 6px: hero subtitle and place lines.
+Letter-spacing is the only place sub-8 values are expected; only these two tokens exist.
+
+### Type ramp (size / line-height, line-heights on the 8pt baseline)
+14/20 caption (`text-sm`, full-contrast only) · 16/28 body (`text-base leading-7`) · 18/32 intro (`text-lg leading-8`) · 20 h3-display (`text-xl`) · 24 h2-mobile and header wordmark (`text-2xl`) · 30/36 page-h1 mobile (`text-3xl`) · 32 header wordmark desktop (`text-[32px]`) · 36 (`text-4xl`) · 48 (`text-5xl`) · 72/80 tagline display (`text-[72px]`) · 88/80 hero wordmark (`text-[88px]`). No sizes outside this ramp.
+
+### Structure
+- Landing page = hero only (`100svh` scene + footer). Interior pages: h1 block, alternating cream sections; tan used sparingly.
+- House hero: wordmark + subtitle + image sized so the tagline plus a peek of the next module fit the first viewport.
 - Breakpoints: single column under 768px; grids collapse to 1 col; nav identical at all sizes.
 
 ## 6. Design System Notes for Generation

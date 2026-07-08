@@ -57,8 +57,8 @@ export default async function CulturePage({
     <main id="main">
       <Header menuLabel={t.header.menu} />
 
-      <section className="bg-cream px-6 py-16 md:py-24 lg:px-[120px] lg:py-32">
-        <div className="mx-auto max-w-3xl">
+      <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-32">
+        <div className="mx-auto max-w-copy">
           <Reveal>
             <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               culture
@@ -86,7 +86,7 @@ export default async function CulturePage({
                   <div className="flex h-full flex-col gap-3 border border-brown/10 p-6 opacity-60">
                     <h2 className="font-display text-xl text-brown">{s.title}</h2>
                     <p className="text-sm leading-6 text-brown">{s.description}</p>
-                    <span className="mt-auto text-sm uppercase tracking-[3px] text-brown">coming soon</span>
+                    <span className="mt-auto text-sm uppercase tracking-cta text-brown">coming soon</span>
                   </div>
                 )}
               </Reveal>

@@ -117,7 +117,7 @@ export default async function FaqPage({
       <main id="main" className="bg-cream min-h-dvh">
         <Header menuLabel={t.header.menu} />
 
-        <div className="mx-auto max-w-3xl px-6 py-16 md:py-24 lg:py-32">
+        <div className="mx-auto max-w-copy px-6 py-16 md:py-24 lg:py-32">
           <Reveal>
             <h1 className="mb-4 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
               {t.faq.title}

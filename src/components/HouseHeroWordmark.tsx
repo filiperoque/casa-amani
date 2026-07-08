@@ -151,7 +151,7 @@ export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: st
       <div
         ref={headerAnchorRef}
         aria-hidden="true"
-        className="pointer-events-none invisible absolute font-display text-[26px] lg:text-[30px]"
+        className="pointer-events-none invisible absolute font-display text-2xl lg:text-[32px]"
         style={{ lineHeight: 1 }}
       >
         {text}

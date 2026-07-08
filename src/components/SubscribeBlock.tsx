@@ -50,8 +50,8 @@ export default function SubscribeBlock() {
   const isConfirmed = status === "success" || status === "already";
 
   return (
-    <section className="bg-warm px-6 py-10 lg:px-[120px]">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 md:flex-row md:items-center md:gap-12">
+    <section className="bg-warm px-gutter py-10 lg:px-gutter-lg">
+      <div className="mx-auto flex w-full max-w-content flex-col gap-6 md:flex-row md:items-center md:gap-12">
         <div className="md:w-2/5">
           <h2 className="mb-2 font-display text-xl text-cream">
             {t.subscribe.heading}
@@ -95,7 +95,7 @@ export default function SubscribeBlock() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="whitespace-nowrap border border-cream px-6 py-3 font-display text-sm uppercase tracking-[4px] text-cream hover:scale-[1.02] hover:bg-cream/10 active:scale-[0.96] disabled:opacity-50"
+                  className="whitespace-nowrap border border-cream px-6 py-3 font-display text-sm uppercase tracking-cta text-cream hover:scale-[1.02] hover:bg-cream/10 active:scale-[0.96] disabled:opacity-50"
                   style={{ transition: `background-color var(--motion-tide) ${CALM}, border-color var(--motion-tide) ${CALM}, transform 150ms ${CALM}` }}
                 >
                   {status === "submitting"
