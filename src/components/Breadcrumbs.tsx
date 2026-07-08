@@ -1,8 +1,9 @@
 /**
  * Editorial breadcrumb title: the page title IS the breadcrumb.
- * "the guide / land" as one baseline-aligned composition; the parent
- * is a smaller linked prefix (title-sm), the current page is the h1
- * at full title scale. Semantically: nav landmark + clean h1.
+ * "the guide /" as a small linked prefix (fixed at intro size so the
+ * title leads by a full ~2.4:1 step), baseline-aligned with the h1.
+ * No underline: underlines belong to prose text links only; the link
+ * affordance here is the breadcrumb pattern itself plus a hover dim.
  * Editorial pages only.
  */
 interface BreadcrumbTitleProps {
@@ -17,14 +18,14 @@ export default function Breadcrumbs({
   title,
 }: BreadcrumbTitleProps) {
   return (
-    <div className="mb-6 flex flex-wrap items-baseline gap-x-4">
+    <div className="mb-6 flex flex-wrap items-baseline gap-x-3">
       <nav
         aria-label="Breadcrumb"
-        className="font-display text-intro text-brown md:text-title-sm"
+        className="font-display text-intro text-brown"
       >
         <a
           href={parentHref}
-          className="underline decoration-brown/30 underline-offset-4 transition-colors hover:decoration-brown"
+          className="transition-opacity hover:opacity-80"
         >
           {parentLabel}
         </a>

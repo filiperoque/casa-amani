@@ -110,7 +110,7 @@ One quiet `py-12` band above the footer; heading + line left, inline form right;
 ### Editorial devices (editorial pages ONLY: guide, calheta, remote-work, future notes/articles; never landing, house, faq, contact)
 - **Kicker** (`components/Kicker.tsx`): numbered label ("01", "02") in display face, `text-sm uppercase tracking-cta`, above each section h2. Language-free by design.
 - **Pull quote** (`components/PullQuote.tsx`): one per page at most, repeating a line that exists VERBATIM in the page's own copy, `text-title-sm`/`text-title` display with a hairline left border, breaking the column left on desktop. Never fabricate a quote.
-- **Editorial breadcrumb** (`components/Breadcrumbs.tsx`): the page title IS the breadcrumb: "the guide /" as a smaller linked prefix baseline-aligned with the h1 at full title scale; no repeated title. Soft-underlined parent link, nav[aria-label=Breadcrumb]. Guide subpages and future article hierarchies only.
+- **Editorial breadcrumb** (`components/Breadcrumbs.tsx`): the page title IS the breadcrumb: "the guide /" as a smaller linked prefix baseline-aligned with the h1 at full title scale; no repeated title. No underline (underlines are reserved for prose text links); link affordance is the pattern plus a hover dim. Prefix fixed at intro size (~2.4:1 title ratio). nav[aria-label=Breadcrumb]. Guide subpages and future article hierarchies only.
 - **Cards** (guide grids): title `text-intro` display, body `text-body` (never `text-prose`; prose is for reading columns), status tags `text-sm tracking-cta`. No opacity washes; state is expressed with tags and borders.
 
 ## 5. Motion
