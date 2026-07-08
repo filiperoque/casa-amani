@@ -50,8 +50,8 @@ export default function SubscribeBlock() {
   const isConfirmed = status === "success" || status === "already";
 
   return (
-    <section className="border-b border-cream/20 bg-warm px-6 py-10 lg:px-[120px]">
-      <div className="flex flex-col gap-6 md:flex-row md:items-center md:gap-12">
+    <section className="bg-warm px-6 py-10 lg:px-[120px]">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 md:flex-row md:items-center md:gap-12">
         <div className="md:w-2/5">
           <h2 className="mb-2 font-display text-xl text-cream">
             {t.subscribe.heading}

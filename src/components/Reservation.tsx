@@ -15,6 +15,7 @@ export default function Reservation() {
 
   return (
     <section className="bg-warm px-6 py-12 md:py-16 lg:px-[120px]">
+      <div className="mx-auto w-full max-w-6xl">
       <Reveal>
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <h2 className="font-display text-2xl text-cream md:text-3xl lg:text-4xl">
@@ -45,6 +46,7 @@ export default function Reservation() {
           </div>
         </div>
       </Reveal>
+      </div>
     </section>
   );
 }

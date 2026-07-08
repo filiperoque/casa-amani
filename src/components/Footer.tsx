@@ -19,6 +19,7 @@ export default function Footer({ subscribe = true }: { subscribe?: boolean }) {
     <>
       {subscribe && <SubscribeBlock />}
       <footer className="bg-warm px-6 py-16 lg:px-[120px] lg:py-20">
+        <div className="mx-auto w-full max-w-6xl">
         <Reveal>
         <div className="grid grid-cols-1 gap-10 text-base text-cream md:grid-cols-3 md:gap-8">
           {/* Column 1: Brand + location */}
@@ -77,6 +78,7 @@ export default function Footer({ subscribe = true }: { subscribe?: boolean }) {
       <div className="mt-12 flex flex-col gap-2 border-t border-cream/20 pt-6 text-sm text-cream md:flex-row md:items-center md:justify-between lg:mt-16">
         <p>&copy; {new Date().getFullYear()} Casa Amani Madeira. All rights reserved.</p>
         <a href={`${base}/privacy`} className="transition-colors hover:text-cream">{t.footer.privacy}</a>
+      </div>
       </div>
     </footer>
     </>

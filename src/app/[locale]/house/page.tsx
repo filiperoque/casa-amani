@@ -41,21 +41,25 @@ export default async function HousePage({
 
       <main id="main" className="bg-warm">
         <h1 className="sr-only">{t.house.title}</h1>
-        <HouseHeroWordmark text={t.landing.title} homeHref={`/${locale}`} />
 
-        <div className="flex flex-col items-center gap-6 px-6 pt-4 lg:px-[120px] lg:pt-6">
-          <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">
-            {t.landing.subtitle}
-          </p>
-          <div className="animate-fade-up animate-delay-2 relative mt-2 h-[43svh] w-full overflow-hidden sm:h-[400px] md:h-[500px] lg:h-[654px]">
-            <OptimizedImage
-              src="/images/hero.jpg"
-              alt="Interior view of Casa Amani with ocean views"
-              fill
-              className="object-cover"
-              priority
-              sizes="100vw"
-            />
+        {/* Hero block fills the viewport: wordmark + subtitle + image */}
+        <div className="flex min-h-[calc(100svh-3.5rem)] flex-col pb-6">
+          <HouseHeroWordmark text={t.landing.title} homeHref={`/${locale}`} />
+
+          <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col items-center gap-6 px-6 pt-4 lg:pt-6">
+            <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-[5.76px] text-cream md:text-lg lg:text-2xl">
+              {t.landing.subtitle}
+            </p>
+            <div className="animate-fade-up animate-delay-2 relative mt-2 min-h-[320px] w-full flex-1 overflow-hidden">
+              <OptimizedImage
+                src="/images/hero.jpg"
+                alt="Interior view of Casa Amani with ocean views"
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+            </div>
           </div>
         </div>
 
@@ -67,28 +71,9 @@ export default async function HousePage({
         </Reveal>
         <HouseGallery t={t} />
 
-        <Reveal>
-          <section className="bg-cream px-6 py-16 lg:px-[120px]">
-            <div className="mx-auto max-w-3xl">
-              <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
-                {t.staysInclude.title}
-              </h2>
-              <ul className="flex flex-col gap-3 leading-7 text-brown">
-                {t.staysInclude.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <h2 className="mb-6 mt-14 font-display text-2xl text-brown md:text-3xl">
-                {t.amenities.title}
-              </h2>
-              <ul className="flex flex-col gap-3 leading-7 text-brown">
-                {t.amenities.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </section>
-        </Reveal>
+        {/* STAYS INCLUDE and AMENITIES hidden until designed properly.
+            Content lives in t.staysInclude / t.amenities (all 5 locales)
+            and remains in JSON-LD + llms.txt for search and AI surfaces. */}
 
         <Reveal>
           <Location
@@ -96,16 +81,10 @@ export default async function HousePage({
             description={t.location.description}
           />
         </Reveal>
-        <Reveal>
-          <section className="bg-cream px-6 py-12 lg:px-[120px]">
-            <div className="mx-auto max-w-3xl flex flex-wrap gap-x-8 gap-y-2 text-base text-brown">
-              <a href={`/${locale}/remote-work`} className="transition-colors hover:text-brown">Remote work from Casa Amani</a>
-              <a href={`/${locale}/experiences`} className="transition-colors hover:text-brown">Experiences</a>
-              <a href={`/${locale}/the-guide/table`} className="transition-colors hover:text-brown">Where to eat</a>
-              <a href={`/${locale}/calheta`} className="transition-colors hover:text-brown">About Calheta</a>
-            </div>
-          </section>
-        </Reveal>
+        {/* Related-links strip hidden pending design. Its job: contextual
+            internal links from the highest-traffic page into remote-work,
+            experiences, guide, and calheta, for both visitors and crawl
+            equity. Reintroduce styled, or fold into the footer nav. */}
         <Footer />
       </main>
     </>

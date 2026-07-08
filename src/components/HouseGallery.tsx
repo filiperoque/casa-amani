@@ -22,7 +22,7 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
   return (
     <section className="bg-cream py-16 lg:py-[120px]">
       <Reveal>
-        <div className="flex flex-col items-center gap-4 px-6 text-center text-brown md:gap-6 lg:px-[120px]">
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-4 px-6 text-center text-brown md:gap-6 lg:px-[120px]">
           <h2 className="font-display text-4xl md:text-5xl lg:text-[72px] lg:leading-[80px]">
             {t.house.title}
           </h2>
@@ -35,7 +35,7 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
       </Reveal>
 
       <div className="no-scrollbar mt-12 overflow-x-auto lg:mt-20">
-        <div className="flex gap-6 px-6 pb-6 lg:gap-10 lg:px-[120px]">
+        <div className="mx-auto flex w-full max-w-6xl gap-6 px-6 pb-6 lg:gap-10 lg:px-[120px]">
           {rooms.map((room, i) => (
             <Reveal key={room.title} delay={i * 80} className="shrink-0">
               <RoomCard
