@@ -1,0 +1,43 @@
+## ADDED Requirements
+
+### Requirement: Single token source with registered classes
+All colors, containers, gutters, letter-spacing, and type sizes SHALL be defined once in `src/app/globals.css` under `@theme` and consumed via generated utility classes (`max-w-content`, `px-gutter`, `tracking-cta`, `text-body`, ...). Components SHALL NOT use raw arbitrary values for these dimensions.
+
+#### Scenario: A new component is added
+- **WHEN** a component needs a width, gutter, tracking, or font size
+- **THEN** it uses an existing token class; if none fits, the token is added to `@theme` and `.stitch/DESIGN.md` first
+
+### Requirement: 8pt baseline grid with rhythmic spacing scale
+Spacing SHALL use the scale 8, 12, 16, 24, 32, 48, 64, 96, 128 (alternating 3:2 and 4:3 jumps). 40 and 80 SHALL NOT be used for layout rhythm; 40 remains permitted only as the fixed control size (`h-10`/`w-10`).
+
+#### Scenario: Section padding
+- **WHEN** a section needs vertical padding
+- **THEN** it uses py-12, py-16, py-24, or lg:py-32 according to its tier
+
+### Requirement: Perfect Fourth type scale with baseline line-heights
+Type SHALL follow a Perfect Fourth (1.333) scale anchored at 16px with optical rounding at the top: 16/28 body, 21/32 intro, 28/36 title-sm, 38/48 title, 50/56 title-lg, 72/80 display, 88/80 wordmark, plus 14/20 caption. Line-heights sit on the 8pt baseline (36 is the single permitted half-step). No other sizes are allowed except the grandfathered Header overlay menu.
+
+#### Scenario: Page heading
+- **WHEN** a page h1 renders
+- **THEN** it uses `text-title-sm md:text-title lg:text-title-lg` in GT Sectra Display
+
+### Requirement: Container alignment with outside gutters
+Every module SHALL align to `max-w-content` (1280px); prose uses `max-w-copy` (768), short-form pages `max-w-narrow` (672). Page gutters (`px-gutter` 24, `lg:px-gutter-lg` 120) SHALL be applied on the section element outside the max-width wrapper, never inside it.
+
+#### Scenario: Module edges align
+- **WHEN** two modules render on the same page at any viewport width
+- **THEN** their content columns share identical left and right edges, including hero images and the room-card strip (first card flush with the column's left edge)
+
+### Requirement: CTA system and casing rules
+Primary actions (Airbnb booking) and form submits SHALL render in GT Sectra Display, uppercase, `tracking-cta`, 1px border, transparent fill. Text links SHALL render in GT Walsheim, sentence case, never uppercase or boxed. Casing: lowercase + trailing period for editorial display headings; UPPERCASE tracked for CTAs, micro-labels, and place lines; Title Case for nav/footer wayfinding; sentence case for body; the wordmark is always lowercase.
+
+#### Scenario: New booking CTA
+- **WHEN** a booking CTA is added anywhere
+- **THEN** it reuses the primary recipe and an i18n label; no new button style is invented
+
+### Requirement: Contrast floors
+Text on cream SHALL be full-strength `--color-brown` (no 40-70% alphas). Text on tan SHALL be full-strength cream at 16px minimum. Hover states may dim to 80%. Radius SHALL be 0 and elevation none throughout.
+
+#### Scenario: Muted text is needed
+- **WHEN** a secondary text treatment is needed on cream
+- **THEN** hierarchy is expressed with size or font switch, not opacity

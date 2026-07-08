@@ -119,10 +119,10 @@ export default async function FaqPage({
 
         <div className="mx-auto max-w-copy px-6 py-16 md:py-24 lg:py-32">
           <Reveal>
-            <h1 className="mb-4 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
+            <h1 className="mb-4 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               {t.faq.title}
             </h1>
-            <p className="mb-16 text-brown md:text-lg">
+            <p className="mb-16 text-body text-brown md:text-intro">
               {t.faq.subtitle}
             </p>
           </Reveal>
@@ -130,7 +130,7 @@ export default async function FaqPage({
           {FAQ_GROUPS.map((group) => (
             <section key={group.labelKey} className="mb-12 last:mb-0">
               <Reveal>
-                <h2 className="mb-2 font-display text-xl text-brown md:text-2xl">
+                <h2 className="mb-2 font-display text-intro text-brown md:text-title-sm">
                   {t.faq.groups[group.labelKey]}
                 </h2>
               </Reveal>
@@ -142,14 +142,14 @@ export default async function FaqPage({
                     <Reveal key={i} delay={Math.min(pos * 40, 200)}>
                       <details className="group border-t border-brown/10 py-6 last:border-b">
                         <summary className="flex cursor-pointer items-start justify-between gap-4 text-brown transition-opacity hover:opacity-70 marker:content-none [&::-webkit-details-marker]:hidden">
-                          <span className="text-base font-medium md:text-lg">
+                          <span className="text-body font-medium md:text-intro">
                             {item.question}
                           </span>
                           <span aria-hidden="true" className="mt-1 shrink-0 text-brown transition-transform duration-300 group-open:rotate-45">
                             +
                           </span>
                         </summary>
-                        <p className="mt-4 leading-7 text-brown md:text-base">
+                        <p className="mt-4 text-body text-brown">
                           {renderAnswer(item.answer)}
                         </p>
                       </details>

@@ -18,7 +18,7 @@ export default function Reservation() {
       <div className="mx-auto w-full max-w-content">
       <Reveal>
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-          <h2 className="font-display text-2xl text-cream md:text-3xl lg:text-4xl">
+          <h2 className="font-display text-title-sm text-cream md:text-title">
             {t.reservation.title}
           </h2>
 

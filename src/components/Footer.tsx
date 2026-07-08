@@ -18,19 +18,19 @@ export default function Footer({ subscribe = true }: { subscribe?: boolean }) {
   return (
     <>
       {subscribe && <SubscribeBlock />}
-      <footer className="bg-warm px-gutter py-16 lg:px-gutter-lg lg:py-20">
+      <footer className="bg-warm px-gutter py-16 lg:px-gutter-lg lg:py-24">
         <div className="mx-auto w-full max-w-content">
         <Reveal>
-        <div className="grid grid-cols-1 gap-10 text-base text-cream md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-8 text-body text-cream md:grid-cols-3">
           {/* Column 1: Brand + location */}
           <div>
-            <p className="mb-3 font-display text-2xl text-cream lg:text-3xl">casa amani</p>
+            <p className="mb-3 font-display text-title-sm text-cream">casa amani</p>
             <p>Arco da Calheta, Madeira, Portugal</p>
             <p>AL 176882/AL</p>
           </div>
 
           {/* Column 2: Pages */}
-          <nav aria-label="Site pages" className="flex flex-col gap-2 md:pt-[calc(1.875rem+0.75rem)]">
+          <nav aria-label="Site pages" className="flex flex-col gap-2 md:pt-[calc(2.25rem+0.75rem)]">
             <a href={`${base}/house`} className="transition-colors hover:text-cream">{t.footer.theHouse}</a>
             <a href={`${base}/calheta`} className="transition-colors hover:text-cream">{t.footer.calheta}</a>
             <a href={`${base}/the-guide`} className="transition-colors hover:text-cream">{t.footer.theGuide}</a>
@@ -41,7 +41,7 @@ export default function Footer({ subscribe = true }: { subscribe?: boolean }) {
           </nav>
 
           {/* Column 3: Contact, booking, social */}
-          <nav aria-label="Contact and booking" className="flex flex-col gap-2 md:pt-[calc(1.875rem+0.75rem)]">
+          <nav aria-label="Contact and booking" className="flex flex-col gap-2 md:pt-[calc(2.25rem+0.75rem)]">
             <a
               href={AIRBNB_URL}
               target="_blank"

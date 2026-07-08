@@ -50,13 +50,13 @@ export default function SubscribeBlock() {
   const isConfirmed = status === "success" || status === "already";
 
   return (
-    <section className="bg-warm px-gutter py-10 lg:px-gutter-lg">
+    <section className="bg-warm px-gutter py-12 lg:px-gutter-lg">
       <div className="mx-auto flex w-full max-w-content flex-col gap-6 md:flex-row md:items-center md:gap-12">
         <div className="md:w-2/5">
-          <h2 className="mb-2 font-display text-xl text-cream">
+          <h2 className="mb-2 font-display text-intro text-cream">
             {t.subscribe.heading}
           </h2>
-          <p className="text-base leading-7 text-cream">
+          <p className="text-body text-cream">
             {t.subscribe.bodyP1}
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function SubscribeBlock() {
         <div className="md:w-3/5">
           {isConfirmed ? (
             <p
-              className="text-base leading-7 text-cream"
+              className="text-body text-cream"
               style={{ transition: `opacity var(--motion-drift) ${CALM}` }}
             >
               <span className="font-display">{t.subscribe.confirmHeading}.</span>{" "}
@@ -89,7 +89,7 @@ export default function SubscribeBlock() {
                   placeholder={t.subscribe.placeholder}
                   disabled={status === "submitting"}
                   required
-                  className="flex-1 border border-cream/70 bg-transparent px-4 py-3 text-base text-cream placeholder:text-cream/70 focus:border-cream focus:outline-none"
+                  className="flex-1 border border-cream/70 bg-transparent px-4 py-3 text-body text-cream placeholder:text-cream/70 focus:border-cream focus:outline-none"
                   style={{ transition: `border-color var(--motion-tide) ${CALM}` }}
                 />
                 <button
@@ -104,10 +104,10 @@ export default function SubscribeBlock() {
                 </button>
               </div>
               {status === "error-invalid" && (
-                <p role="alert" className="text-base text-cream">{t.subscribe.errorInvalid}</p>
+                <p role="alert" className="text-body text-cream">{t.subscribe.errorInvalid}</p>
               )}
               {status === "error-generic" && (
-                <p role="alert" className="text-base text-cream">{t.subscribe.errorGeneric}</p>
+                <p role="alert" className="text-body text-cream">{t.subscribe.errorGeneric}</p>
               )}
               <p className="text-sm text-cream">{t.subscribe.privacyLine}</p>
             </form>

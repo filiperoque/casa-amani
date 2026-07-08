@@ -8,12 +8,12 @@ interface LocationProps {
 export default function Location({ heading, description }: LocationProps) {
   return (
     <section className="bg-warm px-gutter py-16 text-cream lg:px-gutter-lg lg:py-[120px]">
-      <div className="mx-auto flex w-full max-w-content flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
+      <div className="mx-auto flex w-full max-w-content flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
         <div className="flex flex-col gap-4 md:gap-6 lg:w-1/2">
-          <h2 className="font-display text-4xl leading-tight md:text-5xl lg:text-[56px] lg:leading-[64px]">
+          <h2 className="font-display text-title md:text-title-lg">
             {heading}
           </h2>
-          <p className="text-lg font-normal leading-8 text-cream md:text-xl lg:text-2xl lg:leading-9">
+          <p className="text-intro font-normal text-cream md:text-title-sm">
             {description}
           </p>
         </div>

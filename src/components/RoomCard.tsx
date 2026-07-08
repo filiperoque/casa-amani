@@ -25,10 +25,10 @@ export default function RoomCard({
         />
       </div>
       <div className="flex flex-col gap-3 text-brown lg:gap-4">
-        <h3 className="text-sm font-medium tracking-label md:text-base lg:text-xl">
+        <h3 className="text-sm font-medium tracking-label md:text-body lg:text-intro">
           {title}
         </h3>
-        <p className="text-sm leading-6 lg:text-base">{description}</p>
+        <p className="text-sm leading-6 lg:text-body">{description}</p>
       </div>
     </div>
   );

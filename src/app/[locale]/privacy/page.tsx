@@ -35,10 +35,10 @@ export default async function PrivacyPage({
       <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
         <div className="mx-auto max-w-narrow">
           <Reveal>
-            <h1 className="mb-8 font-display text-3xl text-brown md:text-4xl">
+            <h1 className="mb-8 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               {t.privacy.title}
             </h1>
-            <div className="flex flex-col gap-6 leading-8 text-brown">
+            <div className="flex flex-col gap-6 text-body text-brown">
               <p>
                 {t.privacy.p1}
               </p>

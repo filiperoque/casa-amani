@@ -115,7 +115,7 @@ export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: st
 
   if (reducedMotion) {
     return (
-      <p className="animate-fade-up text-center font-display text-5xl text-cream md:text-7xl lg:text-[88px] lg:leading-[80px]">
+      <p className="animate-fade-up text-center font-display text-title-lg text-cream md:text-display lg:text-wordmark">
         {text}
       </p>
     );
@@ -125,7 +125,7 @@ export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: st
     <>
       <p
         ref={wordmarkRef}
-        className="z-[61] text-center font-display text-5xl md:text-7xl lg:text-[88px] lg:leading-[80px]"
+        className="z-[61] text-center font-display text-title-lg md:text-display lg:text-wordmark"
         style={{
           position: "sticky",
           top: `${STICKY_TOP_PX}px`,
@@ -151,7 +151,7 @@ export default function HouseHeroWordmark({ text, homeHref = "/en" }: { text: st
       <div
         ref={headerAnchorRef}
         aria-hidden="true"
-        className="pointer-events-none invisible absolute font-display text-2xl lg:text-[32px]"
+        className="pointer-events-none invisible absolute font-display text-title-sm"
         style={{ lineHeight: 1 }}
       >
         {text}

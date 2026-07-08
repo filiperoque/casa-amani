@@ -71,10 +71,10 @@ export default async function ExperiencesPage({
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-copy">
             <Reveal>
-              <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
+              <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
                 {t.experiences.title}
               </h1>
-              <p className="mb-16 text-lg leading-8 text-brown md:text-xl">
+              <p className="mb-16 text-intro text-brown">
                 {t.experiences.intro}
               </p>
             </Reveal>
@@ -83,10 +83,10 @@ export default async function ExperiencesPage({
               {t.experiences.items.map((item, i) => (
                 <Reveal key={i} delay={Math.min(i * 40, 200)}>
                   <div className="border-t border-brown/10 py-8 first:border-t-0 first:pt-0 last:border-b">
-                    <h2 className="mb-2 font-display text-xl text-brown md:text-2xl">
+                    <h2 className="mb-2 font-display text-intro text-brown md:text-title-sm">
                       {item.title}
                     </h2>
-                    <p className="leading-7 text-brown">
+                    <p className="text-body text-brown">
                       {item.description}
                     </p>
                   </div>

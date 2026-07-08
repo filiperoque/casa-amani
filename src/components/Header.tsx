@@ -231,7 +231,7 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
         {/* Brand mark (Drift for entrance, Tide for hover/color) */}
         <a
           href={base || "/en"}
-          className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[55%] font-display text-2xl lg:text-[32px] ${
+          className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[55%] font-display text-title-sm ${
             showBrand ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
           style={{
@@ -439,14 +439,14 @@ export default function Header({ menuLabel = "MENU", overlay = false, mode = "co
                 )
               )}
               <div
-                className="absolute inset-x-0 bottom-0 p-8 pt-20"
+                className="absolute inset-x-0 bottom-0 p-8 pt-24"
                 style={{
                   background: "linear-gradient(to top, rgba(122,95,64,0.7) 0%, transparent 100%)",
                   opacity: activeText ? 1 : 0,
                   transition: `opacity var(--motion-drift) ${CALM}`,
                 }}
               >
-                <p className="max-w-[32ch] font-display text-base leading-relaxed text-cream">
+                <p className="max-w-[32ch] font-display text-body text-cream">
                   {activeText}
                 </p>
                 {hoveredIndex !== null && allNav[hoveredIndex]?.href && (

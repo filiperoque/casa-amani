@@ -6,7 +6,7 @@ export default function GuideEntryCard({ entry }: { entry: GuideEntry }) {
     <Reveal>
       <article className="border-t border-brown/10 py-8 first:border-t-0 first:pt-0 last:border-b">
         <div className="mb-2 flex items-baseline gap-3">
-          <h3 className="font-display text-xl text-brown md:text-2xl">
+          <h3 className="font-display text-intro text-brown md:text-title-sm">
             {entry.title}
           </h3>
           <span className="text-sm text-brown">{entry.location}</span>
@@ -14,9 +14,9 @@ export default function GuideEntryCard({ entry }: { entry: GuideEntry }) {
         {entry.tagline && (
           <p className="mb-3 text-sm italic text-brown">{entry.tagline}</p>
         )}
-        <p className="leading-7 text-brown">{entry.body}</p>
+        <p className="text-body text-brown">{entry.body}</p>
         {entry.body2 && (
-          <p className="mt-2 leading-7 text-brown">{entry.body2}</p>
+          <p className="mt-2 text-body text-brown">{entry.body2}</p>
         )}
         <p className="mt-4 text-sm italic leading-6 text-brown">
           {entry.practical}

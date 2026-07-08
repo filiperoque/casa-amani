@@ -69,10 +69,10 @@ export default async function GuidePage({
       <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-32">
         <div className="mx-auto max-w-copy">
           <Reveal>
-            <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
+            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               the guide
             </h1>
-            <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
+            <p className="mb-12 text-intro text-brown">
               Places we go and send guests to on the west coast of Madeira. Each
               entry is somewhere we have eaten, drunk, surfed, or spent time.
               Nothing sponsored, nothing paid. Updated when something changes.
@@ -80,13 +80,12 @@ export default async function GuidePage({
           </Reveal>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((cat) => (
-              <Reveal key={cat.title}>
+            {categories.map((cat, i) => (              <Reveal key={cat.title} delay={Math.min(i * 80, 400)}>
                 <a
                   href={`${base}/${cat.href}`}
                   className="flex h-full flex-col gap-3 border border-brown/10 p-6 transition-colors hover:border-brown/30"
                 >
-                  <h2 className="font-display text-xl text-brown">
+                  <h2 className="font-display text-intro text-brown">
                     {cat.title}
                   </h2>
                   <p className="text-sm leading-6 text-brown">

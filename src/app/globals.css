@@ -51,8 +51,8 @@
   --font-display: "GT Sectra Display", Georgia, "Times New Roman", serif;
   --font-body: "GT Walsheim", system-ui, -apple-system, sans-serif;
 
-  /* Layout containers (8pt grid: 1152 / 768 / 672 / 600px) */
-  --container-content: 72rem; /* standard module column */
+  /* Layout containers (8pt grid: 1280 / 768 / 672 / 600px) */
+  --container-content: 80rem; /* standard module column */
   --container-copy: 48rem;    /* prose column */
   --container-narrow: 42rem;  /* short-form pages (contact, privacy) */
   --container-hero-copy: 37.5rem; /* hero intro paragraph */
@@ -64,6 +64,27 @@
   /* Letter-spacing tokens */
   --tracking-cta: 0.25rem;   /* 4px: CTAs, room labels */
   --tracking-label: 0.375rem; /* 6px: hero subtitle, place lines */
+
+  /* Type scale: Perfect Fourth (1.333) anchored at 16px, optically
+     rounded at the top of the ramp. Line-heights sit on the 8pt
+     baseline (36 is the single permitted 4pt half-step).
+     16 -> 21 -> 28 -> 38 -> 50 -> (67~72) -> (89~88) */
+  --text-caption: 0.875rem;            /* 14, one step below body */
+  --text-caption--line-height: 1.25rem;   /* 20 */
+  --text-body: 1rem;                   /* 16 */
+  --text-body--line-height: 1.75rem;      /* 28 */
+  --text-intro: 1.3125rem;             /* 21 */
+  --text-intro--line-height: 2rem;        /* 32 */
+  --text-title-sm: 1.75rem;            /* 28 */
+  --text-title-sm--line-height: 2.25rem;  /* 36 */
+  --text-title: 2.375rem;              /* 38 */
+  --text-title--line-height: 3rem;        /* 48 */
+  --text-title-lg: 3.125rem;           /* 50 */
+  --text-title-lg--line-height: 3.5rem;   /* 56 */
+  --text-display: 4.5rem;              /* 72, optical for 67 */
+  --text-display--line-height: 5rem;      /* 80 */
+  --text-wordmark: 5.5rem;             /* 88, optical for 89 */
+  --text-wordmark--line-height: 5rem;     /* 80, tight display serif */
 }
 
 html {

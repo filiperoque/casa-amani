@@ -72,10 +72,10 @@ export default async function ThePlacePage({
         <section className="bg-cream px-6 py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-copy">
             <Reveal>
-              <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
+              <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
                 {t.thePlace.title}
               </h1>
-              <p className="mb-12 text-lg leading-8 text-brown md:text-xl">
+              <p className="mb-12 text-intro text-brown">
                 {t.thePlace.intro}
               </p>
             </Reveal>
@@ -93,7 +93,7 @@ export default async function ThePlacePage({
             </Reveal>
 
             <Reveal>
-              <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
+              <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.thePlace.distancesTitle}
               </h2>
               <dl className="mb-16 grid grid-cols-1 gap-4 text-brown/80 sm:grid-cols-2">
@@ -107,49 +107,49 @@ export default async function ThePlacePage({
             </Reveal>
 
             <Reveal>
-              <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
+              <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.thePlace.westCoastTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown">
+              <p className="mb-4 text-body text-brown">
                 {t.thePlace.westCoastP1}
               </p>
-              <p className="mb-16 leading-8 text-brown">
+              <p className="mb-16 text-body text-brown">
                 {t.thePlace.westCoastP2}
               </p>
             </Reveal>
 
             <Reveal>
-              <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
+              <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.thePlace.climateTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown">
+              <p className="mb-4 text-body text-brown">
                 {t.thePlace.climateP1}
               </p>
-              <p className="mb-16 leading-8 text-brown">
+              <p className="mb-16 text-body text-brown">
                 {t.thePlace.climateP2}
               </p>
             </Reveal>
 
             <Reveal>
-              <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
+              <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.thePlace.golfTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown">
+              <p className="mb-4 text-body text-brown">
                 {t.thePlace.golfP1}
               </p>
-              <p className="mb-16 leading-8 text-brown">
+              <p className="mb-16 text-body text-brown">
                 {t.thePlace.golfP2}
               </p>
             </Reveal>
 
             <Reveal>
-              <h2 className="mb-6 font-display text-2xl text-brown md:text-3xl">
+              <h2 className="mb-6 font-display text-title-sm text-brown">
                 {t.thePlace.gettingHereTitle}
               </h2>
-              <p className="mb-4 leading-8 text-brown">
+              <p className="mb-4 text-body text-brown">
                 {t.thePlace.gettingHereP1}
               </p>
-              <p className="mb-16 leading-8 text-brown">
+              <p className="mb-16 text-body text-brown">
                 {t.thePlace.gettingHereP2}
               </p>
             </Reveal>

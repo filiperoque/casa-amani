@@ -48,10 +48,10 @@ export default async function ContactPage({
 
         <div className="mx-auto max-w-narrow px-6 py-16 md:py-24 lg:py-32">
           <Reveal>
-            <h1 className="mb-4 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
+            <h1 className="mb-4 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               {t.contact.title}
             </h1>
-            <p className="mb-12 leading-7 text-brown md:text-lg">
+            <p className="mb-12 text-body text-brown md:text-intro">
               {t.contact.intro}
             </p>
           </Reveal>
@@ -104,7 +104,7 @@ export default async function ContactPage({
 
           <Reveal>
             <div className="mt-12 border-t border-brown/10 pt-8">
-              <p className="mb-4 leading-7 text-brown">
+              <p className="mb-4 text-body text-brown">
                 {t.contact.bookingNote}
               </p>
               <a

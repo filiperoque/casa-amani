@@ -69,10 +69,10 @@ export default function LandingScene({
         </div>
       </div>
 
-      <div className="relative z-10 flex w-full flex-1 flex-col items-center justify-center gap-8 px-6 pb-16 pt-10 mix-blend-lighten md:gap-10 md:px-gutter-lg">
+      <div className="relative z-10 flex w-full flex-1 flex-col items-center justify-center gap-8 px-6 pb-16 pt-12 mix-blend-lighten md:gap-12 md:px-gutter-lg">
         <div className="flex flex-col items-center gap-6 text-cream">
           <h1
-            className="font-display text-5xl md:text-7xl lg:text-[88px] lg:leading-[80px]"
+            className="font-display text-title-lg md:text-display lg:text-wordmark"
             style={{
               opacity: stage >= 1 ? 1 : 0,
               transform: stage >= 1 ? "translateY(0)" : "translateY(20px)",
@@ -82,7 +82,7 @@ export default function LandingScene({
             {title}
           </h1>
           <p
-            className="text-center text-sm tracking-label md:text-lg lg:text-2xl"
+            className="text-center text-sm tracking-label md:text-intro lg:text-title-sm"
             style={{
               opacity: stage >= 2 ? 0.8 : 0,
               transform: stage >= 2 ? "translateY(0)" : "translateY(16px)",
@@ -94,7 +94,7 @@ export default function LandingScene({
         </div>
 
         <p
-          className="mx-auto max-w-hero-copy text-center text-base leading-[1.65] text-cream md:text-lg md:leading-[1.7]"
+          className="mx-auto max-w-hero-copy text-center text-body text-cream md:text-intro"
           style={{
             opacity: stage >= 3 ? 1 : 0,
             transform: stage >= 3 ? "translateY(0)" : "translateY(14px)",

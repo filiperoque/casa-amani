@@ -26,11 +26,24 @@ export default function Reveal({ children, className = "", delay = 0 }: RevealPr
           observer.unobserve(el);
         }
       },
-      { threshold: 0.15 }
+      // Low threshold so cards straddling the fold still animate;
+      // 0.15 left second-row cards visible-but-untriggered.
+      { threshold: 0.05 }
     );
 
-    observer.observe(el);
-    return () => observer.disconnect();
+    // Two frames so initial .reveal styles are committed before
+    // is-visible can land; otherwise in-view elements pop without
+    // transitioning.
+    let raf2 = 0;
+    const raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => observer.observe(el));
+    });
+
+    return () => {
+      cancelAnimationFrame(raf1);
+      cancelAnimationFrame(raf2);
+      observer.disconnect();
+    };
   }, [delay]);
 
   return (

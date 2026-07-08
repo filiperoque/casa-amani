@@ -36,10 +36,10 @@ export default async function SubscribeConfirmedPage({
       <section className="bg-cream px-gutter py-24 md:py-32 lg:px-gutter-lg lg:py-40">
         <div className="mx-auto max-w-narrow text-center">
           <Reveal>
-            <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
+            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               {t.subscribe.confirmedHeading}
             </h1>
-            <p className="text-lg leading-8 text-brown">
+            <p className="text-intro text-brown">
               {t.subscribe.confirmedBody}
             </p>
           </Reveal>

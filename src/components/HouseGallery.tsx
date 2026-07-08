@@ -19,23 +19,32 @@ export default function HouseGallery({ t }: HouseGalleryProps) {
     { ...t.rooms.garage, image: "/images/garage.jpg", alt: "Private garage for two cars" },
   ];
 
+  const featureLines = [t.house.features, t.house.features2];
+
   return (
-    <section className="bg-cream py-16 lg:py-[120px]">
+    <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg">
       <Reveal>
-        <div className="mx-auto flex w-full max-w-content flex-col items-center gap-4 px-gutter text-center text-brown md:gap-6 lg:px-gutter-lg">
-          <h2 className="font-display text-4xl md:text-5xl lg:text-[72px] lg:leading-[80px]">
+        <div className="mx-auto flex w-full max-w-content flex-col items-center gap-4 text-center text-brown md:gap-6">
+          <h2 className="font-display text-title md:text-title-lg lg:text-display">
             {t.house.title}
           </h2>
-          <p className="max-w-copy text-sm leading-7 md:text-lg lg:text-2xl lg:leading-8">
-            {t.house.features}
-            <br className="hidden md:block" />
-            {t.house.features2}
+          <p className="max-w-copy text-sm leading-7 md:text-intro lg:text-title-sm">
+            {featureLines.map((line, li) => (
+              <span key={li} className="block">
+                {line.split(" · ").map((fact, fi, arr) => (
+                  <span key={fact} className="whitespace-nowrap">
+                    {fact}
+                    {fi < arr.length - 1 && <span aria-hidden="true"> · </span>}
+                  </span>
+                ))}
+              </span>
+            ))}
           </p>
         </div>
       </Reveal>
 
-      <div className="no-scrollbar mt-12 overflow-x-auto lg:mt-20">
-        <div className="mx-auto flex w-full max-w-content gap-6 px-gutter pb-6 lg:gap-10 lg:px-gutter-lg">
+      <div className="no-scrollbar mx-auto mt-12 w-full max-w-content overflow-x-auto lg:mt-24">
+        <div className="flex gap-6 pb-6 lg:gap-12">
           {rooms.map((room, i) => (
             <Reveal key={room.title} delay={i * 80} className="shrink-0">
               <RoomCard

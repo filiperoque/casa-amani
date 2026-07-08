@@ -8,10 +8,10 @@ interface HeroProps {
 export default function Hero({ title, subtitle }: HeroProps) {
   return (
     <section className="flex flex-col items-center gap-6 bg-warm px-gutter pb-0 lg:px-gutter-lg">
-      <h1 className="animate-fade-up font-display text-5xl text-cream md:text-7xl lg:text-[88px] lg:leading-[80px]">
+      <h1 className="animate-fade-up font-display text-title-lg text-cream md:text-display lg:text-wordmark">
         {title}
       </h1>
-      <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-label text-cream md:text-lg lg:text-2xl">
+      <p className="animate-fade-up animate-delay-1 text-center text-sm tracking-label text-cream md:text-intro lg:text-title-sm">
         {subtitle}
       </p>
 

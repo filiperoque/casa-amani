@@ -66,10 +66,10 @@ export default async function TablePage({
       <section className="bg-cream px-gutter py-16 md:py-24 lg:px-gutter-lg lg:py-32">
         <div className="mx-auto max-w-copy">
           <Reveal>
-            <h1 className="mb-6 font-display text-3xl text-brown md:text-4xl lg:text-5xl">
+            <h1 className="mb-6 font-display text-title-sm text-brown md:text-title lg:text-title-lg">
               table
             </h1>
-            <p className="mb-16 text-lg leading-8 text-brown md:text-xl">
+            <p className="mb-16 text-intro text-brown">
               Where the food and drink lives. Every place listed is somewhere we
               have eaten or drunk, on the west coast of Madeira or worth the
               drive from Arco da Calheta. Nothing sponsored, nothing paid.
@@ -77,7 +77,7 @@ export default async function TablePage({
           </Reveal>
 
           <Reveal>
-            <h2 className="mb-8 font-display text-2xl text-brown md:text-3xl">
+            <h2 className="mb-8 font-display text-title-sm text-brown">
               restaurants
             </h2>
           </Reveal>
@@ -88,7 +88,7 @@ export default async function TablePage({
           </div>
 
           <Reveal>
-            <h2 className="mb-8 font-display text-2xl text-brown md:text-3xl">
+            <h2 className="mb-8 font-display text-title-sm text-brown">
               bars and poncha
             </h2>
           </Reveal>
